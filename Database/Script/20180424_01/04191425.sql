@@ -1,0 +1,2 @@
+INSERT INTO [dbo].[GELookupTables] VALUES ((SELECT MAX(GELookupTableID)+1 FROM [GELookupTables]), 'Alive', N'MEEmrGroupImages', N'MEEmrGroupImages', N'MEEmrGroupImageName');
+INSERT INTO [dbo].[GELookupTables] VALUES ((SELECT MAX(GELookupTableID)+1 FROM [GELookupTables]), 'Alive', N'MEEmrImages', N'MEEmrImages', N'MEEmrImageName');

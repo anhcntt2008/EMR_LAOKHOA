@@ -1,0 +1,2 @@
+﻿SELECT * FROM ADConfigValues where ADConfigKeyGroup = 'EmrActionType'
+INSERT INTO [dbo].[ADConfigValues] VALUES ((SELECT MAX(ADConfigValueID)+1 FROM [ADConfigValues]), 'Alive', N'EmrActionTypeSubTemplate', N'SubTemplate', N'Chèn mẫu con', N'Chèn mẫu con', N'EmrActionType', '1');

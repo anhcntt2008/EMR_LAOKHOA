@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{220ED659-0C9E-4501-BAEE-DD5F5FC1A3BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BOSComponent</RootNamespace>
+    <AssemblyName>BOSComponent</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Export, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.2.Design, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2.Design, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.2.Design, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.2.Design, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.2.Design, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.2.Design, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v17.2.Design, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.2.Design, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.2.Design, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.2.Design, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.VisualBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\ClasSpinEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ClasSpinEdit.Designer.cs">
+      <DependentUpon>ClasSpinEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ClasColorPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ClasColorPicker.Designer.cs">
+      <DependentUpon>ClasColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSDockControlContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSDockControlContainer.Designer.cs">
+      <DependentUpon>BOSDockControlContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSHyperLinkEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSHyperLinkEdit.Designer.cs">
+      <DependentUpon>BOSHyperLinkEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSDockPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSDockPanel.Designer.cs">
+      <DependentUpon>BOSDockPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSRadioGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSRadioGroup.Designer.cs">
+      <DependentUpon>BOSRadioGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSButton.Designer.cs">
+      <DependentUpon>BOSButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSButtonEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSButtonEdit.Designer.cs">
+      <DependentUpon>BOSButtonEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSChartControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSChartControl.Designer.cs">
+      <DependentUpon>BOSChartControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSCheckEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSCheckEdit.Designer.cs">
+      <DependentUpon>BOSCheckEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSComboBox.Designer.cs">
+      <DependentUpon>BOSComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOSControlUtil.cs" />
+    <Compile Include="Components\BOSDateEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSDateEdit.Designer.cs">
+      <DependentUpon>BOSDateEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSGroupControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSGroupControl.Designer.cs">
+      <DependentUpon>BOSGroupControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSLabel.Designer.cs">
+      <DependentUpon>BOSLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSLine.Designer.cs">
+      <DependentUpon>BOSLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSLookupEdit.cs" />
+    <Compile Include="Components\BOSLookupEdit.Designer.cs">
+      <DependentUpon>BOSLookupEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSMemoEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSMemoEdit.Designer.cs">
+      <DependentUpon>BOSMemoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSPanel.Designer.cs">
+      <DependentUpon>BOSPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSPictureEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSPictureEdit.Designer.cs">
+      <DependentUpon>BOSPictureEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSTabControl.Designer.cs">
+      <DependentUpon>BOSTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSTextBox.Designer.cs">
+      <DependentUpon>BOSTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSTimeEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSTimeEdit.Designer.cs">
+      <DependentUpon>BOSTimeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BOSTreeListControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\BOSTreeListControl.Designer.cs">
+      <DependentUpon>BOSTreeListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\GridControl\ComboGridControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\GridControl\BOSGridControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\GridControl\BOSGridControl.Designer.cs">
+      <DependentUpon>BOSGridControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\GridControl\BOSPivotGridControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\GridControl\BOSPivotGridControl.Designer.cs">
+      <DependentUpon>BOSPivotGridControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MultiColCheckedComboBoxEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IBOSControl.cs" />
+    <Compile Include="Localization\ComponentLocalizedResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComponentLocalizedResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="STModuleColumnsController.cs" />
+    <Compile Include="STModuleColumnsInfo.cs" />
+    <Compile Include="UI\guiZoomImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\guiZoomImage.Designer.cs">
+      <DependentUpon>guiZoomImage.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Components\BOSChartControl.resx">
+      <DependentUpon>BOSChartControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\ComponentLocalizedResources.resx">
+      <LastGenOutput>ComponentLocalizedResources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Localization</CustomToolNamespace>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="UI\guiZoomImage.resx">
+      <DependentUpon>guiZoomImage.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BOSCommon\BOSCommon.csproj">
+      <Project>{b05df8ad-9ae4-471c-85c5-6d63540443ad}</Project>
+      <Name>BOSCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BOSEntity\BOSEntity.csproj">
+      <Project>{fe3f2e92-4ddb-4a44-98bb-209c9a452f2a}</Project>
+      <Name>BOSEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BOSLib\BOSLib.csproj">
+      <Project>{A4860258-380C-4FF3-9F93-EC653ABDAE8D}</Project>
+      <Name>BOSLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

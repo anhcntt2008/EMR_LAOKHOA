@@ -1,0 +1,2 @@
+ALTER TABLE MEEmrActions ADD MEEmrActionAllowOverrideReqParamValue bit
+UPDATE MEEmrActions SET MEEmrActionAllowOverrideReqParamValue = 0

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A4860258-380C-4FF3-9F93-EC653ABDAE8D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BOSLib</RootNamespace>
+    <AssemblyName>BOSLib</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>D:\Works\HNET_EMR\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>D:\Works\HNET_EMR\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Export, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.2.Design, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.2.Design, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.2.Design, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.2.Design, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.2.Design, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.Outlook, Version=9.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Configuration.Design, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data.Configuration.Design, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.Practices.EnterpriseLibrary.Data.Configuration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Configuration.Design, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Configuration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.Practices.EnterpriseLibrary.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=5.0.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\FormatGroupAttribute.cs" />
+    <Compile Include="Attributes\RequiredAttribute.cs" />
+    <Compile Include="BaseProvider\BaseCollection\BindingSourceCollection.cs" />
+    <Compile Include="BaseProvider\BaseCollection\ControlCollection.cs" />
+    <Compile Include="BaseProvider\BaseCollection\ErrorProviderCollection.cs" />
+    <Compile Include="BaseProvider\BaseCollection\LookupTableCollection.cs" />
+    <Compile Include="BaseProvider\BaseCollection\ScreenCollection.cs" />
+    <Compile Include="BaseProvider\BaseModule.cs" />
+    <Compile Include="BaseProvider\BaseToolbar.cs" />
+    <Compile Include="BaseProvider\BOSScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseProvider\BOSUndoEngine\BOSUndoEngine.cs" />
+    <Compile Include="BaseProvider\BOSUndoEngine\BOSUndoUnit.cs" />
+    <Compile Include="BaseProvider\Factory\BaseClassFactory - uthv - turning.cs" />
+    <Compile Include="BaseProvider\Factory\BusinessObjectFactory.cs" />
+    <Compile Include="BaseProvider\Interface\IBaseModule.cs" />
+    <Compile Include="BaseProvider\Interface\IBaseModuleERP.cs" />
+    <Compile Include="BaseProvider\Interface\IBOSList.cs" />
+    <Compile Include="BaseProvider\Interface\IBOSScreen.cs" />
+    <Compile Include="BaseProvider\Interface\IBOSTreeList.cs" />
+    <Compile Include="BaseProvider\ModuleEntities.cs" />
+    <Compile Include="BaseProvider\ProgressbarWorker\BOSProgressBar.cs" />
+    <Compile Include="BaseProvider\ProgressbarWorker\BOSWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseProvider\ProgressbarWorker\BOSWorker.designer.cs">
+      <DependentUpon>BOSWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseProvider\ProgressbarWorker\guiBOSProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseProvider\ProgressbarWorker\guiBOSProgressBar.Designer.cs">
+      <DependentUpon>guiBOSProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseProvider\Factory\BusinessControllerFactory.cs" />
+    <Compile Include="BusinessController\AA\AAColumnAliasController.cs" />
+    <Compile Include="BusinessController\AD\ADConfigValuesController.cs" />
+    <Compile Include="BusinessController\AD\ADMatchCodesController.cs" />
+    <Compile Include="BusinessController\AD\ADModuleFieldsToUsersController.cs" />
+    <Compile Include="BusinessController\AD\ADUserConfigsController.cs" />
+    <Compile Include="BusinessController\AD\ADUserFingerprintsController.cs" />
+    <Compile Include="BusinessController\AD\ADUserFingerprintsZKTecoController.cs" />
+    <Compile Include="BusinessController\AD\ADUserGroupExtrasController.cs" />
+    <Compile Include="BusinessController\AD\ADUserGroupsController.cs" />
+    <Compile Include="BusinessController\AD\ADUserGroupSectionsController.cs" />
+    <Compile Include="BusinessController\AD\ADUsersController.cs" />
+    <Compile Include="BusinessController\BaseBusinessController.cs" />
+    <Compile Include="BusinessController\GE\GELanguagesController.cs" />
+    <Compile Include="BusinessController\GE\GELookupTablesController.cs" />
+    <Compile Include="BusinessController\GE\GEMessagesController.cs" />
+    <Compile Include="BusinessController\GE\GEUserAuditsController.cs" />
+    <Compile Include="BusinessController\GE\GEUserMessagesHiddenController.cs" />
+    <Compile Include="BusinessController\PR\PRReportController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessController\ST\STFieldColumnsController.cs" />
+    <Compile Include="BusinessController\ST\STFieldEventFunctionParametersController.cs" />
+    <Compile Include="BusinessController\ST\STFieldEventFunctionsController.cs" />
+    <Compile Include="BusinessController\ST\STFieldEventParametersController.cs" />
+    <Compile Include="BusinessController\ST\STFieldEventsController.cs" />
+    <Compile Include="BusinessController\ST\STFieldFormatGroupsController.cs" />
+    <Compile Include="BusinessController\ST\STFieldFormatsController.cs" />
+    <Compile Include="BusinessController\ST\STFieldPermissionsController.cs" />
+    <Compile Include="BusinessController\ST\STObjectStatePermissionsController.cs" />
+    <Compile Include="BusinessInfo\AD\ADUserFingerprintsInfo.cs" />
+    <Compile Include="BusinessInfo\AD\ADUserFingerprintsZKTecoInfo.cs" />
+    <Compile Include="BusinessInfo\AD\ADUserGroupExtrasInfo.cs" />
+    <Compile Include="BusinessInfo\ObjectStatePermisionDto.cs" />
+    <Compile Include="BusinessInfo\ST\STObjectStatePermissionsInfo.cs" />
+    <Compile Include="BusinessInfo\AD\ADUserConfigsInfo.cs" />
+    <Compile Include="BusinessInfo\BOSTreeListObject.cs" />
+    <Compile Include="BusinessInfo\ERPModuleItemsEntity.cs" />
+    <Compile Include="BusinessInfo\ST\STFieldPermissionsInfo.cs" />
+    <Compile Include="BusinessController\ST\STFieldsController.cs" />
+    <Compile Include="BusinessController\ST\STFieldTabStopsController.cs" />
+    <Compile Include="BusinessController\ST\STFieldTextsController.cs" />
+    <Compile Include="BusinessController\ST\STGridBandsController.cs" />
+    <Compile Include="BusinessController\ST\STGridColumnsController.cs" />
+    <Compile Include="BusinessController\ST\STGridLevelNodesController.cs" />
+    <Compile Include="BusinessController\ST\STGridResultColumnDisplaysController.cs" />
+    <Compile Include="BusinessController\ST\STGridViewsController.cs" />
+    <Compile Include="BusinessController\ST\STModuleDescriptionsController.cs" />
+    <Compile Include="BusinessController\ST\STModuleFunctionParametersController.cs" />
+    <Compile Include="BusinessController\ST\STModuleFunctionParameterValuesController.cs" />
+    <Compile Include="BusinessController\ST\STModuleFunctionsController.cs" />
+    <Compile Include="BusinessController\ST\STModulesController.cs" />
+    <Compile Include="BusinessController\ST\STModuleSearchFieldsController.cs" />
+    <Compile Include="BusinessController\ST\STModuleTablesController.cs" />
+    <Compile Include="BusinessController\ST\STModuleToolbarButtonCaptionsController.cs" />
+    <Compile Include="BusinessController\ST\STModuleToolbarButtonsController.cs" />
+    <Compile Include="BusinessController\ST\STModuleToolbarButtonToUserGroupsController.cs" />
+    <Compile Include="BusinessController\ST\STModuleToolbarsController.cs" />
+    <Compile Include="BusinessController\ST\STModuleToolbarToUserGroupsController.cs" />
+    <Compile Include="BusinessController\ST\STModuleToUserGroupSectionsController.cs" />
+    <Compile Include="BusinessController\ST\STScreensController.cs" />
+    <Compile Include="BusinessController\ST\STScreenTextsController.cs" />
+    <Compile Include="BusinessController\ST\STStoredProceduresController.cs" />
+    <Compile Include="BusinessController\ST\STToolbarFunctionParametersController.cs" />
+    <Compile Include="BusinessController\ST\STToolbarFunctionsController.cs" />
+    <Compile Include="BusinessController\ST\STToolbarsController.cs" />
+    <Compile Include="BusinessInfo\AA\AAColumnAliasInfo.cs" />
+    <Compile Include="BusinessInfo\AD\ADConfigValuesInfo.cs" />
+    <Compile Include="BusinessInfo\AD\ADMatchCodesInfo.cs" />
+    <Compile Include="BusinessInfo\AD\ADModuleFieldsToUsersInfo.cs" />
+    <Compile Include="BusinessInfo\AD\ADUserGroupSectionsInfo.cs" />
+    <Compile Include="BusinessInfo\AD\ADUserGroupsInfo.cs" />
+    <Compile Include="BusinessInfo\AD\ADUsersInfo.cs" />
+    <Compile Include="BusinessInfo\BusinessObject.cs" />
+    <Compile Include="BusinessInfo\BusinessObjectCollection.cs" />
+    <Compile Include="BusinessInfo\BusinessRule.cs" />
+    <Compile Include="BusinessInfo\GE\GELanguagesInfo.cs" />
+    <Compile Include="BusinessInfo\GE\GELookupTablesInfo.cs" />
+    <Compile Include="BusinessInfo\GE\GEMessagesInfo.cs" />
+    <Compile Include="BusinessInfo\GE\GEUserAuditsInfo.cs" />
+    <Compile Include="BusinessInfo\GE\GEUserMessagesHiddenInfo.cs" />
+    <Compile Include="BusinessInfo\PR\PRReportsInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessInfo\ST\STFieldColumnsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STFieldEventFunctionParametersInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STFieldEventFunctionsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STFieldEventParametersInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STFieldEventsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STFieldFormatGroupsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STFieldFormatsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STFieldsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STFieldTabStopsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STFieldTextsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STGridBandsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STGridColumnsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STGridLevelNodesInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STGridResultColumnDisplaysInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STGridViewsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STModuleDescriptionsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STModuleFunctionParametersInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STModuleFunctionParameterValuesInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STModuleFunctionsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STModuleSearchFieldsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STModulesInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STModuleTablesInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STModuleToolbarButtonCaptionsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STModuleToolbarButtonsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STModuleToolbarButtonToUserGroupsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STModuleToolbarsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STModuleToolbarToUserGroupsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STModuleToUserGroupSectionsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STScreensInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STScreenTextsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STStoredProcedureInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STTableQueriesInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STToolbarFunctionParametersInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STToolbarFunctionsInfo.cs" />
+    <Compile Include="BusinessInfo\ST\STToolbarsInfo.cs" />
+    <Compile Include="DataAccess\DALBaseProvider.cs" />
+    <Compile Include="DataAccess\SystemMemCache.cs" />
+    <Compile Include="DataAccess\SqlDatabaseHelper.cs" />
+    <Compile Include="Extension\SignerNameDto.cs" />
+    <Compile Include="Localization\CommonLocalizedResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommonLocalizedResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\ADConfigValuesUtility.cs" />
+    <Compile Include="Utilities\Crypto.cs" />
+    <Compile Include="Utilities\BOSDbUtil.cs" />
+    <Compile Include="Utilities\BOSStoredProcedureUtil.cs" />
+    <Compile Include="Utilities\BOSUtil.cs" />
+    <Compile Include="Utilities\GETempUtility.cs" />
+    <Compile Include="Utilities\RegistryWorker.cs" />
+    <Compile Include="Utilities\ScreenUtilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseProvider\BOSScreen.resx">
+      <DependentUpon>BOSScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseProvider\ProgressbarWorker\BOSWorker.resx">
+      <DependentUpon>BOSWorker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseProvider\ProgressbarWorker\guiBOSProgressBar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>guiBOSProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\CommonLocalizedResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommonLocalizedResources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Localization</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GCNyjJY.gif" />
+    <None Include="Resources\throbber_13.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emr.Base\Emr.Base.csproj">
+      <Project>{34bdef6a-b97e-4571-bc1b-014da906fe6d}</Project>
+      <Name>Emr.Base</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\DPUruNet.dll" />
+    <Content Include="lib\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="lib\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.dll" />
+    <Content Include="lib\Microsoft.Practices.EnterpriseLibrary.Data.Configuration.Design.dll" />
+    <Content Include="lib\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Configuration.Design.dll" />
+    <Content Include="lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" />
+    <Content Include="lib\Microsoft.Practices.EnterpriseLibrary.Security.dll" />
+    <Content Include="lib\Microsoft.Practices.ObjectBuilder.dll" />
+    <Content Include="lib\Microsoft.SqlServer.ConnectionInfo.dll" />
+    <Content Include="lib\Microsoft.SqlServer.Replication.dll" />
+    <Content Include="lib\Microsoft.SqlServer.Rmo.dll" />
+    <Content Include="lib\stdole.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

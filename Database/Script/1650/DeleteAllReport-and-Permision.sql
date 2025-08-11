@@ -1,0 +1,2 @@
+DELETE FROM ADReportPermissions
+DELETE FROM ADReports

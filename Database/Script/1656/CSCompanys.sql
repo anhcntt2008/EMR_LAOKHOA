@@ -1,0 +1,1 @@
+ALTER TABLE [dbo].[CSCompanys] ADD [CSCompanyCaProvider] [varchar] (50) NULL

@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3C2B417-64D1-4A45-A5A6-9AF5CA0FEB94}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Emr.SignPad</RootNamespace>
+    <AssemblyName>STPadLibNet Demo App</AssemblyName>
+    <ApplicationIcon>Resources\Emr.SignPad.ico</ApplicationIcon>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Security.Cryptography">
+      <HintPath>lib\Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="STPadLibNet">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\STPadLibNet\STPadLibNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CaptureWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaptureWindow.Designer.cs">
+      <DependentUpon>CaptureWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageOptions.Designer.cs">
+      <DependentUpon>ImageOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageView.Designer.cs">
+      <DependentUpon>ImageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeypadNameWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeypadNameWindow.Designer.cs">
+      <DependentUpon>KeypadNameWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordPrompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordPrompt.Designer.cs">
+      <DependentUpon>PasswordPrompt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PadServiceMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PadServiceMessageBox.Designer.cs">
+      <DependentUpon>PadServiceMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSAOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSAOptions.Designer.cs">
+      <DependentUpon>RSAOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchConfig.Designer.cs">
+      <DependentUpon>SearchConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CaptureWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CaptureWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImageOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeypadNameWindow.resx">
+      <DependentUpon>KeypadNameWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordPrompt.resx">
+      <DependentUpon>PasswordPrompt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PadServiceMessageBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PadServiceMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSAOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSAOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchConfig.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SignView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="URLPrompt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>URLPrompt.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SignPad.cs" />
+    <Compile Include="SignView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignView.Designer.cs">
+      <DependentUpon>SignView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="URLPrompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="URLPrompt.Designer.cs">
+      <DependentUpon>URLPrompt.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxSIGNVIEWLib">
+      <Guid>{B9A363D6-A283-44CD-B186-806B6E002760}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="CERTENROLLLib">
+      <Guid>{728AB348-217D-11DA-B2A4-000E7BBB2B09}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SIGNVIEWLib">
+      <Guid>{B9A363D6-A283-44CD-B186-806B6E002760}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Welcome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emr.SignPad.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signoPAD-API.cer" />
+    <None Include="Resources\signoPAD-API.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Cancel BW.png" />
+    <Content Include="Resources\Cancel RGB.png" />
+    <Content Include="Resources\Capture Alpha.png" />
+    <Content Include="Resources\Capture Delta.png" />
+    <Content Include="Resources\Capture Gamma.png" />
+    <Content Include="Resources\Capture Omega.png" />
+    <Content Include="Resources\Capture Sigma.png" />
+    <None Include="Resources\Entrymask BW.png" />
+    <None Include="Resources\Capture Zeta.png" />
+    <Content Include="Resources\Example1 Alpha.png" />
+    <Content Include="Resources\Example1 Delta.png" />
+    <Content Include="Resources\Example1 Gamma.png" />
+    <Content Include="Resources\Example1 Omega.png" />
+    <Content Include="Resources\Example1 Sigma.png" />
+    <None Include="Resources\Example1 Zeta.png" />
+    <Content Include="Resources\Example2 BW.png" />
+    <None Include="Resources\Keypad0 bw.png" />
+    <None Include="Resources\Keypad1 bw.png" />
+    <None Include="Resources\Keypad2 bw.png" />
+    <None Include="Resources\Keypad3 bw.png" />
+    <None Include="Resources\Keypad4 bw.png" />
+    <None Include="Resources\Keypad5 bw.png" />
+    <None Include="Resources\Keypad6 bw.png" />
+    <None Include="Resources\Keypad7 bw.png" />
+    <None Include="Resources\Keypad8 bw.png" />
+    <None Include="Resources\Keypad9 bw.png" />
+    <None Include="Resources\KeypadCancel BW.png" />
+    <None Include="Resources\KeypadOk BW.png" />
+    <None Include="Resources\KeypadRetry BW.png" />
+    <None Include="Resources\Keypad0_color_omega.png" />
+    <None Include="Resources\Keypad1_color_omega.png" />
+    <None Include="Resources\Keypad2_color_omega.png" />
+    <None Include="Resources\Keypad3_color_omega.png" />
+    <None Include="Resources\Keypad4_color_omega.png" />
+    <None Include="Resources\Keypad5_color_omega.png" />
+    <None Include="Resources\Keypad6_color_omega.png" />
+    <None Include="Resources\Keypad7_color_omega.png" />
+    <None Include="Resources\Keypad8_color_omega.png" />
+    <None Include="Resources\Keypad9_color_omega.png" />
+    <None Include="Resources\KeypadCancel_color_omega.png" />
+    <None Include="Resources\KeypadConfirm_color_omega.png" />
+    <None Include="Resources\KeypadEntrymask_color_omega.png" />
+    <None Include="Resources\KeypadRetry_color_omega.png" />
+    <None Include="Resources\KeypadEntrymask_color_gamma.png" />
+    <None Include="Resources\Logo Zeta.png" />
+    <None Include="Resources\Example3 Zeta.png" />
+    <None Include="Resources\Example4 Zeta.png" />
+    <Content Include="Resources\OK BW.png" />
+    <Content Include="Resources\OK RGB.png" />
+    <Content Include="Resources\Pad Alpha.png" />
+    <Content Include="Resources\Pad Delta.png" />
+    <Content Include="Resources\Pad Gamma.png" />
+    <Content Include="Resources\Pad Omega.png" />
+    <Content Include="Resources\Pad Sigma.png" />
+    <None Include="Resources\Pad Zeta.png" />
+    <Content Include="Resources\Scroll RGB.png" />
+    <Content Include="Resources\Example2 RGB Large.png" />
+    <Content Include="Resources\Example2 RGB Small.png" />
+    <Content Include="Resources\Example3 Alpha.png" />
+    <Content Include="Resources\Example3 Delta.png" />
+    <Content Include="Resources\Example3 Gamma.png" />
+    <Content Include="Resources\Example3 Omega.png" />
+    <Content Include="Resources\Example3 Sigma.png" />
+    <Content Include="Resources\Example4 Alpha.png" />
+    <Content Include="Resources\Example4 Delta.png" />
+    <Content Include="Resources\Example4 Gamma.png" />
+    <Content Include="Resources\Example4 Omega.png" />
+    <Content Include="Resources\Example4 Sigma.png" />
+    <Content Include="Resources\LED Green Delta.png" />
+    <Content Include="Resources\LED Green Gamma.png" />
+    <Content Include="Resources\LED Green.png" />
+    <Content Include="Resources\LED Off Delta.png" />
+    <Content Include="Resources\LED Off Gamma.png" />
+    <Content Include="Resources\LED Off.png" />
+    <Content Include="Resources\LED Yellow Delta.png" />
+    <Content Include="Resources\LED Yellow Gamma.png" />
+    <Content Include="Resources\LED Yellow.png" />
+    <Content Include="Resources\LED YellowGreen Delta.png" />
+    <Content Include="Resources\LED YellowGreen Gamma.png" />
+    <Content Include="Resources\LED YellowGreen.png" />
+    <Content Include="Resources\Logo Alpha.png" />
+    <Content Include="Resources\Logo Delta.png" />
+    <Content Include="Resources\Logo Gamma.png" />
+    <Content Include="Resources\Logo Omega.png" />
+    <Content Include="Resources\Logo Sigma.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(SolutionDir)\..\..\..\..\STPdfLib\STPdfLib16.dll" "$(ProjectDir)$(OutDir)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

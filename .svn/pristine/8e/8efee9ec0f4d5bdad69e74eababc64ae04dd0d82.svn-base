@@ -1,0 +1,710 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FE3F2E92-4DDB-4A44-98BB-209C9A452F2A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BOSEntity</RootNamespace>
+    <AssemblyName>BOSEntity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.zkemkeeper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BOSERPSolution\BOSERP\lib\Interop.zkemkeeper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\BOSERPSolution\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppMemCache.cs" />
+    <Compile Include="BusinessEntities\Controller\AA\AAInventoryStockController.cs" />
+    <Compile Include="BusinessEntities\Controller\AA\AAInventoryStockSlotController.cs" />
+    <Compile Include="BusinessEntities\Controller\AA\AAInventoryStockSlotSeriesController.cs" />
+    <Compile Include="BusinessEntities\Controller\AC\ACAccountsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AC\ACDocTypeEntryAccountsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AC\ACDocTypeEntrysController.cs" />
+    <Compile Include="BusinessEntities\Controller\AC\ACDocumentEntrysController.cs" />
+    <Compile Include="BusinessEntities\Controller\AC\ACDocumentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AC\ACDocumentTypesController.cs" />
+    <Compile Include="BusinessEntities\Controller\AC\ACEntryTypesController.cs" />
+    <Compile Include="BusinessEntities\Controller\AC\ACObjectsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AC\ACRelativeDocumentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AD\ADCriteriasController.cs" />
+    <Compile Include="BusinessEntities\Controller\AD\ADDataViewPermissionsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AD\ADLocksController.cs" />
+    <Compile Include="BusinessEntities\Controller\AD\ADMatchCodesController.cs" />
+    <Compile Include="BusinessEntities\Controller\AD\ADPrivilegesController.cs" />
+    <Compile Include="BusinessEntities\Controller\AD\ADPrivilegeUserGroupsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AD\ADReportPermissionsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AD\ADReportsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AD\ADSystemConfigsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARCancelVoucherItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARCancelVouchersController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARCustomerContactsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARCustomerPaymentCurrencysController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARCustomerPaymentDetailsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARCustomerPaymentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARCustomersController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARDeliveryItemComponentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARDeliveryItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARDeliveryRoadLogsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARDeliverysController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARDocumentPaymentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARInvoiceItemComponentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARInvoiceItemPackagesController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARInvoiceItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARInvoicesController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARInvoiceVATItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARInvoiceVATsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\AROpenDocumentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARPriceLevelsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARPriceListDetailsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARProposalItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARProposalsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARProspectCustomersController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARReceiptVoucherItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARSaleOrderHistorysController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARSaleOrderItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARSaleOrdersController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARSaleReturnItemComponentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARSaleReturnItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARSaleReturnsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARSOItemComponentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARSwapAndMaintainanceItemComponentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARSwapAndMaintainanceItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARSwapAndMaintainancesController.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\EmployeeSaleDetailController.cs" />
+    <Compile Include="BusinessEntities\Controller\BR\BRPOSsController.cs" />
+    <Compile Include="BusinessEntities\Controller\CS\CSCompanyBanksController.cs" />
+    <Compile Include="BusinessEntities\Controller\CS\CSCompanysController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\GEUsingHistoryController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\GECountrysController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\GECurrenciesController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\GEDistrictsController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\GEHistoryDetailOfProductBranchPricesController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\GEHistoryDetailsController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\GELocationsController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\GEParamsController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\GEStateProvincesController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\GETemplatesController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\GEUsingCashDrawerHistorysController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\GEVersionsController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\OverTimeChartPointController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\GENationalitysController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\GEReligionsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\HREmployeeStatesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\HREmpWorkingDeptsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRAdvanceRequestItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRAdvanceRequestsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRAllowanceItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRAllowancesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRCandidateCertificatesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRCandidatesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRCandidateTemplatesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRCommissionLevelsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\HRDepartmentRoomsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\HRDepartmentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeAllowancesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeCertificatesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeComissionItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeComissionsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeContactPersonsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeContactsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeContractsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeOTFactorsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeePayrollFormulaItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeePayrollFormulasController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeTemplatesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeTranfersController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeWorkScheduleItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeWorkSchedulesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRMachineTimeKeepersController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRManufactureTimeSheetItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRManufactureTimeSheetsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRRoomBedsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRTimeKeeperCompletesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRTimeKeepersController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRTimesheetConfigsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRTimesheetEmployeeLatesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRTimesheetGroupsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRTimeSheetLevelsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRTimeSheetScalesController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICInvAdjustmentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICInventoryEstimateItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICInventoryEstimatesController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICInventoryPackagesController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICInventoryPermissionsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICInventoryStockCountItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICInventoryStockCountsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICPackageNumbersController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICPackageProductsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICPackagesController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICProductAccountsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICProductBranchPricesController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICProductComponentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICProductEmployeesController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICProductLocationBranchPricesController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICProductOriginsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICProductSeriesController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICProductSuppliersController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICReceiptComponentItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICReceiptItemLogsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICReceiptItemPackagesController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICReceiptsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICShipmentItemSaleOrderItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICShipmentItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICShipmentSaleOrdersController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICShipmentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICTransferItemPackagesController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICTransferPackagesController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICTransferProposalItemPackagesController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICTransferProposalItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICTransferProposalsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICTransfersController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MECHBasesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrAbbrevsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrActionParamsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrActionRelationsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrActionsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrArchivesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrSumLogsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrSumsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrRelationsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrDocumentNotesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrDocumentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrDocumentSignsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrGroupImagesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrImageParamsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrImagePatternsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrImagesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MENotificationsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrShareHistoriesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrSymbolsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrTemplateActionsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrTransferHistoriesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrTypeActionsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrTypesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrTypeTemplatesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEndTimeFrameValuesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MECommandPermissionsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MECommandsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MECommandTemplatesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MECompanysController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEComponentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEthnicsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEHospitalRanksController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEParamInputValuesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEParamLookupDatasController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEParamLookupsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEParamRelationsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEParamReportRelationsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrDatasController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEPatientVisitICD10sController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEPatientVisitSymptomsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEReportBHYT917EditedsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEReportBHYT917sController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEReportBHYT917Xml1EditedsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEReportBHYT917Xml1sController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEReportBHYT917Xml2EditedsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEReportBHYT917Xml2sController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEReportBHYT917Xml3EditedsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEReportBHYT917Xml3sController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MESymptomsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEICD10sController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEInsLevelItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEInsLevelsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEInteractingMedicinesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MELabParamsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MELabsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MELabServersController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEMedicationTemplateItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEMedicationTemplatesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEMedicineComponentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEOccupationsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEPackageItemGroupsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEPackageItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEParamsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEPatientAppointmentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEPatientEducationsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEPatientHistorysController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEPatientInssController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEPatientRelativesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEPatientsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEPatientVisitsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MESpecialismsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\METemplateChartsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\METemplateChartSeriesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\METemplateIndexsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\METemplateParamsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrMergeHistoriesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrMergeHistoryDetailsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEEmrDocumentValidatesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\METemplatesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\METemplateUserGroupsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\METimeFramesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEVisitDocumentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEVisitLabParamsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEVisitLabsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEVisitMedicationItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEVisitMedicationsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEVisitOrderItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEVisitOrdersController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEVisitTemplatesController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\MEVOSubItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ME\ServiceStatusController.cs" />
+    <Compile Include="BusinessEntities\Controller\ST\STFieldColumnPermissionsController.cs" />
+    <Compile Include="BusinessEntities\Controller\ST\STScreenPermissionsController.cs" />
+    <Compile Include="BusinessEntities\Info\AC\ACAccountsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AC\ACDocTypeEntryAccountsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AC\ACDocTypeEntrysInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AC\ACDocumentEntrysInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AC\ACDocumentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AC\ACDocumentTypesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AC\ACEntryTypesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AC\ACObjectsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AC\ACRelativeDocumentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AD\ADDataViewPermissionsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AD\ADLocksInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AD\ADMatchCodesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AD\ADReportPermissionsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AD\ADReportsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AD\ADSystemConfigsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARCancelVoucherItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARCancelVouchersInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARCustomerPaymentCurrencysInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARCustomerPaymentDetailsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARCustomerPaymentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARDeliveryItemComponentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARDeliveryItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARDeliveryRoadLogsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARDeliverysInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARDocumentPaymentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARInvoiceItemComponentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARInvoiceItemPackagesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARInvoiceVATItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARInvoiceVATsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\AROpenDocumentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARProposalItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARProposalsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARProspectCustomersInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARReceiptVoucherItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Controller\AR\ARReceiptVouchersController.cs" />
+    <Compile Include="BusinessEntities\Controller\BR\BRBranchsController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\GECorrespondencesController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\GENumberingController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\GEObjectHistoryController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\GEShippingMethodsController.cs" />
+    <Compile Include="BusinessEntities\Controller\GE\GEVATsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRCalendarEntrysController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRCalendarsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRClassSchedulesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRDisciplinesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeAbsencesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeDisciplinesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeEvaluationsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeOTsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeePayRollsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeRewardsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\HREmployeesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeTimeSheetsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREmployeeWorkingShiftsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREvaluationDetailsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREvaluationQuestionsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREvaluationRanksController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREvaluationsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREvaluationStandardsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HREvaluationTemplatesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRLeaveDaysController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRLevelsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRMailAttachmentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRMailsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HROTFactorsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HROverTimesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRPayRollsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRRewardsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRStandardQuestionsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRTemplateRanksController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRTemplateStandardsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRTimeSheetEntrysController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRTimeSheetParamsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRTimeSheetsController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRTrainningClassController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRTrainningCoursesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRTrainningEmployeesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRTrainningSchedulesController.cs" />
+    <Compile Include="BusinessEntities\Controller\HR\WillRemove\HRWorkingShiftsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICDepartmentAttributesController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICDepartmentAttributeValuesController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICDepartmentsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICInventoryStocksController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICInventoryStockSerialsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICInventoryStockSlotsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICInventoryStockSlotSeriesController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICMeasureUnitsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICProductGroupsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICProductPricesController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICProductsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICProductUnitsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICPromotionItemDetailsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICPromotionItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICPromotionsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICReceiptItemsController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICStocksController.cs" />
+    <Compile Include="BusinessEntities\Controller\IC\ICTransferItemsController.cs" />
+    <Compile Include="BusinessEntities\Info\AA\AAInventoryStockInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AA\AAInventoryStockSlotInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AA\AAInventoryStockSlotSeriesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AD\ADCriteriasInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AD\ADPrivilegesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AD\ADPrivilegeUserGroupsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARCustomerContactsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARCustomersInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARInvoiceItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARInvoicesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARPriceLevelsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARPriceListDetailsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARReceiptVouchersInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARSaleOrderHistorysInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARSaleOrderItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARSaleOrdersInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARSaleReturnItemComponentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARSaleReturnItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARSaleReturnsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARSOItemComponentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARSwapAndMaintainanceItemComponentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARSwapAndMaintainanceItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\ARSwapAndMaintainancesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\AR\EmployeeSaleDetailInfo.cs" />
+    <Compile Include="BusinessEntities\Info\BR\BRBranchsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\BR\BRPOSsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\CS\CSCompanyBanksInfo.cs" />
+    <Compile Include="BusinessEntities\Info\CS\CSCompanysInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GEUsingHistoryInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GECorrespondencesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GECountrysInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GECurrenciesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GEDistrictsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GEHistoryDetailOfProductBranchPricesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GEHistoryDetailsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GELocationsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GENationalitysInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GENumberingInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GEObjectHistoryInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GEParamsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GEReligionsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GEShippingMethodsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GEStateProvincesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GETemplatesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GEUsingCashDrawerHistorysInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GEVATsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\GEVersionsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\GE\OverTimeChartPointInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\HREmployeeStatesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRAdvanceRequestItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRAdvanceRequestsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRAllowanceItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRAllowancesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRCalendarEntrysInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRCalendarsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRCandidateCertificatesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRCandidatesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRCandidateTemplatesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRClassSchedulesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRCommissionLevelsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\HRDepartmentRoomsInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntities\Info\HR\HRDepartmentsInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRDisciplinesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeAbsencesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeAllowancesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeCertificatesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeComissionItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeComissionsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeContactPersonsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeContactsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeContractsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeDisciplinesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeEvaluationsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeOTFactorsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeOTsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeePayrollFormulaItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeePayrollFormulasInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeePayRollsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeRewardsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\HREmployeesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeTemplatesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeTimeSheetsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeTranfersInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeWorkingShiftsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeWorkScheduleItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREmployeeWorkSchedulesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\HREmpWorkingDeptsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREvaluationDetailsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREvaluationQuestionsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREvaluationRanksInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREvaluationsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREvaluationStandardsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HREvaluationTemplatesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRLeaveDaysInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRLevelsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRMachineTimeKeepersInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRMailAttachmentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRMailsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRManufactureTimeSheetItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRManufactureTimeSheetsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HROTFactorsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HROverTimesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRPayRollsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRRewardsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRRoomBedsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRStandardQuestionsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRTemplateRanksInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRTemplateStandardsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRTimeKeeperCompletesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRTimeKeepersInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRTimesheetConfigsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRTimesheetEmployeeLatesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRTimeSheetEntrysInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRTimesheetGroupsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRTimeSheetLevelsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRTimeSheetParamsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRTimeSheetScalesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRTimeSheetsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRTrainningClassInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRTrainningCoursesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRTrainningEmployeesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRTrainningSchedulesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\HR\WillRemove\HRWorkingShiftsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICDepartmentAttributesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICDepartmentAttributeValuesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICDepartmentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICInvAdjustmentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICInventoryEstimateItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICInventoryEstimatesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICInventoryPackagesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICInventoryPermissionsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICInventoryStockCountItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICInventoryStockCountsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICInventoryStockSerialsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICInventoryStocksInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICInventoryStockSlotSeriesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICInventoryStockSlotsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICMeasureUnitsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICPackageNumbersInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICPackageProductsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICPackagesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICProductAccountsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICProductBranchPricesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICProductComponentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICProductEmployeesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICProductGroupsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICProductLocationBranchPricesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICProductOriginsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICProductPricesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICProductSeriesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICProductsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICProductSuppliersInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICProductUnitsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICPromotionItemDetailsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICPromotionItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICPromotionsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICReceiptComponentItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICReceiptItemLogsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICReceiptItemPackagesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICReceiptItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICReceiptsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICShipmentItemSaleOrderItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICShipmentItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICShipmentSaleOrdersInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICShipmentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICStocksInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICTransferItemPackagesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICTransferItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICTransferPackagesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICTransferProposalItemPackagesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICTransferProposalItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICTransferProposalsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\IC\ICTransfersInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MECHBasesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrAbbrevsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrActionInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrActionParamsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrActionRelationsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrArchivesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrDocumentNotesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrDocumentSignsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrSumLogsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrSumsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrRelationsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrMergeHistoryDetailsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrDocumentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrGroupImagesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrImageParamsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrImagePatternsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrImagesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrShareHistoriesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MENotificationsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrSymbolsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrTemplateActionsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrMergeHistoriesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrTransferHistoriesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrTypeActionsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrTypesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrTypeTemplatesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEndTimeFrameValuesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MECommandPermissionsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MECommandsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MECommandTemplatesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MECompanysInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEComponentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEthnicsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEHospitalRanksInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEParamInputValuesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEParamLookupDatasInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEParamLookupsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEParamRelationsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrDatasInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEParamReportRelationsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEPatientVisitICD10sInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEPatientVisitSymptomsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEReportBHYT917EditedsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEReportBHYT917sInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEReportBHYT917Xml1EditedsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEReportBHYT917Xml1sInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEReportBHYT917Xml2EditedsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEReportBHYT917Xml2sInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEReportBHYT917Xml3EditedsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEReportBHYT917Xml3sInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MESymptomsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEICD10sInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEInsLevelItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEInsLevelsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEInteractingMedicinesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MELabParamsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MELabServersInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MELabsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEMedicationTemplateItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEMedicationTemplatesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEMedicineComponentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEOccupationsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEPackageItemGroupsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEPackageItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEParamsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEPatientAppointmentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEPatientEducationsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEPatientHistorysInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEPatientInssInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEPatientRelativesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEPatientsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEPatientVisitsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MESpecialismsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\METemplateChartSeriesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\METemplateChartsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\METemplateIndexsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\METemplateParamsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEEmrDocumentValidatesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\METemplatesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\METemplateUserGroupsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\METimeFramesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEVisitDocumentsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEVisitLabParamsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEVisitLabsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEVisitMedicationItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEVisitMedicationsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEVisitOrderItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEVisitOrdersInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEVisitTemplatesInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\MEVOSubItemsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ME\ServiceStatusInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ST\STFieldColumnPermissionsInfo.cs" />
+    <Compile Include="BusinessEntities\Info\ST\STScreenPermissionsInfo.cs" />
+    <Compile Include="Localization\EntityLocalizedResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityLocalizedResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\EntityLocalizedResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EntityLocalizedResources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Localization</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BOSCommon\BOSCommon.csproj">
+      <Project>{B05DF8AD-9AE4-471C-85C5-6D63540443AD}</Project>
+      <Name>BOSCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BOSLib\BOSLib.csproj">
+      <Project>{a4860258-380c-4ff3-9f93-ec653abdae8d}</Project>
+      <Name>BOSLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

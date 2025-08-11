@@ -1,0 +1,3749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="ScreenHelper.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bosTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 202</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bosTextBox1.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bosTextBox1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bosTextBox1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 20</value>
+  </data>
+  <data name="bosTextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>372</value>
+  </data>
+  <data name="&gt;&gt;bosTextBox1.Name" xml:space="preserve">
+    <value>bosTextBox1</value>
+  </data>
+  <data name="&gt;&gt;bosTextBox1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosTextBox1.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;bosTextBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bosLabel23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 205</value>
+  </data>
+  <data name="bosLabel23.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
+  </data>
+  <data name="bosLabel23.TabIndex" type="System.Int32, mscorlib">
+    <value>371</value>
+  </data>
+  <data name="bosLabel23.Text" xml:space="preserve">
+    <value>Mã hoạt chất</value>
+  </data>
+  <data name="&gt;&gt;bosLabel23.Name" xml:space="preserve">
+    <value>bosLabel23</value>
+  </data>
+  <data name="&gt;&gt;bosLabel23.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel23.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;bosLabel23.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fld_txtICProductIngredientConcentration.Location" type="System.Drawing.Point, System.Drawing">
+    <value>473, 178</value>
+  </data>
+  <data name="fld_txtICProductIngredientConcentration.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductIngredientConcentration.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductIngredientConcentration.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductIngredientConcentration.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="fld_txtICProductIngredientConcentration.TabIndex" type="System.Int32, mscorlib">
+    <value>370</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductIngredientConcentration.Name" xml:space="preserve">
+    <value>fld_txtICProductIngredientConcentration</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductIngredientConcentration.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductIngredientConcentration.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductIngredientConcentration.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="bosLabel22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 181</value>
+  </data>
+  <data name="bosLabel22.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="bosLabel22.TabIndex" type="System.Int32, mscorlib">
+    <value>369</value>
+  </data>
+  <data name="bosLabel22.Text" xml:space="preserve">
+    <value>Nồng độ</value>
+  </data>
+  <data name="&gt;&gt;bosLabel22.Name" xml:space="preserve">
+    <value>bosLabel22</value>
+  </data>
+  <data name="&gt;&gt;bosLabel22.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel22.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;bosLabel22.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="fld_txtICProductIngredient.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 178</value>
+  </data>
+  <data name="fld_txtICProductIngredient.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductIngredient.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductIngredient.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductIngredient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 20</value>
+  </data>
+  <data name="fld_txtICProductIngredient.TabIndex" type="System.Int32, mscorlib">
+    <value>368</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductIngredient.Name" xml:space="preserve">
+    <value>fld_txtICProductIngredient</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductIngredient.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductIngredient.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductIngredient.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="bosLabel12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 181</value>
+  </data>
+  <data name="bosLabel12.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="bosLabel12.TabIndex" type="System.Int32, mscorlib">
+    <value>367</value>
+  </data>
+  <data name="bosLabel12.Text" xml:space="preserve">
+    <value>Hoạt chất</value>
+  </data>
+  <data name="&gt;&gt;bosLabel12.Name" xml:space="preserve">
+    <value>bosLabel12</value>
+  </data>
+  <data name="&gt;&gt;bosLabel12.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel12.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;bosLabel12.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="bosCheckEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>690, 179</value>
+  </data>
+  <data name="bosCheckEdit1.Properties.Caption" xml:space="preserve">
+    <value>Hoạt động</value>
+  </data>
+  <data name="bosCheckEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 19</value>
+  </data>
+  <data name="bosCheckEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;bosCheckEdit1.Name" xml:space="preserve">
+    <value>bosCheckEdit1</value>
+  </data>
+  <data name="&gt;&gt;bosCheckEdit1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSCheckEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosCheckEdit1.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;bosCheckEdit1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="fld_chkICProductInsurance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>351, 24</value>
+  </data>
+  <data name="fld_chkICProductInsurance.Properties.Caption" xml:space="preserve">
+    <value>Thuốc BHYT</value>
+  </data>
+  <data name="fld_chkICProductInsurance.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_chkICProductInsurance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 19</value>
+  </data>
+  <data name="fld_chkICProductInsurance.TabIndex" type="System.Int32, mscorlib">
+    <value>366</value>
+  </data>
+  <data name="&gt;&gt;fld_chkICProductInsurance.Name" xml:space="preserve">
+    <value>fld_chkICProductInsurance</value>
+  </data>
+  <data name="&gt;&gt;fld_chkICProductInsurance.Type" xml:space="preserve">
+    <value>BOSComponent.BOSCheckEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_chkICProductInsurance.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_chkICProductInsurance.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="fld_lnkSetDefaultDesc.EditValue" xml:space="preserve">
+    <value>Thiết lập mô tả mặc định</value>
+  </data>
+  <data name="fld_lnkSetDefaultDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 106</value>
+  </data>
+  <data name="fld_lnkSetDefaultDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 18</value>
+  </data>
+  <data name="fld_lnkSetDefaultDesc.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;fld_lnkSetDefaultDesc.Name" xml:space="preserve">
+    <value>fld_lnkSetDefaultDesc</value>
+  </data>
+  <data name="&gt;&gt;fld_lnkSetDefaultDesc.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.HyperLinkEdit, DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;fld_lnkSetDefaultDesc.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_lnkSetDefaultDesc.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="fld_medICProductDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 76</value>
+  </data>
+  <data name="fld_medICProductDesc.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_medICProductDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>547, 24</value>
+  </data>
+  <data name="fld_medICProductDesc.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;fld_medICProductDesc.Name" xml:space="preserve">
+    <value>fld_medICProductDesc</value>
+  </data>
+  <data name="&gt;&gt;fld_medICProductDesc.Type" xml:space="preserve">
+    <value>BOSComponent.BOSMemoEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_medICProductDesc.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_medICProductDesc.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="fld_lblLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 81</value>
+  </data>
+  <data name="fld_lblLabel6.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="fld_lblLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="fld_lblLabel6.Text" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel6.Name" xml:space="preserve">
+    <value>fld_lblLabel6</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel6.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel6.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel6.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="fld_txtICProductNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 26</value>
+  </data>
+  <data name="fld_txtICProductNo.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductNo.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductNo.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 20</value>
+  </data>
+  <data name="fld_txtICProductNo.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductNo.Name" xml:space="preserve">
+    <value>fld_txtICProductNo</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductNo.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductNo.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductNo.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="fld_lblLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 29</value>
+  </data>
+  <data name="fld_lblLabel.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="fld_lblLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="fld_lblLabel.Text" xml:space="preserve">
+    <value>Mã thuốc</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel.Name" xml:space="preserve">
+    <value>fld_lblLabel</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="fld_pteICProductPicture.Location" type="System.Drawing.Point, System.Drawing">
+    <value>692, 38</value>
+  </data>
+  <data name="fld_pteICProductPicture.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_pteICProductPicture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 121</value>
+  </data>
+  <data name="fld_pteICProductPicture.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;fld_pteICProductPicture.Name" xml:space="preserve">
+    <value>fld_pteICProductPicture</value>
+  </data>
+  <data name="&gt;&gt;fld_pteICProductPicture.Type" xml:space="preserve">
+    <value>BOSComponent.BOSPictureEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_pteICProductPicture.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_pteICProductPicture.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="fld_Line.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="fld_Line.Location" type="System.Drawing.Point, System.Drawing">
+    <value>689, 24</value>
+  </data>
+  <data name="fld_Line.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_Line.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 137</value>
+  </data>
+  <data name="fld_Line.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="fld_Line.Text" xml:space="preserve">
+    <value>Hình ảnh</value>
+  </data>
+  <data name="&gt;&gt;fld_Line.Name" xml:space="preserve">
+    <value>fld_Line</value>
+  </data>
+  <data name="&gt;&gt;fld_Line.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLine, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_Line.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_Line.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="fld_txtICProductName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 50</value>
+  </data>
+  <data name="fld_txtICProductName.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductName.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductName.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>547, 20</value>
+  </data>
+  <data name="fld_txtICProductName.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductName.Name" xml:space="preserve">
+    <value>fld_txtICProductName</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductName.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductName.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductName.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="fld_lblLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 53</value>
+  </data>
+  <data name="fld_lblLabel2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 13</value>
+  </data>
+  <data name="fld_lblLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="fld_lblLabel2.Text" xml:space="preserve">
+    <value>Tên thuốc - hoạt chất</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel2.Name" xml:space="preserve">
+    <value>fld_lblLabel2</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel2.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel2.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel2.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="fld_lkeICProductSubType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>473, 130</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v17.2" name="DevExpress.Utils.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="fld_lkeICProductSubType.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeICProductSubType.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeICProductSubType.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeICProductSubType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="fld_lkeICProductSubType.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICProductSubType.Name" xml:space="preserve">
+    <value>fld_lkeICProductSubType</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICProductSubType.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICProductSubType.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICProductSubType.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 130</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID.Properties.Columns" xml:space="preserve">
+    <value>ICProductGroupNo</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID.Properties.Columns1" xml:space="preserve">
+    <value>Mã loại biệt dược</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID.Properties.Columns2" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <assembly alias="DevExpress.Data.v17.2" name="DevExpress.Data.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="fld_lkeFK_ICProductGroupID.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v17.2">
+    <value>Numeric</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID.Properties.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID.Properties.Columns5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v17.2">
+    <value>Default</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID.Properties.Columns7" xml:space="preserve">
+    <value>ICProductGroupName</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID.Properties.Columns8" xml:space="preserve">
+    <value>Tên loại biệt dược</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 20</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductGroupID.Name" xml:space="preserve">
+    <value>fld_lkeFK_ICProductGroupID</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductGroupID.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductGroupID.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductGroupID.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="fld_lblLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 133</value>
+  </data>
+  <data name="fld_lblLabel3.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="fld_lblLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="fld_lblLabel3.Text" xml:space="preserve">
+    <value>Loại biệt dược</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel3.Name" xml:space="preserve">
+    <value>fld_lblLabel3</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel3.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel3.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel3.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 154</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID.Properties.Columns" xml:space="preserve">
+    <value>APSupplierNo</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID.Properties.Columns1" xml:space="preserve">
+    <value>Mã nhà cung cấp</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID.Properties.Columns2" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v17.2">
+    <value>Numeric</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID.Properties.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_APSupplierID.Properties.Columns5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v17.2">
+    <value>Default</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID.Properties.Columns7" xml:space="preserve">
+    <value>APSupplierName</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID.Properties.Columns8" xml:space="preserve">
+    <value>Tên nhà cung cấp</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_APSupplierID.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 20</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_APSupplierID.Name" xml:space="preserve">
+    <value>fld_lkeFK_APSupplierID</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_APSupplierID.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_APSupplierID.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_APSupplierID.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="fld_lblLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 157</value>
+  </data>
+  <data name="fld_lblLabel4.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="fld_lblLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="fld_lblLabel4.Text" xml:space="preserve">
+    <value>Nhà cung cấp</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel4.Name" xml:space="preserve">
+    <value>fld_lblLabel4</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel4.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel4.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel4.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>473, 154</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID.Properties.Columns" xml:space="preserve">
+    <value>GELocationName</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID.Properties.Columns1" xml:space="preserve">
+    <value>Tên nước </value>
+  </data>
+  <data name="fld_lkeFK_GELocationID.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_GELocationID.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_GELocationID.Name" xml:space="preserve">
+    <value>fld_lkeFK_GELocationID</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_GELocationID.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_GELocationID.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_GELocationID.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="bosLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 133</value>
+  </data>
+  <data name="bosLabel9.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="bosLabel9.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="bosLabel9.Text" xml:space="preserve">
+    <value>Phân loại</value>
+  </data>
+  <data name="&gt;&gt;bosLabel9.Name" xml:space="preserve">
+    <value>bosLabel9</value>
+  </data>
+  <data name="&gt;&gt;bosLabel9.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel9.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;bosLabel9.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="fld_lblLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 157</value>
+  </data>
+  <data name="fld_lblLabel5.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="fld_lblLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="fld_lblLabel5.Text" xml:space="preserve">
+    <value>Nước sản xuất</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel5.Name" xml:space="preserve">
+    <value>fld_lblLabel5</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel5.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel5.Parent" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel5.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="fld_grpMedicineInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 36</value>
+  </data>
+  <data name="fld_grpMedicineInfo.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_grpMedicineInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 240</value>
+  </data>
+  <data name="fld_grpMedicineInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="fld_grpMedicineInfo.Text" xml:space="preserve">
+    <value>Thông tin thuốc</value>
+  </data>
+  <data name="&gt;&gt;fld_grpMedicineInfo.Name" xml:space="preserve">
+    <value>fld_grpMedicineInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_grpMedicineInfo.Type" xml:space="preserve">
+    <value>BOSComponent.BOSGroupControl, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_grpMedicineInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;fld_grpMedicineInfo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="fld_txtICProductMaker.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtICProductMaker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 81</value>
+  </data>
+  <data name="fld_txtICProductMaker.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductMaker.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductMaker.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductMaker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="fld_txtICProductMaker.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductMaker.Name" xml:space="preserve">
+    <value>fld_txtICProductMaker</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductMaker.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductMaker.Parent" xml:space="preserve">
+    <value>bosGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductMaker.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="fld_txtICProductRegistrationNo.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtICProductRegistrationNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>459, 55</value>
+  </data>
+  <data name="fld_txtICProductRegistrationNo.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductRegistrationNo.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductRegistrationNo.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductRegistrationNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 20</value>
+  </data>
+  <data name="fld_txtICProductRegistrationNo.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductRegistrationNo.Name" xml:space="preserve">
+    <value>fld_txtICProductRegistrationNo</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductRegistrationNo.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductRegistrationNo.Parent" xml:space="preserve">
+    <value>bosGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductRegistrationNo.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="fld_txtICProductDosageForm.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtICProductDosageForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 55</value>
+  </data>
+  <data name="fld_txtICProductDosageForm.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductDosageForm.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductDosageForm.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductDosageForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="fld_txtICProductDosageForm.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductDosageForm.Name" xml:space="preserve">
+    <value>fld_txtICProductDosageForm</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductDosageForm.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductDosageForm.Parent" xml:space="preserve">
+    <value>bosGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductDosageForm.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="bosLabel13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 58</value>
+  </data>
+  <data name="bosLabel13.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="bosLabel13.TabIndex" type="System.Int32, mscorlib">
+    <value>361</value>
+  </data>
+  <data name="bosLabel13.Text" xml:space="preserve">
+    <value>Số đăng ký/GPNK</value>
+  </data>
+  <data name="&gt;&gt;bosLabel13.Name" xml:space="preserve">
+    <value>bosLabel13</value>
+  </data>
+  <data name="&gt;&gt;bosLabel13.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel13.Parent" xml:space="preserve">
+    <value>bosGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;bosLabel13.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="bosLabel15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 84</value>
+  </data>
+  <data name="bosLabel15.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="bosLabel15.TabIndex" type="System.Int32, mscorlib">
+    <value>359</value>
+  </data>
+  <data name="bosLabel15.Text" xml:space="preserve">
+    <value>Hãng sản xuất</value>
+  </data>
+  <data name="&gt;&gt;bosLabel15.Name" xml:space="preserve">
+    <value>bosLabel15</value>
+  </data>
+  <data name="&gt;&gt;bosLabel15.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel15.Parent" xml:space="preserve">
+    <value>bosGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;bosLabel15.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="bosLabel16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 58</value>
+  </data>
+  <data name="bosLabel16.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 13</value>
+  </data>
+  <data name="bosLabel16.TabIndex" type="System.Int32, mscorlib">
+    <value>358</value>
+  </data>
+  <data name="bosLabel16.Text" xml:space="preserve">
+    <value>Dạng bào chế</value>
+  </data>
+  <data name="&gt;&gt;bosLabel16.Name" xml:space="preserve">
+    <value>bosLabel16</value>
+  </data>
+  <data name="&gt;&gt;bosLabel16.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel16.Parent" xml:space="preserve">
+    <value>bosGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;bosLabel16.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="fld_chkICProductActiveCheck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>690, 176</value>
+  </data>
+  <data name="fld_chkICProductActiveCheck.Properties.Caption" xml:space="preserve">
+    <value>Hoạt động</value>
+  </data>
+  <data name="fld_chkICProductActiveCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 19</value>
+  </data>
+  <data name="fld_chkICProductActiveCheck.TabIndex" type="System.Int32, mscorlib">
+    <value>346</value>
+  </data>
+  <data name="&gt;&gt;fld_chkICProductActiveCheck.Name" xml:space="preserve">
+    <value>fld_chkICProductActiveCheck</value>
+  </data>
+  <data name="&gt;&gt;fld_chkICProductActiveCheck.Type" xml:space="preserve">
+    <value>BOSComponent.BOSCheckEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_chkICProductActiveCheck.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_chkICProductActiveCheck.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_lkeICDepartmentAttributeValueID1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>473, 124</value>
+  </data>
+  <data name="fld_lkeICDepartmentAttributeValueID1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeICDepartmentAttributeValueID1.Properties.Columns" xml:space="preserve">
+    <value>ICDepartmentAttributeValueValue</value>
+  </data>
+  <data name="fld_lkeICDepartmentAttributeValueID1.Properties.Columns1" xml:space="preserve">
+    <value>Tên kích thước</value>
+  </data>
+  <data name="fld_lkeICDepartmentAttributeValueID1.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeICDepartmentAttributeValueID1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeICDepartmentAttributeValueID1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="fld_lkeICDepartmentAttributeValueID1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICDepartmentAttributeValueID1.Name" xml:space="preserve">
+    <value>fld_lkeICDepartmentAttributeValueID1</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICDepartmentAttributeValueID1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICDepartmentAttributeValueID1.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICDepartmentAttributeValueID1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bosLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 127</value>
+  </data>
+  <data name="bosLabel8.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="bosLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="bosLabel8.Text" xml:space="preserve">
+    <value>Kích thước</value>
+  </data>
+  <data name="&gt;&gt;bosLabel8.Name" xml:space="preserve">
+    <value>bosLabel8</value>
+  </data>
+  <data name="&gt;&gt;bosLabel8.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel8.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;bosLabel8.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="fld_lkeICDepartmentAttributeValueNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 124</value>
+  </data>
+  <data name="fld_lkeICDepartmentAttributeValueNo.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeICDepartmentAttributeValueNo.Properties.Columns" xml:space="preserve">
+    <value>ICDepartmentAttributeValueValue</value>
+  </data>
+  <data name="fld_lkeICDepartmentAttributeValueNo.Properties.Columns1" xml:space="preserve">
+    <value>Tên kiểu mẫu</value>
+  </data>
+  <data name="fld_lkeICDepartmentAttributeValueNo.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeICDepartmentAttributeValueNo.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeICDepartmentAttributeValueNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="fld_lkeICDepartmentAttributeValueNo.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICDepartmentAttributeValueNo.Name" xml:space="preserve">
+    <value>fld_lkeICDepartmentAttributeValueNo</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICDepartmentAttributeValueNo.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICDepartmentAttributeValueNo.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICDepartmentAttributeValueNo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bosLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 127</value>
+  </data>
+  <data name="bosLabel7.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="bosLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="bosLabel7.Text" xml:space="preserve">
+    <value>Kiểu mẫu</value>
+  </data>
+  <data name="&gt;&gt;bosLabel7.Name" xml:space="preserve">
+    <value>bosLabel7</value>
+  </data>
+  <data name="&gt;&gt;bosLabel7.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel7.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;bosLabel7.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="fld_txtICProductNo2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 26</value>
+  </data>
+  <data name="fld_txtICProductNo2.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductNo2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductNo2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductNo2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="fld_txtICProductNo2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductNo2.Name" xml:space="preserve">
+    <value>fld_txtICProductNo2</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductNo2.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductNo2.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductNo2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="bosLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 29</value>
+  </data>
+  <data name="bosLabel1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="bosLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="bosLabel1.Text" xml:space="preserve">
+    <value>Mã thiết bị</value>
+  </data>
+  <data name="&gt;&gt;bosLabel1.Name" xml:space="preserve">
+    <value>bosLabel1</value>
+  </data>
+  <data name="&gt;&gt;bosLabel1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel1.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;bosLabel1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="bosPictureEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>692, 38</value>
+  </data>
+  <data name="bosPictureEdit1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosPictureEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 121</value>
+  </data>
+  <data name="bosPictureEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;bosPictureEdit1.Name" xml:space="preserve">
+    <value>bosPictureEdit1</value>
+  </data>
+  <data name="&gt;&gt;bosPictureEdit1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSPictureEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosPictureEdit1.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;bosPictureEdit1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="bosLine1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="bosLine1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>689, 24</value>
+  </data>
+  <data name="bosLine1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLine1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 137</value>
+  </data>
+  <data name="bosLine1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="bosLine1.Text" xml:space="preserve">
+    <value>Hình ảnh</value>
+  </data>
+  <data name="&gt;&gt;bosLine1.Name" xml:space="preserve">
+    <value>bosLine1</value>
+  </data>
+  <data name="&gt;&gt;bosLine1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLine, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLine1.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;bosLine1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="fld_txtICProductName2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 50</value>
+  </data>
+  <data name="fld_txtICProductName2.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductName2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductName2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductName2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>563, 20</value>
+  </data>
+  <data name="fld_txtICProductName2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductName2.Name" xml:space="preserve">
+    <value>fld_txtICProductName2</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductName2.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductName2.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductName2.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="bosLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 53</value>
+  </data>
+  <data name="bosLabel2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="bosLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="bosLabel2.Text" xml:space="preserve">
+    <value>Tên thiết bị</value>
+  </data>
+  <data name="&gt;&gt;bosLabel2.Name" xml:space="preserve">
+    <value>bosLabel2</value>
+  </data>
+  <data name="&gt;&gt;bosLabel2.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel2.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;bosLabel2.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="fld_lkeICProductSubType2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>473, 74</value>
+  </data>
+  <data name="fld_lkeICProductSubType2.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeICProductSubType2.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeICProductSubType2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeICProductSubType2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="fld_lkeICProductSubType2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICProductSubType2.Name" xml:space="preserve">
+    <value>fld_lkeICProductSubType2</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICProductSubType2.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICProductSubType2.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICProductSubType2.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 74</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID2.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID2.Properties.Columns" xml:space="preserve">
+    <value>ICProductGroupName</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID2.Properties.Columns1" xml:space="preserve">
+    <value>Tên loại DCYT</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID2.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductGroupID2.Name" xml:space="preserve">
+    <value>fld_lkeFK_ICProductGroupID2</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductGroupID2.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductGroupID2.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductGroupID2.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="bosLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 77</value>
+  </data>
+  <data name="bosLabel3.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="bosLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="bosLabel3.Text" xml:space="preserve">
+    <value>Loại DCYT</value>
+  </data>
+  <data name="&gt;&gt;bosLabel3.Name" xml:space="preserve">
+    <value>bosLabel3</value>
+  </data>
+  <data name="&gt;&gt;bosLabel3.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel3.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;bosLabel3.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 98</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID2.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID2.Properties.Columns" xml:space="preserve">
+    <value>APSupplierNo</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID2.Properties.Columns1" xml:space="preserve">
+    <value>Mã nhà sản xuất</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID2.Properties.Columns2" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID2.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v17.2">
+    <value>Numeric</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID2.Properties.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_APSupplierID2.Properties.Columns5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID2.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v17.2">
+    <value>Default</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID2.Properties.Columns7" xml:space="preserve">
+    <value>APSupplierName</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID2.Properties.Columns8" xml:space="preserve">
+    <value>Tên nhà sản xuất</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID2.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_APSupplierID2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_APSupplierID2.Name" xml:space="preserve">
+    <value>fld_lkeFK_APSupplierID2</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_APSupplierID2.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_APSupplierID2.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_APSupplierID2.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="bosLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 101</value>
+  </data>
+  <data name="bosLabel4.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="bosLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="bosLabel4.Text" xml:space="preserve">
+    <value>Nhà cung cấp</value>
+  </data>
+  <data name="&gt;&gt;bosLabel4.Name" xml:space="preserve">
+    <value>bosLabel4</value>
+  </data>
+  <data name="&gt;&gt;bosLabel4.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel4.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;bosLabel4.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>473, 98</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID2.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID2.Properties.Columns" xml:space="preserve">
+    <value>GELocationName</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID2.Properties.Columns1" xml:space="preserve">
+    <value>Tên nước</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID2.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_GELocationID2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_GELocationID2.Name" xml:space="preserve">
+    <value>fld_lkeFK_GELocationID2</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_GELocationID2.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_GELocationID2.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_GELocationID2.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="bosLabel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 78</value>
+  </data>
+  <data name="bosLabel10.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="bosLabel10.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="bosLabel10.Text" xml:space="preserve">
+    <value>Phân loại</value>
+  </data>
+  <data name="&gt;&gt;bosLabel10.Name" xml:space="preserve">
+    <value>bosLabel10</value>
+  </data>
+  <data name="&gt;&gt;bosLabel10.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel10.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;bosLabel10.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="bosLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 101</value>
+  </data>
+  <data name="bosLabel5.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="bosLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="bosLabel5.Text" xml:space="preserve">
+    <value>Nước sản xuất</value>
+  </data>
+  <data name="&gt;&gt;bosLabel5.Name" xml:space="preserve">
+    <value>bosLabel5</value>
+  </data>
+  <data name="&gt;&gt;bosLabel5.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel5.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;bosLabel5.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="fld_medICProductDesc1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 150</value>
+  </data>
+  <data name="fld_medICProductDesc1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_medICProductDesc1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>563, 22</value>
+  </data>
+  <data name="fld_medICProductDesc1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;fld_medICProductDesc1.Name" xml:space="preserve">
+    <value>fld_medICProductDesc1</value>
+  </data>
+  <data name="&gt;&gt;fld_medICProductDesc1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSMemoEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_medICProductDesc1.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_medICProductDesc1.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="bosLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 153</value>
+  </data>
+  <data name="bosLabel6.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="bosLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="bosLabel6.Text" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="&gt;&gt;bosLabel6.Name" xml:space="preserve">
+    <value>bosLabel6</value>
+  </data>
+  <data name="&gt;&gt;bosLabel6.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel6.Parent" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;bosLabel6.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="fld_grpDeviceInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 36</value>
+  </data>
+  <data name="fld_grpDeviceInfo.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_grpDeviceInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 208</value>
+  </data>
+  <data name="fld_grpDeviceInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="fld_grpDeviceInfo.Text" xml:space="preserve">
+    <value>Thông tin dụng cụ y tế</value>
+  </data>
+  <data name="fld_grpDeviceInfo.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;fld_grpDeviceInfo.Name" xml:space="preserve">
+    <value>fld_grpDeviceInfo</value>
+  </data>
+  <data name="&gt;&gt;fld_grpDeviceInfo.Type" xml:space="preserve">
+    <value>BOSComponent.BOSGroupControl, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_grpDeviceInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;fld_grpDeviceInfo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="fld_chkCheckEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 26</value>
+  </data>
+  <data name="fld_chkCheckEdit.Properties.Caption" xml:space="preserve">
+    <value>Nhiệt độ bảo quản (oC)</value>
+  </data>
+  <data name="fld_chkCheckEdit.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_chkCheckEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 19</value>
+  </data>
+  <data name="fld_chkCheckEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit.Name" xml:space="preserve">
+    <value>fld_chkCheckEdit</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit.Type" xml:space="preserve">
+    <value>BOSComponent.BOSCheckEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_cmbICProductMatchCode01Combo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 26</value>
+  </data>
+  <data name="fld_cmbICProductMatchCode01Combo.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_cmbICProductMatchCode01Combo.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_cmbICProductMatchCode01Combo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>354, 20</value>
+  </data>
+  <data name="fld_cmbICProductMatchCode01Combo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;fld_cmbICProductMatchCode01Combo.Name" xml:space="preserve">
+    <value>fld_cmbICProductMatchCode01Combo</value>
+  </data>
+  <data name="&gt;&gt;fld_cmbICProductMatchCode01Combo.Type" xml:space="preserve">
+    <value>BOSComponent.BOSComboBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_cmbICProductMatchCode01Combo.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_cmbICProductMatchCode01Combo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fld_chkCheckEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 52</value>
+  </data>
+  <data name="fld_chkCheckEdit1.Properties.Caption" xml:space="preserve">
+    <value>Tránh ánh sáng mặt trời</value>
+  </data>
+  <data name="fld_chkCheckEdit1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_chkCheckEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 19</value>
+  </data>
+  <data name="fld_chkCheckEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit1.Name" xml:space="preserve">
+    <value>fld_chkCheckEdit1</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSCheckEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit1.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="fld_chkCheckEdit2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 52</value>
+  </data>
+  <data name="fld_chkCheckEdit2.Properties.Caption" xml:space="preserve">
+    <value>Tránh ẩm ướt</value>
+  </data>
+  <data name="fld_chkCheckEdit2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_chkCheckEdit2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 19</value>
+  </data>
+  <data name="fld_chkCheckEdit2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit2.Name" xml:space="preserve">
+    <value>fld_chkCheckEdit2</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit2.Type" xml:space="preserve">
+    <value>BOSComponent.BOSCheckEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit2.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="fld_chkCheckEdit3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 52</value>
+  </data>
+  <data name="fld_chkCheckEdit3.Properties.Caption" xml:space="preserve">
+    <value>Tránh đông lạnh</value>
+  </data>
+  <data name="fld_chkCheckEdit3.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_chkCheckEdit3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 19</value>
+  </data>
+  <data name="fld_chkCheckEdit3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit3.Name" xml:space="preserve">
+    <value>fld_chkCheckEdit3</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit3.Type" xml:space="preserve">
+    <value>BOSComponent.BOSCheckEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit3.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="fld_chkCheckEdit4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>597, 52</value>
+  </data>
+  <data name="fld_chkCheckEdit4.Properties.Caption" xml:space="preserve">
+    <value>Tránh nhiệt độ cao</value>
+  </data>
+  <data name="fld_chkCheckEdit4.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_chkCheckEdit4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 19</value>
+  </data>
+  <data name="fld_chkCheckEdit4.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit4.Name" xml:space="preserve">
+    <value>fld_chkCheckEdit4</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit4.Type" xml:space="preserve">
+    <value>BOSComponent.BOSCheckEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit4.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_chkCheckEdit4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="fld_grcGroupControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 13</value>
+  </data>
+  <data name="fld_grcGroupControl1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_grcGroupControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 80</value>
+  </data>
+  <data name="fld_grcGroupControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="fld_grcGroupControl1.Text" xml:space="preserve">
+    <value>Điều kiện bảo quản</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl1.Name" xml:space="preserve">
+    <value>fld_grcGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSGroupControl, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl1.Parent" xml:space="preserve">
+    <value>fld_tabTabPageDVK</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_lblLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 29</value>
+  </data>
+  <data name="fld_lblLabel7.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
+  <data name="fld_lblLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="fld_lblLabel7.Text" xml:space="preserve">
+    <value>Giá bán</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel7.Name" xml:space="preserve">
+    <value>fld_lblLabel7</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel7.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel7.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_lblLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 31</value>
+  </data>
+  <data name="fld_lblLabel8.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="fld_lblLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="fld_lblLabel8.Text" xml:space="preserve">
+    <value>Giá mua</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel8.Name" xml:space="preserve">
+    <value>fld_lblLabel8</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel8.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel8.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fld_lblLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>483, 29</value>
+  </data>
+  <data name="fld_lblLabel9.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 13</value>
+  </data>
+  <data name="fld_lblLabel9.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="fld_lblLabel9.Text" xml:space="preserve">
+    <value>Thuế</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel9.Name" xml:space="preserve">
+    <value>fld_lblLabel9</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel9.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel9.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel9.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="fld_txtICProductPrice01.EditValue" xml:space="preserve">
+    <value>1.00</value>
+  </data>
+  <data name="fld_txtICProductPrice01.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 26</value>
+  </data>
+  <data name="fld_txtICProductPrice01.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v17.2" name="DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="fld_txtICProductPrice01.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v17.2">
+    <value>Numeric</value>
+  </data>
+  <data name="fld_txtICProductPrice01.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductPrice01.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductPrice01.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductPrice01.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
+  </data>
+  <data name="fld_txtICProductPrice01.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductPrice01.Name" xml:space="preserve">
+    <value>fld_txtICProductPrice01</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductPrice01.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductPrice01.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductPrice01.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="fld_txtICProductSupplierPrice.EditValue" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="fld_txtICProductSupplierPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 26</value>
+  </data>
+  <data name="fld_txtICProductSupplierPrice.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n</value>
+  </data>
+  <data name="fld_txtICProductSupplierPrice.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v17.2">
+    <value>Numeric</value>
+  </data>
+  <data name="fld_txtICProductSupplierPrice.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductSupplierPrice.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductSupplierPrice.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductSupplierPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
+  </data>
+  <data name="fld_txtICProductSupplierPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductSupplierPrice.Name" xml:space="preserve">
+    <value>fld_txtICProductSupplierPrice</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductSupplierPrice.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductSupplierPrice.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductSupplierPrice.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="fld_lkeFK_GEVATID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>554, 26</value>
+  </data>
+  <data name="fld_lkeFK_GEVATID.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeFK_GEVATID.Properties.Columns" xml:space="preserve">
+    <value>GEVATNo</value>
+  </data>
+  <data name="fld_lkeFK_GEVATID.Properties.Columns1" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="fld_lkeFK_GEVATID.Properties.Columns2" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="fld_lkeFK_GEVATID.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v17.2">
+    <value>Numeric</value>
+  </data>
+  <data name="fld_lkeFK_GEVATID.Properties.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_GEVATID.Properties.Columns5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_GEVATID.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v17.2">
+    <value>Default</value>
+  </data>
+  <data name="fld_lkeFK_GEVATID.Properties.Columns7" xml:space="preserve">
+    <value>GEVATName</value>
+  </data>
+  <data name="fld_lkeFK_GEVATID.Properties.Columns8" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="fld_lkeFK_GEVATID.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_GEVATID.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_GEVATID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
+  </data>
+  <data name="fld_lkeFK_GEVATID.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_GEVATID.Name" xml:space="preserve">
+    <value>fld_lkeFK_GEVATID</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_GEVATID.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_GEVATID.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_GEVATID.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="fld_lblLabel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 55</value>
+  </data>
+  <data name="fld_lblLabel10.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="fld_lblLabel10.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="fld_lblLabel10.Text" xml:space="preserve">
+    <value>Đơn vị cơ bản</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel10.Name" xml:space="preserve">
+    <value>fld_lblLabel10</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel10.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel10.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel10.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="fld_lblLabel11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 55</value>
+  </data>
+  <data name="fld_lblLabel11.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="fld_lblLabel11.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="fld_lblLabel11.Text" xml:space="preserve">
+    <value>Đơn vị mua</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel11.Name" xml:space="preserve">
+    <value>fld_lblLabel11</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel11.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel11.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel11.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="fld_lblLabel12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>483, 55</value>
+  </data>
+  <data name="fld_lblLabel12.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="fld_lblLabel12.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="fld_lblLabel12.Text" xml:space="preserve">
+    <value>Đơn vị bán</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel12.Name" xml:space="preserve">
+    <value>fld_lblLabel12</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel12.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel12.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel12.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="fld_lkeFK_ICProductBasicUnitID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 52</value>
+  </data>
+  <data name="fld_lkeFK_ICProductBasicUnitID.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeFK_ICProductBasicUnitID.Properties.Columns" xml:space="preserve">
+    <value>ICMeasureUnitNo</value>
+  </data>
+  <data name="fld_lkeFK_ICProductBasicUnitID.Properties.Columns1" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="fld_lkeFK_ICProductBasicUnitID.Properties.Columns2" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="fld_lkeFK_ICProductBasicUnitID.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v17.2">
+    <value>Numeric</value>
+  </data>
+  <data name="fld_lkeFK_ICProductBasicUnitID.Properties.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_ICProductBasicUnitID.Properties.Columns5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_ICProductBasicUnitID.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v17.2">
+    <value>Default</value>
+  </data>
+  <data name="fld_lkeFK_ICProductBasicUnitID.Properties.Columns7" xml:space="preserve">
+    <value>ICMeasureUnitName</value>
+  </data>
+  <data name="fld_lkeFK_ICProductBasicUnitID.Properties.Columns8" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="fld_lkeFK_ICProductBasicUnitID.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_ICProductBasicUnitID.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_ICProductBasicUnitID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
+  </data>
+  <data name="fld_lkeFK_ICProductBasicUnitID.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductBasicUnitID.Name" xml:space="preserve">
+    <value>fld_lkeFK_ICProductBasicUnitID</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductBasicUnitID.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductBasicUnitID.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductBasicUnitID.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="fld_lkeFK_ICProductPurchaseUnitID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 52</value>
+  </data>
+  <data name="fld_lkeFK_ICProductPurchaseUnitID.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeFK_ICProductPurchaseUnitID.Properties.Columns" xml:space="preserve">
+    <value>ICMeasureUnitNo</value>
+  </data>
+  <data name="fld_lkeFK_ICProductPurchaseUnitID.Properties.Columns1" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="fld_lkeFK_ICProductPurchaseUnitID.Properties.Columns2" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="fld_lkeFK_ICProductPurchaseUnitID.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v17.2">
+    <value>Numeric</value>
+  </data>
+  <data name="fld_lkeFK_ICProductPurchaseUnitID.Properties.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_ICProductPurchaseUnitID.Properties.Columns5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_ICProductPurchaseUnitID.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v17.2">
+    <value>Default</value>
+  </data>
+  <data name="fld_lkeFK_ICProductPurchaseUnitID.Properties.Columns7" xml:space="preserve">
+    <value>ICMeasureUnitName</value>
+  </data>
+  <data name="fld_lkeFK_ICProductPurchaseUnitID.Properties.Columns8" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="fld_lkeFK_ICProductPurchaseUnitID.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_ICProductPurchaseUnitID.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_ICProductPurchaseUnitID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
+  </data>
+  <data name="fld_lkeFK_ICProductPurchaseUnitID.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductPurchaseUnitID.Name" xml:space="preserve">
+    <value>fld_lkeFK_ICProductPurchaseUnitID</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductPurchaseUnitID.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductPurchaseUnitID.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductPurchaseUnitID.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="fld_lkeFK_ICProductSaleUnitID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>554, 52</value>
+  </data>
+  <data name="fld_lkeFK_ICProductSaleUnitID.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeFK_ICProductSaleUnitID.Properties.Columns" xml:space="preserve">
+    <value>ICMeasureUnitNo</value>
+  </data>
+  <data name="fld_lkeFK_ICProductSaleUnitID.Properties.Columns1" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="fld_lkeFK_ICProductSaleUnitID.Properties.Columns2" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="fld_lkeFK_ICProductSaleUnitID.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v17.2">
+    <value>Numeric</value>
+  </data>
+  <data name="fld_lkeFK_ICProductSaleUnitID.Properties.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_ICProductSaleUnitID.Properties.Columns5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_ICProductSaleUnitID.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v17.2">
+    <value>Default</value>
+  </data>
+  <data name="fld_lkeFK_ICProductSaleUnitID.Properties.Columns7" xml:space="preserve">
+    <value>ICMeasureUnitName</value>
+  </data>
+  <data name="fld_lkeFK_ICProductSaleUnitID.Properties.Columns8" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="fld_lkeFK_ICProductSaleUnitID.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_ICProductSaleUnitID.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_ICProductSaleUnitID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
+  </data>
+  <data name="fld_lkeFK_ICProductSaleUnitID.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductSaleUnitID.Name" xml:space="preserve">
+    <value>fld_lkeFK_ICProductSaleUnitID</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductSaleUnitID.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductSaleUnitID.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductSaleUnitID.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="fld_grcGroupControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 14</value>
+  </data>
+  <data name="fld_grcGroupControl2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_grcGroupControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>678, 80</value>
+  </data>
+  <data name="fld_grcGroupControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="fld_grcGroupControl2.Text" xml:space="preserve">
+    <value>Đơn vị tính và giá</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl2.Name" xml:space="preserve">
+    <value>fld_grcGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl2.Type" xml:space="preserve">
+    <value>BOSComponent.BOSGroupControl, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl2.Parent" xml:space="preserve">
+    <value>fld_tabTabPageLSK</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_lblLabel14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 32</value>
+  </data>
+  <data name="fld_lblLabel14.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 13</value>
+  </data>
+  <data name="fld_lblLabel14.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="fld_lblLabel14.Text" xml:space="preserve">
+    <value>Số lượng tối thiểu</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel14.Name" xml:space="preserve">
+    <value>fld_lblLabel14</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel14.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel14.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl3</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel14.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_lblLabel15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 56</value>
+  </data>
+  <data name="fld_lblLabel15.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="fld_lblLabel15.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="fld_lblLabel15.Text" xml:space="preserve">
+    <value>Số lượng tối đa</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel15.Name" xml:space="preserve">
+    <value>fld_lblLabel15</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel15.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel15.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl3</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel15.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fld_lblLabel16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 32</value>
+  </data>
+  <data name="fld_lblLabel16.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="fld_lblLabel16.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="fld_lblLabel16.Text" xml:space="preserve">
+    <value>Từ ngày</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel16.Name" xml:space="preserve">
+    <value>fld_lblLabel16</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel16.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel16.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl3</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel16.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="fld_lblLabel17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 56</value>
+  </data>
+  <data name="fld_lblLabel17.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="fld_lblLabel17.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="fld_lblLabel17.Text" xml:space="preserve">
+    <value>Từ ngày</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel17.Name" xml:space="preserve">
+    <value>fld_lblLabel17</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel17.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel17.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl3</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel17.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="fld_lblLabel18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>543, 32</value>
+  </data>
+  <data name="fld_lblLabel18.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 13</value>
+  </data>
+  <data name="fld_lblLabel18.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="fld_lblLabel18.Text" xml:space="preserve">
+    <value>đến</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel18.Name" xml:space="preserve">
+    <value>fld_lblLabel18</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel18.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel18.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl3</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel18.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="fld_lblLabel19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>543, 56</value>
+  </data>
+  <data name="fld_lblLabel19.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 13</value>
+  </data>
+  <data name="fld_lblLabel19.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="fld_lblLabel19.Text" xml:space="preserve">
+    <value>đến</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel19.Name" xml:space="preserve">
+    <value>fld_lblLabel19</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel19.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel19.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl3</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel19.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="fld_txtICProductStockMin.EditValue" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="fld_txtICProductStockMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 29</value>
+  </data>
+  <data name="fld_txtICProductStockMin.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n</value>
+  </data>
+  <data name="fld_txtICProductStockMin.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v17.2">
+    <value>Numeric</value>
+  </data>
+  <data name="fld_txtICProductStockMin.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductStockMin.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductStockMin.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductStockMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_txtICProductStockMin.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductStockMin.Name" xml:space="preserve">
+    <value>fld_txtICProductStockMin</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductStockMin.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductStockMin.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl3</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductStockMin.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="fld_txtICProductStockMax.EditValue" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="fld_txtICProductStockMax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 53</value>
+  </data>
+  <data name="fld_txtICProductStockMax.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n</value>
+  </data>
+  <data name="fld_txtICProductStockMax.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v17.2">
+    <value>Numeric</value>
+  </data>
+  <data name="fld_txtICProductStockMax.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductStockMax.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductStockMax.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductStockMax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_txtICProductStockMax.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductStockMax.Name" xml:space="preserve">
+    <value>fld_txtICProductStockMax</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductStockMax.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductStockMax.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl3</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductStockMax.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="fld_dteICProductStockMinDateFrom.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="fld_dteICProductStockMinDateFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>370, 29</value>
+  </data>
+  <data name="fld_dteICProductStockMinDateFrom.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_dteICProductStockMinDateFrom.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_dteICProductStockMinDateFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_dteICProductStockMinDateFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductStockMinDateFrom.Name" xml:space="preserve">
+    <value>fld_dteICProductStockMinDateFrom</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductStockMinDateFrom.Type" xml:space="preserve">
+    <value>BOSComponent.BOSDateEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductStockMinDateFrom.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl3</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductStockMinDateFrom.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="fld_dteICProductStockMinDateTo.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="fld_dteICProductStockMinDateTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>599, 29</value>
+  </data>
+  <data name="fld_dteICProductStockMinDateTo.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_dteICProductStockMinDateTo.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_dteICProductStockMinDateTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_dteICProductStockMinDateTo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductStockMinDateTo.Name" xml:space="preserve">
+    <value>fld_dteICProductStockMinDateTo</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductStockMinDateTo.Type" xml:space="preserve">
+    <value>BOSComponent.BOSDateEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductStockMinDateTo.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl3</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductStockMinDateTo.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="fld_dteICProductStockMaxDateFrom.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="fld_dteICProductStockMaxDateFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>370, 53</value>
+  </data>
+  <data name="fld_dteICProductStockMaxDateFrom.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_dteICProductStockMaxDateFrom.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_dteICProductStockMaxDateFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_dteICProductStockMaxDateFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductStockMaxDateFrom.Name" xml:space="preserve">
+    <value>fld_dteICProductStockMaxDateFrom</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductStockMaxDateFrom.Type" xml:space="preserve">
+    <value>BOSComponent.BOSDateEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductStockMaxDateFrom.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl3</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductStockMaxDateFrom.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="fld_dteICProductStockMaxDateTo.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="fld_dteICProductStockMaxDateTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>599, 53</value>
+  </data>
+  <data name="fld_dteICProductStockMaxDateTo.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_dteICProductStockMaxDateTo.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_dteICProductStockMaxDateTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_dteICProductStockMaxDateTo.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductStockMaxDateTo.Name" xml:space="preserve">
+    <value>fld_dteICProductStockMaxDateTo</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductStockMaxDateTo.Type" xml:space="preserve">
+    <value>BOSComponent.BOSDateEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductStockMaxDateTo.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl3</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductStockMaxDateTo.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="fld_grcGroupControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 99</value>
+  </data>
+  <data name="fld_grcGroupControl3.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_grcGroupControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 80</value>
+  </data>
+  <data name="fld_grcGroupControl3.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="fld_grcGroupControl3.Text" xml:space="preserve">
+    <value>Thông tin kho</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl3.Name" xml:space="preserve">
+    <value>fld_grcGroupControl3</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl3.Type" xml:space="preserve">
+    <value>BOSComponent.BOSGroupControl, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl3.Parent" xml:space="preserve">
+    <value>fld_tabTabPageDVK</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fld_dgcMEMedicineComponents.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="fld_dgcMEMedicineComponents.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="fld_dgcMEMedicineComponents.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 22</value>
+  </data>
+  <data name="fld_dgcMEMedicineComponents.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_dgcMEMedicineComponents.Size" type="System.Drawing.Size, System.Drawing">
+    <value>674, 111</value>
+  </data>
+  <data name="fld_dgcMEMedicineComponents.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcMEMedicineComponents.Name" xml:space="preserve">
+    <value>fld_dgcMEMedicineComponents</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcMEMedicineComponents.Type" xml:space="preserve">
+    <value>BOSERP.Modules.ICProduct.MEMedicineComponentsGridControl, BOSERP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcMEMedicineComponents.Parent" xml:space="preserve">
+    <value>fld_grpMedichineList</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcMEMedicineComponents.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_grpMedichineList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 100</value>
+  </data>
+  <data name="fld_grpMedichineList.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_grpMedichineList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>678, 135</value>
+  </data>
+  <data name="fld_grpMedichineList.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="fld_grpMedichineList.Text" xml:space="preserve">
+    <value>Danh sách hoạt chất</value>
+  </data>
+  <data name="&gt;&gt;fld_grpMedichineList.Name" xml:space="preserve">
+    <value>fld_grpMedichineList</value>
+  </data>
+  <data name="&gt;&gt;fld_grpMedichineList.Type" xml:space="preserve">
+    <value>BOSComponent.BOSGroupControl, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_grpMedichineList.Parent" xml:space="preserve">
+    <value>fld_tabTabPageLSK</value>
+  </data>
+  <data name="&gt;&gt;fld_grpMedichineList.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fld_rdgMedicineDevice.EditValue" type="System.Decimal, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="fld_rdgMedicineDevice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 3</value>
+  </data>
+  <data name="fld_rdgMedicineDevice.Properties.Items" type="System.Decimal, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="fld_rdgMedicineDevice.Properties.Items1" xml:space="preserve">
+    <value>Thuốc - hoạt chất</value>
+  </data>
+  <data name="fld_rdgMedicineDevice.Properties.Items2" type="System.Decimal, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="fld_rdgMedicineDevice.Properties.Items3" xml:space="preserve">
+    <value>Dụng cụ y tế</value>
+  </data>
+  <data name="fld_rdgMedicineDevice.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_rdgMedicineDevice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 27</value>
+  </data>
+  <data name="fld_rdgMedicineDevice.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;fld_rdgMedicineDevice.Name" xml:space="preserve">
+    <value>fld_rdgMedicineDevice</value>
+  </data>
+  <data name="&gt;&gt;fld_rdgMedicineDevice.Type" xml:space="preserve">
+    <value>BOSComponent.BOSRadioGroup, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_rdgMedicineDevice.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;fld_rdgMedicineDevice.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fld_dgcICProductAccounts.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="fld_dgcICProductAccounts.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="fld_dgcICProductAccounts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 22</value>
+  </data>
+  <data name="fld_dgcICProductAccounts.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_dgcICProductAccounts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>456, 32</value>
+  </data>
+  <data name="fld_dgcICProductAccounts.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcICProductAccounts.Name" xml:space="preserve">
+    <value>fld_dgcICProductAccounts</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcICProductAccounts.Type" xml:space="preserve">
+    <value>BOSERP.Modules.ICProduct.ProductAccountsGridControl, BOSERP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcICProductAccounts.Parent" xml:space="preserve">
+    <value>fld_grpAccountList</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcICProductAccounts.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_grpAccountList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 185</value>
+  </data>
+  <data name="fld_grpAccountList.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_grpAccountList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 56</value>
+  </data>
+  <data name="fld_grpAccountList.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="fld_grpAccountList.Text" xml:space="preserve">
+    <value>Danh sách tài khoản</value>
+  </data>
+  <data name="fld_grpAccountList.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;fld_grpAccountList.Name" xml:space="preserve">
+    <value>fld_grpAccountList</value>
+  </data>
+  <data name="&gt;&gt;fld_grpAccountList.Type" xml:space="preserve">
+    <value>BOSComponent.BOSGroupControl, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_grpAccountList.Parent" xml:space="preserve">
+    <value>fld_tabTabPageDVK</value>
+  </data>
+  <data name="&gt;&gt;fld_grpAccountList.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="fld_tabTabControl100.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 282</value>
+  </data>
+  <data name="fld_tabTabPageLSK.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_tabTabPageLSK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>793, 244</value>
+  </data>
+  <data name="fld_tabTabPageLSK.Text" xml:space="preserve">
+    <value>TT Giá - Hoạt chất</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPageLSK.Name" xml:space="preserve">
+    <value>fld_tabTabPageLSK</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPageLSK.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPageLSK.Parent" xml:space="preserve">
+    <value>fld_tabTabControl100</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPageLSK.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_tabTabControl100.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_tabTabControl100.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 273</value>
+  </data>
+  <data name="fld_tabTabControl100.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="fld_tabTabPageDVK.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_tabTabPageDVK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>793, 244</value>
+  </data>
+  <data name="fld_tabTabPageDVK.Text" xml:space="preserve">
+    <value>ĐK Bảo quản - TT kho</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPageDVK.Name" xml:space="preserve">
+    <value>fld_tabTabPageDVK</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPageDVK.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPageDVK.Parent" xml:space="preserve">
+    <value>fld_tabTabControl100</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPageDVK.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bosLabel11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 84</value>
+  </data>
+  <data name="bosLabel11.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="bosLabel11.TabIndex" type="System.Int32, mscorlib">
+    <value>363</value>
+  </data>
+  <data name="bosLabel11.Text" xml:space="preserve">
+    <value>Dạng trình bày</value>
+  </data>
+  <data name="&gt;&gt;bosLabel11.Name" xml:space="preserve">
+    <value>bosLabel11</value>
+  </data>
+  <data name="&gt;&gt;bosLabel11.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel11.Parent" xml:space="preserve">
+    <value>bosGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;bosLabel11.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_txtICProductPackagingType.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtICProductPackagingType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>459, 81</value>
+  </data>
+  <data name="fld_txtICProductPackagingType.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductPackagingType.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductPackagingType.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductPackagingType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 20</value>
+  </data>
+  <data name="fld_txtICProductPackagingType.TabIndex" type="System.Int32, mscorlib">
+    <value>362</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductPackagingType.Name" xml:space="preserve">
+    <value>fld_txtICProductPackagingType</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductPackagingType.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductPackagingType.Parent" xml:space="preserve">
+    <value>bosGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductPackagingType.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fld_txtICProductRoute.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtICProductRoute.Location" type="System.Drawing.Point, System.Drawing">
+    <value>459, 29</value>
+  </data>
+  <data name="fld_txtICProductRoute.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductRoute.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductRoute.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductRoute.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="fld_txtICProductRoute.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductRoute.Name" xml:space="preserve">
+    <value>fld_txtICProductRoute</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductRoute.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductRoute.Parent" xml:space="preserve">
+    <value>bosGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductRoute.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="fld_txtICProductNoOfInsurance.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtICProductNoOfInsurance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="fld_txtICProductNoOfInsurance.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductNoOfInsurance.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductNoOfInsurance.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductNoOfInsurance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="fld_txtICProductNoOfInsurance.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductNoOfInsurance.Name" xml:space="preserve">
+    <value>fld_txtICProductNoOfInsurance</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductNoOfInsurance.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductNoOfInsurance.Parent" xml:space="preserve">
+    <value>bosGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductNoOfInsurance.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bosLabel19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 32</value>
+  </data>
+  <data name="bosLabel19.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="bosLabel19.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="bosLabel19.Text" xml:space="preserve">
+    <value>Mã BHYT</value>
+  </data>
+  <data name="&gt;&gt;bosLabel19.Name" xml:space="preserve">
+    <value>bosLabel19</value>
+  </data>
+  <data name="&gt;&gt;bosLabel19.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel19.Parent" xml:space="preserve">
+    <value>bosGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;bosLabel19.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="bosLabel20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 32</value>
+  </data>
+  <data name="bosLabel20.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="bosLabel20.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="bosLabel20.Text" xml:space="preserve">
+    <value>Đường dùng</value>
+  </data>
+  <data name="&gt;&gt;bosLabel20.Name" xml:space="preserve">
+    <value>bosLabel20</value>
+  </data>
+  <data name="&gt;&gt;bosLabel20.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel20.Parent" xml:space="preserve">
+    <value>bosGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;bosLabel20.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="bosGroupControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 99</value>
+  </data>
+  <data name="bosGroupControl2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosGroupControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 112</value>
+  </data>
+  <data name="bosGroupControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="bosGroupControl2.Text" xml:space="preserve">
+    <value>Thông tin khác</value>
+  </data>
+  <data name="&gt;&gt;bosGroupControl2.Name" xml:space="preserve">
+    <value>bosGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;bosGroupControl2.Type" xml:space="preserve">
+    <value>BOSComponent.BOSGroupControl, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosGroupControl2.Parent" xml:space="preserve">
+    <value>fld_tabTabPagePA</value>
+  </data>
+  <data name="&gt;&gt;bosGroupControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_txtICProductBiddingNo.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtICProductBiddingNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 29</value>
+  </data>
+  <data name="fld_txtICProductBiddingNo.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductBiddingNo.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductBiddingNo.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductBiddingNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="fld_txtICProductBiddingNo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductBiddingNo.Name" xml:space="preserve">
+    <value>fld_txtICProductBiddingNo</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductBiddingNo.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductBiddingNo.Parent" xml:space="preserve">
+    <value>bosGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductBiddingNo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_txtICProductBiddingName.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtICProductBiddingName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>459, 27</value>
+  </data>
+  <data name="fld_txtICProductBiddingName.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductBiddingName.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtICProductBiddingName.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductBiddingName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 20</value>
+  </data>
+  <data name="fld_txtICProductBiddingName.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductBiddingName.Name" xml:space="preserve">
+    <value>fld_txtICProductBiddingName</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductBiddingName.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductBiddingName.Parent" xml:space="preserve">
+    <value>bosGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductBiddingName.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fld_lkeICProductBiddingGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>459, 53</value>
+  </data>
+  <data name="fld_lkeICProductBiddingGroup.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeICProductBiddingGroup.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeICProductBiddingGroup.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeICProductBiddingGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="fld_lkeICProductBiddingGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICProductBiddingGroup.Name" xml:space="preserve">
+    <value>fld_lkeICProductBiddingGroup</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICProductBiddingGroup.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICProductBiddingGroup.Parent" xml:space="preserve">
+    <value>bosGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeICProductBiddingGroup.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="bosLabel14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 32</value>
+  </data>
+  <data name="bosLabel14.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 13</value>
+  </data>
+  <data name="bosLabel14.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="bosLabel14.Text" xml:space="preserve">
+    <value>STT đấu thầu</value>
+  </data>
+  <data name="&gt;&gt;bosLabel14.Name" xml:space="preserve">
+    <value>bosLabel14</value>
+  </data>
+  <data name="&gt;&gt;bosLabel14.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel14.Parent" xml:space="preserve">
+    <value>bosGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;bosLabel14.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bosLabel17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 30</value>
+  </data>
+  <data name="bosLabel17.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="bosLabel17.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="bosLabel17.Text" xml:space="preserve">
+    <value>Tên đơn vị</value>
+  </data>
+  <data name="&gt;&gt;bosLabel17.Name" xml:space="preserve">
+    <value>bosLabel17</value>
+  </data>
+  <data name="&gt;&gt;bosLabel17.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel17.Parent" xml:space="preserve">
+    <value>bosGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;bosLabel17.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="bosLabel18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 56</value>
+  </data>
+  <data name="bosLabel18.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="bosLabel18.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="bosLabel18.Text" xml:space="preserve">
+    <value>Ngày hiệu lực</value>
+  </data>
+  <data name="&gt;&gt;bosLabel18.Name" xml:space="preserve">
+    <value>bosLabel18</value>
+  </data>
+  <data name="&gt;&gt;bosLabel18.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel18.Parent" xml:space="preserve">
+    <value>bosGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;bosLabel18.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="bosLabel21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 56</value>
+  </data>
+  <data name="bosLabel21.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="bosLabel21.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="bosLabel21.Text" xml:space="preserve">
+    <value>Nhóm</value>
+  </data>
+  <data name="&gt;&gt;bosLabel21.Name" xml:space="preserve">
+    <value>bosLabel21</value>
+  </data>
+  <data name="&gt;&gt;bosLabel21.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel21.Parent" xml:space="preserve">
+    <value>bosGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;bosLabel21.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="fld_dteICProductBiddingDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="fld_dteICProductBiddingDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 55</value>
+  </data>
+  <data name="fld_dteICProductBiddingDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_dteICProductBiddingDate.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_dteICProductBiddingDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="fld_dteICProductBiddingDate.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductBiddingDate.Name" xml:space="preserve">
+    <value>fld_dteICProductBiddingDate</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductBiddingDate.Type" xml:space="preserve">
+    <value>BOSComponent.BOSDateEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductBiddingDate.Parent" xml:space="preserve">
+    <value>bosGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_dteICProductBiddingDate.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="bosGroupControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 13</value>
+  </data>
+  <data name="bosGroupControl1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosGroupControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 80</value>
+  </data>
+  <data name="bosGroupControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="bosGroupControl1.Text" xml:space="preserve">
+    <value>Thông tin trúng thầu BHYT</value>
+  </data>
+  <data name="&gt;&gt;bosGroupControl1.Name" xml:space="preserve">
+    <value>bosGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;bosGroupControl1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSGroupControl, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosGroupControl1.Parent" xml:space="preserve">
+    <value>fld_tabTabPagePA</value>
+  </data>
+  <data name="&gt;&gt;bosGroupControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fld_tabTabPagePA.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_tabTabPagePA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>793, 244</value>
+  </data>
+  <data name="fld_tabTabPagePA.Text" xml:space="preserve">
+    <value>TT Cho BHYT</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPagePA.Name" xml:space="preserve">
+    <value>fld_tabTabPagePA</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPagePA.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPagePA.Parent" xml:space="preserve">
+    <value>fld_tabTabControl100</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPagePA.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabControl100.Name" xml:space="preserve">
+    <value>fld_tabTabControl100</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabControl100.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabControl100.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabControl100.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>58</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>816, 574</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAYAICAQAAAAAADoAgAAZgAAABAQEAAAAAAAKAEAAE4DAAAgIAAAAQAIAKgIAAB2BAAAEBAAAAEA
+        CABoBQAAHg0AACAgAAABACAAqBAAAIYSAAAQEAAAAQAgAGgEAAAuIwAAKAAAACAAAABAAAAAAQAEAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAACAgACAAAAAgACAAICAAACAgIAAwMDAAAAA
+        /wAA/wAAAP//AP8AAAD/AP8A//8AAP///wAiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIoiI
+        iIiIiIiIiIiIiIiIiIiCIigiIiIozMzMzMzMyCIogiIoIiIiKM7m5ubm5sgiKIIiKCIiIijObm5ubm7I
+        IiiCIigiIiIozubm5ubmyCIogiIoIiIiKM5ubm5ubsgiKIIiKCIiIijO5ubm5ubIIiiIiIiIiIiIzm5u
+        bm5uyCIogRERERERGM7u7u7u7sgiKIHZWVlZWRjMzMzMzMzIIiiB1ZWVlZUYiIiIiIiIiIiIgdlZWVlZ
+        GDMzMzMzMzMzOIHVlZWVlRg/uLi4uLi4uDiB2VlZWVkYP7uLi4uLi4s4gdWVlZWVGD+4uLi4uLi4OIHZ
+        WVlZWRg/u4uLi4uLiziB1ZWVlZUYP7i4uLi4uLg4gdlZWVlZGD+7i4uLi4uLOIHVlZWVlRg/uLi4uLi4
+        uDiB3d3d3d0YP7uLi4uLi4s4gRERERERGD+4uLi4uLi4OIiIiIiIiIg/u4uLi4uLiziCIiIiIiIoP7i4
+        uLi4uLg4giIiIiIiKD+7i4uLi4uLOIIiIiIiIig/uLi4uLi4uDiCIiIiIiIoP7u7u7u7u7s4giIiIiIi
+        KD//////////OIIiIiIiIigzMzMzMzMzMziIiIiIiIiIiIiIiIiIiIiIIiIiIiIiIiIiIiIiIiIiIv//
+        ////////AAAAAHv4AA57+AAOe/gADnv4AA57+AAOe/gADgAAAA4AAAAOAAAADgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/4AAB/+AAAf/gAAH/4AAB/+AAAf/gAAAAA
+        AAD/////KAAAABAAAAAgAAAAAQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAACA
+        gACAAAAAgACAAICAAACAgIAAwMDAAAAA/wAA/wAAAP//AP8AAAD/AP8A//8AAP///wAiIiIiIiIiIoiI
+        iIiIiIiIgigijMzMyCiCKCKM5mbIKIiIiIzu7sgogRERjMzMyCiB2ZGIiIiIiIHZkYMzMzM4gdmRg/u7
+        uziB3dGD+7u7OIEREYP7u7s4iIiIg/u7uziCIiKD+7u7OIIiIoP///84giIigzMzMziIiIiIiIiIiP//
+        KCIAACjObALm5mwCIigAAoiIAAKIzgAAbm4AACIoAAAREQAAGM4AAO7uAAAiKHwAWVl8ABjMfADMzAAA
+        IigoAAAAIAAAAEAAAAABAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAA
+        AACAAIAAgIAAAICAgADA3MAA8MqmAKo/KgD/PyoAAF8qAFVfKgCqXyoA/18qAAB/KgBVfyoAqn8qAP9/
+        KgAAnyoAVZ8qAKqfKgD/nyoAAL8qAFW/KgCqvyoA/78qAADfKgBV3yoAqt8qAP/fKgAA/yoAVf8qAKr/
+        KgD//yoAAABVAFUAVQCqAFUA/wBVAAAfVQBVH1UAqh9VAP8fVQAAP1UAVT9VAKo/VQD/P1UAAF9VAFVf
+        VQCqX1UA/19VAAB/VQBVf1UAqn9VAP9/VQAAn1UAVZ9VAKqfVQD/n1UAAL9VAFW/VQCqv1UA/79VAADf
+        VQBV31UAqt9VAP/fVQAA/1UAVf9VAKr/VQD//1UAAAB/AFUAfwCqAH8A/wB/AAAffwBVH38Aqh9/AP8f
+        fwAAP38AVT9/AKo/fwD/P38AAF9/AFVffwCqX38A/19/AAB/fwBVf38Aqn9/AP9/fwAAn38AVZ9/AKqf
+        fwD/n38AAL9/AFW/fwCqv38A/79/AADffwBV338Aqt9/AP/ffwAA/38AVf9/AKr/fwD//38AAACqAFUA
+        qgCqAKoA/wCqAAAfqgBVH6oAqh+qAP8fqgAAP6oAVT+qAKo/qgD/P6oAAF+qAFVfqgCqX6oA/1+qAAB/
+        qgBVf6oAqn+qAP9/qgAAn6oAVZ+qAKqfqgD/n6oAAL+qAFW/qgCqv6oA/7+qAADfqgBV36oAqt+qAP/f
+        qgAA/6oAVf+qAKr/qgD//6oAAADUAFUA1ACqANQA/wDUAAAf1ABVH9QAqh/UAP8f1AAAP9QAVT/UAKo/
+        1AD/P9QAAF/UAFVf1ACqX9QA/1/UAAB/1ABVf9QAqn/UAP9/1AAAn9QAVZ/UAKqf1AD/n9QAAL/UAFW/
+        1ACqv9QA/7/UAADf1ABV39QAqt/UAP/f1AAA/9QAVf/UAKr/1AD//9QAVQD/AKoA/wAAH/8AVR//AKof
+        /wD/H/8AAD//AFU//wCqP/8A/z//AABf/wBVX/8Aql//AP9f/wAAf/8AVX//AKp//wD/f/8AAJ//AFWf
+        /wCqn/8A/5//AAC//wBVv/8Aqr//AP+//wAA3/8AVd//AKrf/wD/3/8AVf//AKr//wD/zMwA/8z/AP//
+        MwD//2YA//+ZAP//zAAAfwAAVX8AAKp/AAD/fwAAAJ8AAFWfAACqnwAA/58AAAC/AABVvwAAqr8AAP+/
+        AAAA3wAAVd8AAKrfAAD/3wAAVf8AAKr/AAAAACoAVQAqAKoAKgD/ACoAAB8qAFUfKgCqHyoA/x8qAAA/
+        KgBVPyoA8Pv/AKSgoACAgIAAAAD/AAD/AAAA//8A/wAAAAAAAAD//wAA////AP39/f39/f39/f39/f39
+        /f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39
+        /f39/f39/f39/f39/f39/f39/f39/f39qoYIqoYIhqoIqgiqCaoIqgiqhqqGhoYIhoYIqv39/f0I/f39
+        /ar9/f39/YY2Ng4yDg4ODgoOCgoKCgqG/f39/Yb9/f39CP39/f39qjY7Ozs3Nzc3NjMSMjIOCqr9/f39
+        qv39/f2G/f39/f0IN19fOzs3Nzc3NjcODg4KCP39/f0I/f39/ar9/f39/ao6X19fXzs7Ozc3NzY3NgqG
+        /f39/Yb9/f39CP39/f39hl9jY19jX187Ozs7Nzc3Dqr9/f39qv39/f2G/f39/f0IOodjh19jX19fXztf
+        OzcOCP39/f0ICAmqCAiqCKoICapfCYdjh2ODY19fXzs7Ow6q/f39/QhITEwoSCUoKSQoqmMJCYcJCWNj
+        Y2NfY19fNgj9/f39qkyZmZmYmJRwlCmqX19fXl9fX186WzY3Njc2gv39/f0JcJ2dmZmZlJmUJAmqCaoJ
+        hggIqggICKoIqggI/f39/YZwnp2dnZmZmJVMqnx8fHx8fFR8VHhUVFRUVKr9/f39CHChoZ2dnZ2ZmUwJ
+        fKSkxqSkxqSkpKSkpKBUCP39/f2qcKLDoqGdnZ2ZTKp8ysakxqSkxqSkxqSkpFSq/f39/QiUpqbDoqHE
+        nZ1Mq3ykqMakyqSkxqSkpKSkVAj9/f39hpTIyKbHoqGhoXAIfMrLpMqkxqSkxqTGpKRUqv39/f0IlMym
+        yKbIpcShcAh8y6jKpMqkxsqkpKSkxlQI/f39/aqUzMzMyKbIpqJwqnzLy8qpxsqkpMakxqSkeAj9/f39
+        CJSUlJSUlJSUlJQJgMupy8qpysqkyqSkxqRUqv39/f2GCKoIqgiqCKoIhgigrcvPqcuoy8qkxsqkxnyG
+        /f39/ar9/f39/f39/f39qnzPz6nLy8uoyqnKpKTKVAj9/f39CP39/f39/f39/f0IfNDPz8+py8upyqjG
+        yqR8hv39/f2G/f39/f39/f39/Qik0K7P0M+ty8vLy6jKpXyq/f39/ar9/f39/f39/f39CHzQ09Ctz8/P
+        qcupy6jKeAj9/f39CP39/f39/f39/f2qoNPQ0NPQ0M/Qz8vLy6l8CP39/f2G/f39/f39/f39/QmkfKR8
+        oHx8fHx8fHx8fHyG/f39/aoIqgiqCKoIqgiqCKoIqgiqCKoIqgiqCKoIqgj9/f39/f39/f39/f39/f39
+        /f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f3/////////////
+        ///AAAAD3vgAA974AAPe+AAD3vgAA974AAPe+AADwAAAA8AAAAPAAAADwAAAA8AAAAPAAAADwAAAA8AA
+        AAPAAAADwAAAA8AAAAPAAAADwAAAA9/4AAPf+AAD3/gAA9/4AAPf+AAD3/gAA8AAAAP//////////ygA
+        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
+        ff//p3f//6Jw//+eav//mWT//pRf//qQWv/0i1b/7IVS/+V/Tv+gWC7/wr/B/wAAAAAAAAAAAAAAAAAA
+        AADCv8H/AAAAAAAAAAAAAAAAAAAAAMK/wf8AAAAAAAAAAAAAAAAAAAAAAAAAAMK/wf/apnP//7+d//+7
+        mP//uJL//7WM//+whv//rH///6d4//+jcf//n2v//5ll//+VYP/6kVv/9YxY/6diN//Cv8H/AAAAAAAA
+        AAAAAAAAAAAAAMK/wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/96t
+        eP//wqL//8Gi//+/nv//vJn//7mT//+2jv//sYj//66A//+pev//pHP//6Bt//+bZ///l2L/r20//8K/
+        wf8AAAAAAAAAAAAAAAAAAAAAwr/B/xYXev8XF3b/GBVx/xkUbf8ZFGr/GhNm/xoSY/8bEV//HBFd/xwQ
+        W//Cv8H/4K96///Cov//wqL//8Ki///Cov//wJ///72b//+6lf//t4///7KJ//+ugv//qnv//6V0//+h
+        bv+3d0n/wr/B/wAAAAAAAAAAAAAAAAAAAADCv8H/FRqE/0dN1v8/RNL/Nz3Q/y40zv8nLcz/ISfK/xwh
+        yf8WHMf/GxJh/8K/wf/gr3r/4K96/+Cvev/gr3r/3614/9yqdf/apnL/16Nw/9Sea//Rmmj/zZZk/8qR
+        X//GjFz/w4dW/7+CUv/Cv8H/AAAAAAAAAAAAAAAAAAAAAMK/wf8SHZD/WF3a/05U1/9FS9X/PUPS/zU7
+        0P8uM83/JyzL/yAmyf8aFGn/wr/B/8K/wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/8K/
+        wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/8K/wf8AAAAAAAAAAAAAAAAAAAAAwr/B/xAfnP9obt7/YGTc/1Zb
+        2f9NU9f/RUrU/ztB0v80OdD/LDHO/xgWcv/Cv8H/Dn+n/w18pP8MeqH/DHie/wt1m/8Kc5j/CXGV/wlv
+        k/8JbJD/CGqN/wdpi/8HZ4j/BmWH/wZkhf8GYoP/wr/B/wAAAAAAAAAAAAAAAAAAAADCv8H/DiKp/3l+
+        4/9vdeH/Zmze/11i2/9UWtn/S1HW/0NI1P86P9H/Fhh9/8K/wf8Ogar/Barp/wGo6P8Apef/AKPm/wCi
+        5P8An+L/AJ7h/wCd3/8AnN7/AJnc/wCY2/8AmNn/AJbX/wZjhP/Cv8H/AAAAAAAAAAAAAAAAAAAAAMK/
+        wf8MJbX/iI7n/4CF5v93fOP/bnPg/2Vr3f9bYdv/UljY/0lP1v8UGoj/wr/B/w+Erf8Lrur/Bqvq/wOo
+        6f8Apuf/AKTm/wCi5f8AoOT/AJ/i/wCd4f8AnN//AJrd/wCZ2/8AmNr/BmWH/8K/wf8AAAAAAAAAAAAA
+        AAAAAAAAwr/B/wkowP+WnOz/jpTq/4aL6P9+hOX/dXri/2xx4P9jaN3/WV/b/xEek//Cv8H/EIaw/xay
+        7P8Or+z/Cavr/wWq6v8Bp+j/AKbn/wCj5f8AoeT/AJ/j/wCe4f8AnOD/AJve/wCa3f8HZ4n/wr/B/wAA
+        AAAAAAAAAAAAAAAAAADCv8H/CCrK/6Ko7/+coe7/lZrr/42T6f+Fiub/fIHl/3N54v9rcN//ECGg/8K/
+        wf8QiLP/I7nu/xq07f8Ssez/C63r/war6v8Cqen/AKbo/wCk5v8AouX/AKHk/wCf4f8AneH/AJzf/who
+        i//Cv8H/AAAAAAAAAAAAAAAAAAAAAMK/wf8GLNP/q7Hy/6as8P+hpu//mp/u/5OY6/+LkOj/g4nm/3qA
+        5P8NI6z/wr/B/xCKtv8xvvD/J7rv/x627f8Vsuz/Dq/s/wmr6/8Equn/Aafo/wCl5/8Ao+X/AKHk/wCf
+        4v8AnuH/CGqO/8K/wf8AAAAAAAAAAAAAAAAAAAAAwr/B/wUu2/+vtPP/r7Tz/6qv8v+mq/D/oKXv/5me
+        7f+Sl+v/io/p/wsmt//Cv8H/Eo24/0HF8f82wfD/LLzv/yK47v8atO3/EbHs/wut6/8Gq+r/A6np/wCm
+        6P8Apeb/AKLl/wCh5P8IbJD/wr/B/wAAAAAAAAAAAAAAAAAAAADCv8H/BC/h/wQv3/8FL9z/BS3Z/wYt
+        1v8GLNL/ByvP/wgqy/8IKcb/CSnC/8K/wf8Sjrv/Uszy/0fH8f87w/H/Mb7v/ye67/8et+7/FbPt/w6v
+        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
+</value>
+  </data>
+  <data name="$this.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Thông tin</value>
+  </data>
+  <data name="&gt;&gt;ScreenHelper.Name" xml:space="preserve">
+    <value>ScreenHelper</value>
+  </data>
+  <data name="&gt;&gt;ScreenHelper.Type" xml:space="preserve">
+    <value>System.Windows.Forms.HelpProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fld_dgvGridControl.Name" xml:space="preserve">
+    <value>fld_dgvGridControl</value>
+  </data>
+  <data name="&gt;&gt;fld_dgvGridControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Name" xml:space="preserve">
+    <value>gridView1</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DMICPR100</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>BOSERP.BOSERPScreen, BOSBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Cancel_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel BW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cancel_RGB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel RGB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Capture_Alpha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capture Alpha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Capture_Delta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capture Delta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Capture_Gamma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capture Gamma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Capture_Omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capture Omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Capture_Sigma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capture Sigma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Capture_Zeta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capture Zeta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Entrymask_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Entrymask BW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example1_Alpha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example1 Alpha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example1_Delta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example1 Delta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example1_Gamma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example1 Gamma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example1_Omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example1 Omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example1_Sigma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example1 Sigma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example1_Zeta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example1 Zeta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example2_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example2 BW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example2_RGB_Large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example2 RGB Large.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example2_RGB_Small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example2 RGB Small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example3_Alpha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example3 Alpha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example3_Delta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example3 Delta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example3_Gamma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example3 Gamma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example3_Omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example3 Omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example3_Sigma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example3 Sigma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example3_Zeta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example3 Zeta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example4_Alpha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example4 Alpha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example4_Delta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example4 Delta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example4_Gamma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example4 Gamma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example4_Omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example4 Omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example4_Sigma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example4 Sigma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Example4_Zeta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Example4 Zeta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad0_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad0 bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad0_color_omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad0_color_omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad1_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad1 bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad1_color_omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad1_color_omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad2_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad2 bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad2_color_omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad2_color_omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad3_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad3 bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad3_color_omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad3_color_omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad4_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad4 bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad4_color_omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad4_color_omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad5_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad5 bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad5_color_omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad5_color_omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad6_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad6 bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad6_color_omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad6_color_omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad7_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad7 bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad7_color_omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad7_color_omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad8_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad8 bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad8_color_omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad8_color_omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad9_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad9 bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keypad9_color_omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keypad9_color_omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KeypadCancel_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KeypadCancel BW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KeypadCancel_color_omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KeypadCancel_color_omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KeypadConfirm_color_omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KeypadConfirm_color_omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KeypadEntrymask_color_gamma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KeypadEntrymask_color_gamma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KeypadEntrymask_color_omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KeypadEntrymask_color_omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KeypadOk_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KeypadOk BW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KeypadRetry_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KeypadRetry BW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KeypadRetry_color_omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KeypadRetry_color_omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LED Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_Green_Delta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LED Green Delta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_Green_Gamma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LED Green Gamma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_Off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LED Off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_Off_Delta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LED Off Delta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_Off_Gamma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LED Off Gamma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LED Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_YellowGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LED YellowGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_YellowGreen_Delta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LED YellowGreen Delta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_YellowGreen_Gamma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LED YellowGreen Gamma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_Yellow_Delta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LED Yellow Delta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LED_Yellow_Gamma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LED Yellow Gamma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo_Alpha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Alpha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo_Delta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Delta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo_Gamma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Gamma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo_Omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo_Sigma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Sigma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo_Zeta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Zeta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OK_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OK BW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OK_RGB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OK RGB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pad_Alpha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pad Alpha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pad_Delta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pad Delta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pad_Gamma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pad Gamma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pad_Omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pad Omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pad_Sigma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pad Sigma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pad_Zeta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pad Zeta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scroll_RGB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scroll RGB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="signoPAD_API" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\signoPAD-API.cer;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="signoPAD_API1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\signoPAD-API.pfx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="STPadLibNet_Demo_App" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STPadLibNet_Demo_App.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Welcome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Welcome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

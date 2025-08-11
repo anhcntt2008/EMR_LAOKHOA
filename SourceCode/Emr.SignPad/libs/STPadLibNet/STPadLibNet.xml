@@ -1,0 +1,2368 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "STPadLibNet"
+    </assembly>
+    <members>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.GetSTPadCtrl">
+            <summary>Returns the CSTPadCtrl member object.</summary>
+            <returns>The CSTPadCtrl member object.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.GetSTPadLib">
+            <summary>Creates the STPadLib member object if necessary and returns it.</summary>
+            <returns>The STPadLib member object.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.STPadLibControl_VisibleChanged(System.Object,System.EventArgs)">
+            <summary>Occurs when the Visible property value changes.</summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.STPadLibControl_MouseWheel(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>Occurs when the mouse wheel moves while the control has focus.</summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.STPadLibControl_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>Occurs when the mouse pointer is moved over the control.</summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.STPadLibControl_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>Occurs when the mouse pointer is over the control and a mouse button is released.</summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.STPadLibControl_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>Occurs when the mouse pointer is over the control and a mouse button is pressed.</summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.STPadLibControl_SizeChanged(System.Object,System.EventArgs)">
+            <summary>Occurs when the <see cref="P:System.Windows.Forms.Control.Size" /> property value changes.</summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.STPadLibControl_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>Occurs when the control is redrawn.</summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSADecryptSignData(signotec.STPadLibNet.SignDataDecryptFlag@)">
+            <summary>Retreives extra data from an RSA encrypted SignData array that has been decrypted before.</summary>
+            <param name="extraData">
+                <see cref="T:signotec.STPadLibNet.SignDataDecryptFlag" /> indicating the extra data that shall be returned; on return it
+indicates which extra data hasn't been retrieved until now.</param>
+            <returns>The requested extra data.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSADecryptSignData(System.Byte[],System.String,System.String,signotec.STPadLibNet.SignDataDecryptFlag@)">
+            <summary>Decrypts an RSA encrypted SignData array and converts it into a traditional SignData array.</summary>
+            <param name="encrypted">RSA encrypted SignData.</param>
+            <param name="cert">Full path or URL of a PKCS#12 certificate used for decrypting the SignData.</param>
+            <param name="password">Password for the private key.</param>
+            <param name="extraData">
+                <see cref="T:signotec.STPadLibNet.SignDataDecryptFlag" /> indicating the extra data that shall be decrypted;
+on return it indicates which extra data can be retrieved.</param>
+            <returns>The signature in traditional SignData format or the requested extra data;
+may be NULL if the RSA encrypted SignData doesn't include any signature data.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSADecryptSignData(System.Byte[],System.String,System.Security.SecureString,signotec.STPadLibNet.SignDataDecryptFlag@)">
+            <summary>Decrypts an RSA encrypted SignData array and converts it into a traditional SignData array.</summary>
+            <param name="encrypted">RSA encrypted SignData.</param>
+            <param name="cert">Full path or URL of a PKCS#12 certificate used for decrypting the SignData.</param>
+            <param name="password">Password for the private key.</param>
+            <param name="extraData">
+                <see cref="T:signotec.STPadLibNet.SignDataDecryptFlag" /> indicating the extra data that shall be decrypted;
+on return it indicates which extra data can be retrieved.</param>
+            <returns>The signature in traditional SignData format or the requested extra data;
+may be NULL if the RSA encrypted SignData doesn't include any signature data.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSADecryptSignData(System.Byte[],System.Security.Cryptography.X509Certificates.X509Certificate2,System.String,signotec.STPadLibNet.SignDataDecryptFlag@)">
+            <summary>Decrypts an RSA encrypted SignData array and converts it into a traditional SignData array.</summary>
+            <param name="encrypted">RSA encrypted SignData.</param>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> 
+holding a PKCS#12 certificate used for decrypting the SignData.</param>
+            <param name="password">Password for the private key.</param>
+            <param name="extraData">
+                <see cref="T:signotec.STPadLibNet.SignDataDecryptFlag" /> indicating the extra data that shall be decrypted; on return it
+indicates which extra data can be retrieved.</param>
+            <returns>The signature in traditional SignData format or the requested extra data;
+may be NULL if the RSA encrypted SignData doesn't include any signature data.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSAExtractExtraData">
+    <summary>Extracts extra data from an RSA encrypted SignData array which has previously been encrypted by a call of <see cref="M:signotec.STPadLibNet.STPadLibControl.RSADecryptSignData(System.Byte[],System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.SecureString,signotec.STPadLibNet.SignDataDecryptFlag@)" /></summary>
+    <returns><see cref="T:signotec.STPadLibNet.ExtraData" /></returns></member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSAExtractExtraData(signotec.STPadLibNet.HashAlgo,System.Byte[])">
+    <summary>Extracts the extra data from an RSA encrypted SignData array, which can be retrieved without decryption.</summary>
+    <param name="hash2Algorithm"><see cref="T:signotec.STPadLibNet.HashAlgo" /> to be used for computing the hash over the biometric data.</param>
+    <param name="signData">RSA encrypted SignData.</param>
+    <returns><see cref="T:signotec.STPadLibNet.ExtraData" /></returns></member>
+        <member name="P:signotec.STPadLibNet.STPadLibControl.RSASignPasswordLength">
+            <summary>Gets and sets the length of the RSA sign password.</summary>
+            <returns>The length as long.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetSignPassword(System.Security.SecureString,System.Security.SecureString,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Sets the Password for signing with RSASignPw().</summary>
+            <param name="newPassword">The new password to set. May be empty if no new password is to set.</param>
+            <param name="oldPassword">The actual password. May be empty if no password is set.</param>
+            <param name="maxWrongEntries">The amount of wrong attemps before signing will be locked. 1-10 or 0 for unlimited tries.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSADecryptSignData(System.Byte[],System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.SecureString,signotec.STPadLibNet.SignDataDecryptFlag@)">
+            <summary>Decrypts an RSA encrypted SignData array and converts it into a traditional SignData array.</summary>
+            <param name="encrypted">RSA encrypted SignData.</param>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> 
+holding a PKCS#12 certificate used for decrypting the SignData.</param>
+            <param name="password">Password for the private key.</param>
+            <param name="extraData">
+                <see cref="T:signotec.STPadLibNet.SignDataDecryptFlag" /> indicating the extra data that shall be decrypted; on return it
+indicates which extra data can be retrieved.</param>
+            <returns>The signature in traditional SignData format or the requested extra data;
+may be NULL if the RSA encrypted SignData doesn't include any signature data.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSAGetSignData(signotec.STPadLibNet.SignDataGetFlag)">
+            <summary>Returns the captured signature data.</summary>
+            <param name="options">
+                <see cref="T:signotec.STPadLibNet.SignDataGetFlag" />.</param>
+            <returns>The signature in an RSA encrypted SignData format.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSAGetEncryptionCertId">
+            <summary>Returns the ID (issuer and serial number) of the encryption cert stored in the pad.</summary>
+            <returns>ID of the cert.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetEncryptionCertPw(System.String,System.String)">
+            <summary>Loads the public key from a DER encoded certificate into the pad.</summary>
+            <param name="cert">Full path or URL of a certificate.</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetEncryptionCertPw(System.String,System.Security.SecureString)">
+            <summary>Loads the public key from a DER encoded certificate into the pad.</summary>
+            <param name="cert">Full path or URL of a certificate.</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetEncryptionCert(System.String)">
+            <summary>Loads a key pair from a DER encoded certificate into the pad.</summary>
+            <param name="cert">Full path or URL of a certificate.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetEncryptionCertPw(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String)">
+            <summary>Loads the public key from a DER encoded certificate into the pad.</summary>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetEncryptionCertPw(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.SecureString)">
+            <summary>Loads the public key from a DER encoded certificate into the pad.</summary>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetEncryptionCert(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>Loads a key pair from a DER encoded certificate into the pad.</summary>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetEncryptionCertPw(System.String)">
+            <summary>Erase the public key used for encryption.</summary>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetEncryptionCertPw(System.Security.SecureString)">
+            <summary>Erase the public key used for encryption.</summary>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetEncryptionCert">
+            <summary>Erase the public key used for encryption.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASignPw(signotec.STPadLibNet.RSAScheme,signotec.STPadLibNet.HashValue,signotec.STPadLibNet.SignFlag,System.Security.SecureString)">
+            <summary>Signs the hash that has been set with RSASetHash(), created with RSACreateDisplayHash() */
+or computed over the biometric data  with the private key of the pad.</summary>
+            <param name="scheme">
+                <see cref="T:signotec.STPadLibNet.RSAScheme" />.</param>
+            <param name="hashValue">
+                <see cref="T:signotec.STPadLibNet.HashValue" />.</param>
+            <param name="options">
+                <see cref="T:signotec.STPadLibNet.SignFlag" />.</param>
+            <param name="signPassword">The password for the sign process.</param>
+            <returns>The signed data.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASign(signotec.STPadLibNet.RSAScheme,signotec.STPadLibNet.HashValue,signotec.STPadLibNet.SignFlag)">
+            <summary>Signs the hash that has been set with RSASetHash(), created with RSACreateDisplayHash() */
+or computed over the biometric data  with the private key of the pad.</summary>
+            <param name="scheme">
+                <see cref="T:signotec.STPadLibNet.RSAScheme" />.</param>
+            <param name="hashValue">
+                <see cref="T:signotec.STPadLibNet.HashValue" />.</param>
+            <param name="options">
+                <see cref="T:signotec.STPadLibNet.SignFlag" />.</param>
+            <returns>The signed data.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSACreateHashedImage(System.Byte[],System.Drawing.Color,System.Int32)">
+            <summary>Creates a image of the image data array that has been returned by RSACreateDisplayHash().</summary>
+            <param name="imageData">Image data over which the hash has been calculated.</param>
+            <param name="backColor">: Background color of the image.</param>
+            <param name="nModelType">Model type of the pad that has calculated the hash.</param>
+            <returns>The created image as <see cref="T:System.Drawing.Bitmap" />.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSACreateDisplayHash(signotec.STPadLibNet.HashAlgo,signotec.STPadLibNet.DisplayTarget)">
+            <summary>Enables the hashing of image data in the pad and copies the visible part of the source
+buffer into the background buffer.</summary>
+            <param name="algorithm">
+                <see cref="T:signotec.STPadLibNet.HashAlgo" />.</param>
+            <param name="source">Source buffer or store (<see cref="T:signotec.STPadLibNet.DisplayTarget" />).</param>
+            <returns>The image data over which the hash has been calculated.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetHash(signotec.STPadLibNet.HashAlgo)">
+            <summary>Sets the hash algorithm which is used when generating the hash 2 over the biometric data.</summary>
+            <param name="algorithm">
+                <see cref="T:signotec.STPadLibNet.HashAlgo" /> of hash 2.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetHash(System.Byte[],signotec.STPadLibNet.HashAlgo,signotec.STPadLibNet.HashFlag)">
+            <summary>Sets the hash that shall be signed and the algorithm which is used
+when generating the hash 2 over the biometric data.</summary>
+            <param name="data">Data to be signed.</param>
+            <param name="algorithm">
+                <see cref="T:signotec.STPadLibNet.HashAlgo" /> of hash 1 and hash 2.</param>
+            <param name="options">
+                <see cref="T:signotec.STPadLibNet.HashFlag" />.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASaveSigningCertAsFile(System.String,signotec.STPadLibNet.CertType)">
+            <summary>Retrieves the public DER encoded certificate or the DER encoded CSR from the pad and saves it on disk.</summary>
+            <param name="type">
+                <see cref="T:signotec.STPadLibNet.CertType" />.</param>
+            <param name="path">Full file path.</param>
+            <param name="type">
+                <see cref="T:signotec.STPadLibNet.CertType" />.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASaveSigningCertAsStream(signotec.STPadLibNet.CertType)">
+            <summary>Retrieves the public DER encoded certificate or the DER encoded CSR from the pad.</summary>
+            <param name="type">
+                <see cref="T:signotec.STPadLibNet.CertType" />.</param>
+            <returns>
+                <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> holding 
+the public certificate or <see cref="T:System.Byte" /> array holding the CSR.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetSigningCertPw(System.String,System.String,System.String)">
+            <summary>Loads a certificate into the pad.</summary>
+            <param name="cert">Full path or URL of a certificate.</param>
+            <param name="password">Password for the private key (if PKCS#12).</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetSigningCertPw(System.String,System.Security.SecureString,System.Security.SecureString)">
+            <summary>Loads a certificate into the pad.</summary>
+            <param name="cert">Full path or URL of a certificate.</param>
+            <param name="password">Password for the private key (if PKCS#12).</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetSigningCert(System.String,System.String)">
+            <summary>Loads a certificate into the pad.</summary>
+            <param name="cert">Full path or URL of a certificate.</param>
+            <param name="password">Password for the private key (if PKCS#12).</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetSigningCert(System.String,System.Security.SecureString)">
+            <summary>Loads a certificate into the pad.</summary>
+            <param name="cert">Full path or URL of a certificate.</param>
+            <param name="password">Password for the private key (if PKCS#12).</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetSigningCertPw(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String,System.String)">
+            <summary>Loads a certificate into the pad.</summary>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
+            <param name="password">Password for the private key (if PKCS#12).</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetSigningCertPw(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.SecureString,System.Security.SecureString)">
+            <summary>Loads a certificate into the pad.</summary>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
+            <param name="password">Password for the private key (if PKCS#12).</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetSigningCert(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String)">
+            <summary>Loads a certificate into the pad.</summary>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
+            <param name="password">Password for the private key (if PKCS#12).</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSASetSigningCert(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.SecureString)">
+            <summary>Loads a certificate into the pad.</summary>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
+            <param name="password">Password for the private key (if PKCS#12).</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSAGenerateSigningCertPw(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.String)">
+            <summary>Generates a unique key pair, a public certificate and a certificate signing
+request in the pad.</summary>
+            <param name="keyLen">Key length in bits.</param>
+            <param name="validity">0: maximum validity (31.12.2049)<para />
+&gt; 0: validity period in months</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSAGenerateSigningCertPw(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Security.SecureString)">
+            <summary>Generates a unique key pair, a public certificate and a certificate signing
+request in the pad.</summary>
+            <param name="keyLen">Key length in bits.</param>
+            <param name="validity">0: maximum validity (31.12.2049)<para />
+&gt; 0: validity period in months</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.RSAGenerateSigningCert(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Generates a unique key pair, a public certificate and a certificate signing
+request in the pad.</summary>
+            <param name="keyLen">Key length in bits.</param>
+            <param name="validity">0: maximum validity (31.12.2049)<para />
+&gt; 0: validity period in months</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SensorClearKeypadEntries">
+            <summary>Deletes all clicked keypad-buttons in pad cache.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SensorGetKeypadEntries(System.Security.SecureString@,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Returns clicked keypad-buttons as assouciated names.</summary>
+            <param name="entries">String which holds keypad-associated names of which were clicked on (fifo).</param>
+            <param name="maxEntries">(Max) number of entries to return in entries.</param>
+            <returns>Number of returned clicks.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SensorSetHotspotMode(signotec.STPadLibNet.HotSpotMode,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Specifies the behavior of a monitored area (hotspot).</summary>
+            <param name="mode">
+                <see cref="T:signotec.STPadLibNet.HotSpotMode" />.</param>
+            <param name="hotSpotId">ID of the hotspot that is to be changed.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SensorClearHotSpots">
+            <summary>Removes all monitored areas (hotspots).</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SensorAddScrollHotSpot(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.ScrollOption)">
+            <summary>Specifies a rectangular subarea of the sensor surface that responds to user clicks and
+scroll the display content.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the display.</param>
+            <param name="top">Upper boundary; 0 is at the top of the display.</param>
+            <param name="width">Width; <see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayWidth" /> holds the width of the LCD used.</param>
+            <param name="height">Height; <see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayHeight" /> holds the width of the LCD used.</param>
+            <param name="type">
+                <see cref="T:signotec.STPadLibNet.ScrollOption" />.</param>
+            <returns>ID of the hotspot that was generated.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SensorAddKeypadHotSpot(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Security.SecureString)">
+            <summary>Specifies a rectangular subarea of the sensor surface that caches user clicks.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the display.</param>
+            <param name="top">Upper boundary; 0 is at the top of the display.</param>
+            <param name="width">Width; <see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayWidth" /> holds the width of the LCD used.</param>
+            <param name="height">Height; <see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayHeight" /> holds the width of the LCD used.</param>
+            <param name="chars">holds the name which will be cached when pressing the keypad-area.</param>
+            <returns>ID of the hotspot that was generated.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SensorAddHotSpot(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Specifies a rectangular subarea of the sensor surface that responds to user clicks.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the display.</param>
+            <param name="top">Upper boundary; 0 is at the top of the display.</param>
+            <param name="width">Width; <see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayWidth" /> holds the width of the LCD used.</param>
+            <param name="height">Height; <see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayHeight" /> holds the width of the LCD used.</param>
+            <returns>ID of the hotspot that was generated.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SensorClearSignRect">
+            <summary>Removes the rectangle in which the signature is captured.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SensorSetSignRect(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Specifies the rectangle in which the signature is captured.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the display.</param>
+            <param name="top">Upper boundary; 0 is at the top of the display.</param>
+            <param name="width">Width; <see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayWidth" /> holds the width of the LCD used.</param>
+            <param name="height">Height; <see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayHeight" /> holds the width of the LCD used.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SensorSetPenScrollingEnabled(System.Boolean)">
+            <summary>Enables the pen scrolling inside of the scrolling area set with <see cref="M:signotec.STPadLibNet.STPadLibControl.SensorSetScrollArea(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)" />.</summary>
+            <param name="enable">Enable / Disable the pen scrolling.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SensorSetScrollArea(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Sets a rectangle of the buffer which may be scrolled. The rectangle must be fully visible on the display.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the buffer.</param>
+            <param name="top">Upper boundary; 0 is at the top of the buffer.</param>
+            <param name="width">The width in pixels. 0 sets the width of the buffer (<see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayTargetWidth" />).</param>
+            <param name="height">The height in pixels. 0 sets the height of the buffer (<see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayTargetHeight" />).</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SensorStopTimer">
+            <summary>Stops a timer started with <see cref="M:signotec.STPadLibNet.STPadLibControl.SensorStartTimer(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.TimerOption)" />.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SensorStartTimer(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.TimerOption)">
+            <summary>Starts a timer which stops after a certain time if there is no interaction on the pad.</summary>
+            <param name="waitBeforeAction">Maximum time to wait for the first interaction (in milliseconds).</param>
+            <param name="waitAfterAction">Maximum time to wait after the last interaction was noticed (in milliseconds).</param>
+            <param name="options">
+                <see cref="T:signotec.STPadLibNet.TimerOption" />.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SensorSetSampleRateMode(signotec.STPadLibNet.SampleRate)">
+            <summary>Returns the sample rate with which the signature is captured.</summary>
+            <param name="mode">
+                <see cref="T:signotec.STPadLibNet.SampleRate" />.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SensorGetSampleRateMode">
+            <summary>Returns the sample rate with which the signature is captured.</summary>
+            <returns>
+                <see cref="T:signotec.STPadLibNet.SampleRate" />.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SignatureGetIsoData(signotec.STPadLibNet.IsoDataFlag,System.Byte[],System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Returns the captured signature data in ISO/IEC 19794-7 format.</summary>
+            <param name="options">
+                <see cref="T:signotec.STPadLibNet.IsoDataFlag" />.</param>
+            <param name="customData">Custom data that is added to the extended data (options must include 0x01).</param>
+            <param name="customDataBlocks">number of blocks	in customData.</param>
+            <returns>The signature in ISO/IEC 19794-7 format.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SignatureGetSignData">
+            <summary>Returns the captured signature data in SignData format.</summary>
+            <returns>The signature in SignData format.</returns>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLibControl.SignatureState">
+            <summary>The current state of the signature capture process.</summary>
+            <returns>True if signature capture process is running, else false.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SignatureScaleToDisplay(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>This method converts the sensor coordinates delivered by 
+<see cref="E:signotec.STPadLibNet.STPadLibControl.SignatureDataReceived" /> to display coordinates.</summary>
+            <param name="sensorValue">X or y value of a sensor coordinate.</param>
+            <returns>X or y value of a display coordinate.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SignatureGetBounds(System.Int32!System.Runtime.CompilerServices.IsLong@,System.Int32!System.Runtime.CompilerServices.IsLong@,System.Int32!System.Runtime.CompilerServices.IsLong@,System.Int32!System.Runtime.CompilerServices.IsLong@,signotec.STPadLibNet.SignatureBoundsOption)">
+            <summary>Returns the coordinates of the rectangle in which the captured signature is given.</summary>
+            <param name="left">Left border of the signature rectangle.</param>
+            <param name="top">Upper border of the signature rectangle.</param>
+            <param name="right">Right border of the signature rectangle.</param>
+            <param name="bottom">Bottom border of the signature rectangle.</param>
+            <param name="bottom">
+                <see cref="T:signotec.STPadLibNet.SignatureBoundsOption" />.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SignatureSaveAsFileEx(System.String,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Drawing.Imaging.ImageFormat,System.Int32!System.Runtime.CompilerServices.IsLong,System.Drawing.Color,signotec.STPadLibNet.SignatureImageFlag)">
+            <summary>Stores an image of the captured signature on the hard disk.</summary>
+            <param name="path">Full path includign file name and extension.</param>
+            <param name="resolution">Resolution in pixels per inch (ppi).</param>
+            <param name="width">Max width of image in pixels, original size is used if value is 0.</param>
+            <param name="height">Max height of image in pixels, original size is used if value is 0.</param>
+            <param name="fileType">Image format.</param>
+            <param name="penWidth">Pen width in pixels, a variable pen width is used if value is 0, a fixed pen width in
+pixels with variable brightness is used if value is negative.</param>
+            <param name="penColor">Colour which is used for drawing the signature.</param>
+            <param name="options">Combination of <see cref="T:signotec.STPadLibNet.SignatureImageFlag" /> values.</param>
+            <returns>The created image as <see cref="T:System.Drawing.Bitmap" />.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SignatureSaveAsStreamEx(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Drawing.Color,signotec.STPadLibNet.SignatureImageFlag)">
+            <summary>Returns an image of the captured signature.</summary>
+            <param name="resolution">Resolution in pixels per inch (ppi).</param>
+            <param name="width">Max width of image in pixels, original size is used if value is 0.</param>
+            <param name="height">Max height of image in pixels, original size is used if value is 0.</param>
+            <param name="penWidth">Pen width in pixels, a variable pen width is used if value is 0, a fixed pen width in
+pixels with variable brightness is used if value is negative.</param>
+            <param name="penColor">Colour which is used for drawing the signature.</param>
+            <param name="options">Combination of <see cref="T:signotec.STPadLibNet.SignatureImageFlag" /> values.</param>
+            <returns>The created image as <see cref="T:System.Drawing.Bitmap" />.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SignatureCancel(signotec.STPadLibNet.EraseOption)">
+            <summary>Stops capturing, erases the display and discards the captured signature.</summary>
+            <param name="erase">
+                <see cref="T:signotec.STPadLibNet.EraseOption" />.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SignatureCancel">
+            <summary>Stops capturing, erases the display and discards the captured signature.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SignatureConfirm">
+            <summary>Stops the capturing and erases the display.</summary>
+            <returns>Number of captured points.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SignatureStop">
+            <summary>Stops the capturing without erasing the display.</summary>
+            <returns>Number of captured points.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SignatureRetry">
+            <summary>Discards the captured signature without stopping capturing. Calls SignatureStart() if no
+capturing is running.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SignatureStart">
+            <summary>Starts the capturing.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.SignatureSetSecureMode(System.Boolean)">
+            <summary>Sets the Secure Mode.</summary>
+            <param name="enable">true: the captured signature can only be retreived using RSAGetSignData()<para />
+false: all signature related methods are available</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.PDFRemoveImage(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Removes a bitmap of the list of bitmaps which shall be rendered onto the page.</summary>
+            <param name="page">Page number starting at 1.</param>
+            <param name="id">The ID of the bitmap to be removed.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.PDFAddImageFromFile(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.String)">
+            <summary>Adds a bitmap to the list of bitmaps which shall be drawn on the rendered page.</summary>
+            <param name="page">Page number starting at 1.</param>
+            <param name="left">Left position in pixels.</param>
+            <param name="top">Top position in pixels.</param>
+            <param name="path">Full path or URL of the image.</param>
+            <returns>The ID of the added image.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.PDFAddImage(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Drawing.Bitmap)">
+            <summary>Adds a bitmap to the list of bitmaps which shall be drawn on the rendered page.</summary>
+            <param name="page">Page number starting at 1.</param>
+            <param name="left">Left position in pixels.</param>
+            <param name="top">Top position in pixels.</param>
+            <param name="bitmap">
+                <see cref="T:System.Drawing.Bitmap" /> to add.</param>
+            <returns>The ID of the added image.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.PDFSelectRect(System.Int32!System.Runtime.CompilerServices.IsLong,System.Double,System.Double,System.Double,System.Double,signotec.STPadLibNet.MeasurementUnit)">
+            <summary>Sets a selection of a page of the currently loaded document.</summary>
+            <param name="page">Page number starting at 1.</param>
+            <param name="left">Left coordinate of the selection.</param>
+            <param name="top">Top coordinate of the selection.</param>
+            <param name="width">Width of the selection.</param>
+            <param name="height">Height of the selection.</param>
+            <param name="unit">The <see cref="T:signotec.STPadLibNet.MeasurementUnit" /> of the selection.</param>
+            <returns>The page height.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.PDFGetHeight(System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.MeasurementUnit)">
+            <summary>Returns the height of a page of the currently loaded document.</summary>
+            <param name="page">Page number starting at 1.</param>
+            <param name="unit">The unit of the returned height (<see cref="T:signotec.STPadLibNet.MeasurementUnit" />).</param>
+            <returns>The page height.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.PDFGetWidth(System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.MeasurementUnit)">
+            <summary>Returns the width of a page of the currently loaded document.</summary>
+            <param name="page">Page number starting at 1.</param>
+            <param name="unit">The unit of the returned width (<see cref="T:signotec.STPadLibNet.MeasurementUnit" />).</param>
+            <returns>The page width.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.PDFGetPageCount">
+            <summary>Returns the number of pages of the currently loaded document.</summary>
+            <returns>Number of pages.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.PDFLoad(System.String,System.String)">
+            <summary>Loads a PDF document from a file or URL.</summary>
+            <param name="document">PDF document to load.</param>
+            <param name="password">Password of the document.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.PDFLoad(System.String,System.Security.SecureString)">
+            <summary>Loads a PDF document from a file or URL.</summary>
+            <param name="document">PDF document to load.</param>
+            <param name="password">Password of the document.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.PDFLoad(System.String)">
+            <summary>Loads a PDF document from a file or URL.</summary>
+            <param name="document">PDF document to load.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.PDFLoad(System.Byte[],System.String)">
+            <summary>Loads a PDF document from byte array.</summary>
+            <param name="document">PDF document to load.</param>
+            <param name="password">Password of the document.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.PDFLoad(System.Byte[],System.Security.SecureString)">
+            <summary>Loads a PDF document from byte array.</summary>
+            <param name="document">PDF document to load.</param>
+            <param name="password">Password of the document.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.PDFLoad(System.Byte[])">
+            <summary>Loads a PDF document from a byte array.</summary>
+            <param name="document">PDF document to load.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.PDFLoad">
+            <summary>Unloads the current PDF document.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLibControl.DisplayRotation">
+            <summary>The display rotation in degrees.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLibControl.DisplayScrollSpeed">
+            <summary>The scroll speed in lines per second.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLibControl.DisplayTargetHeight">
+            <summary>The height of the current target in pixels.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLibControl.DisplayTargetWidth">
+            <summary>The width of the current target in pixels.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLibControl.DisplayResolution">
+            <summary>The resolution of the display in pixels per inch (ppi).</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLibControl.DisplayHeight">
+            <summary>The height of the display in pixels.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLibControl.DisplayWidth">
+            <summary>The width of the display in pixels.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySetBacklight(signotec.STPadLibNet.BacklightMode)">
+            <summary>Controls the backlight of the display.</summary>
+            <param name="mode">The <see cref="T:signotec.STPadLibNet.BacklightMode" /> to be set.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplayConfigPen(System.Int32!System.Runtime.CompilerServices.IsLong,System.Drawing.Color)">
+            <summary>Sets the pen width and the pen color which is used to display the signature line on the
+LCD of the pad.</summary>
+            <param name="penColor">Width in pixel (1 - 3).</param>
+            <param name="penColor">Colour; this parameter is ignored for the Sigma model.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySaveImageAsFile(System.String,System.Drawing.Imaging.ImageFormat,signotec.STPadLibNet.DisplayImageFlag)">
+            <summary>Stores the actual display content without any displayed signature on the hard disk.</summary>
+            <param name="path">Full path includign file name and extension.</param>
+            <param name="fileType">Image format.</param>
+            <param name="options">Combination of <see cref="T:signotec.STPadLibNet.DisplayImageFlag" /> values.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySaveImageAsStream(signotec.STPadLibNet.DisplayImageFlag)">
+            <summary>Returns the actual display content without any displayed signature.</summary>
+            <param name="options">Combination of <see cref="T:signotec.STPadLibNet.DisplayImageFlag" /> values.</param>
+            <returns>The created image as <see cref="T:System.Drawing.Bitmap" />.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplayConfigSlideShowEx(System.String,System.String)">
+            <summary>Configures a slide show of permanently stored images which is played when the connection 
+to the device is closed.</summary>
+            <param name="slideList">A list of up to 32 store IDs separated by a semicolon. If the list doesn't contain any
+valid value, the slide show is disabled.</param>
+            <param name="durationList">A list of the time in milliseconds for each image to be displayed.</param>
+            <returns>Number of images in the slide show.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplayConfigSlideShow(System.String,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Configures a slide show of permanently stored images which is played when the connection 
+to the device is closed.</summary>
+            <param name="slideList">A list of up to 32 store IDs separated by a semicolon. If the list doesn't conatin any
+valid value, the slide show is disabled.</param>
+            <param name="duration">Time in milliseconds for each image to be displayed.</param>
+            <returns>Number of images in the slide show.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySetStandbyImageFromFileEx(System.String,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Stores an image permanently which is automatically displayed for the duration-time when the connection to the
+device is closed.</summary>
+            <param name="path">Full path or URL of the image.</param>
+            <param name="duration">Time period before standby image is hidden and backlight is turned off.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySetStandbyImageFromFile(System.String)">
+            <summary>Stores an image permanently which is automatically displayed when the connection to the
+device is closed.</summary>
+            <param name="path">Full path or URL of the image.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySetStandbyImageEx(System.Drawing.Bitmap,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Stores an image permanently which is automatically displayed for the duration-time when the connection to the
+device is closed.</summary>
+            <param name="bitmap">
+                <see cref="T:System.Drawing.Bitmap" /> to be stored.</param>
+            <param name="duration">Time period before standby image is hidden and backlight is turned off.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySetStandbyImage(System.Drawing.Bitmap)">
+            <summary>Stores an image permanently which is automatically displayed when the connection to the
+device is closed.</summary>
+            <param name="bitmap">
+                <see cref="T:System.Drawing.Bitmap" /> to be stored.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplayGetStandbyId(System.String@)">
+            <summary>Returns the number of images configured for standby operation, as well as a unique string
+that identifies the standby image currently set or the slide show currently configured.</summary>
+            <param name="id">Unique string the identifies the current configuration.</param>
+            <returns>Number of reserved permanent stores used for the standby image or the slide show.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplayGetScrollPos(System.Int32!System.Runtime.CompilerServices.IsLong@,System.Int32!System.Runtime.CompilerServices.IsLong@)">
+            <summary>Returns the X/Y position of the content of the current target.</summary>
+            <param name="xPos">Horizontal offset of the memory contents to the left, in pixels.</param>
+            <param name="yPos">Vertical offset of the memory contents to the top, in pixels.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySetScrollPos(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Specifies the X/Y position of the content of the current target.</summary>
+            <param name="xPos">Horizontal offset of the memory contents to the left, in pixels.</param>
+            <param name="yPos">Vertical offset of the memory contents to the top, in pixels.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySetOverlayRect(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Specifies a rectangular subarea of the display whose contents will be covered by the
+contents of the overlay buffer.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the display.</param>
+            <param name="top">Upper boundary; 0 is at the top of the display.</param>
+            <param name="width">Width; <see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayWidth" /> holds the width of the LCD used. If 0 the overlay
+rectangle is removed.</param>
+            <param name="height">Height; <see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayHeight" /> holds the width of the LCD used. If 0 the overlay
+rectangle is removed.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySetImageFromStore(signotec.STPadLibNet.DisplayTarget)">
+            <summary>Writes an image that has been stored in a device memory to be written to the current target.</summary>
+            <param name="storeId">ID of the memory from which the image is to be read.</param>
+            <returns>If not 0, then the contents of the store has been copied but cannot be used in the control	
+becaus the storeId has not been reserved before.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySetPDF(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Double,signotec.STPadLibNet.PdfFlag)">
+            <summary>Draws the current selection of the currently loaded PDF on the LCD.</summary>
+            <param name="xPos">X coordinate of the starting point; 0 is on the far left of the display.</param>
+            <param name="yPos">Y coordinate of the starting point; 0 is at the top of the display.</param>
+            <param name="page">Page number starting at 1.</param>
+            <param name="scale">Scale of the image (1 means original size).</param>
+            <param name="options">
+                <see cref="T:signotec.STPadLibNet.PdfFlag" />.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySetImageFromFile(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.String)">
+            <summary>Writes an image to the current target.</summary>
+            <param name="xPos">X coordinate of the starting point; 0 is on the far left of the display.</param>
+            <param name="yPos">Y coordinate of the starting point; 0 is at the top of the display.</param>
+            <param name="path">Full path or URL of the image.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySetImage(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Drawing.Bitmap)">
+            <summary>Writes an image to the current target.</summary>
+            <param name="xPos">X coordinate of the starting point; 0 is on the far left of the display.</param>
+            <param name="yPos">Y coordinate of the starting point; 0 is at the top of the display.</param>
+            <param name="bitmap">
+                <see cref="T:System.Drawing.Bitmap" /> to be output.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySetTextInRect(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.TextAlignment,System.String,signotec.STPadLibNet.TextFlag)">
+            <summary>Writes any text to the current target. The text is placed in the rectangle and is
+automatically wrapped. If the text is too long, the font size is automatically reduced.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the display.</param>
+            <param name="top">Upper boundary; 0 is at the top of the display.</param>
+            <param name="width">Width; <see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayWidth" /> holds the width of the LCD used.</param>
+            <param name="height">Height; <see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayHeight" /> holds the width of the LCD used.</param>
+            <param name="alignment">Text alignment.</param>
+            <param name="text">Text to be output.</param>
+            <param name="options">
+                <see cref="T:signotec.STPadLibNet.TextFlag" />.</param>
+            <returns>the actually used font size or text height (depending on options parameter).</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySetTextInRect(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.TextAlignment,System.String)">
+            <summary>Writes any text to the current target. The text is placed in the rectangle and is
+automatically wrapped. If the text is too long, the font size is automatically reduced.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the display.</param>
+            <param name="top">Upper boundary; 0 is at the top of the display.</param>
+            <param name="width">Width; <see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayWidth" /> holds the width of the LCD used.</param>
+            <param name="height">Height; <see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayHeight" /> holds the width of the LCD used.</param>
+            <param name="alignment">Text alignment.</param>
+            <param name="text">Text to be output.</param>
+            <returns>The font size that is actually used.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySetText(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.TextAlignment,System.String)">
+            <summary>Writes any text to the current target.</summary>
+            <param name="xPos">X coordinate of the starting point; 0 is on the far left of the display.</param>
+            <param name="yPos">Y coordinate of the starting point; 0 is at the top of the display.</param>
+            <param name="alignment">Text alignment.</param>
+            <param name="text">Text to be output.</param>
+            <returns>Width of the rectangle surrounding the text.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySetFontColor(System.Drawing.Color)">
+            <summary>Sets the font color which is used to output text to the LCD.</summary>
+            <param name="fontColor">Font colour.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySetFont(System.Drawing.Font)">
+            <summary>Sets the font that is used to output text to the LCD.</summary>
+            <param name="font">Font.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplayEraseRect(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Erases a rectangle in the current target.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the display.</param>
+            <param name="top">Upper boundary; 0 is at the top of the display.</param>
+            <param name="width">Width; <see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayWidth" /> holds the width of the LCD used.</param>
+            <param name="height">Height; <see cref="P:signotec.STPadLibNet.STPadLibControl.DisplayHeight" /> holds the width of the LCD used.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplayErase">
+            <summary>Erases the display, the foreground and background buffers and the control element's window.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DisplaySetTarget(signotec.STPadLibNet.DisplayTarget)">
+            <summary>Defines whether all drawing shall be done in the memory or directly on the LCD.</summary>
+            <param name="target">The target used for all following drawing operations.</param>
+            <returns>The target that has been set, DisplayTarget.BackgroundBuffer if the requested target is
+ not available or has not been reserved before.</returns>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLibControl.DeviceLedDefaultFlag">
+            <summary>Specifies whether the LED on the front of the pad automatically changes to green when the
+device is in signature capture mode.</summary>
+            <returns>True, if LED lights up green for a capture process, else false. The default setting is true.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DeviceSetNFCMode(signotec.STPadLibNet.NFCMode,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Enables / disables the optional NFC reader of the device.</summary>
+            <param name="mode">
+                <see cref="T:signotec.STPadLibNet.NFCMode" />
+            </param>
+            <param name="index">Index of the device whose mode is to be set.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DeviceGetNFCMode(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Reads if the optional NFC reader of the device is enabled.</summary>
+            <param name="index">Index of the device whose mode is to be queried.</param>
+            <returns>
+                <see cref="T:signotec.STPadLibNet.NFCMode" />
+            </returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DeviceStartService(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Starts one of the service menus of the pad.</summary>
+            <param name="type">0: service menu to configure connection type and backlight (not for Sigma and Omega).<para />
+1: calibration menu</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DeviceSetLed(signotec.STPadLibNet.LedColorFlag)">
+            <summary>Sets the colour of the LED.</summary>
+            <param name="ledColor">Combination of LedColorFlag values.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DeviceClose(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Closes a connection to a device.</summary>
+            <param name="index">Index of the device to which a connection is to be closed.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DeviceOpen(System.Int32!System.Runtime.CompilerServices.IsLong,System.Boolean)">
+            <summary>Opens a connection to a device.</summary>
+            <param name="index">Index of the device to which a connection is to be opened.</param>
+            <param name="eraseDisplay">Erase display.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DeviceOpen(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Opens a connection to a device.</summary>
+            <param name="index">Index of the device to which a connection is to be opened.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DeviceGetCapabilities(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Returns the capabilities.</summary>
+            <param name="index">Index of the device whose information is to be queried.</param>
+            <returns>Capabilities as <see cref="T:signotec.STPadLibNet.PadCapabilities" />.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DeviceGetVersion(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Returns the firmware version.</summary>
+            <param name="index">Index of the device whose information is to be queried.</param>
+            <returns>Firmware version number as String.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DeviceGetInfo(System.String@,System.Int32!System.Runtime.CompilerServices.IsLong@,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Returns the serial number and model type of a connected device.</summary>
+            <param name="serial">Serial Number.</param>
+            <param name="type">1: "Sigma HID" model type<para />
+2: "Sigma serial" model type<para />
+11: "Omega HID" model type<para />
+12: "Omega serial" model type<para />
+15: "Gamma HID / USB" model type<para />
+16: "Gamma serial" model type<para />
+21: "Delta HID / USB" model type<para />
+22: "Delta serial" model type<para />
+23: "Delta Ethernet" model type<para />
+31: "Alpha HID / USB" model type<para />
+32: "Alpha serial" model type<para />
+33: "Alpha Ethernet" model type</param>
+            <param name="index">Index of the device whose information is to be queried.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DeviceGetCount">
+            <summary>Searches for connected devices.</summary>
+            <returns>Number of devices detected.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DeviceGetConnectionType(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Returns the type of the pad connection.</summary>
+            <param name="index">Index of the device whose connection type is to be queried.</param>
+            <returns>0: HID<para />
+1: USB<para />
+2: Serial<para />
+3: Ethernet</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DeviceGetIPAddress(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Returns the IP address the pad is connected to.</summary>
+            <param name="index">Index of the device whose information is to be queried.</param>
+            <returns>IP address as string.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DeviceGetComPort(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Returns the number of the COM port a device is connected to.</summary>
+            <param name="index">Index of the device whose port number is to be queried.</param>
+            <returns>Number of the COM port for serial devices. 0 for HID devices.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.DeviceSetComPort(System.String)">
+            <summary>Specifies the interfaces to be searched for devices.</summary>
+            <param name="portList">Semicolon separated list of at least one of the following strings:<para />
+"HID": HID devices will be searched<para />
+"IP=Address:Port": An HID device that is connected to a signotec AK USB device server will
+be searched<para />
+"all": A search is made for serial devices on all COM ports<para />
+"LowSpeed": only pads with low baud rate are found when searching for serial devices<para />
+"HighSpeed": only pads with high baud rate are found when searching for serial devices<para />
+a number: A search is made for serial devices on the COM port with this number</param>
+            <returns>Number of valid members in the list (for "all" 256 is added to the return value).</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.ControlSetHotspotMode(signotec.STPadLibNet.HotSpotMode,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Specifies the behavior of a monitored area (hotspot) when clicked with the mouse in the control.</summary>
+            <param name="mode">
+                <see cref="T:signotec.STPadLibNet.HotSpotMode" />.</param>
+            <param name="hotSpotId">ID of the hotspot that is to be changed.</param>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLibControl.ControlMirrorDisplay">
+            <summary>Specifies whether the content of the LCD should also be displayed in the control elements
+window.</summary>
+            <returns>
+                <see cref="T:signotec.STPadLibNet.MirrorMode" />. The default setting is <see cref="F:signotec.STPadLibNet.MirrorMode.Signature" />.</returns>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLibControl.ControlPenWidth">
+            <summary>Specifies the the pen width with which the captured signature is rendered in the control
+element's window.</summary>
+            <returns>0 if a variable pen width is used, positive if a fixed pen width in pixels is used, 
+negative if a fixed pen width in pixels with variable brightness is used. The default 
+setting is 0.</returns>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLibControl.ControlPenColor">
+            <summary>Specifies the colour in which the captured signature is rendered in the control elements
+window.</summary>
+            <returns>Pen colour. The default setting is blue.</returns>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLibControl.ControlRectColor">
+            <summary>Specifies the border colour of the control element's window.</summary>
+            <returns>Border colour. No border is drawn if this value is identical to the value of the 
+ControlBackColor property. The default setting is orange.</returns>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLibControl.ControlBackColor">
+            <summary>Specifies the background colour of the control element's window.</summary>
+            <returns>Background colour. The default setting is white.</returns>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLibControl.ControlVersion">
+            <summary>The version number of the control.</summary>
+            <returns>The version number as String.</returns>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLibControl.ControlAppName">
+            <summary>Specifies the name of the application that uses this control.</summary>
+            <returns>The application name as String.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.ControlErase">
+            <summary>Deletes the captured signature data and erases the whole control element's window.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.ControlSetLogDirectory(System.String,signotec.STPadLibNet.LogFlag)">
+            <summary>Enables logging in the given path.</summary>
+            <param name="path">NULL or "": disable logging<para />
+starting with %: environment variable<para />
+else: directory path</param>
+            <param name="options">Bitmask which may include one or more <see cref="T:signotec.STPadLibNet.LogFlag" />s</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.ControlSetLogDirectory(System.String)">
+            <summary>Enables logging in the given path.</summary>
+            <param name="path">NULL or "": disable logging<para />
+starting with %: environment variable<para />
+else: directory path</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.ControlSetSTPadLib(signotec.STPadLibNet.STPadLib)">
+            <summary>Sets the STPadLib object which is used to communicate with the signature pad.</summary>
+            <param name="stPadLib">
+                <see cref="T:signotec.STPadLibNet.STPadLib" /> object or NULL if the default object shall be used.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.Finalize">
+            <summary>Finalizer.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.Dispose">
+            <summary>Destructor.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLibControl.#ctor">
+            <summary>Constructor.</summary>
+        </member>
+        <member name="E:signotec.STPadLibNet.STPadLibControl.SignatureDataReceived">
+            <summary>Called when signature data is received from the pad.</summary>
+        </member>
+        <member name="E:signotec.STPadLibNet.STPadLibControl.DisplayScrollPosChanged">
+            <summary>Called as soon as the scroll position of the display contents has changed.</summary>
+        </member>
+        <member name="E:signotec.STPadLibNet.STPadLibControl.SensorTimeoutOccured">
+            <summary>Called as soon as the timer started with <see cref="M:signotec.STPadLibNet.STPadLibControl.SensorStartTimer(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.TimerOption)" /> has expired.</summary>
+        </member>
+        <member name="E:signotec.STPadLibNet.STPadLibControl.SensorHotSpotPressed">
+            <summary>Called as soon as the user lifts the pen off a hotspot.</summary>
+        </member>
+        <member name="E:signotec.STPadLibNet.STPadLibControl.DeviceDisconnected">
+            <summary>Called as soon as a device is disconnected through an external event.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.STPadLibControl">
+            <summary>Windows Forms control for signotec LCD Signature Pads.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.MirrorMode">
+            <summary>Defines the content of the control element's window.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.MirrorMode.EverythingActiveHotSpots">
+            <summary>Display the whole content of the display.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.MirrorMode.SignRect">
+            <summary>Display the signature only (scaled that the per SensorSetSignRect() defined 
+rectangle fills out the window completely).</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.MirrorMode.Everything">
+            <summary>Display the whole content of the display.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.MirrorMode.Signature">
+            <summary>Display the signature only.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.MirrorMode.Nothing">
+            <summary>Display nothing.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.CreateBufferFromArray(System.Byte[],CBytearray*)">
+            <summary>Creates an unsigned char array from a <see cref="T:System.Array" />.</summary>
+            <param name="btIn">Array to convert.</param>
+            <param name="pbtarrOut">Pointer to a CBytearray that will hold the created buffer on return.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.CreateArrayFromBuffer(CBytearray*)">
+            <summary>Creates a <see cref="T:System.Array" /> from a CBytearray*.</summary>
+            <param name="pbtarrBuffer">Pointer to CBytearray to convert.</param>
+            <returns>
+                <see cref="T:System.Array" />.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.CreateBitmapFromBuffer(CBytearray*)">
+            <summary>Creates a <see cref="T:System.Drawing.Bitmap" /> from a CBytearray*.</summary>
+            <param name="pbtarrBuffer">Pointer to CBytearray to convert.</param>
+            <returns>
+                <see cref="T:System.Array" />.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.CreateHbitmapFromBitmap(System.Drawing.Bitmap,System.Drawing.Color)">
+            <summary>Creates an HBITMAP from a <see cref="T:System.Drawing.Bitmap" />.</summary>
+            <param name="bitmap">
+                <see cref="T:System.Drawing.Bitmap" /> to convert.</param>
+            <param name="background"> A <see cref="T:System.Drawing.Color" /> structure that specifies the background color. This parameter is ignored if the bitmap is totally opaque.</param>
+            <returns>The bitmap as HBITMAP (the caller must call DeleteObject() after use!).</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SetSTPadCtrlObject(CSTPadCtrl*)">
+            <summary>Sets the pointer to the CSTPadCtrl object which is used by the STPadLibControl class.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.GetPointer">
+            <summary>Returns the pointer to the CSTPadLib object which is used by the STPadLib class.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.CreateException(System.Int32!System.Runtime.CompilerServices.IsLong,System.Exception)">
+            <summary>Creates an <see cref="T:signotec.STPadLibNet.STPadException" />.</summary>
+            <param name="nErrorId">0: returns the exception of the last error<para />
+else returns the exception of the associated error</param>
+            <param name="innerException">The <see cref="T:System.Exception" /> that is the cause of the current exception, may be	nullptr</param>
+            <returns>The <see cref="T:signotec.STPadLibNet.STPadException" />.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.CreateException(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Creates an <see cref="T:signotec.STPadLibNet.STPadException" />.</summary>
+            <param name="nErrorId">0: returns the exception of the last error<para />
+else returns the exception of the associated error</param>
+            <returns>The <see cref="T:signotec.STPadLibNet.STPadException" />.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetSignPassword(System.Security.SecureString,System.Security.SecureString,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Sets the Password for signing with RSASignPw().</summary>
+            <param name="newPassword">The new password to set. May be empty if no new password is to set.</param>
+            <param name="oldPassword">The actual password. May be empty if no password is set.</param>
+            <param name="maxWrongEntries">The amount of wrong attemps before signing will be locked. 1-10 or 0 for unlimited tries.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSADecryptSignData(signotec.STPadLibNet.SignDataDecryptFlag@)">
+            <summary>Retreives extra data from an RSA encrypted SignData array that has been decrypted before.</summary>
+            <param name="extraData">
+                <see cref="T:signotec.STPadLibNet.SignDataDecryptFlag" /> indicating the extra data that shall be returned;
+on return it indicates which extra data hasn't been retrieved until now.</param>
+            <returns>The requested extra data.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSADecryptSignData(System.Byte[],System.String,System.String,signotec.STPadLibNet.SignDataDecryptFlag@)">
+            <summary>Decrypts an RSA encrypted SignData array and converts it into a traditional SignData array.</summary>
+            <param name="encrypted">RSA encrypted SignData.</param>
+            <param name="cert">Full path or URL of a PKCS#12 certificate used for decrypting the SignData.</param>
+            <param name="password">Password for the private key.</param>
+            <param name="extraData">
+                <see cref="T:signotec.STPadLibNet.SignDataDecryptFlag" /> indicating the extra data that shall be decrypted; on return it
+indicates which extra data can be retrieved.</param>
+            <returns>The signature in traditional SignData format;
+may be NULL if the RSA encrypted SignData doesn't include any signature data.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSADecryptSignData(System.Byte[],System.String,System.Security.SecureString,signotec.STPadLibNet.SignDataDecryptFlag@)">
+            <summary>Decrypts an RSA encrypted SignData array and converts it into a traditional SignData array.</summary>
+            <param name="encrypted">RSA encrypted SignData.</param>
+            <param name="cert">Full path or URL of a PKCS#12 certificate used for decrypting the SignData.</param>
+            <param name="password">Password for the private key.</param>
+            <param name="extraData">
+                <see cref="T:signotec.STPadLibNet.SignDataDecryptFlag" /> indicating the extra data that shall be decrypted; on return it
+indicates which extra data can be retrieved.</param>
+            <returns>The signature in traditional SignData format;
+may be NULL if the RSA encrypted SignData doesn't include any signature data.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSADecryptSignData(System.Byte[],System.Security.Cryptography.X509Certificates.X509Certificate2,System.String,signotec.STPadLibNet.SignDataDecryptFlag@)">
+            <summary>Decrypts an RSA encrypted SignData array and converts it into a traditional SignData array.</summary>
+            <param name="encrypted">RSA encrypted SignData.</param>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> 
+holding a PKCS#12 certificate used for decrypting the SignData.</param>
+            <param name="password">Password for the private key.</param>
+            <param name="extraData">
+                <see cref="T:signotec.STPadLibNet.SignDataDecryptFlag" /> indicating the extra data that shall be decrypted; on return it
+indicates which extra data can be retrieved.</param>
+            <returns>The signature in traditional SignData format;
+may be NULL if the RSA encrypted SignData doesn't include any signature data.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSAExtractExtraData">
+            <summary>Extracts extra data from an RSA encrypted SignData array which has 
+previously been encrypted by a call of <see cref="M:signotec.STPadLibNet.STPadLib.RSADecryptSignData(System.Byte[],System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.SecureString,signotec.STPadLibNet.SignDataDecryptFlag@)" /></summary>
+            <returns>
+                <see cref="T:signotec.STPadLibNet.ExtraData" />
+            </returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSAExtractExtraData(signotec.STPadLibNet.HashAlgo,System.Byte[])">
+            <summary>Extracts the extra data from an RSA encrypted SignData array, which can be retrieved without decryption.</summary>
+            <param name="hash2Algorithm">
+                <see cref="T:signotec.STPadLibNet.HashAlgo" /> to be used for computing the hash over the biometric data.</param>
+            <param name="signData">RSA encrypted SignData.</param>
+            <returns>
+                <see cref="T:signotec.STPadLibNet.ExtraData" />
+            </returns>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLib.RSASignPasswordLength">
+            <summary>Sets and returns the RSA sign password length.</summary>
+            <returns>The length.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSADecryptSignData(System.Byte[],System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.SecureString,signotec.STPadLibNet.SignDataDecryptFlag@)">
+            <summary>Decrypts an RSA encrypted SignData array and converts it into a traditional SignData array.</summary>
+            <param name="encrypted">RSA encrypted SignData.</param>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> 
+holding a PKCS#12 certificate used for decrypting the SignData.</param>
+            <param name="password">Password for the private key.</param>
+            <param name="extraData">
+                <see cref="T:signotec.STPadLibNet.SignDataDecryptFlag" /> indicating the extra data that shall be decrypted; on return it
+indicates which extra data can be retrieved.</param>
+            <returns>The signature in traditional SignData format;
+may be NULL if the RSA encrypted SignData doesn't include any signature data.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSAGetSignData(signotec.STPadLibNet.SignDataGetFlag)">
+            <summary>Returns the captured signature data.</summary>
+            <param name="options">
+                <see cref="T:signotec.STPadLibNet.SignDataGetFlag" />.</param>
+            <returns>The signature in an RSA encrypted SignData format.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSAGetEncryptionCertId">
+            <summary>Returns the ID (issuer and serial number) of the encryption cert stored in the pad.</summary>
+            <returns>ID of the cert.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetEncryptionCertPw(System.String,System.String)">
+            <summary>Loads the public key from a DER encoded certificate into the pad.</summary>
+            <param name="cert">Full path or URL of a certificate.</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetEncryptionCertPw(System.String,System.Security.SecureString)">
+            <summary>Loads the public key from a DER encoded certificate into the pad.</summary>
+            <param name="cert">Full path or URL of a certificate.</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetEncryptionCert(System.String)">
+            <summary>Loads the public key from a DER encoded certificate into the pad.</summary>
+            <param name="cert">Full path or URL of a certificate.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetEncryptionCertPw(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String)">
+            <summary>Loads the public key from a DER encoded certificate into the pad.</summary>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetEncryptionCertPw(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.SecureString)">
+            <summary>Loads the public key from a DER encoded certificate into the pad.</summary>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetEncryptionCert(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>Loads the public key from a DER encoded certificate into the pad.</summary>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetEncryptionCertPw(System.String)">
+            <summary>Erase the public key used for encryption.</summary>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetEncryptionCertPw(System.Security.SecureString)">
+            <summary>Erase the public key used for encryption.</summary>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetEncryptionCert">
+            <summary>Erase the public key used for encryption.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASignPw(signotec.STPadLibNet.RSAScheme,signotec.STPadLibNet.HashValue,signotec.STPadLibNet.SignFlag,System.Security.SecureString)">
+            <summary>Signs the hash that has been set with RSASetHash(), created with RSACreateDisplayHash() */
+or computed over the biometric data  with the private key of the pad.</summary>
+            <param name="scheme">
+                <see cref="T:signotec.STPadLibNet.RSAScheme" />.</param>
+            <param name="hashValue">
+                <see cref="T:signotec.STPadLibNet.HashValue" />.</param>
+            <param name="options">
+                <see cref="T:signotec.STPadLibNet.SignFlag" />.</param>
+            <param name="signPassword">Password for the sign process.</param>
+            <returns>The signed data.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASign(signotec.STPadLibNet.RSAScheme,signotec.STPadLibNet.HashValue,signotec.STPadLibNet.SignFlag)">
+            <summary>Signs the hash that has been set with RSASetHash(), created with RSACreateDisplayHash() */
+or computed over the biometric data  with the private key of the pad.</summary>
+            <param name="scheme">
+                <see cref="T:signotec.STPadLibNet.RSAScheme" />.</param>
+            <param name="hashValue">
+                <see cref="T:signotec.STPadLibNet.HashValue" />.</param>
+            <param name="options">
+                <see cref="T:signotec.STPadLibNet.SignFlag" />.</param>
+            <returns>The signed data.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSACreateHashedImage(System.Byte[],System.Drawing.Color,System.Int32)">
+            <summary>Creates a image of the image data array that has been returned by RSACreateDisplayHash().</summary>
+            <param name="imageData">Image data over which the hash has been calculated.</param>
+            <param name="backColor">: Background color of the image.</param>
+            <param name="nModelType">Model type of the pad that has calculated the hash.</param>
+            <returns>The created image as <see cref="T:System.Drawing.Bitmap" />.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSACreateDisplayHash(signotec.STPadLibNet.HashAlgo,signotec.STPadLibNet.DisplayTarget)">
+            <summary>Enables the hashing of image data in the pad and copies the visible part of the source
+buffer into the background buffer.</summary>
+            <param name="algorithm">
+                <see cref="T:signotec.STPadLibNet.HashAlgo" />.</param>
+            <param name="source">Source buffer or store (<see cref="T:signotec.STPadLibNet.DisplayTarget" />).</param>
+            <returns>The image data over which the hash has been calculated.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetHash(signotec.STPadLibNet.HashAlgo)">
+            <summary>Sets the hash algorithm which is used when generating the hash 2 over the biometric data.</summary>
+            <param name="algorithm">
+                <see cref="T:signotec.STPadLibNet.HashAlgo" /> of hash 2.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetHash(System.Byte[],signotec.STPadLibNet.HashAlgo,signotec.STPadLibNet.HashFlag)">
+            <summary>Sets the hash that shall be signed and the algorithm which is used
+when generating the hash 2 over the biometric data.</summary>
+            <param name="data">Data to be signed.</param>
+            <param name="algorithm">
+                <see cref="T:signotec.STPadLibNet.HashAlgo" /> of hash 1 and hash 2.</param>
+            <param name="options">
+                <see cref="T:signotec.STPadLibNet.HashFlag" />.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASaveSigningCertAsFile(System.String,signotec.STPadLibNet.CertType)">
+            <summary>Retrieves the public DER encoded certificate or the DER encoded CSR from the pad and saves it on disk.</summary>
+            <param name="type">
+                <see cref="T:signotec.STPadLibNet.CertType" />.</param>
+            <param name="path">Full file path.</param>
+            <param name="type">
+                <see cref="T:signotec.STPadLibNet.CertType" />.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASaveSigningCertAsStream(signotec.STPadLibNet.CertType)">
+            <summary>Retrieves the public DER encoded certificate or the DER encoded CSR from the pad.</summary>
+            <param name="type">
+                <see cref="T:signotec.STPadLibNet.CertType" />.</param>
+            <returns>
+                <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> holding 
+the public certificate or <see cref="T:System.Byte" /> array holding the CSR.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetSigningCertPw(System.String,System.String,System.String)">
+            <summary>Loads a certificate into the pad.</summary>
+            <param name="cert">Full path or URL of a certificate.</param>
+            <param name="password">Password for the private key (if PKCS#12).</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetSigningCertPw(System.String,System.Security.SecureString,System.Security.SecureString)">
+            <summary>Loads a certificate into the pad.</summary>
+            <param name="cert">Full path or URL of a certificate.</param>
+            <param name="password">Password for the private key (if PKCS#12).</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetSigningCert(System.String,System.String)">
+            <summary>Loads a certificate into the pad.</summary>
+            <param name="cert">Full path or URL of a certificate.</param>
+            <param name="password">Password for the private key (if PKCS#12).</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetSigningCert(System.String,System.Security.SecureString)">
+            <summary>Loads a certificate into the pad.</summary>
+            <param name="cert">Full path or URL of a certificate.</param>
+            <param name="password">Password for the private key (if PKCS#12).</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetSigningCertPw(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String,System.String)">
+            <summary>Loads a certificate into the pad.</summary>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
+            <param name="password">Password for the private key (if PKCS#12).</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetSigningCertPw(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.SecureString,System.Security.SecureString)">
+            <summary>Loads a certificate into the pad.</summary>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
+            <param name="password">Password for the private key (if PKCS#12).</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetSigningCert(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String)">
+            <summary>Loads a certificate into the pad.</summary>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
+            <param name="password">Password for the private key (if PKCS#12).</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSASetSigningCert(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.SecureString)">
+            <summary>Loads a certificate into the pad.</summary>
+            <param name="cert">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
+            <param name="password">Password for the private key (if PKCS#12).</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSAGenerateSigningCertPw(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.String)">
+            <summary>Generates a unique key pair, a public certificate and a certificate signing
+request in the pad.</summary>
+            <param name="keyLen">Key length in bits.</param>
+            <param name="validity">0: maximum validity (31.12.2049)<para />
+&gt; 0: validity period in months</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSAGenerateSigningCertPw(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Security.SecureString)">
+            <summary>Generates a unique key pair, a public certificate and a certificate signing
+request in the pad.</summary>
+            <param name="keyLen">Key length in bits.</param>
+            <param name="validity">0: maximum validity (31.12.2049)<para />
+&gt; 0: validity period in months</param>
+            <param name="devicePassword">Password of the device as hex string.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.RSAGenerateSigningCert(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Generates a unique key pair, a public certificate and a certificate signing
+request in the pad.</summary>
+            <param name="keyLen">Key length in bits.</param>
+            <param name="validity">0: maximum validity (31.12.2049)<para />
+&gt; 0: validity period in months</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SensorClearKeypadEntries">
+            <summary>Deletes all clicked keypad-buttons in pad cache.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SensorGetKeypadEntries(System.Security.SecureString@,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Returns clicked keypad-buttons as assouciated names.</summary>
+            <param name="entry">string which holds keypad-associated names of which were clicked on (fifo).</param>
+            <param name="maxEntries">(max) number of maxEntries to return in entry.</param>
+            <returns>Number of returned clicks.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SensorSetHotspotMode(signotec.STPadLibNet.HotSpotMode,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Specifies the behavior of a monitored area (hotspot).</summary>
+            <param name="mode">
+                <see cref="T:signotec.STPadLibNet.HotSpotMode" />.</param>
+            <param name="hotSpotId">ID of the hotspot that is to be changed.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SensorClearHotSpots">
+            <summary>Removes all monitored areas (hotspots).</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SensorAddScrollHotSpot(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.ScrollOption)">
+            <summary>Specifies a rectangular subarea of the sensor surface that responds to user clicks and
+scroll the display content.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the display.</param>
+            <param name="top">Upper boundary; 0 is at the top of the display.</param>
+            <param name="width">Width; <see cref="P:signotec.STPadLibNet.STPadLib.DisplayWidth" /> holds the width of the LCD used.</param>
+            <param name="height">Height; <see cref="P:signotec.STPadLibNet.STPadLib.DisplayHeight" /> holds the width of the LCD used.</param>
+            <param name="type">
+                <see cref="T:signotec.STPadLibNet.ScrollOption" />.</param>
+            <returns>ID of the hotspot that was generated.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SensorAddKeypadHotSpot(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Security.SecureString)">
+            <summary>Specifies a rectangular subarea of the sensor surface that caches user clicks.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the display.</param>
+            <param name="top">Upper boundary; 0 is at the top of the display.</param>
+            <param name="width">Width; <see cref="P:signotec.STPadLibNet.STPadLib.DisplayWidth" /> holds the width of the LCD used.</param>
+            <param name="height">Height; <see cref="P:signotec.STPadLibNet.STPadLib.DisplayHeight" /> holds the width of the LCD used.</param>
+            <param name="chars">holds the name which will be cached when pressing the keypad-area.</param>
+            <returns>ID of the hotspot that was generated.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SensorAddHotSpot(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Specifies a rectangular subarea of the sensor surface that responds to user clicks.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the display.</param>
+            <param name="top">Upper boundary; 0 is at the top of the display.</param>
+            <param name="width">Width; <see cref="P:signotec.STPadLibNet.STPadLib.DisplayWidth" /> holds the width of the LCD used.</param>
+            <param name="height">Height; <see cref="P:signotec.STPadLibNet.STPadLib.DisplayHeight" /> holds the width of the LCD used.</param>
+            <returns>ID of the hotspot that was generated.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SensorClearSignRect">
+            <summary>Removes the rectangle in which the signature is captured.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SensorSetSignRect(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Specifies the rectangle in which the signature is captured.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the display.</param>
+            <param name="top">Upper boundary; 0 is at the top of the display.</param>
+            <param name="width">Width; <see cref="P:signotec.STPadLibNet.STPadLib.DisplayWidth" /> holds the width of the LCD used.</param>
+            <param name="height">Height; <see cref="P:signotec.STPadLibNet.STPadLib.DisplayHeight" /> holds the width of the LCD used.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SensorSetPenScrollingEnabled(System.Boolean)">
+            <summary>Enables the pen scrolling inside of the scrolling area set with <see cref="M:signotec.STPadLibNet.STPadLib.SensorSetScrollArea(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)" />.</summary>
+            <param name="enable">Enable / Disable the pen scrolling.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SensorSetScrollArea(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Sets a rectangle of the buffer which may be scrolled. The rectangle must be fully visible on the display.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the buffer.</param>
+            <param name="top">Upper boundary; 0 is at the top of the buffer.</param>
+            <param name="width">The width in pixels. 0 sets the width of the buffer (<see cref="P:signotec.STPadLibNet.STPadLib.DisplayTargetWidth" />).</param>
+            <param name="height">The height in pixels. 0 sets the height of the buffer (<see cref="P:signotec.STPadLibNet.STPadLib.DisplayTargetHeight" />).</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SensorStopTimer">
+            <summary>Stops a timer started with <see cref="M:signotec.STPadLibNet.STPadLib.SensorStartTimer(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.TimerOption)" />.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SensorStartTimer(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.TimerOption)">
+            <summary>Starts a timer which stops after a certain time if there is no interaction on the pad.</summary>
+            <param name="waitBeforeAction">Maximum time to wait for the first interaction (in milliseconds).</param>
+            <param name="waitAfterAction">Maximum time to wait after the last interaction was noticed (in milliseconds).</param>
+            <param name="options">
+                <see cref="T:signotec.STPadLibNet.TimerOption" />.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SensorSetSampleRateMode(signotec.STPadLibNet.SampleRate)">
+            <summary>Returns the sample rate with which the signature is captured.</summary>
+            <param name="mode">
+                <see cref="T:signotec.STPadLibNet.SampleRate" />.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SensorGetSampleRateMode">
+            <summary>Returns the sample rate with which the signature is captured.</summary>
+            <returns>
+                <see cref="T:signotec.STPadLibNet.SampleRate" />.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SignatureGetIsoData(signotec.STPadLibNet.IsoDataFlag,System.Byte[],System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Returns the captured signature data in ISO/IEC 19794-7 format.</summary>
+            <param name="options">
+                <see cref="T:signotec.STPadLibNet.IsoDataFlag" />.</param>
+            <param name="customData">Custom data that is added to the extended data (options must include 0x01).</param>
+            <param name="customDataBlocks">number of blocks	in customData.</param>
+            <returns>The signature in ISO/IEC 19794-7 format.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SignatureGetSignData">
+            <summary>Returns the captured signature data in SignData format.</summary>
+            <returns>The signature in SignData format.</returns>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLib.SignatureState">
+            <summary>The current state of the signature capture process.</summary>
+            <returns>True if signature capture process is running, else false.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SignatureScaleToDisplay(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>This method converts the sensor coordinates delivered by 
+<see cref="E:signotec.STPadLibNet.STPadLib.SignatureDataReceived" /> to display coordinates.</summary>
+            <param name="sensorValue">X or y value of a sensor coordinate.</param>
+            <returns>X or y value of a display coordinate.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SignatureGetBounds(System.Int32!System.Runtime.CompilerServices.IsLong@,System.Int32!System.Runtime.CompilerServices.IsLong@,System.Int32!System.Runtime.CompilerServices.IsLong@,System.Int32!System.Runtime.CompilerServices.IsLong@,signotec.STPadLibNet.SignatureBoundsOption)">
+            <summary>Returns the coordinates of the rectangle in which the captured signature is given.</summary>
+            <param name="left">Left border of the signature rectangle.</param>
+            <param name="top">Upper border of the signature rectangle.</param>
+            <param name="right">Right border of the signature rectangle.</param>
+            <param name="bottom">Bottom border of the signature rectangle.</param>
+            <param name="bottom">
+                <see cref="T:signotec.STPadLibNet.SignatureBoundsOption" />.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SignatureSaveAsFileEx(System.String,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Drawing.Imaging.ImageFormat,System.Int32!System.Runtime.CompilerServices.IsLong,System.Drawing.Color,signotec.STPadLibNet.SignatureImageFlag)">
+            <summary>Stores an image of the captured signature on the hard disk.</summary>
+            <param name="path">Full path includign file name and extension.</param>
+            <param name="resolution">Resolution in pixels per inch (ppi).</param>
+            <param name="width">Max width of image in pixels, original size is used if value is 0.</param>
+            <param name="height">Max height of image in pixels, original size is used if value is 0.</param>
+            <param name="fileType">Image format.</param>
+            <param name="penWidth">Pen width in pixels, a variable pen width is used if value is 0, a fixed pen width in
+pixels with variable brightness is used if value is negative.</param>
+            <param name="penColor">Colour which is used for drawing the signature.</param>
+            <param name="options">Combination of <see cref="T:signotec.STPadLibNet.SignatureImageFlag" /> values.</param>
+            <returns>The created image as <see cref="T:System.Drawing.Bitmap" />.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SignatureSaveAsStreamEx(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Drawing.Color,signotec.STPadLibNet.SignatureImageFlag)">
+            <summary>Returns an image of the captured signature.</summary>
+            <param name="resolution">Resolution in pixels per inch (ppi).</param>
+            <param name="width">Max width of image in pixels, original size is used if value is 0.</param>
+            <param name="height">Max height of image in pixels, original size is used if value is 0.</param>
+            <param name="penWidth">Pen width in pixels, a variable pen width is used if value is 0, a fixed pen width in
+pixels with variable brightness is used if value is negative.</param>
+            <param name="penColor">Colour which is used for drawing the signature.</param>
+            <param name="options">Combination of <see cref="T:signotec.STPadLibNet.SignatureImageFlag" /> values.</param>
+            <returns>The created image as <see cref="T:System.Drawing.Bitmap" />.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SignatureCancel(signotec.STPadLibNet.EraseOption)">
+            <summary>Stops capturing, erases the display and discards the captured signature.</summary>
+            <param name="erase">
+                <see cref="T:signotec.STPadLibNet.EraseOption" />.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SignatureCancel">
+            <summary>Stops capturing, erases the display and discards the captured signature.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SignatureConfirm">
+            <summary>Stops the capturing and erases the display.</summary>
+            <returns>Number of captured points.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SignatureStop">
+            <summary>Stops the capturing without erasing the display.</summary>
+            <returns>Number of captured points.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SignatureRetry">
+            <summary>Discards the captured signature without stopping capturing. Calls SignatureStart() if no
+capturing is running.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SignatureStart">
+            <summary>Starts the capturing.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.SignatureSetSecureMode(System.Boolean)">
+            <summary>Sets the Secure Mode.</summary>
+            <param name="enable">true: the captured signature can only be retreived using RSAGetSignData()<para />
+false: all signature related methods are available</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.PDFRemoveImage(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Removes a bitmap of the list of bitmaps which shall be rendered onto the page.</summary>
+            <param name="page">Page number starting at 1.</param>
+            <param name="id">The ID of the bitmap to be removed.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.PDFAddImageFromFile(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.String)">
+            <summary>Adds a bitmap to the list of bitmaps which shall be drawn on the rendered page.</summary>
+            <param name="page">Page number starting at 1.</param>
+            <param name="left">Left position in pixels.</param>
+            <param name="top">Top position in pixels.</param>
+            <param name="path">Full path or URL of the image.</param>
+            <returns>The ID of the added image.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.PDFAddImage(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Drawing.Bitmap)">
+            <summary>Adds a bitmap to the list of bitmaps which shall be drawn on the rendered page.</summary>
+            <param name="page">Page number starting at 1.</param>
+            <param name="left">Left position in pixels.</param>
+            <param name="top">Top position in pixels.</param>
+            <param name="bitmap">
+                <see cref="T:System.Drawing.Bitmap" /> to add.</param>
+            <returns>The ID of the added image.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.PDFSelectRect(System.Int32!System.Runtime.CompilerServices.IsLong,System.Double,System.Double,System.Double,System.Double,signotec.STPadLibNet.MeasurementUnit)">
+            <summary>Sets a selection of a page of the currently loaded document.</summary>
+            <param name="page">Page number starting at 1.</param>
+            <param name="left">Left coordinate of the selection.</param>
+            <param name="top">Top coordinate of the selection.</param>
+            <param name="width">Width of the selection.</param>
+            <param name="height">Height of the selection.</param>
+            <param name="unit">The <see cref="T:signotec.STPadLibNet.MeasurementUnit" /> of the selection.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.PDFGetHeight(System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.MeasurementUnit)">
+            <summary>Returns the height of a page of the currently loaded document.</summary>
+            <param name="page">Page number starting at 1.</param>
+            <param name="unit">The <see cref="T:signotec.STPadLibNet.MeasurementUnit" /> of the returned height.</param>
+            <returns>The page height.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.PDFGetWidth(System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.MeasurementUnit)">
+            <summary>Returns the width of a page of the currently loaded document.</summary>
+            <param name="page">Page number starting at 1.</param>
+            <param name="unit">The unit of the returned width (<see cref="T:signotec.STPadLibNet.MeasurementUnit" />).</param>
+            <returns>The page width.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.PDFGetPageCount">
+            <summary>Returns the number of pages of the currently loaded document.</summary>
+            <returns>Number of pages.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.PDFLoad(System.String,System.String)">
+            <summary>Loads a PDF document from a file or URL.</summary>
+            <param name="document">PDF document to load.</param>
+            <param name="password">Password of the document.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.PDFLoad(System.String,System.Security.SecureString)">
+            <summary>Loads a PDF document from a file or URL.</summary>
+            <param name="document">PDF document to load.</param>
+            <param name="password">Password of the document.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.PDFLoad(System.String)">
+            <summary>Loads a PDF document from a file or URL.</summary>
+            <param name="document">PDF document to load.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.PDFLoad(System.Byte[],System.String)">
+            <summary>Loads a PDF document from byte array.</summary>
+            <param name="document">PDF document to load.</param>
+            <param name="password">Password of the document.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.PDFLoad(System.Byte[],System.Security.SecureString)">
+            <summary>Loads a PDF document from byte array.</summary>
+            <param name="document">PDF document to load.</param>
+            <param name="password">Password of the document.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.PDFLoad(System.Byte[])">
+            <summary>Loads a PDF document from a byte array.</summary>
+            <param name="document">PDF document to load.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.PDFLoad">
+            <summary>Unloads the current PDF document.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLib.DisplayRotation">
+            <summary>The display rotation in degrees.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLib.DisplayScrollSpeed">
+            <summary>The scroll speed in lines per second.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLib.DisplayTargetHeight">
+            <summary>The height of the current target in pixels.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLib.DisplayTargetWidth">
+            <summary>The width of the current target in pixels.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLib.DisplayResolution">
+            <summary>The resolution of the display in pixels per inch (ppi).</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLib.DisplayHeight">
+            <summary>The height of the display in pixels.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLib.DisplayWidth">
+            <summary>The width of the display in pixels.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySetBacklight(signotec.STPadLibNet.BacklightMode)">
+            <summary>Controls the backlight of the display.</summary>
+            <param name="mode">The <see cref="T:signotec.STPadLibNet.BacklightMode" /> to be set.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplayConfigPen(System.Int32!System.Runtime.CompilerServices.IsLong,System.Drawing.Color)">
+            <summary>Sets the pen width and the pen color which is used to display the signature line on the
+LCD of the pad.</summary>
+            <param name="penColor">Width in pixel (1 - 3).</param>
+            <param name="penColor">Colour; this parameter is ignored for the Sigma model.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySaveImageAsFile(System.String,System.Drawing.Imaging.ImageFormat,signotec.STPadLibNet.DisplayImageFlag)">
+            <summary>Stores the actual display content without any displayed signature on the hard disk.</summary>
+            <param name="path">Full path includign file name and extension.</param>
+            <param name="fileType">Image format.</param>
+            <param name="options">Combination of <see cref="T:signotec.STPadLibNet.DisplayImageFlag" /> values.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySaveImageAsStream(signotec.STPadLibNet.DisplayImageFlag)">
+            <summary>Returns the actual display content without any displayed signature.</summary>
+            <param name="options">Combination of <see cref="T:signotec.STPadLibNet.DisplayImageFlag" /> values.</param>
+            <returns>The created image as <see cref="T:System.Drawing.Bitmap" />.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplayConfigSlideShowEx(System.String,System.String)">
+            <summary>Configures a slide show of permanently stored images which is played when the connection 
+to the device is closed.</summary>
+            <param name="slideList">A list of up to 32 store IDs separated by a semicolon. If the list doesn't contain any
+valid value, the slide show is disabled.</param>
+            <param name="durationList">A list of the time in milliseconds for each image to be displayed.</param>
+            <returns>Number of images in the slide show.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplayConfigSlideShow(System.String,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Configures a slide show of permanently stored images which is played when the connection 
+to the device is closed.</summary>
+            <param name="slideList">A list of up to 32 store IDs separated by a semicolon. If the list doesn't contain any
+valid value, the slide show is disabled.</param>
+            <param name="duration">Time in milliseconds for each image to be displayed.</param>
+            <returns>Number of images in the slide show.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySetStandbyImageFromFileEx(System.String,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Stores an image permanently which is automatically displayed for the duration-time when the connection to the
+device is closed.</summary>
+            <param name="path">Full path or URL of the image.</param>
+            <param name="duration">Time period before standby image is hidden and backlight is turned off.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySetStandbyImageFromFile(System.String)">
+            <summary>Stores an image permanently which is automatically displayed when the connection to the
+device is closed.</summary>
+            <param name="path">Full path or URL of the image.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySetStandbyImageEx(System.Drawing.Bitmap,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Stores an image permanently which is automatically displayed for the duration-time when the connection to the
+device is closed.</summary>
+            <param name="bitmap">
+                <see cref="T:System.Drawing.Bitmap" /> to be stored.</param>
+            <param name="duration">Time period before standby image is hidden and backlight is turned off.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySetStandbyImage(System.Drawing.Bitmap)">
+            <summary>Stores an image permanently which is automatically displayed when the connection to the
+device is closed.</summary>
+            <param name="bitmap">
+                <see cref="T:System.Drawing.Bitmap" /> to be stored.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplayGetStandbyId(System.String@)">
+            <summary>Returns the number of images configured for standby operation, as well as a unique string
+that identifies the standby image currently set or the slide show currently configured.</summary>
+            <param name="id">Unique string the identifies the current configuration.</param>
+            <returns>Number of reserved permanent stores used for the standby image or the slide show.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplayGetScrollPos(System.Int32!System.Runtime.CompilerServices.IsLong@,System.Int32!System.Runtime.CompilerServices.IsLong@)">
+            <summary>Returns the X/Y position of the content of the current target.</summary>
+            <param name="xPos">Horizontal offset of the memory contents to the left, in pixels.</param>
+            <param name="yPos">Vertical offset of the memory contents to the top, in pixels.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySetScrollPos(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Specifies the X/Y position of the content of the current target.</summary>
+            <param name="xPos">Horizontal offset of the memory contents to the left, in pixels.</param>
+            <param name="yPos">Vertical offset of the memory contents to the top, in pixels.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySetOverlayRect(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Specifies a rectangular subarea of the display whose contents will be covered by the
+contents of the overlay buffer.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the display.</param>
+            <param name="top">Upper boundary; 0 is at the top of the display.</param>
+            <param name="width">Width; <see cref="P:signotec.STPadLibNet.STPadLib.DisplayWidth" /> holds the width of the LCD used. If 0 the overlay
+rectangle is removed.</param>
+            <param name="height">Height; <see cref="P:signotec.STPadLibNet.STPadLib.DisplayHeight" /> holds the width of the LCD used. If 0 the overlay
+rectangle is removed.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySetImageFromStore(signotec.STPadLibNet.DisplayTarget)">
+            <summary>Writes an image that has been stored in a device memory to be written to the current target.</summary>
+            <param name="storeId">ID of the memory from which the image is to be read.</param>
+            <returns>If not 0, then the contents of the store has been copied but cannot be used in the control	
+because the storeId has not been reserved before.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySetPDF(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Double,signotec.STPadLibNet.PdfFlag)">
+            <summary>Draws the current selection of the currently loaded PDF on the LCD.</summary>
+            <param name="xPos">X coordinate of the starting point; 0 is on the far left of the display.</param>
+            <param name="yPos">Y coordinate of the starting point; 0 is at the top of the display.</param>
+            <param name="page">Page number starting at 1.</param>
+            <param name="scale">Scale of the image (1 means original size).</param>
+            <param name="options">
+                <see cref="T:signotec.STPadLibNet.PdfFlag" />.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySetImageFromFile(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.String)">
+            <summary>Writes an image to the current target.</summary>
+            <param name="xPos">X coordinate of the starting point; 0 is on the far left of the display.</param>
+            <param name="yPos">Y coordinate of the starting point; 0 is at the top of the display.</param>
+            <param name="path">Full path or URL of the image.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySetImage(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Drawing.Bitmap)">
+            <summary>Writes an image to the current target.</summary>
+            <param name="xPos">X coordinate of the starting point; 0 is on the far left of the display.</param>
+            <param name="yPos">Y coordinate of the starting point; 0 is at the top of the display.</param>
+            <param name="bitmap">
+                <see cref="T:System.Drawing.Bitmap" /> to be output.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySetTextInRect(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.TextAlignment,System.String,signotec.STPadLibNet.TextFlag)">
+            <summary>Writes any text to the current target. The text is placed in the rectangle and is
+automatically wrapped. If the text is too long, the font size is automatically reduced.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the display.</param>
+            <param name="top">Upper boundary; 0 is at the top of the display.</param>
+            <param name="width">Width; <see cref="P:signotec.STPadLibNet.STPadLib.DisplayWidth" /> holds the width of the LCD used.</param>
+            <param name="height">Height; <see cref="P:signotec.STPadLibNet.STPadLib.DisplayHeight" /> holds the width of the LCD used.</param>
+            <param name="alignment">Text alignment.</param>
+            <param name="text">Text to be output.</param>
+            <param name="options">
+                <see cref="T:signotec.STPadLibNet.TextFlag" />.</param>
+            <returns>the actually used font size or text height (depending on options parameter).</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySetTextInRect(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.TextAlignment,System.String)">
+            <summary>Writes any text to the current target. The text is placed in the rectangle and is
+automatically wrapped. If the text is too long, the font size is automatically reduced.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the display.</param>
+            <param name="top">Upper boundary; 0 is at the top of the display.</param>
+            <param name="width">Width; <see cref="P:signotec.STPadLibNet.STPadLib.DisplayWidth" /> holds the width of the LCD used.</param>
+            <param name="height">Height; <see cref="P:signotec.STPadLibNet.STPadLib.DisplayHeight" /> holds the width of the LCD used.</param>
+            <param name="alignment">Text alignment.</param>
+            <param name="text">Text to be output.</param>
+            <returns>The font size that is actually used.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySetText(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.TextAlignment,System.String)">
+            <summary>Writes any text to the current target.</summary>
+            <param name="xPos">X coordinate of the starting point; 0 is on the far left of the display.</param>
+            <param name="yPos">Y coordinate of the starting point; 0 is at the top of the display.</param>
+            <param name="alignment">Text alignment.</param>
+            <param name="text">Text to be output.</param>
+            <returns>Width of the rectangle surrounding the text.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySetFontColor(System.Drawing.Color)">
+            <summary>Sets the font color which is used to output text to the LCD.</summary>
+            <param name="fontColor">Font colour.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySetFont(System.Drawing.Font)">
+            <summary>Sets the font that is used to output text to the LCD.</summary>
+            <param name="font">Font.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplayEraseRect(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Erases a rectangle in the current target.</summary>
+            <param name="left">Left boundary; 0 is on the far left of the display.</param>
+            <param name="top">Upper boundary; 0 is at the top of the display.</param>
+            <param name="width">Width; <see cref="P:signotec.STPadLibNet.STPadLib.DisplayWidth" /> holds the width of the LCD used.</param>
+            <param name="height">Height; <see cref="P:signotec.STPadLibNet.STPadLib.DisplayHeight" /> holds the width of the LCD used.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplayErase">
+            <summary>Erases the display, the foreground and background buffers and the control element's window.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisplaySetTarget(signotec.STPadLibNet.DisplayTarget)">
+            <summary>Defines whether all drawing shall be done in the memory or directly on the LCD.</summary>
+            <param name="target">The target used for all following drawing operations.</param>
+            <returns>The target that has been set, DisplayTarget.BackgroundBuffer if the requested target is
+ not available or has not been reserved before.</returns>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLib.DeviceLedDefaultFlag">
+            <summary>Specifies whether the LED on the front of the pad automatically changes to green when the
+device is in signature capture mode.</summary>
+            <returns>True, if LED lights up green for a capture process, else false. The default setting is true.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DeviceSetNFCMode(signotec.STPadLibNet.NFCMode,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Enables / disables the optional NFC reader of the device.</summary>
+            <param name="mode">
+                <see cref="T:signotec.STPadLibNet.NFCMode" />
+            </param>
+            <param name="index">Index of the device whose mode is to be set.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DeviceGetNFCMode(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Reads if the optional NFC reader of the device is enabled.</summary>
+            <param name="index">Index of the device whose mode is to be queried.</param>
+            <returns>
+                <see cref="T:signotec.STPadLibNet.NFCMode" />
+            </returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DeviceStartService(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Starts one of the service menus of the pad.</summary>
+            <param name="type">0: service menu to configure connection type and backlight (not for Sigma and Omega).<para />
+1: calibration menu</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DeviceSetLed(signotec.STPadLibNet.LedColorFlag)">
+            <summary>Sets the colour of the LED.</summary>
+            <param name="ledColor">Combination of <see cref="T:signotec.STPadLibNet.LedColorFlag" /> values.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DeviceClose(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Closes a connection to a device.</summary>
+            <param name="index">Index of the device to which a connection is to be closed.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DeviceOpen(System.Int32!System.Runtime.CompilerServices.IsLong,System.Boolean)">
+            <summary>Opens a connection to a device.</summary>
+            <param name="index">Index of the device to which a connection is to be opened.</param>
+            <param name="eraseDisplay">Erase display.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DeviceOpen(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Opens a connection to a device.</summary>
+            <param name="index">Index of the device to which a connection is to be opened.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DeviceGetCapabilities(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Returns the capabilities.</summary>
+            <param name="index">Index of the device whose information is to be queried.</param>
+            <returns>Capabilities as <see cref="T:signotec.STPadLibNet.PadCapabilities" />.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DeviceGetVersion(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Returns the firmware version.</summary>
+            <param name="index">Index of the device whose information is to be queried.</param>
+            <returns>Firmware version number as string.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DeviceGetInfo(System.String@,System.Int32!System.Runtime.CompilerServices.IsLong@,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Returns the serial number and model type of a connected device.</summary>
+            <param name="serial">Serial Number.</param>
+            <param name="type">1: "Sigma HID" model type<para />
+2: "Sigma serial" model type<para />
+11: "Omega HID / USB" model type<para />
+12: "Omega serial" model type<para />
+15: "Gamma HID / USB" model type<para />
+16: "Gamma serial" model type<para />
+21: "Delta HID / USB" model type<para />
+22: "Delta serial" model type<para />
+23: "Delta Ethernet" model type<para />
+31: "Alpha HID / USB" model type<para />
+32: "Alpha serial" model type<para />
+33: "Alpha Ethernet" model type</param>
+            <param name="index">Index of the device whose information is to be queried.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DeviceGetCount">
+            <summary>Searches for connected devices.</summary>
+            <returns>Number of devices detected.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DeviceGetConnectionType(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Returns the type of the pad connection.</summary>
+            <param name="index">Index of the device whose connection type is to be queried.</param>
+            <returns>0: HID<para />
+1: USB<para />
+2: Serial<para />
+3: Ethernet</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DeviceGetIPAddress(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Returns the IP address the pad is connected to.</summary>
+            <param name="index">Index of the device whose information is to be queried.</param>
+            <returns>IP address as string.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DeviceGetComPort(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Returns the number of the COM port a device is connected to.</summary>
+            <param name="index">Index of the device whose port number is to be queried.</param>
+            <returns>Number of the COM port for serial devices. 0 for HID devices.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DeviceSetComPort(System.String)">
+            <summary>Specifies the interfaces to be searched for devices.</summary>
+            <param name="portList">Semicolon separated list of at least one of the following strings:<para />
+"HID": HID devices will be searched<para />
+"IP=Address:Port": An HID device that is connected to a signotec AK USB device server will
+be searched<para />
+"all": A search is made for serial devices on all COM ports<para />
+"LowSpeed": only pads with low baud rate are found when searching for serial devices<para />
+"HighSpeed": only pads with high baud rate are found when searching for serial devices<para />
+a number: A search is made for serial devices on the COM port with this number</param>
+            <returns>Number of valid members in the list (for "all" 256 is added to the return value).</returns>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLib.ControlVersion">
+            <summary>The version number of the control.</summary>
+            <returns>The version number as string.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.ControlSetLogDirectory(System.String,signotec.STPadLibNet.LogFlag)">
+            <summary>Enables logging in the given path.</summary>
+            <param name="path">NULL or "": disable logging<para />
+starting with %: environment variable<para />
+else: directory path</param>
+            <param name="options">Bitmask which may include one or more <see cref="T:signotec.STPadLibNet.LogFlag" />s</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.ControlSetLogDirectory(System.String)">
+            <summary>Enables logging in the given path.</summary>
+            <param name="path">NULL or "": disable logging<para />
+starting with %: environment variable<para />
+else: directory path</param>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLib.ControlAppName">
+            <summary>Specifies the name of the application that uses this control.</summary>
+            <returns>The application name as string.</returns>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadLib.IsDisposed">
+            <summary>Returns true if the instance has been disposed.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.DisposeInternal">
+            <summary>Releases all resources used by this control.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.Finalize">
+            <summary>Finalizer.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.Dispose">
+            <summary>Destructor.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadLib.#ctor">
+            <summary>Constructor.</summary>
+        </member>
+        <member name="E:signotec.STPadLibNet.STPadLib.SignatureDataReceived">
+            <summary>Called when signature data is received from the pad.</summary>
+        </member>
+        <member name="E:signotec.STPadLibNet.STPadLib.DisplayScrollPosChanged">
+            <summary>Called as soon as the scroll position of the display contents has changed.</summary>
+        </member>
+        <member name="E:signotec.STPadLibNet.STPadLib.SensorTimeoutOccured">
+            <summary>Called as soon as the timer started with <see cref="M:signotec.STPadLibNet.STPadLib.SensorStartTimer(System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32!System.Runtime.CompilerServices.IsLong,signotec.STPadLibNet.TimerOption)" /> has expired.</summary>
+        </member>
+        <member name="E:signotec.STPadLibNet.STPadLib.SensorHotSpotPressed">
+            <summary>Called as soon as the user lifts the pen off a hotspot.</summary>
+        </member>
+        <member name="E:signotec.STPadLibNet.STPadLib.DeviceDisconnected">
+            <summary>Called as soon as a device is disconnected through an external event.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.STPadLib">
+            <summary>Class library for signotec LCD Signature Pads.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.LogFlag">
+            <summary>Options for logging to file.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.LogFlag.STVCPad">
+            <summary>Configure logging for Virtual Channel.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.LogFlag.STPad">
+            <summary>Configure logging for the STPad library (extended logging).</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.LogFlag.STPadLibNet">
+            <summary>Configure logging for STPadLibNet.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.LogFlag.Off">
+            <summary>Disable logging.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.HashFlag">
+            <summary>Options for passing a hash value to the pad.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.HashFlag.HashData">
+            <summary>The passed data contains no hash but the data to be hashed (the <see cref="F:signotec.STPadLibNet.HashFlag.LittleEndian" /> flag is ignored).</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.HashFlag.LittleEndian">
+            <summary>The passed hash Little Endian byte order.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.SignFlag">
+            <summary>Options for signing data with a private key.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignFlag.IncludeChain">
+            <summary>Embed certificate chain (only if <see cref="F:signotec.STPadLibNet.SignFlag.PKCS7" /> flag is also set).</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignFlag.PKCS7">
+            <summary>Return signature in PKCS#7 format (the <see cref="F:signotec.STPadLibNet.SignFlag.LittleEndian" /> flag is ignored).</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignFlag.LittleEndian">
+            <summary>Return signature in Little Endian byte order.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.MeasurementUnit">
+            <summary>Defines a measurement unit.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.PdfFlag">
+            <summary>Options for PDF rendering.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.PdfFlag.Cache">
+            <summary>Buffer the rendered image.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.IsoDataFlag.Extended">
+            <summary>Return IsoData uncompressed.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignDataGetFlag.Uncompressed">
+            <summary>Return SignData uncompressed.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.HotSpotMode">
+            <summary>Options for the hotspots.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.HotSpotMode.InvertOff">
+            <summary>Disable inverting of hotspot.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.HotSpotMode.Active">
+            <summary>Enable hotspot.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.HotSpotMode.Inactive">
+            <summary>Disable hotspot.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.ScrollOption">
+            <summary>Options for the scroll hotspots.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.TimerOption">
+            <summary>Options for starting a timer.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.TimerOption.CallCancel">
+            <summary>SignatureCancel() is called.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.TimerOption.CallCancelOrConfirm">
+            <summary>SignatureCancel() or SignatureConfirm() is called.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.TimerOption.CallEvent">
+            <summary>SensorTimeoutOccured() is called.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.SampleRate">
+            <summary>Possible sample rates.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.SignatureImageFlag">
+            <summary>Options for creating signature images.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignatureImageFlag.VariablePenWidth">
+            <summary>The specified width is varied depending on the pressure values.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignatureImageFlag.CurrentImages">
+            <summary>Use current display content as background image.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignatureImageFlag.TransparentBack">
+            <summary>Draw the signatue on a transparent background.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignatureImageFlag.OverlayImage">
+            <summary>Include overlayed image.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignatureImageFlag.Smooth">
+            <summary>Always smooth signature.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignatureImageFlag.DontSmooth">
+            <summary>Never smooth signature.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignatureImageFlag.TimestampRelToImage">
+            <summary>Calculate timestamp size relative to the image size.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignatureImageFlag.AlignBottom">
+            <summary>Align signature on the bottom.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignatureImageFlag.AlignTop">
+            <summary>Align signature on the top.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignatureImageFlag.AlignRight">
+            <summary>Align signature on the right.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignatureImageFlag.AlignLeft">
+            <summary>Align signature on the left.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignatureImageFlag.DontCrop">
+            <summary>Don't crop image to signature size.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignatureImageFlag.ExcludeHotSpots">
+            <summary>Exlude the hot spot areas (fill with white color).</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignatureImageFlag.BackImage">
+            <summary>Include background image.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignatureImageFlag.Timestamp">
+            <summary>Include timestamp.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.SignatureBoundsOption">
+            <summary>Options for retreiving the signature bounds.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignatureBoundsOption.SignRectRelative">
+            <summary>Returned values are relative to the signature window.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.SignatureBoundsOption.DisplayRelative">
+            <summary>Returned values are relative to the display.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.BacklightMode">
+            <summary>Brightness mode of the LCD backlight.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.BacklightMode.Maximum">
+            <summary>Switch on the backlight (maximum brightness).</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.BacklightMode.Medium">
+            <summary>Switch on the backlight (medium brightness).</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.BacklightMode.On">
+            <summary>Switch on the backlight (default brightness).</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.BacklightMode.Off">
+            <summary>Switch off the backlight.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.DisplayImageFlag">
+            <summary>Options for creating images of the display content.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayImageFlag.CurrentTarget">
+            <summary>use current target instead of the foreground buffer as source for the image</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayImageFlag.CompleteBuffer">
+            <summary>The content of the whole foreground buffer is saved.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayImageFlag.ExcludeHotSpots">
+            <summary>Exlude the hot spot areas (fill with white color).</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.TextFlag">
+            <summary>Options for drawing text on the display.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.TextFlag.NoResize">
+            <summary>the text is set with the given width but without font resizing; nothing is drawn if the text doesn't fit; the actually used or needed height is returned.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.TextAlignment">
+            <summary>Text alignment options.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.TextAlignment.RightNoWrap">
+            <summary>Right alignment without automatic wrapping.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.TextAlignment.CenterNoWrap">
+            <summary>Centred alignment without automatic wrapping.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.TextAlignment.LeftNoWrap">
+            <summary>Left alignment without automatic wrapping.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.TextAlignment.RightCenteredVertically">
+            <summary>Right alignment (centred vertically in the rectangle).</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.TextAlignment.CenterCenteredVertically">
+            <summary>Centred alignment (centred vertically in the rectangle).</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.TextAlignment.LeftCenteredVertically">
+            <summary>Left alignment (centred vertically in the rectangle).</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.TextAlignment.Right">
+            <summary>Right alignment.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.TextAlignment.Center">
+            <summary>Centred alignment.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.TextAlignment.Left">
+            <summary>Left alignment.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.DisplayTarget">
+            <summary>IDs of the volatile or permanent image memories of the pad.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayTarget.DisplayHashBuffer">
+            <summary>The local buffer for images which shall be used for creating the display hash.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayTarget.Reserved11">
+            <summary>A reserved permanent memory.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayTarget.Reserved10">
+            <summary>A reserved permanent memory.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayTarget.Reserved9">
+            <summary>A reserved permanent memory.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayTarget.Reserved8">
+            <summary>A reserved permanent memory.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayTarget.Reserved7">
+            <summary>A reserved permanent memory.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayTarget.Reserved6">
+            <summary>A reserved permanent memory.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayTarget.Reserved5">
+            <summary>A reserved permanent memory.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayTarget.Reserved4">
+            <summary>A reserved permanent memory.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayTarget.Reserved3">
+            <summary>A reserved permanent memory.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayTarget.Reserved2">
+            <summary>A reserved permanent memory.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayTarget.Reserved1">
+            <summary>A reserved permanent memory.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayTarget.OverlayBuffer">
+            <summary>The volatile overlay buffer.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayTarget.BackgroundBuffer">
+            <summary>The volatile background buffer.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayTarget.ForegroundBuffer">
+            <summary>The volatile foreground buffer (display).</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayTarget.NewStandardStore">
+            <summary>Reserves a new permanent standard store.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.DisplayTarget.NewLargeStore">
+            <summary>Reserves a new permanent large store.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.EraseOption">
+            <summary>Defines what shall be erased when calling SignatureCancel().</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.NFCMode">
+            <summary>NFC reader modes.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.LedColorFlag">
+            <summary>Flags that defines the possible LED colours.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.ExtraData.Hash2">
+            <value>Hash 2. Hash of the biometric data, calculated from the sign data.<see cref="T:signotec.STPadLibNet.Hash" /></value>
+        </member>
+        <member name="P:signotec.STPadLibNet.ExtraData.Hash1">
+            <value>Hash 1. Has been specified at the start of the signature process.<see cref="T:signotec.STPadLibNet.Hash" /></value>
+        </member>
+        <member name="P:signotec.STPadLibNet.ExtraData.Firmware">
+            <value>Firmware version.<see cref="T:System.Version" /></value>
+        </member>
+        <member name="P:signotec.STPadLibNet.ExtraData.DeviceOptions">
+            <value>Device options. For details please get in touch with your contact at signotec.</value>
+        </member>
+        <member name="P:signotec.STPadLibNet.ExtraData.KeySource">
+            <value>
+                <see cref="T:signotec.STPadLibNet.KeySource" />
+            </value>
+        </member>
+        <member name="P:signotec.STPadLibNet.ExtraData.SerialNumber">
+            <value>Serial number of the pad.</value>
+        </member>
+        <member name="P:signotec.STPadLibNet.ExtraData.TimeStamp">
+            <value>Time of signature creation.<see cref="T:System.DateTime" /></value>
+        </member>
+        <member name="M:signotec.STPadLibNet.ExtraData.#ctor">
+            <summary>Default constructor.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.ExtraData">
+            <summary>Class containing the Extradata properties (which are part of the Signdata).</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.Hash.Data">
+            <value>Hash value.</value>
+        </member>
+        <member name="P:signotec.STPadLibNet.Hash.Algorithm">
+            <value>Hash algorithm.</value>
+        </member>
+        <member name="M:signotec.STPadLibNet.Hash.#ctor(signotec.STPadLibNet.HashAlgo,System.IntPtr,System.Int32)">
+            <summary>Constructor taking algorithm <see cref="T:signotec.STPadLibNet.HashAlgo" />, 
+IntPtr to hashdata, and length of the hashdata as argument.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.Hash.#ctor">
+            <summary>Default constructor.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.Hash">
+            <summary>Class containing the hash and its algorithm.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.HashAlgo">
+            <summary>Hash algorithm.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.KeySource">
+            <summary>Source of the signdata-key.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.KeySource.Factory">
+            <summary>Key was stored at the factory.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.KeySource.External">
+            <summary>Externally generated key was loaded into the device.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.KeySource.Internal">
+            <summary>Key was generated in the device.</summary>
+        </member>
+        <member name="F:signotec.STPadLibNet.KeySource.Unknown">
+            <summary>Key source has not been retrieved.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.HasDisplay">
+            <summary>Device has a display.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.HasNFCReader">
+            <summary>Device has a built-in NFC reader.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.SupportsRSASignPassword">
+            <summary>Device supports RSASign password protection.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.Supports4096BitKeys">
+            <summary>Device is able to work with keys up to 4096 bits.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.SupportsSecureModePassword">
+            <summary>Secure mode may be protected by a password.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.SupportsRSAPassword">
+            <summary>RSA keys may be protected by a password.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.CanSignExternalHash">
+            <summary>Device is able to sign a hash calculated externally.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.CanStoreEncryptKey">
+            <summary>Device is able to store a signing key pair generated outside of the device.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.CanStoreSignKey">
+            <summary>Device is able to store a signing key pair.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.CanGenerateSignKey">
+            <summary>Device is able to generate a signing key pair.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.SupportsH2ContentSigning">
+            <summary>Device supports content signing with the biometric data only (hash 2).</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.SupportsContentSigning">
+            <summary>Device supports content signing.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.SupportsRSA">
+            <summary>Device supports RSA features.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.SupportsKeypad32">
+            <summary>Device caches up to 32 keypad-entries.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.SupportsKeypad">
+            <summary>Device supports keypads (hotspot mode), caches up to 8 entries (could be 32, check SupportsKeypad32).</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.SupportsServiceMenu">
+            <summary>Device supports starting the service menu using the API.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.SupportsPenScrolling">
+            <summary>Device supports pen scrolling.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.SupportsHorizontalScrolling">
+            <summary>Device supports horizontal scrolling.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.SupportsVerticalScrolling">
+            <summary>Device supports vertical scrolling.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.HasBacklight">
+            <summary>Device has a backlight display.</summary>
+        </member>
+        <member name="P:signotec.STPadLibNet.PadCapabilities.HasColorDisplay">
+            <summary>Device has a color display.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.PadCapabilities.#ctor(System.Int32)">
+            <summary>Constructor.</summary>
+            <summary>Constructor.</summary>
+        </member>
+        <member name="T:signotec.STPadLibNet.PadCapabilities">
+            <summary>Describes capabilities of a signotec LCD Signature Pad.</summary>
+        </member>
+        <member name="M:COverlayRect.RemoveSign">
+            <summary>Removes the overlay rectangle which was set while the signature capture was running, that means that it will be empty.</summary>
+        </member>
+        <member name="M:COverlayRect.SetSign(tagRECT!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Sets the overlay rectangle which was set while the signature capture was running.</summary>
+            <param name="rcSign">Reference to the new overlay rectangle.</param>
+        </member>
+        <member name="M:COverlayRect.GetSign">
+            <summary>Returns the overlay rectangle which was set while the signature capture was running.</summary>
+            <returns>Reference to the overlay rectangle, which is an empty rectangle when no overlay rect was set.</returns>
+        </member>
+        <member name="M:COverlayRect.WasSetWhileSigning">
+            <summary>Signals if an overlay rectangle was set while the signature capture was running.</summary>
+            <returns>True if an overlay rectangle is prepared.</returns>
+        </member>
+        <member name="M:COverlayRect.RemovePrepared">
+            <summary>Removes the prepared overlay rectangle, that means that it will be empty.</summary>
+        </member>
+        <member name="M:COverlayRect.SetPrepared(tagRECT!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Sets the new prepared overlay rectangle.</summary>
+            <param name="rcPrepared">Reference to the new prepared overlay rectangle.</param>
+        </member>
+        <member name="M:COverlayRect.GetPrepared">
+            <summary>Returns the prepared overlay rectangle.</summary>
+            <returns>Reference to the prepared overlay rectangle, which is an empty rectangle when no overlay rect is prepared currently.</returns>
+        </member>
+        <member name="M:COverlayRect.IsPrepared">
+            <summary>Signals if an overlay rectangle is prepared.</summary>
+            <returns>True if an overlay rectangle is prepared.</returns>
+        </member>
+        <member name="M:COverlayRect.GetHeight">
+            <summary>Returns the height of the current overlay rectangle.</summary>
+            <returns>Height of the current overlay rectangle.</returns>
+        </member>
+        <member name="M:COverlayRect.GetWidth">
+            <summary>Returns the width of the current overlay rectangle.</summary>
+            <returns>Width of the current overlay rectangle.</returns>
+        </member>
+        <member name="M:COverlayRect.Remove">
+            <summary>Removes the current overlay rectangle, that means that both the current and the actually set rect will be empty.</summary>
+        </member>
+        <member name="M:COverlayRect.Set(tagRECT!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,tagRECT!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Sets the new overlay rectangle.</summary>
+            <param name="rect">Reference to the new overlay rectangle.</param>
+            <param name="sigpadRect">Reference to the overlay rectangle which is actually set in the signature pad (coordinates may be rotated for example).<para />
+Note: the rectangle should have the same dimensions as <paramref name="rect" /> for logical reasons but this isn't checked!</param>
+        </member>
+        <member name="M:COverlayRect.GetSigpad">
+            <summary>Returns the current overlay rectangle which is actually set in the signature pad.</summary>
+            <returns>Reference to the current overlay rectangle, which is an empty rectangle when no overlay rect is set currently.</returns>
+        </member>
+        <member name="M:COverlayRect.Get">
+            <summary>Returns the current overlay rectangle.</summary>
+            <returns>Reference to the current overlay rectangle, which is an empty rectangle when no overlay is set currently.</returns>
+        </member>
+        <member name="M:COverlayRect.IsSet">
+            <summary>Signals if an overlay rectangle is set currently.</summary>
+            <returns>True if the overlay rectangle is set.</returns>
+        </member>
+        <member name="M:COverlayRect.HasChanged">
+            <summary>Signals if the current overlay rectangle has been changed since the last call.</summary>
+            <returns>True if the overlay rectangle has changed.</returns>
+        </member>
+        <member name="M:COverlayRect.Reset">
+            <summary>Resets all members to default values, that means that all rects are empty.</summary>
+        </member>
+        <member name="M:Gdiplus.Region.IsVisible(Gdiplus.PointF!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Gdiplus.Graphics!System.Runtime.CompilerServices.IsConst*)">
+Hit testing operations
+
+</member>
+        <member name="M:signotec.STPadLibNet.NativeString.op_Implicit(signotec.STPadLibNet.NativeString)~System.Byte*">
+            <summary>Returns a pointer to a native BYTE array of the string.</summary>
+            <returns>Pointer to native BYTE array, may be <code>null</code>.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.NativeString.op_Implicit(signotec.STPadLibNet.NativeString)~System.Char*">
+            <summary>Returns a pointer to a native WCHAR array of the string.</summary>
+            <returns>Pointer to native WCHAR array, may be <code>null</code>.</returns>
+        </member>
+        <member name="M:signotec.STPadLibNet.NativeString.Finalize">
+            <summary>Finalizer.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.NativeString.Dispose">
+            <summary>Destructor.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.NativeString.#ctor(System.Security.SecureString)">
+            <summary>Constructor.</summary>
+            <param name="string">
+                <see cref="T:System.Security.SecureString" /> to intitialize the class with; may be <code>null</code>.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.NativeString.#ctor(System.String)">
+            <summary>Constructor.</summary>
+            <param name="string">
+                <see cref="T:System.String" /> to intitialize the class with; may be <code>null</code>.</param>
+        </member>
+        <member name="P:signotec.STPadLibNet.STPadException.ErrorCode">
+            <summary>Error code of the <see cref="T:signotec.STPadLibNet.STPadException" />.</summary>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadException.#ctor(System.String,System.Int32!System.Runtime.CompilerServices.IsLong,System.Exception)">
+            <summary>Initializes a new instance of the <see cref="T:signotec.STPadLibNet.STPadException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="errorCode">The error code.</param>
+            <param name="innerException">The <see cref="T:System.Exception" /> that is the cause of the current exception, or a null reference(Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadException.#ctor(System.String,System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Initializes a new instance of the <see cref="T:signotec.STPadLibNet.STPadException" /> class with a specified error message.</summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="errorCode">The error code.</param>
+        </member>
+        <member name="M:signotec.STPadLibNet.STPadException.#ctor(System.Int32!System.Runtime.CompilerServices.IsLong)">
+            <summary>Initializes a new instance of the <see cref="T:signotec.STPadLibNet.STPadException" /> class with a specified error message.</summary>
+            <param name="errorCode">The error code.</param>
+        </member>
+    </members>
+</doc>

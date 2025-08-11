@@ -1,0 +1,45 @@
+USE [db]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[ADUserConfigs](
+	[ADUserConfigID] [int] NOT NULL,
+	[FK_ADUserID] [int] NOT NULL,
+	[AAStatus] [varchar](10) NULL,
+	[IsActive] [bit] NOT NULL,
+	[ADUserConfigGroup] [varchar](100) NOT NULL,
+	[ADUserConfigKey] [varchar](100) NOT NULL,
+	[ADUserConfigValue] [ntext] NOT NULL,
+	[ADUserConfigText] [nvarchar](250) NOT NULL,
+	[ADUserConfigDesc] [nvarchar](250) NULL,
+ CONSTRAINT [PK_ADUserConfigs] PRIMARY KEY CLUSTERED 
+(
+	[ADUserConfigID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[ADUserConfigs] ADD  CONSTRAINT [ADUserConfigs_DF_IsActive]  DEFAULT ((0)) FOR [IsActive]
+GO
+
+ALTER TABLE [dbo].[ADUserConfigs]  WITH CHECK ADD  CONSTRAINT [FK_ADUserConfigs_ADUsers] FOREIGN KEY([FK_ADUserID])
+REFERENCES [dbo].[ADUsers] ([ADUserID])
+GO
+
+ALTER TABLE [dbo].[ADUserConfigs] CHECK CONSTRAINT [FK_ADUserConfigs_ADUsers]
+GO
+
+CREATE NONCLUSTERED INDEX [IX_FK_ADUserConfigs_ADUsers] ON [dbo].[ADUserConfigs]
+(
+	[FK_ADUserID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+
+
+
+

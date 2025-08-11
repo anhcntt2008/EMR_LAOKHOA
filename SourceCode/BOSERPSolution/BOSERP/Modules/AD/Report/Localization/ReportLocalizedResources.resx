@@ -1,0 +1,843 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Category" xml:space="preserve">
+    <value>Nhóm hàng</value>
+  </data>
+  <data name="Cost" xml:space="preserve">
+    <value>Tổng giá mua</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Ngành hàng</value>
+  </data>
+  <data name="ARCustomerName" xml:space="preserve">
+    <value>Tên khách hàng</value>
+  </data>
+  <data name="FromDateLargerToDateErrorMessage" xml:space="preserve">
+    <value>Từ ngày không được lớn hơn đến ngày</value>
+  </data>
+  <data name="ICInventoryStockTotalQty" xml:space="preserve">
+    <value>Tổng cộng</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Sản phẩm</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>Nhà cung cấp</value>
+  </data>
+  <data name="TitleChartName" xml:space="preserve">
+    <value>Báo cáo doanh thu theo sản phẩm</value>
+  </data>
+  <data name="InvoiceNo" xml:space="preserve">
+    <value>Mã hóa đơn</value>
+  </data>
+  <data name="SaleOrderStatus" xml:space="preserve">
+    <value>Tình trạng</value>
+  </data>
+  <data name="ToDateLessFromDateErrorMessage" xml:space="preserve">
+    <value>Đến ngày không được nhỏ hơn từ ngày</value>
+  </data>
+  <data name="PurchaseOrderItemType" xml:space="preserve">
+    <value>Loại hàng đặt</value>
+  </data>
+  <data name="APPurchaseProposalItemStatus" xml:space="preserve">
+    <value>Tình trạng</value>
+  </data>
+  <data name="ICFromStockName" xml:space="preserve">
+    <value>Từ kho</value>
+  </data>
+  <data name="ICToStockName" xml:space="preserve">
+    <value>Đến kho</value>
+  </data>
+  <data name="ICTransferDate" xml:space="preserve">
+    <value>Ngày chứng từ</value>
+  </data>
+  <data name="LoadingData" xml:space="preserve">
+    <value>Đang xử lý dữ liệu</value>
+  </data>
+  <data name="ProductAttributeKeyMessage" xml:space="preserve">
+    <value>Bạn vui lòng chọn ngành hàng hoặc sản phẩm trước!</value>
+  </data>
+  <data name="ICReceiptDate" xml:space="preserve">
+    <value>Ngày chứng từ</value>
+  </data>
+  <data name="ICReceiptNo" xml:space="preserve">
+    <value>Mã chứng từ</value>
+  </data>
+  <data name="ICReceiptPackNo" xml:space="preserve">
+    <value>Mã lô hàng</value>
+  </data>
+  <data name="ICInventoryStockQuantity" xml:space="preserve">
+    <value>Số lượng hiện có trong kho</value>
+  </data>
+  <data name="MisssingInventoryStockQuantity" xml:space="preserve">
+    <value>Số lượng thiếu</value>
+  </data>
+  <data name="ICProductSerieNo" xml:space="preserve">
+    <value>Mã lô hàng</value>
+  </data>
+  <data name="ICStockName" xml:space="preserve">
+    <value>Kho</value>
+  </data>
+  <data name="ARInvoiceItemProductQty" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="ARInvoiceItemTotalAmount" xml:space="preserve">
+    <value>Doanh thu</value>
+  </data>
+  <data name="Qty" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="ARCustomerPaymentDate" xml:space="preserve">
+    <value>Ngày chứng từ</value>
+  </data>
+  <data name="ARCustomerPaymentNo" xml:space="preserve">
+    <value>Mã chứng từ</value>
+  </data>
+  <data name="ARSaleOrderDate" xml:space="preserve">
+    <value>Ngày đơn hàng</value>
+  </data>
+  <data name="ARSaleOrderNo" xml:space="preserve">
+    <value>Mã đơn hàng</value>
+  </data>
+  <data name="BRBranchName" xml:space="preserve">
+    <value>Chi nhánh</value>
+  </data>
+  <data name="TotalPurchaseQty" xml:space="preserve">
+    <value>Số lần mua</value>
+  </data>
+  <data name="TotalPurchaseAmount" xml:space="preserve">
+    <value>Số tiền mua</value>
+  </data>
+  <data name="ICTransferNo" xml:space="preserve">
+    <value>Mã chứng từ</value>
+  </data>
+  <data name="ARCustomerContactAddressLine3" xml:space="preserve">
+    <value>Địa chỉ liên lạc</value>
+  </data>
+  <data name="ARCancelVoucherItemProductQty" xml:space="preserve">
+    <value>Số lượng hủy</value>
+  </data>
+  <data name="FromMonth" xml:space="preserve">
+    <value>Từ tháng</value>
+  </data>
+  <data name="FromYear" xml:space="preserve">
+    <value>Từ năm</value>
+  </data>
+  <data name="ARSaleOrderBalanceDue" xml:space="preserve">
+    <value>Còn lại</value>
+  </data>
+  <data name="ARSaleOrderDeliveryDate" xml:space="preserve">
+    <value>Ngày giao</value>
+  </data>
+  <data name="ARSaleOrderDepositBalance" xml:space="preserve">
+    <value>Đặt trước</value>
+  </data>
+  <data name="ARSaleOrderDiscountPerCentDisplayText" xml:space="preserve">
+    <value>% chiết khấu</value>
+  </data>
+  <data name="ARSaleOrderTaxPercentDisplayText" xml:space="preserve">
+    <value>% thuế</value>
+  </data>
+  <data name="ARSaleOrderTotalAmount" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="SaleOrderNo" xml:space="preserve">
+    <value>Mã đơn hàng</value>
+  </data>
+  <data name="ARInvoiceBalanceDue" xml:space="preserve">
+    <value>Còn lại</value>
+  </data>
+  <data name="ARInvoiceDepositBalance" xml:space="preserve">
+    <value>Đặt trước</value>
+  </data>
+  <data name="ARInvoiceDiscountPerCentDisplayText" xml:space="preserve">
+    <value>% chiết khấu</value>
+  </data>
+  <data name="ARInvoiceNo" xml:space="preserve">
+    <value>Mã hóa đơn</value>
+  </data>
+  <data name="ARInvoiceTaxPercentDisplayText" xml:space="preserve">
+    <value>% thuế</value>
+  </data>
+  <data name="ARInvoiceTotalAmount" xml:space="preserve">
+    <value>Doanh thu</value>
+  </data>
+  <data name="ICProductGroupParentName" xml:space="preserve">
+    <value>Nhóm hàng</value>
+  </data>
+  <data name="APPurchaseOrderBalanceDue" xml:space="preserve">
+    <value>Còn lại</value>
+  </data>
+  <data name="APPurchaseOrderDate" xml:space="preserve">
+    <value>Ngày chứng từ</value>
+  </data>
+  <data name="APPurchaseOrderDeliveryDate" xml:space="preserve">
+    <value>Ngày giao hàng</value>
+  </data>
+  <data name="APPurchaseOrderDepositBalance" xml:space="preserve">
+    <value>Đặt trước</value>
+  </data>
+  <data name="APPurchaseOrderDesc" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="APPurchaseOrderNo" xml:space="preserve">
+    <value>Mã chứng từ</value>
+  </data>
+  <data name="APPurchaseOrderTotalCost" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="APPurchaseOrderTypeDisplayText" xml:space="preserve">
+    <value>Loại</value>
+  </data>
+  <data name="APPurchaseOrderVolume" xml:space="preserve">
+    <value>Số khối</value>
+  </data>
+  <data name="APSupplierName" xml:space="preserve">
+    <value>NCC</value>
+  </data>
+  <data name="ICProductGoupInfo" xml:space="preserve">
+    <value>Thông tin</value>
+  </data>
+  <data name="RateIncreaseDecrease" xml:space="preserve">
+    <value>Tỉ lệ (tăng,giảm)</value>
+  </data>
+  <data name="CaptionNext" xml:space="preserve">
+    <value>Xem chi tiết &gt;&gt;</value>
+  </data>
+  <data name="Captionprev" xml:space="preserve">
+    <value>&lt;&lt; Trở lại</value>
+  </data>
+  <data name="ICProductGroupName" xml:space="preserve">
+    <value>Danh mục</value>
+  </data>
+  <data name="ICDepartmentName" xml:space="preserve">
+    <value>Ngành hàng</value>
+  </data>
+  <data name="ICProductNo" xml:space="preserve">
+    <value>Mã sản phẩm</value>
+  </data>
+  <data name="DateTitle" xml:space="preserve">
+    <value>Ngày</value>
+  </data>
+  <data name="FromDateTitle" xml:space="preserve">
+    <value>Từ ngày</value>
+  </data>
+  <data name="ToDateTitle" xml:space="preserve">
+    <value>Đến</value>
+  </data>
+  <data name="FromDeliveryDateTitle" xml:space="preserve">
+    <value>Ngày giao từ</value>
+  </data>
+  <data name="ARSellerName" xml:space="preserve">
+    <value>Người bán</value>
+  </data>
+  <data name="ARCancelVoucherNo" xml:space="preserve">
+    <value>Mã chứng từ</value>
+  </data>
+  <data name="ARCancelVoucherTotalAmount" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="ARCustomerPaymentDetailDesc" xml:space="preserve">
+    <value>Chi tiết thanh toán</value>
+  </data>
+  <data name="Sum" xml:space="preserve">
+    <value>Cộng</value>
+  </data>
+  <data name="ICProductDesc" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="ICProductSupplierNumber" xml:space="preserve">
+    <value>Mã sản phẩm NCC</value>
+  </data>
+  <data name="APSupplierContactPhone1" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <data name="ProductDesc" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="ProductQty" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="ProductSupplierNo" xml:space="preserve">
+    <value>Mã sản phẩm NCC</value>
+  </data>
+  <data name="ToMonth" xml:space="preserve">
+    <value>Đến tháng</value>
+  </data>
+  <data name="ToYear" xml:space="preserve">
+    <value>Đến năm</value>
+  </data>
+  <data name="APProposalDate" xml:space="preserve">
+    <value>Ngày đề nghị</value>
+  </data>
+  <data name="ICReceiptTotalCost" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="APPurchaseOrderPackingDate" xml:space="preserve">
+    <value>Ngày đóng hàng</value>
+  </data>
+  <data name="APPurchaseOrderStatusDisplayText" xml:space="preserve">
+    <value>Tình trạng</value>
+  </data>
+  <data name="APInvoiceInBalanceDue" xml:space="preserve">
+    <value>Còn lại</value>
+  </data>
+  <data name="APInvoiceInDate" xml:space="preserve">
+    <value>Ngày hóa đơn</value>
+  </data>
+  <data name="APInvoiceInDepositBalance" xml:space="preserve">
+    <value>Đặt trước</value>
+  </data>
+  <data name="APInvoiceInNo" xml:space="preserve">
+    <value>Mã hóa đơn</value>
+  </data>
+  <data name="APInvoiceInPackNo" xml:space="preserve">
+    <value>Mã lô hàng</value>
+  </data>
+  <data name="APInvoiceInPaymentAmount" xml:space="preserve">
+    <value>Thanh toán</value>
+  </data>
+  <data name="APInvoiceInStatusDisplayText" xml:space="preserve">
+    <value>Tình trạng</value>
+  </data>
+  <data name="APInvoiceInTotalCost" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="APInvoiceInValidateDate" xml:space="preserve">
+    <value>Ngày thanh toán</value>
+  </data>
+  <data name="ICTransferStatusDisplayText" xml:space="preserve">
+    <value>Tình trạng</value>
+  </data>
+  <data name="HREmployeeName" xml:space="preserve">
+    <value>Nhân viên</value>
+  </data>
+  <data name="ARInvoiceReturnAmount" xml:space="preserve">
+    <value>Khách hàng trả hàng</value>
+  </data>
+  <data name="ARInvoicePaymentAmount" xml:space="preserve">
+    <value>Thực thu</value>
+  </data>
+  <data name="ARInvoiceDate" xml:space="preserve">
+    <value>Ngày hóa đơn</value>
+  </data>
+  <data name="ICReceiptTypeDisplayText" xml:space="preserve">
+    <value>Diễn giải</value>
+  </data>
+  <data name="ProductSerialNo" xml:space="preserve">
+    <value>Mã lô hàng</value>
+  </data>
+  <data name="ICReceiptStatus" xml:space="preserve">
+    <value>Tình trạng</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Chọn</value>
+  </data>
+  <data name="ACObjectName" xml:space="preserve">
+    <value>Tên đối tượng</value>
+  </data>
+  <data name="ACObjectNo" xml:space="preserve">
+    <value>Mã đối tượng</value>
+  </data>
+  <data name="ACObjectType" xml:space="preserve">
+    <value>Loại đối tượng</value>
+  </data>
+  <data name="SelectedCustomerNoNull" xml:space="preserve">
+    <value>Bạn vui lòng chọn khách hàng</value>
+  </data>
+  <data name="SelectedSupplierNoNull" xml:space="preserve">
+    <value>Bạn vui lòng chọn nhà cung cấp</value>
+  </data>
+  <data name="SeletedAccountNotNull" xml:space="preserve">
+    <value>Bạn vui lòng chọn tài khoản</value>
+  </data>
+  <data name="ICProductPrice" xml:space="preserve">
+    <value>Giá bán</value>
+  </data>
+  <data name="GECurrencyName" xml:space="preserve">
+    <value>Loại tiền tệ</value>
+  </data>
+  <data name="ChooseAccountMessage" xml:space="preserve">
+    <value>Bạn vui lòng chọn tài khoản!</value>
+  </data>
+  <data name="ChooseProductMessage" xml:space="preserve">
+    <value>Bạn vui lòng chọn sản phẩm</value>
+  </data>
+  <data name="ChooseSupplierMessage" xml:space="preserve">
+    <value>Bạn vui lòng chọn NCC!</value>
+  </data>
+  <data name="ChooseObjectMessage" xml:space="preserve">
+    <value>Vui lòng chọn đối tượng!</value>
+  </data>
+  <data name="SpecifyAssetInitialBalance" xml:space="preserve">
+    <value>Xác định số dư ban đầu</value>
+  </data>
+  <data name="ChooseAssetMessage" xml:space="preserve">
+    <value>Vui lòng chọn tài sản!</value>
+  </data>
+  <data name="ChooseRoomMessage" xml:space="preserve">
+    <value>Vui lòng chọn phòng ban!</value>
+  </data>
+  <data name="BuiltInAccount" xml:space="preserve">
+    <value>A. Tài khoản trong bảng</value>
+  </data>
+  <data name="NotBuiltInAccount" xml:space="preserve">
+    <value>B. Tài khoản ngoài bảng</value>
+  </data>
+  <data name="TotalSaleAmount" xml:space="preserve">
+    <value>Doanh thu bán hàng</value>
+  </data>
+  <data name="TotalSaleQty" xml:space="preserve">
+    <value>Số lần bán hàng</value>
+  </data>
+  <data name="ICReceiptDesc" xml:space="preserve">
+    <value>Diễn giải</value>
+  </data>
+  <data name="ReceiptedQty" xml:space="preserve">
+    <value>Số lượng nhập</value>
+  </data>
+  <data name="ShippedQty" xml:space="preserve">
+    <value>Số lượng xuất</value>
+  </data>
+  <data name="ICMeasureUnitName" xml:space="preserve">
+    <value>Đơn vị tính</value>
+  </data>
+  <data name="APInvoiceInComment" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="APPurchaseOrderComment" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DocumentComment" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DocumentDate" xml:space="preserve">
+    <value>Ngày chứng từ</value>
+  </data>
+  <data name="DocumentNo" xml:space="preserve">
+    <value>Mã chứng từ</value>
+  </data>
+  <data name="SaleOrderDate" xml:space="preserve">
+    <value>Ngày đơn hàng</value>
+  </data>
+  <data name="SellerName" xml:space="preserve">
+    <value>Người bán</value>
+  </data>
+  <data name="TotalAmount" xml:space="preserve">
+    <value>Số tiền</value>
+  </data>
+  <data name="CancelVoucherAmount" xml:space="preserve">
+    <value>Số tiền hàng hủy</value>
+  </data>
+  <data name="InvoiceIncome" xml:space="preserve">
+    <value>Doanh thu giao hàng</value>
+  </data>
+  <data name="SaleOrderIncome" xml:space="preserve">
+    <value>Doanh thu bán hàng</value>
+  </data>
+  <data name="SaleReturnAmount" xml:space="preserve">
+    <value>Số tiền hàng trả lại</value>
+  </data>
+  <data name="ARCancelVoucherDate" xml:space="preserve">
+    <value>Ngày chứng từ</value>
+  </data>
+  <data name="ARInvoiceStatus" xml:space="preserve">
+    <value>Tình trạng</value>
+  </data>
+  <data name="APProposalNo" xml:space="preserve">
+    <value>Mã chứng từ</value>
+  </data>
+  <data name="StockCardViewAll" xml:space="preserve">
+    <value>Tất cả (xem tổng hợp)</value>
+  </data>
+  <data name="StockCardViewAll1" xml:space="preserve">
+    <value>Tất cả (xem theo kho)</value>
+  </data>
+  <data name="DepositExchange" xml:space="preserve">
+    <value>Cấn trừ cọc</value>
+  </data>
+  <data name="APInvoiceInExchangeRate" xml:space="preserve">
+    <value>Tỷ giá</value>
+  </data>
+  <data name="OnHandQuantity" xml:space="preserve">
+    <value>Số lượng hiện có</value>
+  </data>
+  <data name="PurchaseOrderQuantity" xml:space="preserve">
+    <value>Số lượng đặt mua</value>
+  </data>
+  <data name="SaleOrderQuantity" xml:space="preserve">
+    <value>Số lượng nợ khách</value>
+  </data>
+  <data name="TransitInQuantity" xml:space="preserve">
+    <value>Số lượng hàng về</value>
+  </data>
+  <data name="TransitOutQuantity" xml:space="preserve">
+    <value>Số lượng trung chuyển</value>
+  </data>
+  <data name="ICInventoryStockPurchaseAndSaleAvailableQuantityCaption" xml:space="preserve">
+    <value>TỔNG TỒN</value>
+  </data>
+  <data name="ICInventoryStockPurchaseOrderQuantityCaption" xml:space="preserve">
+    <value>Hàng đang về(cont 11-18)</value>
+  </data>
+  <data name="ICInventoryStockSaleAvailableQuantityCaption" xml:space="preserve">
+    <value>TON KD</value>
+  </data>
+  <data name="ICInventoryStockSaleOrderQuantityCaption" xml:space="preserve">
+    <value>HCG</value>
+  </data>
+  <data name="ICInventoryStockTotalQtyCaption" xml:space="preserve">
+    <value>KHO NG</value>
+  </data>
+  <data name="StockSaleOff" xml:space="preserve">
+    <value>KHO SALE</value>
+  </data>
+  <data name="ICInventoryStockShipmentAndReceiptQuantityCaption" xml:space="preserve">
+    <value>D.Số {0}-{1}</value>
+  </data>
+  <data name="ARCustomerContactPhone" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <data name="ICInventoryStockSaleOff" xml:space="preserve">
+    <value>HCG SALE</value>
+  </data>
+  <data name="ICInventoryStockSaleOffAvailableQuantityCaption" xml:space="preserve">
+    <value>TONKD SALE</value>
+  </data>
+  <data name="ARCustomerRepaid" xml:space="preserve">
+    <value>Trả tiền khách hàng</value>
+  </data>
+  <data name="ConvertedTotalCostCaption" xml:space="preserve">
+    <value>Thành tiền(Quy đổi)</value>
+  </data>
+  <data name="ConvertUnitCost" xml:space="preserve">
+    <value>Đơn giá (Quy đổi)</value>
+  </data>
+  <data name="ConvertedItemTotalCostCaption" xml:space="preserve">
+    <value>Tổng giá mua (Quy đổi)</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ICProductStatus" xml:space="preserve">
+    <value>Tình trạng</value>
+  </data>
+  <data name="ICProductSupplierPrice" xml:space="preserve">
+    <value>Giá mua</value>
+  </data>
+  <data name="ARInvoiceTotalAmount2" xml:space="preserve">
+    <value>Tổng Công nợ</value>
+  </data>
+  <data name="ARSaleOrderDebitReceivedTotal" xml:space="preserve">
+    <value>Công nợ đã thu</value>
+  </data>
+  <data name="ARSaleOrderDebitRemainingTotal" xml:space="preserve">
+    <value>Công nợ còn lại</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Công ty</value>
+  </data>
+  <data name="StockCardOpeningBalanceAmount" xml:space="preserve">
+    <value>Dư đầu</value>
+  </data>
+  <data name="StockCardOpeningBalance" xml:space="preserve">
+    <value>Tồn đầu</value>
+  </data>
+  <data name="StockCardEndBalance" xml:space="preserve">
+    <value>Tồn cuối</value>
+  </data>
+  <data name="StockCardEndBalanceAmount" xml:space="preserve">
+    <value>Dư cuối</value>
+  </data>
+  <data name="StockCardReceiptAmount" xml:space="preserve">
+    <value>Tiền nhập</value>
+  </data>
+  <data name="StockCardReceiptItemProductQty" xml:space="preserve">
+    <value>Số lượng nhập</value>
+  </data>
+  <data name="StockCardShipmentAmount" xml:space="preserve">
+    <value>Tiền xuất</value>
+  </data>
+  <data name="StockCardShipmentItemProductQty" xml:space="preserve">
+    <value>Số lượng xuất</value>
+  </data>
+  <data name="MedicineAndEquipmentName" xml:space="preserve">
+    <value>Tên thuốc/ DCYT</value>
+  </data>
+  <data name="MedicineAndEquipmentNo" xml:space="preserve">
+    <value>Mã thuốc/ DCYT</value>
+  </data>
+  <data name="MedicineName" xml:space="preserve">
+    <value>Tên thuốc</value>
+  </data>
+  <data name="MedicineNo" xml:space="preserve">
+    <value>Mã thuốc</value>
+  </data>
+  <data name="MEPatientName" xml:space="preserve">
+    <value>Tên bệnh nhân</value>
+  </data>
+  <data name="MEPatienVisitTotalQty" xml:space="preserve">
+    <value>Số lượng khám</value>
+  </data>
+  <data name="MESpecialismName" xml:space="preserve">
+    <value>Chuyên khoa</value>
+  </data>
+  <data name="MEVisitMedicationDate" xml:space="preserve">
+    <value>Ngày kê toa</value>
+  </data>
+  <data name="MEVisitOrderDate" xml:space="preserve">
+    <value>Ngày chỉ định</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Xem theo doanh thu</value>
+  </data>
+  <data name="ICProductGroup" xml:space="preserve">
+    <value>Dịch vụ khám</value>
+  </data>
+  <data name="AxisXDayOfMonthTitle" xml:space="preserve">
+    <value>Ngày trong tháng</value>
+  </data>
+  <data name="AxisXDayOfWeekTitle" xml:space="preserve">
+    <value>Ngày trong tuần</value>
+  </data>
+  <data name="AxisXMonthTitle" xml:space="preserve">
+    <value>Tháng</value>
+  </data>
+  <data name="AxisXYearTitle" xml:space="preserve">
+    <value>Năm</value>
+  </data>
+  <data name="AxisYAmountTitle" xml:space="preserve">
+    <value>Doanh thu</value>
+  </data>
+  <data name="AxisYQuantityTitle" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="TitleSales" xml:space="preserve">
+    <value>Danh sách doanh thu theo thời gian</value>
+  </data>
+  <data name="TitleChartCustomerName" xml:space="preserve">
+    <value>Biểu đồ thống kê số lượng khách hàng theo chuyên khoa</value>
+  </data>
+  <data name="TitleChartNameCustomerOverTime" xml:space="preserve">
+    <value>Biểu đồ thống kê số lượng khách hàng theo thời gian</value>
+  </data>
+  <data name="EquipmentName" xml:space="preserve">
+    <value>Tên DCYT</value>
+  </data>
+  <data name="EquipmentNo" xml:space="preserve">
+    <value>Mã DCYT</value>
+  </data>
+  <data name="ICShipmentItemProductTotalQty" xml:space="preserve">
+    <value>Số lượng sử dụng</value>
+  </data>
+  <data name="ICProductStockMax" xml:space="preserve">
+    <value>Hạn mức tồn kho tối đa</value>
+  </data>
+  <data name="ICProductStockMin" xml:space="preserve">
+    <value>Hạn mức tồn kho tối thiểu</value>
+  </data>
+  <data name="AllBranch" xml:space="preserve">
+    <value>Tất cả chi nhánh</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="NoDataToPrintMessage" xml:space="preserve">
+    <value>Không có dữ liệu để in</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>Tel:</value>
+  </data>
+  <data name="MEPatientVisitDate" xml:space="preserve">
+    <value>Ngày khám</value>
+  </data>
+  <data name="MEPatientVisitNo" xml:space="preserve">
+    <value>Mã lần khám</value>
+  </data>
+  <data name="ICMedicationName" xml:space="preserve">
+    <value>Tên thuốc</value>
+  </data>
+  <data name="ICMedicationNo" xml:space="preserve">
+    <value>Mã thuốc</value>
+  </data>
+  <data name="ICOrderName" xml:space="preserve">
+    <value>Tên chỉ định</value>
+  </data>
+  <data name="ICOrderNo" xml:space="preserve">
+    <value>Mã chỉ định</value>
+  </data>
+  <data name="Remark" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="CannotExportToExcelFileBecauseTheFileIsBeingUsedByAnotherProcessMessage" xml:space="preserve">
+    <value>Không thể xuất ra excel file vì file này đang được sử dụng bởi 1 tiến trình khác.</value>
+  </data>
+  <data name="ExportExelFileUnsuccessfullyMessage" xml:space="preserve">
+    <value>Có lỗi xảy ra khi xuất ra file excel. Vui lòng thử lại.</value>
+  </data>
+  <data name="DocumentInvoiceType" xml:space="preserve">
+    <value>Loại hóa đơn</value>
+  </data>
+  <data name="VisitOrderItemDone" xml:space="preserve">
+    <value>Đã thực hiện</value>
+  </data>
+  <data name="HREmployeeIDAsExecDr" xml:space="preserve">
+    <value>Bác sĩ thực hiện</value>
+  </data>
+  <data name="DocumentEntryAccountNo" xml:space="preserve">
+    <value>Tài khoản</value>
+  </data>
+  <data name="DocumentEntrySegmentName" xml:space="preserve">
+    <value>Khoản mục</value>
+  </data>
+  <data name="ACDocumentDate" xml:space="preserve">
+    <value>Ngày chứng từ</value>
+  </data>
+  <data name="ACDocumentEntryAccountName" xml:space="preserve">
+    <value>Tên tài khoản</value>
+  </data>
+  <data name="ACDocumentEntryCreditAmount" xml:space="preserve">
+    <value>Có</value>
+  </data>
+  <data name="ACDocumentEntryDebitAmount" xml:space="preserve">
+    <value>Nợ</value>
+  </data>
+  <data name="ACDocumentNo" xml:space="preserve">
+    <value>Mã chứng từ</value>
+  </data>
+  <data name="ModuleDescriptions" xml:space="preserve">
+    <value>Tên module</value>
+  </data>
+  <data name="ICProductName" xml:space="preserve">
+    <value>Tên sản phẩm</value>
+  </data>
+  <data name="MEVisitOrderItemQty" xml:space="preserve">
+    <value>Số lượng chỉ định</value>
+  </data>
+  <data name="MEPatientContactAddressLine3" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="MEPatientContactCellPhone" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="GEUsingHistoryDateTime" xml:space="preserve">
+    <value>Ngày</value>
+  </data>
+</root>

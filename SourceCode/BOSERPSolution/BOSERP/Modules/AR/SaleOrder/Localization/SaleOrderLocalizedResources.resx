@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ARCustomerName" xml:space="preserve">
+    <value>Khách hàng</value>
+  </data>
+  <data name="AROpenDocumentNo" xml:space="preserve">
+    <value>Mã đơn hàng</value>
+  </data>
+  <data name="ARSaleOrderItemRemainedQty" xml:space="preserve">
+    <value>Số lượng còn lại</value>
+  </data>
+  <data name="CannotBuyProductErrorMessage" xml:space="preserve">
+    <value>Khách hàng này đã bị khóa mua hàng, xin chọn khách hàng khác.</value>
+  </data>
+  <data name="CompleteSuccessfullyMessage" xml:space="preserve">
+    <value>Hoàn tất thành công</value>
+  </data>
+  <data name="ConfirmUpdatePriceLevelToListedItemsMessage" xml:space="preserve">
+    <value>Bạn có muốn áp dụng mức giá mới cho những sản phẩm đã chọn?</value>
+  </data>
+  <data name="DeleteSuccessfullMessage" xml:space="preserve">
+    <value>Xóa đặt cọc thành công</value>
+  </data>
+  <data name="QuestionDeleteMessage" xml:space="preserve">
+    <value>Bạn có muốn xóa lần đặt cọc này?</value>
+  </data>
+  <data name="SaleOrderHasBeenCanceledMessage" xml:space="preserve">
+    <value>Đơn đặt hàng đã bị hủy và không thể chỉnh sửa</value>
+  </data>
+  <data name="SaleOrderHasBeenConfirmedMessage" xml:space="preserve">
+    <value>Đơn đặt hàng đã được xác nhận từ phía khách hàng và không thể chỉnh sửa</value>
+  </data>
+  <data name="SaleOrderHasBeenShippedMessage" xml:space="preserve">
+    <value>Đơn đặt hàng đã được lập phiếu giao và không thể chỉnh sửa</value>
+  </data>
+  <data name="SOItemComponent" xml:space="preserve">
+    <value>Thành phần</value>
+  </data>
+  <data name="UpdateSuccessfullMessage" xml:space="preserve">
+    <value>Cập nhật đặt cọc thành công</value>
+  </data>
+  <data name="ConfirmDepositBeforePrintingMessage" xml:space="preserve">
+    <value>Đơn đặt hàng chưa thu tiền cọc. Bạn có muốn in?</value>
+  </data>
+  <data name="ComponentIsNull" xml:space="preserve">
+    <value>Không có thành phần cho sản phẩm này</value>
+  </data>
+  <data name="ICProductName" xml:space="preserve">
+    <value>Tên sản phẩm</value>
+  </data>
+  <data name="ItemComponentList" xml:space="preserve">
+    <value>Xác định thành phần</value>
+  </data>
+  <data name="SaleOrderMustBeCompletedBeforePrintingMessage" xml:space="preserve">
+    <value>Bạn cần hoàn tất đơn hàng trước khi in</value>
+  </data>
+  <data name="SaleOrderMustBeCompletedBeforeTakingDepositMessage" xml:space="preserve">
+    <value>Bạn cần hoàn tất đơn hàng trước khi thu tiền cọc</value>
+  </data>
+  <data name="Discount" xml:space="preserve">
+    <value>CK</value>
+  </data>
+  <data name="VAT" xml:space="preserve">
+    <value>VAT</value>
+  </data>
+  <data name="ARCustomerPaymentNo" xml:space="preserve">
+    <value>Mã phiếu cọc</value>
+  </data>
+  <data name="ICProductDesc" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="ICProductSupplierNo" xml:space="preserve">
+    <value>Mã sản phẩm NCC</value>
+  </data>
+  <data name="ARCustomerPaymentExchangeRate" xml:space="preserve">
+    <value>Tỉ giá</value>
+  </data>
+  <data name="GECurrencyName" xml:space="preserve">
+    <value>Loại tiền tệ</value>
+  </data>
+  <data name="HREmployeeName" xml:space="preserve">
+    <value>Nhân viên</value>
+  </data>
+  <data name="Copy1" xml:space="preserve">
+    <value>Liên 1: Lưu</value>
+  </data>
+  <data name="Copy2" xml:space="preserve">
+    <value>Liên 2: Giao cho khách hàng</value>
+  </data>
+  <data name="ExchangeRate" xml:space="preserve">
+    <value>Tỷ giá</value>
+  </data>
+  <data name="ICProductSerialNo" xml:space="preserve">
+    <value>Mã lô hàng</value>
+  </data>
+  <data name="ICStockName" xml:space="preserve">
+    <value>Kho</value>
+  </data>
+  <data name="DepositAlreadyExistsMessage" xml:space="preserve">
+    <value>Phiếu cọc {0} đã có trong đơn hàng</value>
+  </data>
+  <data name="DepositHasNotSameCustomerMessage" xml:space="preserve">
+    <value>Phiếu cọc {0} không cùng khách hàng với đơn hàng</value>
+  </data>
+  <data name="ARCustomerPaymentDate" xml:space="preserve">
+    <value>Ngày đặt cọc</value>
+  </data>
+  <data name="DepositRemain" xml:space="preserve">
+    <value>Còn lại</value>
+  </data>
+  <data name="DepositTransfer" xml:space="preserve">
+    <value>Đã chuyển cọc</value>
+  </data>
+</root>

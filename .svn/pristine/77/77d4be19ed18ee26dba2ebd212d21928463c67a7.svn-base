@@ -1,0 +1,1 @@
+INSERT INTO [dbo].[ADConfigValues] VALUES ((SELECT MAX(ADConfigValueID)+1 FROM ADConfigValues), 'Alive', N'MEEmrActionTypeComposition', N'Composition', N'Phức hợp', NULL, N'EmrActionType', '1');

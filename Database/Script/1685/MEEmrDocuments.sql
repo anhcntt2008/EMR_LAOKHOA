@@ -1,0 +1,1 @@
+ALTER TABLE MEEmrDocuments ADD MEEmrDocumentRefNo varchar(250)

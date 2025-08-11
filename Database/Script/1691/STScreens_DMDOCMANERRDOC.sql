@@ -1,0 +1,127 @@
+﻿
+DELETE
+FROM [STScreens]
+WHERE [STScreenNumber] = 'DMDOCMANERRDOC'
+
+INSERT INTO [dbo].[STScreens] (
+	[STScreenID]
+	,[STScreenNumber]
+	,[STScreenText]
+	,[STScreenName]
+	,[STModuleID]
+	,[STUserGroupID]
+	,[STScreenBackColor]
+	,[STScreenForeColor]
+	,[STScreenFontName]
+	,[STScreenFontSize]
+	,[STScreenFontStyle]
+	,[STScreenTag]
+	,[STScreenSizeWidth]
+	,[STScreenSizeHeight]
+	,[STScreenLocationX]
+	,[STScreenLocationY]
+	,[STScreenShowModal]
+	,[STScreenTopMost]
+	,[STScreenMatchCode01]
+	,[STScreenShowInfoPanel]
+	,[STScreenSortOrder]
+	,[STScreenPrivilege]
+	,[STScreenVisible]
+	)
+VALUES (
+	(
+		SELECT MAX([STScreenID]) + 1
+		FROM [STScreens]
+		)
+	,'DMDOCMANERRDOC'
+	,N'Tờ bệnh án lỗi nội dung'
+	,'DMDOCMANERRDOC'
+	,(
+		SELECT TOP 1 [STModuleID]
+		FROM [STModules]
+		WHERE [STModuleName] = 'MEDocumentManage'
+		)
+	,1
+	,- 526863
+	,- 16777216
+	,N'Tahoma'
+	,8.250000000000000
+	,'Regular'
+	,'DM'
+	,0
+	,0
+	,0
+	,0
+	,'1'
+	,'1'
+	,NULL
+	,'0'
+	,-1
+	,NULL
+	,'1'
+	);
+
+
+
+	
+DELETE
+FROM [STScreens]
+WHERE [STScreenNumber] = 'DMDOCMANLOSTDOC'
+
+INSERT INTO [dbo].[STScreens] (
+	[STScreenID]
+	,[STScreenNumber]
+	,[STScreenText]
+	,[STScreenName]
+	,[STModuleID]
+	,[STUserGroupID]
+	,[STScreenBackColor]
+	,[STScreenForeColor]
+	,[STScreenFontName]
+	,[STScreenFontSize]
+	,[STScreenFontStyle]
+	,[STScreenTag]
+	,[STScreenSizeWidth]
+	,[STScreenSizeHeight]
+	,[STScreenLocationX]
+	,[STScreenLocationY]
+	,[STScreenShowModal]
+	,[STScreenTopMost]
+	,[STScreenMatchCode01]
+	,[STScreenShowInfoPanel]
+	,[STScreenSortOrder]
+	,[STScreenPrivilege]
+	,[STScreenVisible]
+	)
+VALUES (
+	(
+		SELECT MAX([STScreenID]) + 1
+		FROM [STScreens]
+		)
+	,'DMDOCMANLOSTDOC'
+	,N'Tờ bệnh án mất'
+	,'DMDOCMANLOSTDOC'
+	,(
+		SELECT TOP 1 [STModuleID]
+		FROM [STModules]
+		WHERE [STModuleName] = 'MEDocumentManage'
+		)
+	,1
+	,- 526863
+	,- 16777216
+	,N'Tahoma'
+	,8.250000000000000
+	,'Regular'
+	,'DM'
+	,0
+	,0
+	,0
+	,0
+	,'1'
+	,'1'
+	,NULL
+	,'0'
+	,-2
+	,NULL
+	,'1'
+	);

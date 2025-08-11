@@ -1,0 +1,16 @@
+﻿
+x64/
+x86/
+build/
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Rr]eleases/
+
+*.licx
+
+.vs/
+/SourceCode/BOSERPSolution/BOSERP/App.config
+/SourceCode/BOSERPSolution/packages/
+/SourceCode/BOSERPSolution/Emr.Workflow.Client/Emr.Workflow.Client.csproj.user

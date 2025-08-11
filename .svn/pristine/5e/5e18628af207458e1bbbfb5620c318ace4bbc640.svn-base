@@ -1,0 +1,1 @@
+ALTER TABLE MENotifications ADD MENotificationImg varbinary(MAX);

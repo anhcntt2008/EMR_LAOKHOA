@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="mustBeExpressions"><value>Arguments must be expressions.</value></data>
+  <data name="mappedMemberIsChildOfTheParameterFormat"><value>The mapped member {0} is of type {1} and a child of the parameter type {2}.  No reference type (parent of) {0} is available to map as an include.</value></data>
+  <data name="expressionMapValueTypeMustMatchFormat"><value>The source and destination types must be the same for expression mapping between value types. Source Type: {0}, Source Description: {1}, Destination Type: {2}, Destination Property: {3}.</value></data>
+  <data name="typeMappingsDictionaryIsNull"><value>Type Mappings dictionary cannot be null.</value></data>
+  <data name="cannotCreateBinaryExpressionFormat"><value>Cannot create a binary expression for the following pair.  Node: {0}, Type: {1} and Node: {2}, Type: {3}.</value></data>
+  <data name="srcMemberCannotBeNullFormat"><value>SourceMember cannot be null. Source Type: {0}, Destination Type: {1}, Property: {2}.</value></data>
+  <data name="mapperInfoDictionaryIsNull"><value>Mapper Info dictionary cannot be null.</value></data>
+  <data name="invalidArgumentCount"><value>Source and destination must have the same number of arguments.</value></data>
+  <data name="invalidExpErr"><value>Invalid expression type for this operation.</value></data>
+  <data name="cantRemapExpression"><value>Can't rempa expression</value></data>
+  <data name="customResolversNotSupported"><value>Custom resolvers are not supported for expression mapping.</value></data>
+  <data name="includeExpressionTooComplex"><value>The Include value-type expression uses multiple sibling navigation objects "{0}", "{1}" and is too complex to translate.</value></data>
+  </root>

@@ -1,0 +1,1 @@
+UPDATE STScreens SET STScreenVisible=0 WHERE STModuleID=1045 AND STScreenTag='DS' and STScreenNumber in ('DSMETE100','DSMETE101')

@@ -1,0 +1,1 @@
+﻿UPDATE [dbo].[AAColumnAlias] SET [AANumberInt] = 0, [AANumberString] = '', [AAStatus] = 'Alive', [AAColumnAliasName] = 'FK_MEPatientID', [AAColumnAliasCaption] = N'Bệnh nhân', [AATableName] = 'MEEmrs' WHERE [AAColumnAliasID] = 2489;

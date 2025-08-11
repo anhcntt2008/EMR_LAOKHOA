@@ -1,0 +1,1 @@
+ALTER TABLE ADUserFingerprintsZKTeco ADD ADUserFingerprintIndex int;

@@ -1,0 +1,5 @@
+﻿INSERT INTO [dbo].[STToolbars] VALUES ((SELECT MAX([STToolbarID])+1 FROM [dbo].[STToolbars]) , 'Alive', 2265, 1, N'fld_barbtnEdit', N'', 'Edit', 'Default', N'Sửa (F5)', N'Action', 2, '1', N'', 0, N'');
+INSERT INTO [dbo].[STToolbars] VALUES ((SELECT MAX([STToolbarID])+1 FROM [dbo].[STToolbars]), 'Alive', 2265, 1, N'fld_barbtnNew', N'', 'New', 'Default', N'Tạo mới (F4)', N'Action', 1, '1', N'', 0, N'');
+INSERT INTO [dbo].[STToolbars] VALUES ((SELECT MAX([STToolbarID])+1 FROM [dbo].[STToolbars]), 'Alive', 2265, 1, N'fld_barbtnDelete', N'', 'Delete', 'Default', N'Xóa (F6)', N'Action', 3, '1', N'', 0, N'');
+INSERT INTO [dbo].[STToolbars] VALUES ((SELECT MAX([STToolbarID])+1 FROM [dbo].[STToolbars]), 'Alive', 2265, 1, N'fld_barbtnSave', N'', 'Save', 'Default', N'Lưu (F8)', N'Action', 4, '1', N'', 0, N'');
+INSERT INTO [dbo].[STToolbars] VALUES ((SELECT MAX([STToolbarID])+1 FROM [dbo].[STToolbars]), 'Alive', 2265, 1, N'fld_barbtnCancel', N'', 'Cancel', 'Default', N'Hủy (F7)', N'Action', 5, '1', N'', 0, N'');

@@ -1,0 +1,1 @@
+ALTER TABLE MEVisitMedications ADD MEVisitMedicationNotes nvarchar(512)

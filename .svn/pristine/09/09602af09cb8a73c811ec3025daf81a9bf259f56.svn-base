@@ -1,0 +1,1 @@
+ALTER TABLE ADReports ADD ADReportDataSource varchar(100)

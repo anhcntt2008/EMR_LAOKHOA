@@ -1,0 +1,9 @@
+﻿INSERT INTO [dbo].[STModules]([STModuleID], [AAStatus], [STModuleName], [STModuleCode], [STModuleMain], [IsVisible]) VALUES (2270, 'Alive', 'EmrAbbrev', 'EAB', 0, 0);
+INSERT INTO [dbo].[STModuleDescriptions]([STModuleDescriptionID], [STModuleID], [STLanguageID], [STModuleDescriptionDescription]) VALUES (185, 2270, 1, N'Thư viện mã tắt');
+INSERT INTO [dbo].[STScreens]([STScreenID], [STScreenNumber], [STScreenText], [STScreenName], [STModuleID], [STUserGroupID], [STScreenBackColor], [STScreenForeColor], [STScreenFontName], [STScreenFontSize], [STScreenFontStyle], [STScreenTag], [STScreenSizeWidth], [STScreenSizeHeight], [STScreenLocationX], [STScreenLocationY], [STScreenShowModal], [STScreenTopMost], [STScreenMatchCode01], [STScreenShowInfoPanel], [STScreenSortOrder], [STScreenPrivilege], [STScreenVisible]) VALUES (1005, 'DMEAB100', N'Danh sách từ viết tắt', 'guiEmrAbbrev', 2270, 1, -526863, -16777216, N'Tahoma', 8.250000000000000, 'Regular', 'DM', 0, 0, 0, 0, '1', '1', NULL, '0', 0, NULL, '1');
+
+INSERT INTO [dbo].[STToolbars] VALUES ((SELECT MAX(STToolbarID)+1 FROM [STToolbars]), 'Alive', 2270, 1, N'fld_barbtnSave', N'', 'Save', 'Default', N'Lưu (F8)', N'Action', 4, '1', N'', 0, N'');
+INSERT INTO [dbo].[STToolbars] VALUES ((SELECT MAX(STToolbarID)+1 FROM [STToolbars]), 'Alive', 2270, 1, N'fld_barbtnCancel', N'', 'Cancel', 'Default', N'Hủy (F7)', N'Action', 5, '1', N'', 0, N'');
+INSERT INTO [dbo].[STToolbars] VALUES ((SELECT MAX(STToolbarID)+1 FROM [STToolbars]), 'Alive', 2270, 1, N'fld_barbtnCreateFromShared', N'', 'New', 'Default', N'Tạo mới từ danh mục chia sẻ', N'Action', 6, '1', N'', 0, N'');
+INSERT INTO [dbo].[STToolbarFunctions] VALUES ((SELECT MAX(STToolbarFunctionID)+1 FROM STToolbarFunctions), '0', 
+(SELECT STToolbarID FROM [STToolbars] WHERE STToolbarName = 'fld_barbtnCreateFromShared'), 'CreateFromShared', 'Void CreateFromShared()', 'BOSERP.Modules.MEEmr.EmrAbbrev', 1);

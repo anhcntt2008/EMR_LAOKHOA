@@ -1,0 +1,18 @@
+<configuration>
+  <configSections>
+    <section name="dataConfiguration" type="Microsoft.Practices.EnterpriseLibrary.Data.Configuration.DatabaseSettings, Microsoft.Practices.EnterpriseLibrary.Data" />
+  </configSections>  
+  <dataConfiguration defaultDatabase="BOSDataAccess"/>
+<connectionStrings>
+    <add name="BOSDataAccess" connectionString="server=192.168.110.2;uid=sa;pwd=abc@123;database=EMR_PSHN;Connection Timeout=30" providerName="System.Data.SqlClient"/>
+  </connectionStrings>
+  <appSettings>    
+    <add key="CompanyName" value="Infomed VN"/> 
+    <add key="ConnectionString" value="Data Source=192.168.110.2;Initial Catalog=EMR_PSHN;User ID=sa;Password=abc@123"/>
+    <add key="ServerName" value="192.168.110.2"/>
+    <add key="DatabaseName" value="EMR_PSHN"/>
+    <add key="UserID" value="sa"/>
+    <add key="Password" value="abc@123"/>
+    <add key="ReportPath" value="\\Reports"/>
+  </appSettings>
+</configuration>

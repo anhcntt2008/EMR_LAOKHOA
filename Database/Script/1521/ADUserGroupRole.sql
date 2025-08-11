@@ -1,0 +1,4 @@
+﻿INSERT INTO [dbo].[ADConfigValues] VALUES ((SELECT MAX(ADConfigValueID)+1 FROM [ADConfigValues]), 'Alive', N'ADUserGroupRoleDoctor', N'doctor', N'Vai trò - Bác sĩ', N'', N'UserGroupRole', '1');
+INSERT INTO [dbo].[ADConfigValues] VALUES ((SELECT MAX(ADConfigValueID)+1 FROM [ADConfigValues]), 'Alive', N'ADUserGroupRoleNurse', N'nurse', N'Vai trò - Điều dưỡng', N'', N'UserGroupRole', '1');
+INSERT INTO [dbo].[ADConfigValues] VALUES ((SELECT MAX(ADConfigValueID)+1 FROM [ADConfigValues]), 'Alive', N'ADUserGroupRoleAdmin', N'admin', N'Vai trò - Quản trị', N'', N'UserGroupRole', '1');
+ALTER TABLE ADUserGroups ADD ADUserGroupRole varchar(100)

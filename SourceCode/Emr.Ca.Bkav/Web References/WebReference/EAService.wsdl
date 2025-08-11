@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns="http://service.easerver.bkavca.com" xmlns:ns1="http://org.apache.axis2/xsd" targetNamespace="http://service.easerver.bkavca.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>EAService</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://service.easerver.bkavca.com">
+      <xs:element name="getCertificate">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="UID" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="partnerName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="serialOrCardNumber" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCertificateResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="importCert">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="base64Cert" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="UID" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="partnerName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="serviceValidFrom" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="serviceValidTo" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="importCertResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="signList">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="listInput" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="signListResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="verifyHash">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="dataToVerify" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="originData" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="base64Cert" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="verifyHashResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="revokeUser">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="UID" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="partnerName" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="revokeUserResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="updateRevokeDate">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="user" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="serial" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="revokeDate" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="partnerName" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="updateRevokeDateResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="signHash">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="hashData" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="UID" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="partnerName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="serialOrCardNumber" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="signHashResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="updateExpiryDate">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="jsonString" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="partnerName" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="updateExpiryDateResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCSRFromUser">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="xmlUser" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="partnerName" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCSRFromUserResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="sign0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="input" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="sign0Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="isReadyToSign">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="isReadyToSignResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCertificateSerialNumber">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="partnerName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCertificateSerialNumberResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="execute">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="xmlData" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="executeType" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="executeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="sign">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="dataToSign" nillable="true" type="xs:base64Binary" />
+            <xs:element minOccurs="0" name="tagName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="partnerName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="extensionFile" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="signResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="verify">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="dataToVerify" nillable="true" type="xs:base64Binary" />
+            <xs:element minOccurs="0" name="partnerName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="extensionFile" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="verifyResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="signHashRequest">
+    <wsdl:part name="parameters" element="ns:signHash" />
+  </wsdl:message>
+  <wsdl:message name="signHashResponse">
+    <wsdl:part name="parameters" element="ns:signHashResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCertificateSerialNumberRequest">
+    <wsdl:part name="parameters" element="ns:getCertificateSerialNumber" />
+  </wsdl:message>
+  <wsdl:message name="getCertificateSerialNumberResponse">
+    <wsdl:part name="parameters" element="ns:getCertificateSerialNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="revokeUserRequest">
+    <wsdl:part name="parameters" element="ns:revokeUser" />
+  </wsdl:message>
+  <wsdl:message name="revokeUserResponse">
+    <wsdl:part name="parameters" element="ns:revokeUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="signListRequest">
+    <wsdl:part name="parameters" element="ns:signList" />
+  </wsdl:message>
+  <wsdl:message name="signListResponse">
+    <wsdl:part name="parameters" element="ns:signListResponse" />
+  </wsdl:message>
+  <wsdl:message name="verifyHashRequest">
+    <wsdl:part name="parameters" element="ns:verifyHash" />
+  </wsdl:message>
+  <wsdl:message name="verifyHashResponse">
+    <wsdl:part name="parameters" element="ns:verifyHashResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCertificateRequest">
+    <wsdl:part name="parameters" element="ns:getCertificate" />
+  </wsdl:message>
+  <wsdl:message name="getCertificateResponse">
+    <wsdl:part name="parameters" element="ns:getCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="importCertRequest">
+    <wsdl:part name="parameters" element="ns:importCert" />
+  </wsdl:message>
+  <wsdl:message name="importCertResponse">
+    <wsdl:part name="parameters" element="ns:importCertResponse" />
+  </wsdl:message>
+  <wsdl:message name="executeRequest">
+    <wsdl:part name="parameters" element="ns:execute" />
+  </wsdl:message>
+  <wsdl:message name="executeResponse">
+    <wsdl:part name="parameters" element="ns:executeResponse" />
+  </wsdl:message>
+  <wsdl:message name="isReadyToSignRequest">
+    <wsdl:part name="parameters" element="ns:isReadyToSign" />
+  </wsdl:message>
+  <wsdl:message name="isReadyToSignResponse">
+    <wsdl:part name="parameters" element="ns:isReadyToSignResponse" />
+  </wsdl:message>
+  <wsdl:message name="verifyRequest">
+    <wsdl:part name="parameters" element="ns:verify" />
+  </wsdl:message>
+  <wsdl:message name="verifyResponse">
+    <wsdl:part name="parameters" element="ns:verifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateExpiryDateRequest">
+    <wsdl:part name="parameters" element="ns:updateExpiryDate" />
+  </wsdl:message>
+  <wsdl:message name="updateExpiryDateResponse">
+    <wsdl:part name="parameters" element="ns:updateExpiryDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="sign0Request">
+    <wsdl:part name="parameters" element="ns:sign0" />
+  </wsdl:message>
+  <wsdl:message name="sign0Response">
+    <wsdl:part name="parameters" element="ns:sign0Response" />
+  </wsdl:message>
+  <wsdl:message name="signRequest">
+    <wsdl:part name="parameters" element="ns:sign" />
+  </wsdl:message>
+  <wsdl:message name="signResponse">
+    <wsdl:part name="parameters" element="ns:signResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateRevokeDateRequest">
+    <wsdl:part name="parameters" element="ns:updateRevokeDate" />
+  </wsdl:message>
+  <wsdl:message name="updateRevokeDateResponse">
+    <wsdl:part name="parameters" element="ns:updateRevokeDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCSRFromUserRequest">
+    <wsdl:part name="parameters" element="ns:getCSRFromUser" />
+  </wsdl:message>
+  <wsdl:message name="getCSRFromUserResponse">
+    <wsdl:part name="parameters" element="ns:getCSRFromUserResponse" />
+  </wsdl:message>
+  <wsdl:portType name="EAServicePortType">
+    <wsdl:operation name="signHash">
+      <wsdl:input wsaw:Action="urn:signHash" message="ns:signHashRequest" />
+      <wsdl:output wsaw:Action="urn:signHashResponse" message="ns:signHashResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getCertificateSerialNumber">
+      <wsdl:input wsaw:Action="urn:getCertificateSerialNumber" message="ns:getCertificateSerialNumberRequest" />
+      <wsdl:output wsaw:Action="urn:getCertificateSerialNumberResponse" message="ns:getCertificateSerialNumberResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="revokeUser">
+      <wsdl:input wsaw:Action="urn:revokeUser" message="ns:revokeUserRequest" />
+      <wsdl:output wsaw:Action="urn:revokeUserResponse" message="ns:revokeUserResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="signList">
+      <wsdl:input wsaw:Action="urn:signList" message="ns:signListRequest" />
+      <wsdl:output wsaw:Action="urn:signListResponse" message="ns:signListResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="verifyHash">
+      <wsdl:input wsaw:Action="urn:verifyHash" message="ns:verifyHashRequest" />
+      <wsdl:output wsaw:Action="urn:verifyHashResponse" message="ns:verifyHashResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getCertificate">
+      <wsdl:input wsaw:Action="urn:getCertificate" message="ns:getCertificateRequest" />
+      <wsdl:output wsaw:Action="urn:getCertificateResponse" message="ns:getCertificateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="importCert">
+      <wsdl:input wsaw:Action="urn:importCert" message="ns:importCertRequest" />
+      <wsdl:output wsaw:Action="urn:importCertResponse" message="ns:importCertResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="execute">
+      <wsdl:input wsaw:Action="urn:execute" message="ns:executeRequest" />
+      <wsdl:output wsaw:Action="urn:executeResponse" message="ns:executeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="isReadyToSign">
+      <wsdl:input wsaw:Action="urn:isReadyToSign" message="ns:isReadyToSignRequest" />
+      <wsdl:output wsaw:Action="urn:isReadyToSignResponse" message="ns:isReadyToSignResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="verify">
+      <wsdl:input wsaw:Action="urn:verify" message="ns:verifyRequest" />
+      <wsdl:output wsaw:Action="urn:verifyResponse" message="ns:verifyResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateExpiryDate">
+      <wsdl:input wsaw:Action="urn:updateExpiryDate" message="ns:updateExpiryDateRequest" />
+      <wsdl:output wsaw:Action="urn:updateExpiryDateResponse" message="ns:updateExpiryDateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="sign0">
+      <wsdl:input wsaw:Action="urn:sign0" message="ns:sign0Request" />
+      <wsdl:output wsaw:Action="urn:sign0Response" message="ns:sign0Response" />
+    </wsdl:operation>
+    <wsdl:operation name="sign">
+      <wsdl:input wsaw:Action="urn:sign" message="ns:signRequest" />
+      <wsdl:output wsaw:Action="urn:signResponse" message="ns:signResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateRevokeDate">
+      <wsdl:input wsaw:Action="urn:updateRevokeDate" message="ns:updateRevokeDateRequest" />
+      <wsdl:output wsaw:Action="urn:updateRevokeDateResponse" message="ns:updateRevokeDateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getCSRFromUser">
+      <wsdl:input wsaw:Action="urn:getCSRFromUser" message="ns:getCSRFromUserRequest" />
+      <wsdl:output wsaw:Action="urn:getCSRFromUserResponse" message="ns:getCSRFromUserResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EAServiceSoap11Binding" type="ns:EAServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="signHash">
+      <soap:operation soapAction="urn:signHash" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertificateSerialNumber">
+      <soap:operation soapAction="urn:getCertificateSerialNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="revokeUser">
+      <soap:operation soapAction="urn:revokeUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="signList">
+      <soap:operation soapAction="urn:signList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifyHash">
+      <soap:operation soapAction="urn:verifyHash" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertificate">
+      <soap:operation soapAction="urn:getCertificate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importCert">
+      <soap:operation soapAction="urn:importCert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="execute">
+      <soap:operation soapAction="urn:execute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isReadyToSign">
+      <soap:operation soapAction="urn:isReadyToSign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verify">
+      <soap:operation soapAction="urn:verify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateExpiryDate">
+      <soap:operation soapAction="urn:updateExpiryDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sign0">
+      <soap:operation soapAction="urn:sign0" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sign">
+      <soap:operation soapAction="urn:sign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateRevokeDate">
+      <soap:operation soapAction="urn:updateRevokeDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCSRFromUser">
+      <soap:operation soapAction="urn:getCSRFromUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EAServiceSoap12Binding" type="ns:EAServicePortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="signHash">
+      <soap12:operation soapAction="urn:signHash" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertificateSerialNumber">
+      <soap12:operation soapAction="urn:getCertificateSerialNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="revokeUser">
+      <soap12:operation soapAction="urn:revokeUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="signList">
+      <soap12:operation soapAction="urn:signList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifyHash">
+      <soap12:operation soapAction="urn:verifyHash" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertificate">
+      <soap12:operation soapAction="urn:getCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importCert">
+      <soap12:operation soapAction="urn:importCert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="execute">
+      <soap12:operation soapAction="urn:execute" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isReadyToSign">
+      <soap12:operation soapAction="urn:isReadyToSign" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verify">
+      <soap12:operation soapAction="urn:verify" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateExpiryDate">
+      <soap12:operation soapAction="urn:updateExpiryDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sign0">
+      <soap12:operation soapAction="urn:sign0" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sign">
+      <soap12:operation soapAction="urn:sign" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateRevokeDate">
+      <soap12:operation soapAction="urn:updateRevokeDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCSRFromUser">
+      <soap12:operation soapAction="urn:getCSRFromUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EAServiceHttpBinding" type="ns:EAServicePortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="signHash">
+      <http:operation location="signHash" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertificateSerialNumber">
+      <http:operation location="getCertificateSerialNumber" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="revokeUser">
+      <http:operation location="revokeUser" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="signList">
+      <http:operation location="signList" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifyHash">
+      <http:operation location="verifyHash" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCertificate">
+      <http:operation location="getCertificate" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importCert">
+      <http:operation location="importCert" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="execute">
+      <http:operation location="execute" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isReadyToSign">
+      <http:operation location="isReadyToSign" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verify">
+      <http:operation location="verify" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateExpiryDate">
+      <http:operation location="updateExpiryDate" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sign0">
+      <http:operation location="sign0" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sign">
+      <http:operation location="sign" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateRevokeDate">
+      <http:operation location="updateRevokeDate" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCSRFromUser">
+      <http:operation location="getCSRFromUser" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EAService">
+    <wsdl:port name="EAServiceHttpsSoap11Endpoint" binding="ns:EAServiceSoap11Binding">
+      <soap:address location="https://103.237.99.76/EAServer/services/EAService.EAServiceHttpsSoap11Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="EAServiceHttpsSoap12Endpoint" binding="ns:EAServiceSoap12Binding">
+      <soap12:address location="https://103.237.99.76/EAServer/services/EAService.EAServiceHttpsSoap12Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="EAServiceHttpsEndpoint" binding="ns:EAServiceHttpBinding">
+      <http:address location="https://103.237.99.76/EAServer/services/EAService.EAServiceHttpsEndpoint/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

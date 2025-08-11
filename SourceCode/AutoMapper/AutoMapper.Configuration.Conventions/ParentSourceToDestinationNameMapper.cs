@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Reflection;
+
+namespace AutoMapper.Configuration.Conventions
+{
+	public class ParentSourceToDestinationNameMapper : IParentSourceToDestinationNameMapper
+	{
+		public IGetTypeInfoMembers GetMembers
+		{
+			get;
+		} = new AllMemberInfo();
+
+
+		public ICollection<ISourceToDestinationNameMapper> NamedMappers
+		{
+			get;
+		} = new Collection<ISourceToDestinationNameMapper>
+		{
+			new DefaultName(),
+			new SourceToDestinationNameMapperAttributesMember()
+		};
+
+
+		public MemberInfo GetMatchingMemberInfo(TypeDetails typeInfo, Type destType, Type destMemberType, string nameToSearch)
+		{
+			MemberInfo memberInfo = null;
+			foreach (ISourceToDestinationNameMapper namedMapper in NamedMappers)
+			{
+				memberInfo = namedMapper.GetMatchingMemberInfo(GetMembers, typeInfo, destType, destMemberType, nameToSearch);
+				if (memberInfo != null)
+				{
+					return memberInfo;
+				}
+			}
+			return memberInfo;
+		}
+	}
+}

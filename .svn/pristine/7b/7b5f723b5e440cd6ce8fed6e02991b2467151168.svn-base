@@ -1,0 +1,1 @@
+ALTER TABLE MEEmrDocuments ALTER COLUMN MEEmrDocumentRefNo nvarchar(500)

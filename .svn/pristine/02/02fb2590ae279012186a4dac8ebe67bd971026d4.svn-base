@@ -1,0 +1,1 @@
+ALTER TABLE CSCompanys ADD CSCompanyEmrShareHours float

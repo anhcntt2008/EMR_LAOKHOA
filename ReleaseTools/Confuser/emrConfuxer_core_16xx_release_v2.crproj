@@ -1,0 +1,27 @@
+<project outputDir="D:\emr\Repos\Emr.Desktop\SourceCode\BOSERPSolution\BOSERP\bin\Release" baseDir="D:\emr\Repos\Emr.Desktop\SourceCode\BOSERPSolution\BOSERP\bin\Release" xmlns="http://confuser.codeplex.com">
+  <module path="Clas.Emr.Core.dll">
+    <rule pattern="true" inherit="false">
+      <protection id="anti ildasm" />
+      <protection id="anti tamper" />
+      <protection id="constants" />
+      <protection id="ctrl flow" />
+      <protection id="anti dump" />
+      <protection id="anti debug" />
+      <protection id="ref proxy" />
+    </rule>
+  </module>
+  <module path="Emr.Base.dll">
+    <rule pattern="true" inherit="false">
+      <protection id="anti ildasm" />
+      <protection id="anti tamper" />
+      <protection id="constants" />
+      <protection id="ctrl flow" />
+      <protection id="anti dump" />
+      <protection id="anti debug" />
+      <protection id="ref proxy" />
+      <protection id="rename" />
+    </rule>
+  </module>
+  <probePath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework</probePath>
+  <probePath>C:\data\emr\repo\ProgressNote\SourceCode\BOSERPSolution\packages\OpenPop.NET.2.0.6.1120\lib\net40</probePath>
+</project>

@@ -1,0 +1,6 @@
+Quản lý thư mục, tên script:
+1. {branch}/{version}/{id_card}/{script}
+Example: 
++ dev/1698.21/123/update1.sql
++ 1698/1698.21/565/update2.sql
+

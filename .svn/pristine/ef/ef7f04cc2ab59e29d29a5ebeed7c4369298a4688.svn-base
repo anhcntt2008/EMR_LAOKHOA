@@ -1,0 +1,23 @@
+-- PARAMS
+delete METemplateParams where AAStatus !='Dummy'
+delete MEEmrImageParams where AAStatus !='Dummy'
+delete MEParamRelations where AAStatus !='Dummy'
+delete MELabParams where AAStatus !='Dummy'
+delete MEEmrActionParams where AAStatus !='Dummy'
+delete MEParamValues where AAStatus !='Dummy'
+delete MEEmrImagePatterns where AAStatus !='Dummy'
+delete MEEmrImages where AAStatus !='Dummy'
+delete MEParams where AAStatus !='Dummy'
+
+-- TEMPLATES
+delete MEEmrTemplateActions where AAStatus !='Dummy'
+delete MEEmrActionRelations where AAStatus !='Dummy'
+delete MEEmrActions where AAStatus !='Dummy'
+delete MEParamLookupDatas where AAStatus !='Dummy'
+delete METemplateUserGroups where AAStatus !='Dummy'
+delete METemplateChartSeries where AAStatus !='Dummy'
+delete METemplateCharts where AAStatus !='Dummy'
+delete MEEmrDocumentSigns where AAStatus !='Dummy'
+delete MEEmrDocuments where AAStatus !='Dummy'
+delete MEEmrTypeTemplates where AAStatus !='Dummy'
+delete METemplates where AAStatus !='Dummy'

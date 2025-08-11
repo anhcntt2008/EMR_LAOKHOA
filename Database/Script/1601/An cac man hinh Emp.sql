@@ -1,0 +1,9 @@
+UPDATE STScreens set STScreenVisible = 1 where STScreenID = 743
+UPDATE STScreens set STScreenVisible = 0 where STScreenID = 798
+UPDATE STScreens set STScreenVisible = 0 where STScreenID = 799
+UPDATE STScreens set STScreenVisible = 0 where STScreenID = 853
+UPDATE STScreens set STScreenVisible = 0 where STScreenID = 879
+UPDATE STScreens set STScreenVisible = 0 where STScreenID = 880
+UPDATE STScreens set STScreenVisible = 0 where STScreenID = 889
+UPDATE STScreens set STScreenVisible = 0 where STScreenID = 890
+UPDATE STScreens set STScreenVisible = 0 where STScreenID = 891

@@ -1,0 +1,1 @@
+﻿UPDATE [dbo].[ADConfigValues] SET [AAStatus] = 'Alive', [ADConfigKey] = N'EmrStatusInProgress', [ADConfigKeyValue] = N'InProgress', [ADConfigText] = N'Đang mở', [ADConfigKeyDesc] = NULL, [ADConfigKeyGroup] = N'EmrStatus', [IsActive] = '1' WHERE [ADConfigValueID] = 1404;

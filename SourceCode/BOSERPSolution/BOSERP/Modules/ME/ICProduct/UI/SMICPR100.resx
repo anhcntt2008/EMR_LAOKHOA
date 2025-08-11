@@ -1,0 +1,720 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="fld_dgcICProduct.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="fld_lblLabel22.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <assembly alias="DevExpress.Data.v17.2" name="DevExpress.Data.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="fld_lkeFK_APSupplierID1.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v17.2">
+    <value>Numeric</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel22.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="fld_dgcICProduct.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel27.Name" xml:space="preserve">
+    <value>fld_lblLabel27</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="fld_lkeLookupEdit1.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="fld_txtICProductName1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_APSupplierID1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="fld_lblLabel21.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductGroupID1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="fld_lkeFK_GELocationID1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 64</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v17.2">
+    <value>Numeric</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID1.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v17.2" name="DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="fld_txtICProductName1.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v17.2">
+    <value>None</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID1.Properties.Columns1" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductName1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.Properties.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_dgcICProduct.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtICProductName1.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel27.Text" xml:space="preserve">
+    <value>Nước sản xuất</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID1.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_APSupplierID1.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel26.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_txtICProductNo1.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID1.Properties.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_APSupplierID1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 20</value>
+  </data>
+  <data name="fld_dgcICProduct.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v17.2">
+    <value>Default</value>
+  </data>
+  <data name="fld_lblLabel22.Text" xml:space="preserve">
+    <value>Tên thuốc/ DCYT</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID1.Properties.Columns1" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="fld_lkeLookupEdit1.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_GELocationID1.Properties.Columns" xml:space="preserve">
+    <value>GELocationName</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel21.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_dgcICProduct.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v17.2">
+    <value>Default</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID1.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 40</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel27.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_lblLabel22.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="fld_lkeLookupEdit1.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SMICPR100</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_GELocationID1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel25.Name" xml:space="preserve">
+    <value>fld_lblLabel25</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_GELocationID1.Name" xml:space="preserve">
+    <value>fld_lkeFK_GELocationID1</value>
+  </data>
+  <data name="fld_txtICProductNo1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_APSupplierID1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel25.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel22.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_lblLabel26.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcICProduct.Name" xml:space="preserve">
+    <value>fld_dgcICProduct</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel21.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="fld_lblLabel26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>279, 43</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductGroupID1.Name" xml:space="preserve">
+    <value>fld_lkeFK_ICProductGroupID1</value>
+  </data>
+  <data name="fld_txtICProductNo1.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.Properties.Columns" xml:space="preserve">
+    <value>ICProductGroupNo</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_APSupplierID1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeLookupEdit1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="fld_txtICProductName1.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeLookupEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 16</value>
+  </data>
+  <data name="fld_txtICProductName1.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ScreenHelper.Name" xml:space="preserve">
+    <value>ScreenHelper</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="fld_lblLabel27.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID1.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;fld_lblLabel23.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v17.2" name="DevExpress.Utils.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="fld_lkeFK_APSupplierID1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel27.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="fld_txtICProductNo1.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_GELocationID1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="fld_txtICProductNo1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_lblLabel25.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_lblLabel23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="fld_lkeLookupEdit1.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lblLabel25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductName1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;fld_dgvICProduct.Name" xml:space="preserve">
+    <value>fld_dgvICProduct</value>
+  </data>
+  <data name="fld_txtICProductName1.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_APSupplierID1.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v17.2">
+    <value>Default</value>
+  </data>
+  <data name="fld_lblLabel26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_GELocationID1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="fld_dgcICProduct.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v17.2">
+    <value>None</value>
+  </data>
+  <data name="fld_txtICProductName1.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel25.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeLookupEdit1.Name" xml:space="preserve">
+    <value>fld_lkeLookupEdit1</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel22.Name" xml:space="preserve">
+    <value>fld_lblLabel22</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductNo1.Name" xml:space="preserve">
+    <value>fld_txtICProductNo1</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID1.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductNo1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 16</value>
+  </data>
+  <data name="fld_txtICProductNo1.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductGroupID1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID1.Properties.Columns" xml:space="preserve">
+    <value>APSupplierNo</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel21.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="fld_lblLabel23.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcICProduct.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="fld_txtICProductNo1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 20</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_GELocationID1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 20</value>
+  </data>
+  <data name="fld_lblLabel25.Text" xml:space="preserve">
+    <value>Nhóm thuốc/ DCYT</value>
+  </data>
+  <data name="fld_txtICProductName1.Properties.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_APSupplierID1.Name" xml:space="preserve">
+    <value>fld_lkeFK_APSupplierID1</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lblLabel21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 19</value>
+  </data>
+  <data name="fld_lblLabel25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>279, 19</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel21.Name" xml:space="preserve">
+    <value>fld_lblLabel21</value>
+  </data>
+  <data name="fld_lblLabel23.Text" xml:space="preserve">
+    <value>Nhà cung cấp</value>
+  </data>
+  <data name="fld_txtICProductName1.Properties.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductName1.Properties.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_txtICProductName1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_txtICProductNo1.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lblLabel21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="fld_txtICProductName1.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v17.2">
+    <value>Default</value>
+  </data>
+  <data name="fld_lkeLookupEdit1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lblLabel23.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="fld_lblLabel26.Text" xml:space="preserve">
+    <value>Loại biệt dược</value>
+  </data>
+  <data name="fld_txtICProductNo1.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v17.2">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel23.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductNo1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_lblLabel21.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID1.Properties.NullValuePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtICProductNo1.Properties.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v17.2">
+    <value>Default</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID1.Properties.Columns2" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="fld_txtICProductName1.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_dgcICProduct.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 94</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductNo1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;ScreenHelper.Type" xml:space="preserve">
+    <value>System.Windows.Forms.HelpProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel26.Name" xml:space="preserve">
+    <value>fld_lblLabel26</value>
+  </data>
+  <data name="fld_txtICProductName1.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="fld_lblLabel23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 67</value>
+  </data>
+  <data name="fld_lblLabel21.Text" xml:space="preserve">
+    <value>Mã thuốc/ DCYT</value>
+  </data>
+  <data name="fld_txtICProductNo1.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel27.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="fld_lkeFK_GELocationID1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductName1.Name" xml:space="preserve">
+    <value>fld_txtICProductName1</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcICProduct.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="fld_txtICProductNo1.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="fld_txtICProductName1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 20</value>
+  </data>
+  <data name="fld_dgcICProduct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 200</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.Properties.Columns5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeLookupEdit1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>BOSERP.BOSERPScreen, BOSBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel26.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.Properties.Columns2" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID1.Properties.Columns7" xml:space="preserve">
+    <value>APSupplierName</value>
+  </data>
+  <data name="fld_lblLabel27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>279, 67</value>
+  </data>
+  <data name="fld_txtICProductName1.Properties.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel25.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="fld_txtICProductNo1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel22.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel23.Name" xml:space="preserve">
+    <value>fld_lblLabel23</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductNo1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="fld_txtICProductNo1.Properties.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;fld_lblLabel25.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.Properties.Columns7" xml:space="preserve">
+    <value>ICProductGroupName</value>
+  </data>
+  <data name="&gt;&gt;fld_txtICProductName1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="fld_dgcICProduct.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtICProductNo1.Properties.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID1.Properties.Columns5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtICProductNo1.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.Properties.Columns8" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID1.Properties.Columns8" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeLookupEdit1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="fld_lkeLookupEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 20</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel27.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 20</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeLookupEdit1.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="fld_lblLabel27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel23.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcICProduct.Type" xml:space="preserve">
+    <value>BOSERP.BOSSearchResultsGridControl, BOSBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_dgcICProduct.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_dgcICProduct.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>862, 567</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ICProductGroupID1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_txtICProductNo1.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeLookupEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="fld_txtICProductName1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 40</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID1.Properties.NullValuePromptShowForEmptyValue" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="fld_txtICProductName1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="fld_lblLabel22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 13</value>
+  </data>
+  <data name="fld_dgcICProduct.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v17.2">
+    <value>Center</value>
+  </data>
+  <data name="fld_lblLabel26.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_lkeFK_APSupplierID1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 64</value>
+  </data>
+  <data name="&gt;&gt;fld_dgvICProduct.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="fld_dgcICProduct.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="fld_lblLabel22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 43</value>
+  </data>
+  <data name="$this.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel26.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="fld_lkeFK_ICProductGroupID1.Properties.Columns1" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ScreenHelper.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>272, 17</value>
+  </metadata>
+</root>

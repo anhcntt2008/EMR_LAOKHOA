@@ -1,0 +1,30 @@
+
+CREATE TABLE [dbo].[AbpJobRuns](
+	[Id] [bigint] IDENTITY(1,1) NOT NULL,
+	[JobStateId] [bigint] NOT NULL,
+	[FireTime] [datetime] NOT NULL,
+	[EndTime] [datetime] NOT NULL,
+	[State] [varchar](100) NOT NULL,
+	[Msg] [nvarchar](512) NOT NULL,
+	[Log] [ntext] NULL,
+	[TenantId] [int] NOT NULL,
+ CONSTRAINT [PK_dbo.AbpJobRuns] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[AbpJobRuns]  WITH CHECK ADD  CONSTRAINT [FK_AbpJobRuns_AbpJobStates] FOREIGN KEY([JobStateId])
+REFERENCES [dbo].[AbpJobStates] ([Id])
+GO
+
+ALTER TABLE [dbo].[AbpJobRuns] CHECK CONSTRAINT [FK_AbpJobRuns_AbpJobStates]
+GO
+
+CREATE NONCLUSTERED INDEX [IX_JobStateId_State] ON [dbo].[AbpJobRuns]
+(
+	[JobStateId] ASC,
+	[State] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO

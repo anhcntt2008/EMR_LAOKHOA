@@ -1,0 +1,759 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="fld_lblSickLeaveDaysQty.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="fld_lblLabel44.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;fld_lblBirthLeaveDaysQty.Name" xml:space="preserve">
+    <value>fld_lblBirthLeaveDaysQty</value>
+  </data>
+  <data name="fld_lblLabel39.Text" xml:space="preserve">
+    <value>Nghỉ phép năm</value>
+  </data>
+  <data name="fld_grcGroupControl7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel52.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_dgcHRLeaveDays.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="fld_grcGroupControl7.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <assembly alias="DevExpress.Data.v17.2" name="DevExpress.Data.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="fld_dgcHRLeaveDays.EmbeddedNavigator.AllowHtmlTextInToolTip" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v17.2">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;fld_lblBirthDayRemaining.Name" xml:space="preserve">
+    <value>fld_lblBirthDayRemaining</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcHRLeaveDays.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl8</value>
+  </data>
+  <data name="fld_dgcHRLeaveDays.EmbeddedNavigator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v17.2" name="DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="fld_dgcHRLeaveDays.EmbeddedNavigator.TextLocation" type="DevExpress.XtraEditors.NavigatorButtonsTextLocation, DevExpress.XtraEditors.v17.2">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;fld_lblSickDayRemaining.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="fld_lblAnnualDayRemaining.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 59</value>
+  </data>
+  <data name="fld_lblAnnualLeaveDaysQty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 59</value>
+  </data>
+  <data name="fld_lblLabel53.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 128</value>
+  </data>
+  <data name="fld_lblNormalDayRemaining.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="fld_grcGroupControl8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>850, 372</value>
+  </data>
+  <data name="fld_lblLabel39.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_grcGroupControl7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>850, 180</value>
+  </data>
+  <data name="&gt;&gt;fld_lblBirthLeaveDaysQty.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <data name="fld_lblSickDayRemaining.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 82</value>
+  </data>
+  <data name="&gt;&gt;fld_lblNormalDayRemaining.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_lblLabel54.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="fld_lblSickLeaveDaysQty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;fld_lblNormalDayRemaining.Name" xml:space="preserve">
+    <value>fld_lblNormalDayRemaining</value>
+  </data>
+  <data name="fld_lblNormalLeaveDaysQty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="fld_lblLabel57.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 27</value>
+  </data>
+  <data name="bosPanel1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel54.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblSickLeaveDaysQty.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_lblOTDayRemaining.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 128</value>
+  </data>
+  <data name="&gt;&gt;fld_lblBirthDayRemaining.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <data name="fld_lblLabel52.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_lblOTDayRemaining.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 13</value>
+  </data>
+  <data name="fld_lblLabel44.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 82</value>
+  </data>
+  <data name="fld_lblLabel57.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;fld_lblOTDayRemaining.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <data name="bosPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="fld_lblLabel53.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
+  <data name="fld_lblNormalLeaveDaysQty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 151</value>
+  </data>
+  <data name="fld_lblLabel53.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_lblSickLeaveDaysQty.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;fld_lblOTLeaveDaysQty.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v17.2" name="DevExpress.Utils.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="fld_dgcHRLeaveDays.EmbeddedNavigator.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v17.2">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DMSS101</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcHRLeaveDays.Type" xml:space="preserve">
+    <value>BOSERP.Modules.MEEmployee.HRLeaveDaysGridControl, BOSERP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_lblNormalDayRemaining.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 151</value>
+  </data>
+  <data name="&gt;&gt;fld_lblNormalDayRemaining.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="fld_lblOTLeaveDaysQty.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;fld_lblAnnualLeaveDaysQty.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Thông tin ngày nghỉ</value>
+  </data>
+  <data name="&gt;&gt;fld_lblSickDayRemaining.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <data name="$this.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;bosPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl7.Type" xml:space="preserve">
+    <value>BOSComponent.BOSGroupControl, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblOTLeaveDaysQty.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="bosPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="fld_dgcHRLeaveDays.EmbeddedNavigator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="fld_lblLabel55.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="fld_dgcHRLeaveDays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 22</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel44.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_lblBirthDayRemaining.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_grcGroupControl7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="fld_grcGroupControl8.Text" xml:space="preserve">
+    <value>Thông tin chi tiết ngày nghỉ</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel55.Name" xml:space="preserve">
+    <value>fld_lblLabel55</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel54.Name" xml:space="preserve">
+    <value>fld_lblLabel54</value>
+  </data>
+  <data name="&gt;&gt;ScreenHelper.Name" xml:space="preserve">
+    <value>ScreenHelper</value>
+  </data>
+  <data name="&gt;&gt;fld_lblSickLeaveDaysQty.Name" xml:space="preserve">
+    <value>fld_lblSickLeaveDaysQty</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel54.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel53.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel44.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bosPanel1.Name" xml:space="preserve">
+    <value>bosPanel1</value>
+  </data>
+  <data name="fld_lblLabel44.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="fld_lblBirthLeaveDaysQty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="fld_grcGroupControl8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 189</value>
+  </data>
+  <data name="bosPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>862, 567</value>
+  </data>
+  <data name="&gt;&gt;fld_lblAnnualDayRemaining.Name" xml:space="preserve">
+    <value>fld_lblAnnualDayRemaining</value>
+  </data>
+  <data name="fld_lblLabel55.Text" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="fld_lblAnnualLeaveDaysQty.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel39.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <data name="fld_lblLabel54.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 151</value>
+  </data>
+  <data name="fld_lblLabel39.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="fld_lblLabel44.Text" xml:space="preserve">
+    <value>Nghỉ bệnh</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcHRLeaveDays.Name" xml:space="preserve">
+    <value>fld_dgcHRLeaveDays</value>
+  </data>
+  <data name="fld_lblOTDayRemaining.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel39.Name" xml:space="preserve">
+    <value>fld_lblLabel39</value>
+  </data>
+  <data name="fld_lblLabel53.Text" xml:space="preserve">
+    <value>Nghỉ bù</value>
+  </data>
+  <data name="&gt;&gt;fld_lblAnnualDayRemaining.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="fld_lblLabel54.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_lblNormalLeaveDaysQty.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="fld_lblSickLeaveDaysQty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 82</value>
+  </data>
+  <data name="fld_grcGroupControl7.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;fld_lblOTLeaveDaysQty.Name" xml:space="preserve">
+    <value>fld_lblOTLeaveDaysQty</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel52.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <data name="&gt;&gt;fld_lblNormalLeaveDaysQty.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel44.Name" xml:space="preserve">
+    <value>fld_lblLabel44</value>
+  </data>
+  <data name="fld_dgcHRLeaveDays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>846, 348</value>
+  </data>
+  <data name="&gt;&gt;fld_lblNormalLeaveDaysQty.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_lblBirthLeaveDaysQty.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_dgcHRLeaveDays.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_lblLabel57.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_lblAnnualDayRemaining.Text" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="fld_lblNormalLeaveDaysQty.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;fld_lblSickDayRemaining.Name" xml:space="preserve">
+    <value>fld_lblSickDayRemaining</value>
+  </data>
+  <data name="fld_lblOTLeaveDaysQty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 128</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel52.Name" xml:space="preserve">
+    <value>fld_lblLabel52</value>
+  </data>
+  <data name="fld_grcGroupControl8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;fld_lblSickDayRemaining.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblNormalLeaveDaysQty.Name" xml:space="preserve">
+    <value>fld_lblNormalLeaveDaysQty</value>
+  </data>
+  <data name="fld_lblLabel52.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 105</value>
+  </data>
+  <data name="fld_lblLabel39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 59</value>
+  </data>
+  <data name="fld_dgcHRLeaveDays.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;fld_lblBirthDayRemaining.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="fld_dgcHRLeaveDays.EmbeddedNavigator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="fld_lblOTLeaveDaysQty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel39.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblOTDayRemaining.Name" xml:space="preserve">
+    <value>fld_lblOTDayRemaining</value>
+  </data>
+  <data name="&gt;&gt;bosPanel1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSPanel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblNormalLeaveDaysQty.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <data name="fld_lblAnnualDayRemaining.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel53.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;fld_lblAnnualLeaveDaysQty.Name" xml:space="preserve">
+    <value>fld_lblAnnualLeaveDaysQty</value>
+  </data>
+  <data name="fld_lblBirthDayRemaining.Text" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="fld_lblLabel44.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_lblSickLeaveDaysQty.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="fld_dgcHRLeaveDays.EmbeddedNavigator.ToolTipTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;fld_lblAnnualDayRemaining.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <data name="&gt;&gt;fld_lblOTLeaveDaysQty.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel44.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <data name="&gt;&gt;fld_lblOTDayRemaining.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="fld_lblNormalDayRemaining.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="fld_lblBirthDayRemaining.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 13</value>
+  </data>
+  <data name="fld_lblNormalDayRemaining.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="fld_lblOTDayRemaining.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;fld_lblBirthDayRemaining.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_lblSickDayRemaining.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="fld_lblLabel52.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="fld_lblLabel57.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 13</value>
+  </data>
+  <data name="&gt;&gt;fld_lblBirthLeaveDaysQty.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="fld_lblBirthLeaveDaysQty.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;fld_lblOTDayRemaining.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel57.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <data name="fld_dgcHRLeaveDays.EmbeddedNavigator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Tile</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel52.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl8.Parent" xml:space="preserve">
+    <value>bosPanel1</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel55.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <data name="fld_grcGroupControl7.Text" xml:space="preserve">
+    <value>Thông tin tổng hợp ngày nghỉ</value>
+  </data>
+  <data name="fld_lblLabel52.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 13</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel57.Name" xml:space="preserve">
+    <value>fld_lblLabel57</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>BOSERP.BOSERPScreen, BOSBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_lblAnnualLeaveDaysQty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcHRLeaveDays.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl8.Name" xml:space="preserve">
+    <value>fld_grcGroupControl8</value>
+  </data>
+  <data name="&gt;&gt;fld_lblAnnualDayRemaining.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_grcGroupControl8.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_lblSickDayRemaining.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;fld_dgvHRLeaveDays.Name" xml:space="preserve">
+    <value>fld_dgvHRLeaveDays</value>
+  </data>
+  <data name="fld_lblNormalDayRemaining.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;bosPanel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="fld_lblOTLeaveDaysQty.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="fld_lblLabel52.Text" xml:space="preserve">
+    <value>Nghỉ thai sản</value>
+  </data>
+  <data name="fld_dgcHRLeaveDays.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;ScreenHelper.Type" xml:space="preserve">
+    <value>System.Windows.Forms.HelpProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fld_lblNormalDayRemaining.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <data name="fld_lblLabel53.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="fld_lblLabel55.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_lblOTDayRemaining.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="fld_lblAnnualDayRemaining.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="fld_grcGroupControl8.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="fld_lblBirthLeaveDaysQty.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl8.Type" xml:space="preserve">
+    <value>BOSComponent.BOSGroupControl, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_dgvHRLeaveDays.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="fld_lblSickDayRemaining.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel54.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl7.Parent" xml:space="preserve">
+    <value>bosPanel1</value>
+  </data>
+  <data name="&gt;&gt;fld_lblSickLeaveDaysQty.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <data name="&gt;&gt;fld_lblAnnualLeaveDaysQty.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel39.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_lblBirthLeaveDaysQty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 105</value>
+  </data>
+  <data name="fld_lblLabel54.Text" xml:space="preserve">
+    <value>Nghỉ không lương</value>
+  </data>
+  <data name="fld_lblSickDayRemaining.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="fld_lblAnnualLeaveDaysQty.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel53.Name" xml:space="preserve">
+    <value>fld_lblLabel53</value>
+  </data>
+  <data name="fld_lblBirthDayRemaining.Location" type="System.Drawing.Point, System.Drawing">
+    <value>390, 105</value>
+  </data>
+  <data name="fld_lblBirthDayRemaining.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>862, 567</value>
+  </data>
+  <data name="fld_lblAnnualLeaveDaysQty.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel57.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_lblLabel55.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel55.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_lblLabel54.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="fld_lblLabel39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="&gt;&gt;fld_lblSickLeaveDaysQty.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="bosPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl7.Name" xml:space="preserve">
+    <value>fld_grcGroupControl7</value>
+  </data>
+  <data name="&gt;&gt;fld_lblAnnualLeaveDaysQty.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel57.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fld_lblAnnualDayRemaining.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 13</value>
+  </data>
+  <data name="fld_lblLabel57.Text" xml:space="preserve">
+    <value>Còn lại</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel53.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel55.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="fld_lblLabel55.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 27</value>
+  </data>
+  <data name="fld_lblNormalLeaveDaysQty.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;fld_lblBirthLeaveDaysQty.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="fld_lblOTLeaveDaysQty.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ScreenHelper.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>272, 17</value>
+  </metadata>
+</root>

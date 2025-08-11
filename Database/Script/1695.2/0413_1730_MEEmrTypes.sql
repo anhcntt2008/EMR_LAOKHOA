@@ -1,0 +1,1 @@
+﻿ALTER TABLE [dbo].[MEEmrTypes] ALTER COLUMN MEEmrTypeOneEmrOnePhase BIT NOT NULL

@@ -1,0 +1,8 @@
+﻿ALTER TABLE MEEmrs ADD MEEmrNotifyType varchar(50) 
+ALTER TABLE MEEmrs ADD MEEmrNotifyMsg nvarchar(1024)
+GO
+UPDATE  MEEmrs SET MEEmrNotifyType=''
+UPDATE  MEEmrs SET MEEmrNotifyMsg=''
+GO
+ALTER TABLE MEEmrs ADD CONSTRAINT DF_MEEmrs_MEEmrNotifyType DEFAULT '' FOR MEEmrNotifyType 
+ALTER TABLE MEEmrs ADD CONSTRAINT DF_MEEmrs_MEEmrNotifyMsg DEFAULT '' FOR MEEmrNotifyMsg 

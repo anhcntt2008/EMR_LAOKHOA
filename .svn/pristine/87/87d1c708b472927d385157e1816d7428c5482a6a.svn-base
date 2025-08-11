@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Emr.Ca.Bkav.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Emr_Ca_Bkav_WebReference_EAService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://103.237.99.76/EAServer/services/EAService.EAServiceHttpsSoap11Endpoint/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

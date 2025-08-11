@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Clas.Emr.Core</id>
+    <version>$version$</version>
+    <title>Core Library - Bệnh án điện tử - EMR</title>
+    <authors>Ut Huynh</authors>
+    <owners>CHC EMR</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Core Library - Bệnh án điện tử - EMR</description>
+    <releaseNotes>.</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>Emr Core 1.0</tags>
+  </metadata>
+  <files>
+    <file src="D:\emr\Repos\Emr.Desktop\SourceCode\BOSERPSolution\BOSERP\bin\Release\Dev\Clas.Emr.Core.dll" target="lib\net45"></file>
+  </files>
+</package>

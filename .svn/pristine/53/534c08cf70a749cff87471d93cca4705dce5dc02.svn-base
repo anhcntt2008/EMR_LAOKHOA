@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="Emr.Ca.Bkav.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <applicationSettings>
+        <Emr.Ca.Bkav.Properties.Settings>
+            <setting name="Emr_Ca_Bkav_WebReference_EAService" serializeAs="String">
+                <value>https://103.237.99.76/EAServer/services/EAService.EAServiceHttpsSoap11Endpoint/</value>
+            </setting>
+        </Emr.Ca.Bkav.Properties.Settings>
+    </applicationSettings>
+</configuration>

@@ -1,0 +1,2509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="ScreenHelper.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="fld_grcGroupControl.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="fld_grcGroupControl.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="bosTextBox3.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bosTextBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>624, 220</value>
+  </data>
+  <data name="bosTextBox3.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="bosTextBox3.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bosTextBox3.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bosTextBox3.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bosTextBox3.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosTextBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 20</value>
+  </data>
+  <data name="bosTextBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;bosTextBox3.Name" xml:space="preserve">
+    <value>bosTextBox3</value>
+  </data>
+  <data name="&gt;&gt;bosTextBox3.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosTextBox3.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;bosTextBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bosLabel10.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="bosLabel10.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="bosLabel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 224</value>
+  </data>
+  <data name="bosLabel10.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 13</value>
+  </data>
+  <data name="bosLabel10.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="bosLabel10.Text" xml:space="preserve">
+    <value>Mã Remote Case</value>
+  </data>
+  <data name="&gt;&gt;bosLabel10.Name" xml:space="preserve">
+    <value>bosLabel10</value>
+  </data>
+  <data name="&gt;&gt;bosLabel10.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel10.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;bosLabel10.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bosTextBox2.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bosTextBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>624, 26</value>
+  </data>
+  <data name="bosTextBox2.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="bosTextBox2.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="bosTextBox2.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosTextBox2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bosTextBox2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosTextBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="bosTextBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;bosTextBox2.Name" xml:space="preserve">
+    <value>bosTextBox2</value>
+  </data>
+  <data name="&gt;&gt;bosTextBox2.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosTextBox2.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;bosTextBox2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="bosLabel9.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="bosLabel9.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="bosLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 29</value>
+  </data>
+  <data name="bosLabel9.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="bosLabel9.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="bosLabel9.Text" xml:space="preserve">
+    <value>Mã Bs24x7</value>
+  </data>
+  <data name="&gt;&gt;bosLabel9.Name" xml:space="preserve">
+    <value>bosLabel9</value>
+  </data>
+  <data name="&gt;&gt;bosLabel9.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel9.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;bosLabel9.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bosLabel4.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="bosLabel4.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="bosLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 164</value>
+  </data>
+  <data name="bosLabel4.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="bosLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="bosLabel4.Text" xml:space="preserve">
+    <value>Điện thoại 2</value>
+  </data>
+  <data name="&gt;&gt;bosLabel4.Name" xml:space="preserve">
+    <value>bosLabel4</value>
+  </data>
+  <data name="&gt;&gt;bosLabel4.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel4.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;bosLabel4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="bosTextBox1.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bosTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>624, 163</value>
+  </data>
+  <data name="bosTextBox1.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="bosTextBox1.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="bosTextBox1.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosTextBox1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bosTextBox1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 20</value>
+  </data>
+  <data name="bosTextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;bosTextBox1.Name" xml:space="preserve">
+    <value>bosTextBox1</value>
+  </data>
+  <data name="&gt;&gt;bosTextBox1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosTextBox1.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;bosTextBox1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="fld_lkeFK_MECompanyID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>624, 80</value>
+  </data>
+  <data name="fld_lkeFK_MECompanyID.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_lkeFK_MECompanyID.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v17.2" name="DevExpress.Utils.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="fld_lkeFK_MECompanyID.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Glyph</value>
+  </data>
+  <data name="fld_lkeFK_MECompanyID.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_MECompanyID.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_MECompanyID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_lkeFK_MECompanyID.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_MECompanyID.Name" xml:space="preserve">
+    <value>fld_lkeFK_MECompanyID</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_MECompanyID.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_MECompanyID.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_MECompanyID.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="bosLabel3.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 255, 255, 255</value>
+  </data>
+  <data name="bosLabel3.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="bosLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 193</value>
+  </data>
+  <data name="bosLabel3.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="bosLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="bosLabel3.Text" xml:space="preserve">
+    <value>Dân tộc</value>
+  </data>
+  <data name="&gt;&gt;bosLabel3.Name" xml:space="preserve">
+    <value>bosLabel3</value>
+  </data>
+  <data name="&gt;&gt;bosLabel3.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel3.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;bosLabel3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="fld_lkeFK_MEEthnicID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>624, 191</value>
+  </data>
+  <data name="fld_lkeFK_MEEthnicID.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_lkeFK_MEEthnicID.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lkeFK_MEEthnicID.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeFK_MEEthnicID.Properties.Columns" xml:space="preserve">
+    <value>MEEthnicNo</value>
+  </data>
+  <data name="fld_lkeFK_MEEthnicID.Properties.Columns1" xml:space="preserve">
+    <value>Mã dân tộc</value>
+  </data>
+  <data name="fld_lkeFK_MEEthnicID.Properties.Columns2" xml:space="preserve">
+    <value>MEEthnicDesc</value>
+  </data>
+  <data name="fld_lkeFK_MEEthnicID.Properties.Columns3" xml:space="preserve">
+    <value>Tên dân tộc</value>
+  </data>
+  <data name="fld_lkeFK_MEEthnicID.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_MEEthnicID.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_MEEthnicID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 20</value>
+  </data>
+  <data name="fld_lkeFK_MEEthnicID.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_MEEthnicID.Name" xml:space="preserve">
+    <value>fld_lkeFK_MEEthnicID</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_MEEthnicID.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_MEEthnicID.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_MEEthnicID.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="fld_lkeFK_MEOccupationID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 82</value>
+  </data>
+  <data name="fld_lkeFK_MEOccupationID.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_lkeFK_MEOccupationID.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lkeFK_MEOccupationID.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeFK_MEOccupationID.Properties.Columns" xml:space="preserve">
+    <value>MEOccupationNo</value>
+  </data>
+  <data name="fld_lkeFK_MEOccupationID.Properties.Columns1" xml:space="preserve">
+    <value>Mã nghề nghiệp</value>
+  </data>
+  <data name="fld_lkeFK_MEOccupationID.Properties.Columns2" xml:space="preserve">
+    <value>MEOccupationDesc</value>
+  </data>
+  <data name="fld_lkeFK_MEOccupationID.Properties.Columns3" xml:space="preserve">
+    <value>Tên nghề nghiệp</value>
+  </data>
+  <data name="fld_lkeFK_MEOccupationID.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_MEOccupationID.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_MEOccupationID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_lkeFK_MEOccupationID.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_MEOccupationID.Name" xml:space="preserve">
+    <value>fld_lkeFK_MEOccupationID</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_MEOccupationID.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_MEOccupationID.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_MEOccupationID.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="fld_txtMEPatientBarcode1.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtMEPatientBarcode1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>624, 54</value>
+  </data>
+  <data name="fld_txtMEPatientBarcode1.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_txtMEPatientBarcode1.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_txtMEPatientBarcode1.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientBarcode1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtMEPatientBarcode1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientBarcode1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_txtMEPatientBarcode1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientBarcode1.Name" xml:space="preserve">
+    <value>fld_txtMEPatientBarcode1</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientBarcode1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientBarcode1.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientBarcode1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="fld_lkeMEPatientType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 134</value>
+  </data>
+  <data name="fld_lkeMEPatientType.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_lkeMEPatientType.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lkeMEPatientType.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeMEPatientType.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeMEPatientType.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeMEPatientType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_lkeMEPatientType.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeMEPatientType.Name" xml:space="preserve">
+    <value>fld_lkeMEPatientType</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeMEPatientType.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeMEPatientType.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeMEPatientType.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="fld_lbMeBarcode.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="fld_lbMeBarcode.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lbMeBarcode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 57</value>
+  </data>
+  <data name="fld_lbMeBarcode.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lbMeBarcode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="fld_lbMeBarcode.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="fld_lbMeBarcode.Text" xml:space="preserve">
+    <value>Mã vạch</value>
+  </data>
+  <data name="&gt;&gt;fld_lbMeBarcode.Name" xml:space="preserve">
+    <value>fld_lbMeBarcode</value>
+  </data>
+  <data name="&gt;&gt;fld_lbMeBarcode.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lbMeBarcode.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lbMeBarcode.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="fld_lblLabel5.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel5.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 33</value>
+  </data>
+  <data name="fld_lblLabel5.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 13</value>
+  </data>
+  <data name="fld_lblLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="fld_lblLabel5.Text" xml:space="preserve">
+    <value>Mã bệnh nhân</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel5.Name" xml:space="preserve">
+    <value>fld_lblLabel5</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel5.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel5.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel5.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="fld_lblLabel6.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel6.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>269, 33</value>
+  </data>
+  <data name="fld_lblLabel6.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="fld_lblLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="fld_lblLabel6.Text" xml:space="preserve">
+    <value>Tên bệnh nhân</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel6.Name" xml:space="preserve">
+    <value>fld_lblLabel6</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel6.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel6.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel6.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="fld_lblLabel7.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel7.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 85</value>
+  </data>
+  <data name="fld_lblLabel7.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="fld_lblLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="fld_lblLabel7.Text" xml:space="preserve">
+    <value>Giới tính</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel7.Name" xml:space="preserve">
+    <value>fld_lblLabel7</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel7.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel7.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel7.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="bosLabel7.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="bosLabel7.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="bosLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 135</value>
+  </data>
+  <data name="bosLabel7.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="bosLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="bosLabel7.Text" xml:space="preserve">
+    <value>Nơi cấp</value>
+  </data>
+  <data name="&gt;&gt;bosLabel7.Name" xml:space="preserve">
+    <value>bosLabel7</value>
+  </data>
+  <data name="&gt;&gt;bosLabel7.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel7.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;bosLabel7.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="bosLabel8.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="bosLabel8.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="bosLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 189</value>
+  </data>
+  <data name="bosLabel8.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="bosLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="bosLabel8.Text" xml:space="preserve">
+    <value>Hộ khẩu TT</value>
+  </data>
+  <data name="&gt;&gt;bosLabel8.Name" xml:space="preserve">
+    <value>bosLabel8</value>
+  </data>
+  <data name="&gt;&gt;bosLabel8.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel8.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;bosLabel8.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="bosLabel6.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="bosLabel6.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="bosLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>269, 111</value>
+  </data>
+  <data name="bosLabel6.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="bosLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="bosLabel6.Text" xml:space="preserve">
+    <value>Ngày cấp</value>
+  </data>
+  <data name="&gt;&gt;bosLabel6.Name" xml:space="preserve">
+    <value>bosLabel6</value>
+  </data>
+  <data name="&gt;&gt;bosLabel6.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel6.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;bosLabel6.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="bosLabel5.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="bosLabel5.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="bosLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 111</value>
+  </data>
+  <data name="bosLabel5.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="bosLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="bosLabel5.Text" xml:space="preserve">
+    <value>Số CMND</value>
+  </data>
+  <data name="&gt;&gt;bosLabel5.Name" xml:space="preserve">
+    <value>bosLabel5</value>
+  </data>
+  <data name="&gt;&gt;bosLabel5.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel5.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;bosLabel5.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="fld_lblLabel8.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel8.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>269, 137</value>
+  </data>
+  <data name="fld_lblLabel8.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="fld_lblLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="fld_lblLabel8.Text" xml:space="preserve">
+    <value>Điện thoại 1</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel8.Name" xml:space="preserve">
+    <value>fld_lblLabel8</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel8.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel8.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel8.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="fld_txtMEPatientIDCardStateProvinces.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtMEPatientIDCardStateProvinces.Location" type="System.Drawing.Point, System.Drawing">
+    <value>624, 132</value>
+  </data>
+  <data name="fld_txtMEPatientIDCardStateProvinces.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_txtMEPatientIDCardStateProvinces.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_txtMEPatientIDCardStateProvinces.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientIDCardStateProvinces.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtMEPatientIDCardStateProvinces.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientIDCardStateProvinces.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_txtMEPatientIDCardStateProvinces.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientIDCardStateProvinces.Name" xml:space="preserve">
+    <value>fld_txtMEPatientIDCardStateProvinces</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientIDCardStateProvinces.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientIDCardStateProvinces.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientIDCardStateProvinces.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="fld_txtMEPatientPermanentResidence.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtMEPatientPermanentResidence.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 186</value>
+  </data>
+  <data name="fld_txtMEPatientPermanentResidence.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_txtMEPatientPermanentResidence.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_txtMEPatientPermanentResidence.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientPermanentResidence.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtMEPatientPermanentResidence.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientPermanentResidence.Size" type="System.Drawing.Size, System.Drawing">
+    <value>396, 20</value>
+  </data>
+  <data name="fld_txtMEPatientPermanentResidence.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientPermanentResidence.Name" xml:space="preserve">
+    <value>fld_txtMEPatientPermanentResidence</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientPermanentResidence.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientPermanentResidence.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientPermanentResidence.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="fld_txtMEPatientIDCard.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtMEPatientIDCard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 108</value>
+  </data>
+  <data name="fld_txtMEPatientIDCard.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_txtMEPatientIDCard.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_txtMEPatientIDCard.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientIDCard.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtMEPatientIDCard.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientIDCard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_txtMEPatientIDCard.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientIDCard.Name" xml:space="preserve">
+    <value>fld_txtMEPatientIDCard</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientIDCard.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientIDCard.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientIDCard.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="fld_txtMEPatientContactCellPhone.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtMEPatientContactCellPhone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 134</value>
+  </data>
+  <data name="fld_txtMEPatientContactCellPhone.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_txtMEPatientContactCellPhone.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_txtMEPatientContactCellPhone.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientContactCellPhone.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtMEPatientContactCellPhone.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientContactCellPhone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_txtMEPatientContactCellPhone.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactCellPhone.Name" xml:space="preserve">
+    <value>fld_txtMEPatientContactCellPhone</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactCellPhone.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactCellPhone.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactCellPhone.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="fld_lkeMEGender.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 82</value>
+  </data>
+  <data name="fld_lkeMEGender.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_lkeMEGender.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lkeMEGender.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeMEGender.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeMEGender.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeMEGender.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_lkeMEGender.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeMEGender.Name" xml:space="preserve">
+    <value>fld_lkeMEGender</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeMEGender.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeMEGender.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeMEGender.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="fld_lblLabel11.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel11.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 59</value>
+  </data>
+  <data name="fld_lblLabel11.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="fld_lblLabel11.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="fld_lblLabel11.Text" xml:space="preserve">
+    <value>Ngày sinh</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel11.Name" xml:space="preserve">
+    <value>fld_lblLabel11</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel11.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel11.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel11.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="fld_lblLabel12.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel12.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 163</value>
+  </data>
+  <data name="fld_lblLabel12.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="fld_lblLabel12.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="fld_lblLabel12.Text" xml:space="preserve">
+    <value>Điện thoại CQ</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel12.Name" xml:space="preserve">
+    <value>fld_lblLabel12</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel12.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel12.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel12.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="bosLabel1.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 255, 255, 255</value>
+  </data>
+  <data name="bosLabel1.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="bosLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 83</value>
+  </data>
+  <data name="bosLabel1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="bosLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="bosLabel1.Text" xml:space="preserve">
+    <value>Đơn vị</value>
+  </data>
+  <data name="&gt;&gt;bosLabel1.Name" xml:space="preserve">
+    <value>bosLabel1</value>
+  </data>
+  <data name="&gt;&gt;bosLabel1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel1.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;bosLabel1.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="fld_lblLabel13.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 255, 255, 255</value>
+  </data>
+  <data name="fld_lblLabel13.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>269, 59</value>
+  </data>
+  <data name="fld_lblLabel13.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="fld_lblLabel13.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="fld_lblLabel13.Text" xml:space="preserve">
+    <value>Mức giá</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel13.Name" xml:space="preserve">
+    <value>fld_lblLabel13</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel13.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel13.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel13.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="fld_lblLabel15.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 255, 255, 255</value>
+  </data>
+  <data name="fld_lblLabel15.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>269, 85</value>
+  </data>
+  <data name="fld_lblLabel15.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="fld_lblLabel15.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="fld_lblLabel15.Text" xml:space="preserve">
+    <value>Nghề nghiệp</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel15.Name" xml:space="preserve">
+    <value>fld_lblLabel15</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel15.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel15.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel15.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="fld_lblLabel16.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 255, 255, 255</value>
+  </data>
+  <data name="fld_lblLabel16.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 109</value>
+  </data>
+  <data name="fld_lblLabel16.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="fld_lblLabel16.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="fld_lblLabel16.Text" xml:space="preserve">
+    <value>Tình trạng hôn nhân</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel16.Name" xml:space="preserve">
+    <value>fld_lblLabel16</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel16.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel16.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel16.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="fld_pteMEPatientPicture.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_pteMEPatientPicture.Location" type="System.Drawing.Point, System.Drawing">
+    <value>783, 33</value>
+  </data>
+  <data name="fld_pteMEPatientPicture.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_pteMEPatientPicture.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_pteMEPatientPicture.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_pteMEPatientPicture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 115</value>
+  </data>
+  <data name="fld_pteMEPatientPicture.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;fld_pteMEPatientPicture.Name" xml:space="preserve">
+    <value>fld_pteMEPatientPicture</value>
+  </data>
+  <data name="&gt;&gt;fld_pteMEPatientPicture.Type" xml:space="preserve">
+    <value>BOSComponent.BOSPictureEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_pteMEPatientPicture.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_pteMEPatientPicture.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="fld_dteMEPatientIDCardDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="fld_dteMEPatientIDCardDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 108</value>
+  </data>
+  <data name="fld_dteMEPatientIDCardDate.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_dteMEPatientIDCardDate.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_dteMEPatientIDCardDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_dteMEPatientIDCardDate.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_dteMEPatientIDCardDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_dteMEPatientIDCardDate.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;fld_dteMEPatientIDCardDate.Name" xml:space="preserve">
+    <value>fld_dteMEPatientIDCardDate</value>
+  </data>
+  <data name="&gt;&gt;fld_dteMEPatientIDCardDate.Type" xml:space="preserve">
+    <value>BOSComponent.BOSDateEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_dteMEPatientIDCardDate.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_dteMEPatientIDCardDate.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="fld_dteMEPatientBirthday.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="fld_dteMEPatientBirthday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 56</value>
+  </data>
+  <data name="fld_dteMEPatientBirthday.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_dteMEPatientBirthday.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_dteMEPatientBirthday.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_dteMEPatientBirthday.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_dteMEPatientBirthday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_dteMEPatientBirthday.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;fld_dteMEPatientBirthday.Name" xml:space="preserve">
+    <value>fld_dteMEPatientBirthday</value>
+  </data>
+  <data name="&gt;&gt;fld_dteMEPatientBirthday.Type" xml:space="preserve">
+    <value>BOSComponent.BOSDateEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_dteMEPatientBirthday.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_dteMEPatientBirthday.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="fld_Line.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="fld_Line.Location" type="System.Drawing.Point, System.Drawing">
+    <value>780, 19</value>
+  </data>
+  <data name="fld_Line.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_Line.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 135</value>
+  </data>
+  <data name="fld_Line.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="fld_Line.Text" xml:space="preserve">
+    <value>Hình ảnh</value>
+  </data>
+  <data name="&gt;&gt;fld_Line.Name" xml:space="preserve">
+    <value>fld_Line</value>
+  </data>
+  <data name="&gt;&gt;fld_Line.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLine, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_Line.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_Line.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="fld_lkeFK_ARPriceLevelID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 56</value>
+  </data>
+  <data name="fld_lkeFK_ARPriceLevelID.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_lkeFK_ARPriceLevelID.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lkeFK_ARPriceLevelID.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeFK_ARPriceLevelID.Properties.Columns" xml:space="preserve">
+    <value>ARPriceLevelNo</value>
+  </data>
+  <data name="fld_lkeFK_ARPriceLevelID.Properties.Columns1" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="fld_lkeFK_ARPriceLevelID.Properties.Columns2" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <assembly alias="DevExpress.Data.v17.2" name="DevExpress.Data.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="fld_lkeFK_ARPriceLevelID.Properties.Columns3" type="DevExpress.Utils.FormatType, DevExpress.Data.v17.2">
+    <value>Numeric</value>
+  </data>
+  <data name="fld_lkeFK_ARPriceLevelID.Properties.Columns4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_ARPriceLevelID.Properties.Columns5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_ARPriceLevelID.Properties.Columns6" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v17.2">
+    <value>Default</value>
+  </data>
+  <data name="fld_lkeFK_ARPriceLevelID.Properties.Columns7" xml:space="preserve">
+    <value>ARPriceLevelName</value>
+  </data>
+  <data name="fld_lkeFK_ARPriceLevelID.Properties.Columns8" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="fld_lkeFK_ARPriceLevelID.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_ARPriceLevelID.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_ARPriceLevelID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_lkeFK_ARPriceLevelID.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ARPriceLevelID.Name" xml:space="preserve">
+    <value>fld_lkeFK_ARPriceLevelID</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ARPriceLevelID.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ARPriceLevelID.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_ARPriceLevelID.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="fld_lblLabel17.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 255, 255, 255</value>
+  </data>
+  <data name="fld_lblLabel17.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>269, 163</value>
+  </data>
+  <data name="fld_lblLabel17.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 13</value>
+  </data>
+  <data name="fld_lblLabel17.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="fld_lblLabel17.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel17.Name" xml:space="preserve">
+    <value>fld_lblLabel17</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel17.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel17.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel17.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="fld_lbMEPantientType.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="fld_lbMEPantientType.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lbMEPantientType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 137</value>
+  </data>
+  <data name="fld_lbMEPantientType.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lbMEPantientType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="fld_lbMEPantientType.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="fld_lbMEPantientType.Text" xml:space="preserve">
+    <value>Loại bệnh nhân</value>
+  </data>
+  <data name="&gt;&gt;fld_lbMEPantientType.Name" xml:space="preserve">
+    <value>fld_lbMEPantientType</value>
+  </data>
+  <data name="&gt;&gt;fld_lbMEPantientType.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lbMEPantientType.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lbMEPantientType.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="fld_lblLabel19.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 255, 255, 255</value>
+  </data>
+  <data name="fld_lblLabel19.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 224</value>
+  </data>
+  <data name="fld_lblLabel19.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="fld_lblLabel19.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="fld_lblLabel19.Text" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel19.Name" xml:space="preserve">
+    <value>fld_lblLabel19</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel19.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel19.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel19.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="fld_txtMEPatientContactEmail.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtMEPatientContactEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 160</value>
+  </data>
+  <data name="fld_txtMEPatientContactEmail.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_txtMEPatientContactEmail.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_txtMEPatientContactEmail.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientContactEmail.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtMEPatientContactEmail.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientContactEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_txtMEPatientContactEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactEmail.Name" xml:space="preserve">
+    <value>fld_txtMEPatientContactEmail</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactEmail.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactEmail.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactEmail.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="fld_medMEPatientDesc.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_medMEPatientDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 212</value>
+  </data>
+  <data name="fld_medMEPatientDesc.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_medMEPatientDesc.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_medMEPatientDesc.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_medMEPatientDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>396, 38</value>
+  </data>
+  <data name="fld_medMEPatientDesc.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;fld_medMEPatientDesc.Name" xml:space="preserve">
+    <value>fld_medMEPatientDesc</value>
+  </data>
+  <data name="&gt;&gt;fld_medMEPatientDesc.Type" xml:space="preserve">
+    <value>BOSComponent.BOSMemoEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_medMEPatientDesc.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_medMEPatientDesc.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="fld_lkeMEMarital.Location" type="System.Drawing.Point, System.Drawing">
+    <value>624, 106</value>
+  </data>
+  <data name="fld_lkeMEMarital.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_lkeMEMarital.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lkeMEMarital.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Combo</value>
+  </data>
+  <data name="fld_lkeMEMarital.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeMEMarital.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeMEMarital.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_lkeMEMarital.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeMEMarital.Name" xml:space="preserve">
+    <value>fld_lkeMEMarital</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeMEMarital.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeMEMarital.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeMEMarital.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="fld_txtMEPatientContactPhone.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtMEPatientContactPhone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 160</value>
+  </data>
+  <data name="fld_txtMEPatientContactPhone.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_txtMEPatientContactPhone.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_txtMEPatientContactPhone.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientContactPhone.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtMEPatientContactPhone.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientContactPhone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_txtMEPatientContactPhone.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactPhone.Name" xml:space="preserve">
+    <value>fld_txtMEPatientContactPhone</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactPhone.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactPhone.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactPhone.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="fld_txtMEPatientNo1.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtMEPatientNo1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 30</value>
+  </data>
+  <data name="fld_txtMEPatientNo1.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_txtMEPatientNo1.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_txtMEPatientNo1.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientNo1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtMEPatientNo1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientNo1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_txtMEPatientNo1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientNo1.Name" xml:space="preserve">
+    <value>fld_txtMEPatientNo1</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientNo1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientNo1.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientNo1.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="fld_txtMEPatientName1.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtMEPatientName1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 30</value>
+  </data>
+  <data name="fld_txtMEPatientName1.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_txtMEPatientName1.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_txtMEPatientName1.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientName1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtMEPatientName1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientName1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_txtMEPatientName1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientName1.Name" xml:space="preserve">
+    <value>fld_txtMEPatientName1</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientName1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientName1.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientName1.ZOrder" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="fld_grcGroupControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="fld_grcGroupControl.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_grcGroupControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>905, 262</value>
+  </data>
+  <data name="fld_grcGroupControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="fld_grcGroupControl.Text" xml:space="preserve">
+    <value>Thông tin cá nhân</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl.Name" xml:space="preserve">
+    <value>fld_grcGroupControl</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl.Type" xml:space="preserve">
+    <value>BOSComponent.BOSGroupControl, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl.Parent" xml:space="preserve">
+    <value>bosPanel1</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_lkeFK_MECompanyID2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>698, 52</value>
+  </data>
+  <data name="fld_lkeFK_MECompanyID2.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_lkeFK_MECompanyID2.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lkeFK_MECompanyID2.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v17.2">
+    <value>Glyph</value>
+  </data>
+  <data name="fld_lkeFK_MECompanyID2.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_lkeFK_MECompanyID2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lkeFK_MECompanyID2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="fld_lkeFK_MECompanyID2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_MECompanyID2.Name" xml:space="preserve">
+    <value>fld_lkeFK_MECompanyID2</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_MECompanyID2.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLookupEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_MECompanyID2.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_lkeFK_MECompanyID2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="fld_grcGroupControl1.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="fld_grcGroupControl1.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="bosLabel2.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 255, 255, 255</value>
+  </data>
+  <data name="bosLabel2.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="bosLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 55</value>
+  </data>
+  <data name="bosLabel2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 13</value>
+  </data>
+  <data name="bosLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="bosLabel2.Text" xml:space="preserve">
+    <value>Vị trí</value>
+  </data>
+  <data name="&gt;&gt;bosLabel2.Name" xml:space="preserve">
+    <value>bosLabel2</value>
+  </data>
+  <data name="&gt;&gt;bosLabel2.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosLabel2.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;bosLabel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_bedGELocationName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 52</value>
+  </data>
+  <data name="fld_bedGELocationName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="fld_bedGELocationName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;fld_bedGELocationName.Name" xml:space="preserve">
+    <value>fld_bedGELocationName</value>
+  </data>
+  <data name="&gt;&gt;fld_bedGELocationName.Type" xml:space="preserve">
+    <value>BOSComponent.BOSButtonEdit, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_bedGELocationName.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_bedGELocationName.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fld_txtMEPatientContactAddressPostalCode100.Location" type="System.Drawing.Point, System.Drawing">
+    <value>551, 52</value>
+  </data>
+  <data name="fld_txtMEPatientContactAddressPostalCode100.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientContactAddressPostalCode100.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 20</value>
+  </data>
+  <data name="fld_txtMEPatientContactAddressPostalCode100.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactAddressPostalCode100.Name" xml:space="preserve">
+    <value>fld_txtMEPatientContactAddressPostalCode100</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactAddressPostalCode100.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactAddressPostalCode100.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactAddressPostalCode100.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="fld_lblLabel20.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 255, 255, 255</value>
+  </data>
+  <data name="fld_lblLabel20.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 29</value>
+  </data>
+  <data name="fld_lblLabel20.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="fld_lblLabel20.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="fld_lblLabel20.Text" xml:space="preserve">
+    <value>Chổ ở hiện tại</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel20.Name" xml:space="preserve">
+    <value>fld_lblLabel20</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel20.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel20.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel20.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="fld_lblLabel22.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 255, 255, 255</value>
+  </data>
+  <data name="fld_lblLabel22.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_lblLabel22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>481, 55</value>
+  </data>
+  <data name="fld_lblLabel22.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_lblLabel22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="fld_lblLabel22.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="fld_lblLabel22.Text" xml:space="preserve">
+    <value>Mã vùng</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel22.Name" xml:space="preserve">
+    <value>fld_lblLabel22</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel22.Type" xml:space="preserve">
+    <value>BOSComponent.BOSLabel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel22.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_lblLabel22.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="fld_txtMEPatientContactAddressLine1.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fld_txtMEPatientContactAddressLine1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 26</value>
+  </data>
+  <data name="fld_txtMEPatientContactAddressLine1.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>255, 255, 255</value>
+  </data>
+  <data name="fld_txtMEPatientContactAddressLine1.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_txtMEPatientContactAddressLine1.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientContactAddressLine1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="fld_txtMEPatientContactAddressLine1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_txtMEPatientContactAddressLine1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>788, 20</value>
+  </data>
+  <data name="fld_txtMEPatientContactAddressLine1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactAddressLine1.Name" xml:space="preserve">
+    <value>fld_txtMEPatientContactAddressLine1</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactAddressLine1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSTextBox, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactAddressLine1.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_txtMEPatientContactAddressLine1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="fld_grcGroupControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 268</value>
+  </data>
+  <data name="fld_grcGroupControl1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_grcGroupControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>905, 80</value>
+  </data>
+  <data name="fld_grcGroupControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="fld_grcGroupControl1.Text" xml:space="preserve">
+    <value>Thông tin liên lạc</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl1.Name" xml:space="preserve">
+    <value>fld_grcGroupControl1</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSGroupControl, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl1.Parent" xml:space="preserve">
+    <value>bosPanel1</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fld_grcGroupControl2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="fld_grcGroupControl2.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="fld_grcGroupControl2.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="fld_tabTabControl100.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="fld_tabTabControl100.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 20</value>
+  </data>
+  <data name="fld_dgcMEPatientVisits.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="fld_dgcMEPatientVisits.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="fld_dgcMEPatientVisits.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_dgcMEPatientVisits.Size" type="System.Drawing.Size, System.Drawing">
+    <value>893, 214</value>
+  </data>
+  <data name="fld_dgcMEPatientVisits.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcMEPatientVisits.Name" xml:space="preserve">
+    <value>fld_dgcMEPatientVisits</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcMEPatientVisits.Type" xml:space="preserve">
+    <value>BOSERP.Modules.MEPatient.MEPatientVisitsGridControl, BOSERP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcMEPatientVisits.Parent" xml:space="preserve">
+    <value>fld_tabTabPageLSK</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcMEPatientVisits.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_tabTabPageLSK.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_tabTabPageLSK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>893, 214</value>
+  </data>
+  <data name="fld_tabTabPageLSK.Text" xml:space="preserve">
+    <value>Lịch sử khám</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPageLSK.Name" xml:space="preserve">
+    <value>fld_tabTabPageLSK</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPageLSK.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPageLSK.Parent" xml:space="preserve">
+    <value>fld_tabTabControl100</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPageLSK.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_tabTabControl100.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_tabTabControl100.Size" type="System.Drawing.Size, System.Drawing">
+    <value>899, 242</value>
+  </data>
+  <data name="fld_tabTabControl100.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="fld_dgcMEVisitOrderItems.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="fld_dgcMEVisitOrderItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="fld_dgcMEVisitOrderItems.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_dgcMEVisitOrderItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>893, 263</value>
+  </data>
+  <data name="fld_dgcMEVisitOrderItems.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcMEVisitOrderItems.Name" xml:space="preserve">
+    <value>fld_dgcMEVisitOrderItems</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcMEVisitOrderItems.Type" xml:space="preserve">
+    <value>BOSERP.Modules.MEPatient.MEVisitOrderItemsGridControl, BOSERP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcMEVisitOrderItems.Parent" xml:space="preserve">
+    <value>fld_tabTabPageDVK</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcMEVisitOrderItems.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_tabTabPageDVK.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_tabTabPageDVK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>893, 263</value>
+  </data>
+  <data name="fld_tabTabPageDVK.Text" xml:space="preserve">
+    <value>Dịch vụ khám</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPageDVK.Name" xml:space="preserve">
+    <value>fld_tabTabPageDVK</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPageDVK.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPageDVK.Parent" xml:space="preserve">
+    <value>fld_tabTabControl100</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPageDVK.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fld_dgcMEPatients.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="fld_dgcMEPatients.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="fld_dgcMEPatients.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_dgcMEPatients.Size" type="System.Drawing.Size, System.Drawing">
+    <value>893, 263</value>
+  </data>
+  <data name="fld_dgcMEPatients.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcMEPatients.Name" xml:space="preserve">
+    <value>fld_dgcMEPatients</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcMEPatients.Type" xml:space="preserve">
+    <value>BOSERP.Modules.MEPatient.MEPatientsGridControl, BOSERP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcMEPatients.Parent" xml:space="preserve">
+    <value>fld_tabTabPagePA</value>
+  </data>
+  <data name="&gt;&gt;fld_dgcMEPatients.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_tabTabPagePA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>893, 263</value>
+  </data>
+  <data name="fld_tabTabPagePA.Text" xml:space="preserve">
+    <value>Bệnh nhân</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPagePA.Name" xml:space="preserve">
+    <value>fld_tabTabPagePA</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPagePA.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPagePA.Parent" xml:space="preserve">
+    <value>fld_tabTabControl100</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabPagePA.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabControl100.Name" xml:space="preserve">
+    <value>fld_tabTabControl100</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabControl100.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabControl100.Parent" xml:space="preserve">
+    <value>fld_grcGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_tabTabControl100.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="fld_grcGroupControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 403</value>
+  </data>
+  <data name="fld_grcGroupControl2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fld_grcGroupControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>903, 264</value>
+  </data>
+  <data name="fld_grcGroupControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="fld_grcGroupControl2.Text" xml:space="preserve">
+    <value>Lịch sử khám bệnh</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl2.Name" xml:space="preserve">
+    <value>fld_grcGroupControl2</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl2.Type" xml:space="preserve">
+    <value>BOSComponent.BOSGroupControl, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl2.Parent" xml:space="preserve">
+    <value>bosPanel1</value>
+  </data>
+  <data name="&gt;&gt;fld_grcGroupControl2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="bosPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="bosPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="bosPanel1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bosPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>942, 675</value>
+  </data>
+  <data name="bosPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;bosPanel1.Name" xml:space="preserve">
+    <value>bosPanel1</value>
+  </data>
+  <data name="&gt;&gt;bosPanel1.Type" xml:space="preserve">
+    <value>BOSComponent.BOSPanel, BOSComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bosPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bosPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="DMMAPA100.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>0, 0, 0</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>942, 675</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAYAICAQAAAAAADoAgAAZgAAABAQEAAAAAAAKAEAAE4DAAAgIAAAAQAIAKgIAAB2BAAAEBAAAAEA
+        CABoBQAAHg0AACAgAAABACAAqBAAAIYSAAAQEAAAAQAgAGgEAAAuIwAAKAAAACAAAABAAAAAAQAEAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAACAgACAAAAAgACAAICAAACAgIAAwMDAAAAA
+        /wAA/wAAAP//AP8AAAD/AP8A//8AAP///wAiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIoiI
+        iIiIiIiIiIiIiIiIiIiCIigiIiIozMzMzMzMyCIogiIoIiIiKM7m5ubm5sgiKIIiKCIiIijObm5ubm7I
+        IiiCIigiIiIozubm5ubmyCIogiIoIiIiKM5ubm5ubsgiKIIiKCIiIijO5ubm5ubIIiiIiIiIiIiIzm5u
+        bm5uyCIogRERERERGM7u7u7u7sgiKIHZWVlZWRjMzMzMzMzIIiiB1ZWVlZUYiIiIiIiIiIiIgdlZWVlZ
+        GDMzMzMzMzMzOIHVlZWVlRg/uLi4uLi4uDiB2VlZWVkYP7uLi4uLi4s4gdWVlZWVGD+4uLi4uLi4OIHZ
+        WVlZWRg/u4uLi4uLiziB1ZWVlZUYP7i4uLi4uLg4gdlZWVlZGD+7i4uLi4uLOIHVlZWVlRg/uLi4uLi4
+        uDiB3d3d3d0YP7uLi4uLi4s4gRERERERGD+4uLi4uLi4OIiIiIiIiIg/u4uLi4uLiziCIiIiIiIoP7i4
+        uLi4uLg4giIiIiIiKD+7i4uLi4uLOIIiIiIiIig/uLi4uLi4uDiCIiIiIiIoP7u7u7u7u7s4giIiIiIi
+        KD//////////OIIiIiIiIigzMzMzMzMzMziIiIiIiIiIiIiIiIiIiIiIIiIiIiIiIiIiIiIiIiIiIv//
+        ////////AAAAAHv4AA57+AAOe/gADnv4AA57+AAOe/gADgAAAA4AAAAOAAAADgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/4AAB/+AAAf/gAAH/4AAB/+AAAf/gAAAAA
+        AAD/////KAAAABAAAAAgAAAAAQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAACA
+        gACAAAAAgACAAICAAACAgIAAwMDAAAAA/wAA/wAAAP//AP8AAAD/AP8A//8AAP///wAiIiIiIiIiIoiI
+        iIiIiIiIgigijMzMyCiCKCKM5mbIKIiIiIzu7sgogRERjMzMyCiB2ZGIiIiIiIHZkYMzMzM4gdmRg/u7
+        uziB3dGD+7u7OIEREYP7u7s4iIiIg/u7uziCIiKD+7u7OIIiIoP///84giIigzMzMziIiIiIiIiIiP//
+        KCIAACjObALm5mwCIigAAoiIAAKIzgAAbm4AACIoAAAREQAAGM4AAO7uAAAiKHwAWVl8ABjMfADMzAAA
+        IigoAAAAIAAAAEAAAAABAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAA
+        AACAAIAAgIAAAICAgADA3MAA8MqmAKo/KgD/PyoAAF8qAFVfKgCqXyoA/18qAAB/KgBVfyoAqn8qAP9/
+        KgAAnyoAVZ8qAKqfKgD/nyoAAL8qAFW/KgCqvyoA/78qAADfKgBV3yoAqt8qAP/fKgAA/yoAVf8qAKr/
+        KgD//yoAAABVAFUAVQCqAFUA/wBVAAAfVQBVH1UAqh9VAP8fVQAAP1UAVT9VAKo/VQD/P1UAAF9VAFVf
+        VQCqX1UA/19VAAB/VQBVf1UAqn9VAP9/VQAAn1UAVZ9VAKqfVQD/n1UAAL9VAFW/VQCqv1UA/79VAADf
+        VQBV31UAqt9VAP/fVQAA/1UAVf9VAKr/VQD//1UAAAB/AFUAfwCqAH8A/wB/AAAffwBVH38Aqh9/AP8f
+        fwAAP38AVT9/AKo/fwD/P38AAF9/AFVffwCqX38A/19/AAB/fwBVf38Aqn9/AP9/fwAAn38AVZ9/AKqf
+        fwD/n38AAL9/AFW/fwCqv38A/79/AADffwBV338Aqt9/AP/ffwAA/38AVf9/AKr/fwD//38AAACqAFUA
+        qgCqAKoA/wCqAAAfqgBVH6oAqh+qAP8fqgAAP6oAVT+qAKo/qgD/P6oAAF+qAFVfqgCqX6oA/1+qAAB/
+        qgBVf6oAqn+qAP9/qgAAn6oAVZ+qAKqfqgD/n6oAAL+qAFW/qgCqv6oA/7+qAADfqgBV36oAqt+qAP/f
+        qgAA/6oAVf+qAKr/qgD//6oAAADUAFUA1ACqANQA/wDUAAAf1ABVH9QAqh/UAP8f1AAAP9QAVT/UAKo/
+        1AD/P9QAAF/UAFVf1ACqX9QA/1/UAAB/1ABVf9QAqn/UAP9/1AAAn9QAVZ/UAKqf1AD/n9QAAL/UAFW/
+        1ACqv9QA/7/UAADf1ABV39QAqt/UAP/f1AAA/9QAVf/UAKr/1AD//9QAVQD/AKoA/wAAH/8AVR//AKof
+        /wD/H/8AAD//AFU//wCqP/8A/z//AABf/wBVX/8Aql//AP9f/wAAf/8AVX//AKp//wD/f/8AAJ//AFWf
+        /wCqn/8A/5//AAC//wBVv/8Aqr//AP+//wAA3/8AVd//AKrf/wD/3/8AVf//AKr//wD/zMwA/8z/AP//
+        MwD//2YA//+ZAP//zAAAfwAAVX8AAKp/AAD/fwAAAJ8AAFWfAACqnwAA/58AAAC/AABVvwAAqr8AAP+/
+        AAAA3wAAVd8AAKrfAAD/3wAAVf8AAKr/AAAAACoAVQAqAKoAKgD/ACoAAB8qAFUfKgCqHyoA/x8qAAA/
+        KgBVPyoA8Pv/AKSgoACAgIAAAAD/AAD/AAAA//8A/wAAAAAAAAD//wAA////AP39/f39/f39/f39/f39
+        /f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39
+        /f39/f39/f39/f39/f39/f39/f39/f39qoYIqoYIhqoIqgiqCaoIqgiqhqqGhoYIhoYIqv39/f0I/f39
+        /ar9/f39/YY2Ng4yDg4ODgoOCgoKCgqG/f39/Yb9/f39CP39/f39qjY7Ozs3Nzc3NjMSMjIOCqr9/f39
+        qv39/f2G/f39/f0IN19fOzs3Nzc3NjcODg4KCP39/f0I/f39/ar9/f39/ao6X19fXzs7Ozc3NzY3NgqG
+        /f39/Yb9/f39CP39/f39hl9jY19jX187Ozs7Nzc3Dqr9/f39qv39/f2G/f39/f0IOodjh19jX19fXztf
+        OzcOCP39/f0ICAmqCAiqCKoICapfCYdjh2ODY19fXzs7Ow6q/f39/QhITEwoSCUoKSQoqmMJCYcJCWNj
+        Y2NfY19fNgj9/f39qkyZmZmYmJRwlCmqX19fXl9fX186WzY3Njc2gv39/f0JcJ2dmZmZlJmUJAmqCaoJ
+        hggIqggICKoIqggI/f39/YZwnp2dnZmZmJVMqnx8fHx8fFR8VHhUVFRUVKr9/f39CHChoZ2dnZ2ZmUwJ
+        fKSkxqSkxqSkpKSkpKBUCP39/f2qcKLDoqGdnZ2ZTKp8ysakxqSkxqSkxqSkpFSq/f39/QiUpqbDoqHE
+        nZ1Mq3ykqMakyqSkxqSkpKSkVAj9/f39hpTIyKbHoqGhoXAIfMrLpMqkxqSkxqTGpKRUqv39/f0IlMym
+        yKbIpcShcAh8y6jKpMqkxsqkpKSkxlQI/f39/aqUzMzMyKbIpqJwqnzLy8qpxsqkpMakxqSkeAj9/f39
+        CJSUlJSUlJSUlJQJgMupy8qpysqkyqSkxqRUqv39/f2GCKoIqgiqCKoIhgigrcvPqcuoy8qkxsqkxnyG
+        /f39/ar9/f39/f39/f39qnzPz6nLy8uoyqnKpKTKVAj9/f39CP39/f39/f39/f0IfNDPz8+py8upyqjG
+        yqR8hv39/f2G/f39/f39/f39/Qik0K7P0M+ty8vLy6jKpXyq/f39/ar9/f39/f39/f39CHzQ09Ctz8/P
+        qcupy6jKeAj9/f39CP39/f39/f39/f2qoNPQ0NPQ0M/Qz8vLy6l8CP39/f2G/f39/f39/f39/QmkfKR8
+        oHx8fHx8fHx8fHyG/f39/aoIqgiqCKoIqgiqCKoIqgiqCKoIqgiqCKoIqgj9/f39/f39/f39/f39/f39
+        /f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f3/////////////
+        ///AAAAD3vgAA974AAPe+AAD3vgAA974AAPe+AADwAAAA8AAAAPAAAADwAAAA8AAAAPAAAADwAAAA8AA
+        AAPAAAADwAAAA8AAAAPAAAADwAAAA9/4AAPf+AAD3/gAA9/4AAPf+AAD3/gAA8AAAAP//////////ygA
+        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
+        ff//p3f//6Jw//+eav//mWT//pRf//qQWv/0i1b/7IVS/+V/Tv+gWC7/wr/B/wAAAAAAAAAAAAAAAAAA
+        AADCv8H/AAAAAAAAAAAAAAAAAAAAAMK/wf8AAAAAAAAAAAAAAAAAAAAAAAAAAMK/wf/apnP//7+d//+7
+        mP//uJL//7WM//+whv//rH///6d4//+jcf//n2v//5ll//+VYP/6kVv/9YxY/6diN//Cv8H/AAAAAAAA
+        AAAAAAAAAAAAAMK/wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/96t
+        eP//wqL//8Gi//+/nv//vJn//7mT//+2jv//sYj//66A//+pev//pHP//6Bt//+bZ///l2L/r20//8K/
+        wf8AAAAAAAAAAAAAAAAAAAAAwr/B/xYXev8XF3b/GBVx/xkUbf8ZFGr/GhNm/xoSY/8bEV//HBFd/xwQ
+        W//Cv8H/4K96///Cov//wqL//8Ki///Cov//wJ///72b//+6lf//t4///7KJ//+ugv//qnv//6V0//+h
+        bv+3d0n/wr/B/wAAAAAAAAAAAAAAAAAAAADCv8H/FRqE/0dN1v8/RNL/Nz3Q/y40zv8nLcz/ISfK/xwh
+        yf8WHMf/GxJh/8K/wf/gr3r/4K96/+Cvev/gr3r/3614/9yqdf/apnL/16Nw/9Sea//Rmmj/zZZk/8qR
+        X//GjFz/w4dW/7+CUv/Cv8H/AAAAAAAAAAAAAAAAAAAAAMK/wf8SHZD/WF3a/05U1/9FS9X/PUPS/zU7
+        0P8uM83/JyzL/yAmyf8aFGn/wr/B/8K/wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/8K/
+        wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/8K/wf8AAAAAAAAAAAAAAAAAAAAAwr/B/xAfnP9obt7/YGTc/1Zb
+        2f9NU9f/RUrU/ztB0v80OdD/LDHO/xgWcv/Cv8H/Dn+n/w18pP8MeqH/DHie/wt1m/8Kc5j/CXGV/wlv
+        k/8JbJD/CGqN/wdpi/8HZ4j/BmWH/wZkhf8GYoP/wr/B/wAAAAAAAAAAAAAAAAAAAADCv8H/DiKp/3l+
+        4/9vdeH/Zmze/11i2/9UWtn/S1HW/0NI1P86P9H/Fhh9/8K/wf8Ogar/Barp/wGo6P8Apef/AKPm/wCi
+        5P8An+L/AJ7h/wCd3/8AnN7/AJnc/wCY2/8AmNn/AJbX/wZjhP/Cv8H/AAAAAAAAAAAAAAAAAAAAAMK/
+        wf8MJbX/iI7n/4CF5v93fOP/bnPg/2Vr3f9bYdv/UljY/0lP1v8UGoj/wr/B/w+Erf8Lrur/Bqvq/wOo
+        6f8Apuf/AKTm/wCi5f8AoOT/AJ/i/wCd4f8AnN//AJrd/wCZ2/8AmNr/BmWH/8K/wf8AAAAAAAAAAAAA
+        AAAAAAAAwr/B/wkowP+WnOz/jpTq/4aL6P9+hOX/dXri/2xx4P9jaN3/WV/b/xEek//Cv8H/EIaw/xay
+        7P8Or+z/Cavr/wWq6v8Bp+j/AKbn/wCj5f8AoeT/AJ/j/wCe4f8AnOD/AJve/wCa3f8HZ4n/wr/B/wAA
+        AAAAAAAAAAAAAAAAAADCv8H/CCrK/6Ko7/+coe7/lZrr/42T6f+Fiub/fIHl/3N54v9rcN//ECGg/8K/
+        wf8QiLP/I7nu/xq07f8Ssez/C63r/war6v8Cqen/AKbo/wCk5v8AouX/AKHk/wCf4f8AneH/AJzf/who
+        i//Cv8H/AAAAAAAAAAAAAAAAAAAAAMK/wf8GLNP/q7Hy/6as8P+hpu//mp/u/5OY6/+LkOj/g4nm/3qA
+        5P8NI6z/wr/B/xCKtv8xvvD/J7rv/x627f8Vsuz/Dq/s/wmr6/8Equn/Aafo/wCl5/8Ao+X/AKHk/wCf
+        4v8AnuH/CGqO/8K/wf8AAAAAAAAAAAAAAAAAAAAAwr/B/wUu2/+vtPP/r7Tz/6qv8v+mq/D/oKXv/5me
+        7f+Sl+v/io/p/wsmt//Cv8H/Eo24/0HF8f82wfD/LLzv/yK47v8atO3/EbHs/wut6/8Gq+r/A6np/wCm
+        6P8Apeb/AKLl/wCh5P8IbJD/wr/B/wAAAAAAAAAAAAAAAAAAAADCv8H/BC/h/wQv3/8FL9z/BS3Z/wYt
+        1v8GLNL/ByvP/wgqy/8IKcb/CSnC/8K/wf8Sjrv/Uszy/0fH8f87w/H/Mb7v/ye67/8et+7/FbPt/w6v
+        6/8IrOv/BKnp/wGo6P8Apef/AKPl/wluk//Cv8H/AAAAAAAAAAAAAAAAAAAAAMK/wf/Cv8H/wr/B/8K/
+        wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/xKRvf9j0/P/WM/z/0zK8f9BxfH/N8Hw/yy8
+        7/8iuO7/GbTt/xGx7P8Lruv/Bqrq/wOo6f8Apuf/CnGV/8K/wf8AAAAAAAAAAAAAAAAAAAAAwr/B/wAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADCv8H/E5LA/3Ta8/9q1fP/XtHz/1LM
+        8v9Hx/H/O8Pw/zG+7/8nu+//Hrbt/xay7f8Or+v/CKzq/wSq6f8Kc5j/wr/B/wAAAAAAAAAAAAAAAAAA
+        AADCv8H/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMK/wf8UlMH/hOD1/3rc
+        9f9v2PP/ZNTy/1jO8v9NyvH/Qsbx/zbB8P8svO//I7ju/xm07f8SsOz/C67r/wt2m//Cv8H/AAAAAAAA
+        AAAAAAAAAAAAAMK/wf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwr/B/xSW
+        w/+T5vb/iuL1/3/e9P912vT/adbz/13R8/9SzPL/R8jx/zzD8P8xvvD/J7rv/x627v8Vsuz/C3ie/8K/
+        wf8AAAAAAAAAAAAAAAAAAAAAwr/B/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADCv8H/FJbG/57r9/+X6Pb/juT1/4Th9f963fX/b9j0/2PT8/9Yz/L/TMrx/0HF8f83wO//LLzv/yK4
+        7v8MeqH/wr/B/wAAAAAAAAAAAAAAAAAAAADCv8H/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAMK/wf8VmMf/qO/3/6Lt9/+b6vb/kub2/4rj9f9/3vX/dNrz/2rV8/9d0fP/Uszy/0fI
+        8f88w/D/Mr7v/w19pP/Cv8H/AAAAAAAAAAAAAAAAAAAAAMK/wf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAwr/B/xWZyP8UmMf/FZfF/xSVw/8TlML/E5K//xOQvf8Sjrv/EYy4/xGK
+        tv8QiLL/D4Ww/w+Erf8Pgar/Dn+n/8K/wf8AAAAAAAAAAAAAAAAAAAAAwr/B/8K/wf/Cv8H/wr/B/8K/
+        wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/8K/
+        wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/8K/wf/Cv8H/wr/B/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
+        /////////////8AAAAPe+AAD3vgAA974AAPe+AAD3vgAA974AAPAAAADwAAAA8AAAAPAAAADwAAAA8AA
+        AAPAAAADwAAAA8AAAAPAAAADwAAAA8AAAAPAAAAD3/gAA9/4AAPf+AAD3/gAA9/4AAPf+AADwAAAA///
+        ////////KAAAABAAAAAgAAAAAQAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDA/8DA
+        wP/AwMD/wMDA/8DAwP/AwMD/wMDA/8DAwP/AwMD/wMDA/8DAwP/AwMD/wMDA/8DAwP8AAAAAAAAAAMDA
+        wP8AAAAAAAAAAMDAwP8AAAAAwMDA/8F2R/+9bj//umc6/7diNf+3YjX/wMDA/wAAAADAwMD/AAAAAAAA
+        AADAwMD/AAAAAAAAAADAwMD/AAAAAMDAwP/RkmD//7aP//+ldP/8kl3/vW0//8DAwP8AAAAAwMDA/wAA
+        AAAAAAAAwMDA/8DAwP/AwMD/wMDA/8DAwP/AwMD/3ap2///Cov//to7//6V0/8uJWP/AwMD/AAAAAMDA
+        wP8AAAAAAAAAAMDAwP8THI7/FBqF/xYYfP8XFnP/wMDA/+Cvev/gr3r/4K96/92qdv/ao3D/wMDA/wAA
+        AADAwMD/AAAAAAAAAADAwMD/ECCd/2Fn3P8zOc//FRmC/8DAwP/AwMD/wMDA/8DAwP/AwMD/wMDA/8DA
+        wP/AwMD/wMDA/wAAAAAAAAAAwMDA/w0krP+Pler/YWbd/xIcj//AwMD/DHmf/wpzmP8Ib5L/B2uO/wdq
+        jf8Gao3/B2qN/8DAwP8AAAAAAAAAAMDAwP8KJrv/r7Tz/5CU6v8PIJ//wMDA/w+Dq/87y/z/Kcb8/xrD
+        /P8QwPv/EMD7/wdqjf/AwMD/AAAAAAAAAADAwMD/CCrI/woowP8LJrf/DSSu/8DAwP8Sjbj/Zdb9/0/Q
+        /P88y/v/Kcf7/xrC+/8IbZD/wMDA/wAAAAAAAAAAwMDA/8DAwP/AwMD/wMDA/8DAwP/AwMD/FpfG/43h
+        /f962/3/Zdb8/0/Q/P87zPz/CXSZ/8DAwP8AAAAAAAAAAMDAwP8AAAAAAAAAAAAAAAAAAAAAwMDA/xif
+        z/+u6f7/n+X9/47h/f953P3/ZNb9/w19pP/AwMD/AAAAAAAAAADAwMD/AAAAAAAAAAAAAAAAAAAAAMDA
+        wP8apNX/uez+/7ns/v+u6f7/oOX9/43h/f8Rh7H/wMDA/wAAAAAAAAAAwMDA/wAAAAAAAAAAAAAAAAAA
+        AADAwMD/GqTV/xqk1f8apNX/GaHR/xecy/8WmMb/FJK+/8DAwP8AAAAAAAAAAMDAwP/AwMD/wMDA/8DA
+        wP/AwMD/wMDA/8DAwP/AwMD/wMDA/8DAwP/AwMD/wMDA/8DAwP/AwMD/AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAgAEAALQF
+        wf+0BQAAgAUAAIAFAACAAQAAgAHB/4ABAACAAQAAgAEAALwBAAC8AQAAvAHB/4ABbP///5H/
+</value>
+  </data>
+  <data name="$this.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>c</value>
+  </data>
+  <data name="&gt;&gt;ScreenHelper.Name" xml:space="preserve">
+    <value>ScreenHelper</value>
+  </data>
+  <data name="&gt;&gt;ScreenHelper.Type" xml:space="preserve">
+    <value>System.Windows.Forms.HelpProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DMMAPA100</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>BOSERP.BOSERPScreen, BOSBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

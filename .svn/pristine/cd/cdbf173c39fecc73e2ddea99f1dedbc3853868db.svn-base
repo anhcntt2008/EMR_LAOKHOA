@@ -1,0 +1,137 @@
+﻿namespace BOSBase
+{
+    partial class GuiSyncData
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.lblHospitalName = new DevExpress.XtraEditors.LabelControl();
+            this.progressBar = new DevExpress.XtraEditors.ProgressBarControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.lblRemaing = new DevExpress.XtraEditors.LabelControl();
+            this.lblProgress = new DevExpress.XtraEditors.LabelControl();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBar.Properties)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // lblHospitalName
+            // 
+            this.lblHospitalName.Appearance.Font = new System.Drawing.Font("Tahoma", 12.25F, System.Drawing.FontStyle.Bold);
+            this.lblHospitalName.Appearance.Options.UseFont = true;
+            this.lblHospitalName.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblHospitalName.Location = new System.Drawing.Point(13, 180);
+            this.lblHospitalName.Name = "lblHospitalName";
+            this.lblHospitalName.Size = new System.Drawing.Size(399, 28);
+            this.lblHospitalName.TabIndex = 1;
+            this.lblHospitalName.Text = "Hospital Name";
+            // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(12, 246);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Properties.ShowTitle = true;
+            this.progressBar.Properties.Step = 1;
+            this.progressBar.Size = new System.Drawing.Size(399, 30);
+            this.progressBar.TabIndex = 2;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Italic);
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl1.Appearance.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Appearance.Options.UseImageAlign = true;
+            this.labelControl1.Appearance.Options.UseTextOptions = true;
+            this.labelControl1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl1.Location = new System.Drawing.Point(13, 314);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(399, 29);
+            this.labelControl1.TabIndex = 22;
+            this.labelControl1.Text = "Đang cập nhật dữ liệu, vui lòng đợi đến khi tiến trình kết thúc.";
+            // 
+            // lblRemaing
+            // 
+            this.lblRemaing.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.lblRemaing.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lblRemaing.Appearance.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lblRemaing.Appearance.Options.UseFont = true;
+            this.lblRemaing.Appearance.Options.UseForeColor = true;
+            this.lblRemaing.Appearance.Options.UseImageAlign = true;
+            this.lblRemaing.Appearance.Options.UseTextOptions = true;
+            this.lblRemaing.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblRemaing.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblRemaing.Location = new System.Drawing.Point(12, 216);
+            this.lblRemaing.Name = "lblRemaing";
+            this.lblRemaing.Size = new System.Drawing.Size(399, 26);
+            this.lblRemaing.TabIndex = 23;
+            this.lblRemaing.Text = "Đang cập nhật...";
+            // 
+            // lblProgress
+            // 
+            this.lblProgress.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.lblProgress.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lblProgress.Appearance.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lblProgress.Appearance.Options.UseFont = true;
+            this.lblProgress.Appearance.Options.UseForeColor = true;
+            this.lblProgress.Appearance.Options.UseImageAlign = true;
+            this.lblProgress.Appearance.Options.UseTextOptions = true;
+            this.lblProgress.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.lblProgress.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblProgress.Location = new System.Drawing.Point(13, 277);
+            this.lblProgress.Name = "lblProgress";
+            this.lblProgress.Size = new System.Drawing.Size(399, 26);
+            this.lblProgress.TabIndex = 24;
+            // 
+            // GuiSyncData
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(424, 355);
+            this.ControlBox = false;
+            this.Controls.Add(this.lblProgress);
+            this.Controls.Add(this.lblRemaing);
+            this.Controls.Add(this.labelControl1);
+            this.Controls.Add(this.progressBar);
+            this.Controls.Add(this.lblHospitalName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "GuiSyncData";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Đồng bộ dữ liệu";
+            this.Load += new System.EventHandler(this.GuiSyncData_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.progressBar.Properties)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+        private DevExpress.XtraEditors.LabelControl lblHospitalName;
+        private DevExpress.XtraEditors.ProgressBarControl progressBar;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl lblRemaing;
+        private DevExpress.XtraEditors.LabelControl lblProgress;
+    }
+}
