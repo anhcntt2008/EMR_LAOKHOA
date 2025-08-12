@@ -39,14 +39,12 @@ public static class RabbitMqConnectionManager
     {
 
         //_hostname = SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_RABBITMQ_HOST);
-        //_port = Convert.ToInt32(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_RABBITMQ_PORT));
-        //_username = SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_RABBITMQ_USER);
-        //_password = SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_RABBITMQ_PASSWORD);
-
         _hostname = SqlDatabaseHelper._rabbitMQ_HostName;
-        _port = Convert.ToInt32(SqlDatabaseHelper._rabbitMQ_Port);
-        _username = SqlDatabaseHelper._rabbitMQ_UserName;
-        _password = SqlDatabaseHelper._rabbitMQ_Password;
+
+        _port = Convert.ToInt32(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_RABBITMQ_PORT));
+        _username = SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_RABBITMQ_USER);
+        _password = SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_RABBITMQ_PASSWORD);
+
         // Khởi tạo kết nối ngay khi lớp được nạp
         Initialize();
 

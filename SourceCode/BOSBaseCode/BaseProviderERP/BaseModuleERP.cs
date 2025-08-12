@@ -311,7 +311,8 @@ namespace BOSERP
 
             Task.Run(() =>
             {
-                var emrEndpoint = BOSApp.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_EMR_API_ENDPOINT);
+                //var emrEndpoint = BOSApp.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_EMR_API_ENDPOINT);
+                var emrEndpoint = SqlDatabaseHelper._EMR_API_ENDPOINT;
                 if (!string.IsNullOrEmpty(emrEndpoint) && !string.IsNullOrEmpty(BOSApp.EmrApiAuthToken))
                     _workflowClient = new WorkflowClient(emrEndpoint, BOSApp.EmrApiAuthToken);
             });

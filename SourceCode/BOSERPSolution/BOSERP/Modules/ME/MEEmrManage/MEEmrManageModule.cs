@@ -169,7 +169,8 @@ namespace BOSERP.Modules.MEEmrManage
 
             _emrArchiveHelper = new EmrArchiveHelper(_documentPath, _pdfProcessor, _ftpFileMng, _hashProvider, _digitalSig);
             _emrHelper = new EmrHelper(_documentPath, _pdfProcessor, _ftpFileMng, _hashProvider, _digitalSig);
-            var emrEndpoint = SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_HIS_API_ENDPOINT);
+            //var emrEndpoint = SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_HIS_API_ENDPOINT);
+            var emrEndpoint = SqlDatabaseHelper._HIS_API_ENDPOINT;
             if (!string.IsNullOrEmpty(emrEndpoint) && !string.IsNullOrEmpty(BOSApp.EmrApiAuthToken))
                 _apiEmr = new ApiHelper(emrEndpoint, BOSApp.EmrApiAuthToken, "EMR");
 

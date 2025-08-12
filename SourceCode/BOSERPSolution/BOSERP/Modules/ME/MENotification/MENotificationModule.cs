@@ -120,7 +120,8 @@ namespace BOSERP.Modules.MENotification
             SetMachineInfo();
             _notificationCtrl = new MENotificationsController();
 
-            var emrEndpoint = BOSApp.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_EMR_API_ENDPOINT);
+            //var emrEndpoint = BOSApp.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_EMR_API_ENDPOINT);
+            var emrEndpoint = SqlDatabaseHelper._EMR_API_ENDPOINT;
             if (!string.IsNullOrEmpty(emrEndpoint) && !string.IsNullOrEmpty(BOSApp.EmrApiAuthToken))
                 _apiEmr = new ApiHelper(emrEndpoint, BOSApp.EmrApiAuthToken, "EMR");
 

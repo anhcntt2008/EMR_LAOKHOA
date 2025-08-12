@@ -37,12 +37,12 @@ namespace BOSLib
         private static String _companyName = String.Empty;
 
         public static string _rabbitMQ_HostName = string.Empty;
-        public static string _rabbitMQ_Port = string.Empty;
-        public static string _rabbitMQ_UserName = string.Empty;
-        public static string _rabbitMQ_Password = string.Empty;
-
-
+        public static string _HIS_DB_SERVER = string.Empty;
         public static string _HIS_INTERGRATE_API_ENDPOINT = string.Empty;
+        public static string _HIS_API_ENDPOINT = string.Empty;
+        public static string _EMR_API_ENDPOINT = string.Empty;
+        public static string _MONGO_HOST = string.Empty;
+
         private static Dictionary<string, string> _tableIdentities;
 
         #region Public properties
@@ -83,11 +83,12 @@ namespace BOSLib
                     string userID = cryp.DecryptNew(ConfigurationManager.AppSettings["UserID"], true);
                     string password = cryp.DecryptNew(ConfigurationManager.AppSettings["Password"], true);
 
-                    _rabbitMQ_HostName = cryp.DecryptNew(ConfigurationManager.AppSettings["RabbitMQ_HostName"], true);
-                    _rabbitMQ_Port = cryp.DecryptNew(ConfigurationManager.AppSettings["RabbitMQ_Port"], true);
-                    _rabbitMQ_UserName = cryp.DecryptNew(ConfigurationManager.AppSettings["RabbitMQ_UserName"], true);
-                    _rabbitMQ_Password = cryp.DecryptNew(ConfigurationManager.AppSettings["RabbitMQ_Password"], true);
-                    _HIS_INTERGRATE_API_ENDPOINT = cryp.DecryptNew(ConfigurationManager.AppSettings["HIS_INTERGRATE_API_ENDPOINT"], true);
+                    _rabbitMQ_HostName = ConfigurationManager.AppSettings["RabbitMQ_HostName"];
+                    _HIS_DB_SERVER = ConfigurationManager.AppSettings["HIS_DB_SERVER"];
+                    _HIS_INTERGRATE_API_ENDPOINT = ConfigurationManager.AppSettings["HIS_INTERGRATE_API_ENDPOINT"];
+                    _HIS_API_ENDPOINT = ConfigurationManager.AppSettings["HIS_API_ENDPOINT"];
+                    _EMR_API_ENDPOINT = ConfigurationManager.AppSettings["EMR_API_ENDPOINT"];
+                    _MONGO_HOST = ConfigurationManager.AppSettings["MONGO_HOST"];
 
                     _connectionString = string.Format("Data Source={0};Initial Catalog={1};User ID={2};Password={3}", serverName, databaseName, userID, password);
                     database = new SqlDatabase(_connectionString);

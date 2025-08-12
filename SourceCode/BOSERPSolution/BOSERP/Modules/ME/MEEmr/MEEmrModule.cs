@@ -317,7 +317,8 @@ namespace BOSERP.Modules.MEEmr
             }
             #endregion
 
-            this._api = new ApiHelper(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_HIS_API_ENDPOINT), BOSApp.ApiToken);
+            //this._api = new ApiHelper(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_HIS_API_ENDPOINT), BOSApp.ApiToken);
+            this._api = new ApiHelper(SqlDatabaseHelper._HIS_API_ENDPOINT, BOSApp.ApiToken);
             this._sqlHelper = new SqlHelper();
 
             this.InitPatientInfoMappingForExternal();
@@ -424,7 +425,8 @@ namespace BOSERP.Modules.MEEmr
                 ClearEmrFiles();
             }
 
-            var emrEndpoint = BOSApp.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_EMR_API_ENDPOINT);
+            //var emrEndpoint = BOSApp.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_EMR_API_ENDPOINT);
+            var emrEndpoint = SqlDatabaseHelper._EMR_API_ENDPOINT;
             if (!string.IsNullOrEmpty(emrEndpoint) && !string.IsNullOrEmpty(BOSApp.EmrApiAuthToken))
             {
                 var timeout = BOSApp.GetSystemConfigValueInt(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_EMR_API_ENDPOINT_TIMEOUT, 180000);

@@ -96,7 +96,8 @@ namespace BOSERP.Modules.MEEmrStore
             base.InitializeModule();
             this._msgLogs = this.Controls["txtLogs"] as BOSMemoEdit;
             _archivesCtrl = new MEEmrArchivesController();
-            var emrEndpoint = BOSApp.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_EMR_API_ENDPOINT);
+            //var emrEndpoint = BOSApp.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_EMR_API_ENDPOINT);
+            var emrEndpoint = SqlDatabaseHelper._EMR_API_ENDPOINT;
             if (!string.IsNullOrEmpty(emrEndpoint) && !string.IsNullOrEmpty(BOSApp.EmrApiAuthToken))
                 _apiEmr = new ApiHelper(emrEndpoint, BOSApp.EmrApiAuthToken, "EMR");
         }

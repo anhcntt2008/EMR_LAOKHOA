@@ -26,12 +26,17 @@ namespace Clas.Repository.Mongo
             System.Configuration.Configuration configuration =
                ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             // XUANTM move to sql storage. Flex
-            var host = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_MONGO_HOST), true);
+            //var host = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_MONGO_HOST), true);
+
+            var host = SqlDatabaseHelper._MONGO_HOST;
+
             var port = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_MONGO_PORT), true);
             var user = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_MONGO_USER), true);
             var pw = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_MONGO_PW), true);
             var authSource = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_MONGO_AUTH_SOURCE), true);
             var dbName = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_MONGO_DB), true);
+
+
             _connectionString = string.Format("mongodb://{0}:{1}@{2}:{3}/{4}?authSource={5}",
                 user, pw, host, port, dbName, authSource);
             _client = new MongoClient(_connectionString);

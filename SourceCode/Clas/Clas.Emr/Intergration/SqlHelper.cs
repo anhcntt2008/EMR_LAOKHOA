@@ -29,7 +29,8 @@ namespace Clas.Emr.Intergration
             {
                 //Get from configuration file
                 Crypto cryp = new Crypto();
-                string serverName = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_HIS_DB_SERVER), true);
+                //string serverName = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_HIS_DB_SERVER), true);
+                string serverName = SqlDatabaseHelper._HIS_DB_SERVER;
                 string databaseName = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_HIS_DB_NAME), true);
                 string userID = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_HIS_DB_USER), true);
                 string password = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_HIS_DB_PASSWORD), true);

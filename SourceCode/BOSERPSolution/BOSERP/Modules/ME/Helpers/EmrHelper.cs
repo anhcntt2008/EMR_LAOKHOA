@@ -62,7 +62,8 @@ namespace BOSERP.Modules.ME.Helpers
             _emrDocumentCtrl = new MEEmrDocumentsController();
             _templateActionCtrl = new MEEmrTemplateActionsController();
 
-            var emrEndpoint = BOSApp.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_EMR_API_ENDPOINT);
+            //var emrEndpoint = BOSApp.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_EMR_API_ENDPOINT);
+            var emrEndpoint = SqlDatabaseHelper._EMR_API_ENDPOINT;
             if (!string.IsNullOrEmpty(emrEndpoint) && !string.IsNullOrEmpty(BOSApp.EmrApiAuthToken))
             {
                 var timeout = BOSApp.GetSystemConfigValueInt(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_EMR_API_ENDPOINT_TIMEOUT, 180000);

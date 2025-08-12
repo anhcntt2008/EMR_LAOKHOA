@@ -1,4 +1,5 @@
-﻿using BOSLib.DataAccess;
+﻿using BOSLib;
+using BOSLib.DataAccess;
 using Emr.Base.Models.Abp;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -25,7 +26,8 @@ namespace Clas.Emr.Intergration
         public ApiHelper(int timeout = 100000)
         {
             System.Configuration.Configuration configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-            this._endpoint = SystemMemCache.GetSystemConfigValue(BOSCommon.SysCfgConsts.PRIVATE, BOSCommon.SysCfgConsts.PRIVATE_HIS_API_ENDPOINT);
+            //this._endpoint = SystemMemCache.GetSystemConfigValue(BOSCommon.SysCfgConsts.PRIVATE, BOSCommon.SysCfgConsts.PRIVATE_HIS_API_ENDPOINT);
+            this._endpoint = SqlDatabaseHelper._HIS_API_ENDPOINT;
             this._token = SystemMemCache.GetSystemConfigValue(BOSCommon.SysCfgConsts.PRIVATE, BOSCommon.SysCfgConsts.PRIVATE_HIS_API_TOKEN);
             this._client = new HttpClient();
             this._client.Timeout = TimeSpan.FromMilliseconds(timeout);
