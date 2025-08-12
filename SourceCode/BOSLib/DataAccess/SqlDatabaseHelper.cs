@@ -41,6 +41,8 @@ namespace BOSLib
         public static string _rabbitMQ_UserName = string.Empty;
         public static string _rabbitMQ_Password = string.Empty;
 
+
+        public static string _HIS_INTERGRATE_API_ENDPOINT = string.Empty;
         private static Dictionary<string, string> _tableIdentities;
 
         #region Public properties
@@ -85,6 +87,7 @@ namespace BOSLib
                     _rabbitMQ_Port = cryp.DecryptNew(ConfigurationManager.AppSettings["RabbitMQ_Port"], true);
                     _rabbitMQ_UserName = cryp.DecryptNew(ConfigurationManager.AppSettings["RabbitMQ_UserName"], true);
                     _rabbitMQ_Password = cryp.DecryptNew(ConfigurationManager.AppSettings["RabbitMQ_Password"], true);
+                    _HIS_INTERGRATE_API_ENDPOINT = cryp.DecryptNew(ConfigurationManager.AppSettings["HIS_INTERGRATE_API_ENDPOINT"], true);
 
                     _connectionString = string.Format("Data Source={0};Initial Catalog={1};User ID={2};Password={3}", serverName, databaseName, userID, password);
                     database = new SqlDatabase(_connectionString);

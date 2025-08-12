@@ -130,10 +130,11 @@ namespace BOSBase
         {
             try
             {
-                var endPoint = BOSApp.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.HIS_INTERGRATE_API_ENDPOINT);
-                if (!string.IsNullOrEmpty(endPoint))
-                    return endPoint;
-                return string.Empty;
+                //var endPoint = BOSApp.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.HIS_INTERGRATE_API_ENDPOINT);
+                //if (!string.IsNullOrEmpty(endPoint))
+                //    return endPoint;
+                //return string.Empty;
+                return SqlDatabaseHelper._HIS_INTERGRATE_API_ENDPOINT;
             }
             catch (Exception ex)
             {
