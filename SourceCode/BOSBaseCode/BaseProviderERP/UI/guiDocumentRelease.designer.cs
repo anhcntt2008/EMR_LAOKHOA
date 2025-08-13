@@ -15,7 +15,6 @@ namespace BOSERP
         #region Windows Form Designer generated code
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(guiDocumentRelease));
             this.btnOk = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
@@ -86,6 +85,7 @@ namespace BOSERP
             ((System.ComponentModel.ISupportInitialize)(this.gridViewEmrDocumentRelease)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
         #endregion
 

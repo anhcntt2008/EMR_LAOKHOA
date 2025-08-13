@@ -176,255 +176,264 @@ namespace BOSERP
             return true;
         }
         private void fld_btnLogin_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(fld_txtUserName.Text) || string.IsNullOrEmpty(fld_txtPassword.Text))
+        { 
+            try
             {
-                MessageBox.Show("Vui lòng nhập tên đăng nhập và mật khẩu.", CommonLocalizedResources.MessageBoxDefaultCaption,
-                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
-
-            var ip = BOSApp.GetMachineIp();
-            var hostName = Dns.GetHostName();
-            var mac = BOSApp.GetMachineMac();
-
-            var isNetworkToBs24x7 = _netWork.CheckNetworkToBs24x7();
-            if (isNetworkToBs24x7.IsNetwork)
-            {
-                var result = _userBs247Manager.Login(fld_txtUserName.Text, fld_txtPassword.Text);
-                if (!result.successful)
+                if (string.IsNullOrEmpty(fld_txtUserName.Text) || string.IsNullOrEmpty(fld_txtPassword.Text))
                 {
-                    if (result.errorCode == 9)
+                    MessageBox.Show("Vui lòng nhập tên đăng nhập và mật khẩu.", CommonLocalizedResources.MessageBoxDefaultCaption,
+                        MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+
+                var ip = BOSApp.GetMachineIp();
+                var hostName = Dns.GetHostName();
+                var mac = BOSApp.GetMachineMac();
+
+                var isNetworkToBs24x7 = _netWork.CheckNetworkToBs24x7();
+                if (isNetworkToBs24x7.IsNetwork)
+                {
+                    var result = _userBs247Manager.Login(fld_txtUserName.Text, fld_txtPassword.Text);
+                    if (!result.successful)
                     {
-                        if (BOSApp.IsAuthenticated(fld_txtUserName.Text, fld_txtPassword.Text))
+                        if (result.errorCode == 9)
                         {
-                            MessageBox.Show(BaseLocalizedResources.OfflineLogin,
+                            if (BOSApp.IsAuthenticated(fld_txtUserName.Text, fld_txtPassword.Text))
+                            {
+                                MessageBox.Show(BaseLocalizedResources.OfflineLogin,
+                                    CommonLocalizedResources.MessageBoxDefaultCaption, MessageBoxButtons.OK,
+                                    MessageBoxIcon.Exclamation);
+                                BOSApp.IsLoginBacSi24X7 = false;
+                                BOSApp.SetCurrentUserLogin(fld_txtUserName.Text);
+                                DialogResult = DialogResult.OK;
+                                Dispose();
+                            }
+                            else
+                            {
+                                MessageBox.Show(BaseLocalizedResources.InvalidAuthenticationMessage,
+                                    CommonLocalizedResources.MessageBoxDefaultCaption, MessageBoxButtons.OK,
+                                    MessageBoxIcon.Exclamation);
+                            }
+                        }
+                        else if (result.errorCode == 3)
+                        {
+                            MessageBox.Show(BaseLocalizedResources.InvalidAuthenticationMessage,
+                            CommonLocalizedResources.MessageBoxDefaultCaption, MessageBoxButtons.OK,
+                            MessageBoxIcon.Exclamation);
+                        }
+                        else if (result.errorCode == -3)
+                        {
+                            MessageBox.Show("Tài khoản của bạn chưa được kích hoạt. Vui lòng kiểm tra lại.",
                                 CommonLocalizedResources.MessageBoxDefaultCaption, MessageBoxButtons.OK,
                                 MessageBoxIcon.Exclamation);
-                            BOSApp.IsLoginBacSi24X7 = false;
-                            BOSApp.SetCurrentUserLogin(fld_txtUserName.Text);
-                            DialogResult = DialogResult.OK;
-                            Dispose();
                         }
                         else
                         {
                             MessageBox.Show(BaseLocalizedResources.InvalidAuthenticationMessage,
-                                CommonLocalizedResources.MessageBoxDefaultCaption, MessageBoxButtons.OK,
-                                MessageBoxIcon.Exclamation);
+                                    CommonLocalizedResources.MessageBoxDefaultCaption, MessageBoxButtons.OK,
+                                    MessageBoxIcon.Exclamation);
                         }
-                    }
-                    else if (result.errorCode == 3)
-                    {
-                        MessageBox.Show(BaseLocalizedResources.InvalidAuthenticationMessage,
-                        CommonLocalizedResources.MessageBoxDefaultCaption, MessageBoxButtons.OK,
-                        MessageBoxIcon.Exclamation);
-                    }
-                    else if (result.errorCode == -3)
-                    {
-                        MessageBox.Show("Tài khoản của bạn chưa được kích hoạt. Vui lòng kiểm tra lại.",
-                            CommonLocalizedResources.MessageBoxDefaultCaption, MessageBoxButtons.OK,
-                            MessageBoxIcon.Exclamation);
                     }
                     else
                     {
-                        MessageBox.Show(BaseLocalizedResources.InvalidAuthenticationMessage,
+                        BOSApp.IsLoginBacSi24X7 = true;
+                        BOSApp.CurrentBacSi24X7 = result.data;
+
+                        if (result.data.hospitals == null || result.data.hospitals.Length == 0)
+                        {
+                            MessageBox.Show(BaseLocalizedResources.HospitalEmpty,
                                 CommonLocalizedResources.MessageBoxDefaultCaption, MessageBoxButtons.OK,
                                 MessageBoxIcon.Exclamation);
+                        }
+                        else
+                        {
+                            _listHospitals = result.data.hospitals;
+                            var listName = _listHospitals.Select(x => x.name).ToArray();
+                            fld_cboBranch.Properties.Items.AddRange(listName);
+                            fld_cboBranch.SelectedIndex = 0;
+                            _brBranchsController = new BRBranchsController();
+                            var userResult = _userBs247Manager.GetUserDetailsIncludeClinic(BOSApp.CurrentBacSi24X7.userId,
+                                BOSApp.CurrentBacSi24X7.userId, BOSApp.CurrentBacSi24X7.sessionId);
+                            _userBacsi24X7 = userResult.data.user;
+                            panelControl1.Visible = false;
+                            fld_panelSelectBranch.Visible = true;
+                        }
                     }
                 }
                 else
                 {
-                    BOSApp.IsLoginBacSi24X7 = true;
-                    BOSApp.CurrentBacSi24X7 = result.data;
-
-                    if (result.data.hospitals == null || result.data.hospitals.Length == 0)
+                    var paramList = new Dictionary<string, object>();
+                    object data = null;
+                    //login by call api his or sql
+                    //uu tiên api
+                    if (!string.IsNullOrEmpty(_apiLogin))
                     {
-                        MessageBox.Show(BaseLocalizedResources.HospitalEmpty,
-                            CommonLocalizedResources.MessageBoxDefaultCaption, MessageBoxButtons.OK,
-                            MessageBoxIcon.Exclamation);
-                    }
-                    else
-                    {
-                        _listHospitals = result.data.hospitals;
-                        var listName = _listHospitals.Select(x => x.name).ToArray();
-                        fld_cboBranch.Properties.Items.AddRange(listName);
-                        fld_cboBranch.SelectedIndex = 0;
-                        _brBranchsController = new BRBranchsController();
-                        var userResult = _userBs247Manager.GetUserDetailsIncludeClinic(BOSApp.CurrentBacSi24X7.userId,
-                            BOSApp.CurrentBacSi24X7.userId, BOSApp.CurrentBacSi24X7.sessionId);
-                        _userBacsi24X7 = userResult.data.user;
-                        panelControl1.Visible = false;
-                        fld_panelSelectBranch.Visible = true;
-                    }
-                }
-            }
-            else
-            {
-                var paramList = new Dictionary<string, object>();
-                object data = null;
-                //login by call api his or sql
-                //uu tiên api
-                if (!string.IsNullOrEmpty(_apiLogin))
-                {
-                    string passwordSend = fld_txtPassword.Text;
-                    var methodHash = BOSApp.GetSystemConfigValue(SysCfgConsts.SYSTEM_CONFIGS, "HASH_PASSWORD_TO_HIS");
-                    if (!string.IsNullOrEmpty(methodHash))
-                    {
-                        var hashProvider = new HashProvider(methodHash);
-                        passwordSend = hashProvider.ComputeHash(Encoding.ASCII.GetBytes(fld_txtPassword.Text)).ToLower();
-                    }
-
-                    data = _apiHis.Post(_apiLogin,
-                      paramList,
-                      new
-                      {
-                          User = fld_txtUserName.Text,
-                          user = fld_txtUserName.Text,
-                          Pass = passwordSend,
-                          pass = passwordSend,
-                          IP = ip,
-                          ip
-                      });
-                }
-                else if (!string.IsNullOrEmpty(_spLogin))
-                {
-                    paramList.Add("username", fld_txtUserName.Text);
-                    paramList.Add("password", fld_txtPassword.Text);
-                    paramList.Add("ip", ip);
-                    data = JObject.FromObject(_sqlHelper.Get(_spLogin, paramList).FirstOrDefault());
-                }
-                if (!string.IsNullOrEmpty(_spLogin) || !string.IsNullOrEmpty(_apiLogin))
-                {
-                    if (data != null)
-                    {
-                        //ip success update pw to db
-                        var value = data as JObject;
-                        if (!value.ContainsKey("success"))
+                        string passwordSend = fld_txtPassword.Text;
+                        var methodHash = BOSApp.GetSystemConfigValue(SysCfgConsts.SYSTEM_CONFIGS, "HASH_PASSWORD_TO_HIS");
+                        if (!string.IsNullOrEmpty(methodHash))
                         {
-                            MessageBox.Show("HIS trả về dữ liệu không đúng khi gọi api/sp login", "Lỗi từ HIS", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
+                            var hashProvider = new HashProvider(methodHash);
+                            passwordSend = hashProvider.ComputeHash(Encoding.ASCII.GetBytes(fld_txtPassword.Text)).ToLower();
                         }
-                        if (value["success"].ToString().ToLower() == "true")
+
+                        data = _apiHis.Post(_apiLogin,
+                          paramList,
+                          new
+                          {
+                              User = fld_txtUserName.Text,
+                              user = fld_txtUserName.Text,
+                              Pass = passwordSend,
+                              pass = passwordSend,
+                              IP = ip,
+                              ip
+                          });
+                    }
+                    else if (!string.IsNullOrEmpty(_spLogin))
+                    {
+                        paramList.Add("username", fld_txtUserName.Text);
+                        paramList.Add("password", fld_txtPassword.Text);
+                        paramList.Add("ip", ip);
+                        data = JObject.FromObject(_sqlHelper.Get(_spLogin, paramList).FirstOrDefault());
+                    }
+                    if (!string.IsNullOrEmpty(_spLogin) || !string.IsNullOrEmpty(_apiLogin))
+                    {
+                        if (data != null)
                         {
-                            ADUsersInfo user = null;
-                            //Nếu login API không trả về user_id, EMR sẽ login theo cách cũ
-                            if (value.ContainsKey("user_id") && !string.IsNullOrEmpty(value["user_id"].ToString()))
+                            //ip success update pw to db
+                            var value = data as JObject;
+                            if (!value.ContainsKey("success"))
                             {
-                                user = _usersController.GetFirstObjectByStringColumn("ADUserHISID", value["user_id"].ToString()) as ADUsersInfo;
-                            }
-                            else
-                            {
-                                user = _usersController.GetObjectByName(fld_txtUserName.Text) as ADUsersInfo;
-                            }
-                            if (user == null)
-                            {
-                                MessageBox.Show("Người dùng này không tồn tại trên CHC.EMR. Vui lòng tạo người dùng.",
-                                "Không tìm thấy người dùng.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                MessageBox.Show("HIS trả về dữ liệu không đúng khi gọi api/sp login", "Lỗi từ HIS", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 return;
                             }
+                            if (value["success"].ToString().ToLower() == "true")
+                            {
+                                ADUsersInfo user = null;
+                                //Nếu login API không trả về user_id, EMR sẽ login theo cách cũ
+                                if (value.ContainsKey("user_id") && !string.IsNullOrEmpty(value["user_id"].ToString()))
+                                {
+                                    user = _usersController.GetFirstObjectByStringColumn("ADUserHISID", value["user_id"].ToString()) as ADUsersInfo;
+                                }
+                                else
+                                {
+                                    user = _usersController.GetObjectByName(fld_txtUserName.Text) as ADUsersInfo;
+                                }
+                                if (user == null)
+                                {
+                                    MessageBox.Show("Người dùng này không tồn tại trên CHC.EMR. Vui lòng tạo người dùng.",
+                                    "Không tìm thấy người dùng.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                    return;
+                                }
+                                else
+                                {
+                                    byte[] passwordBytes = SHA1Managed.Create().ComputeHash(ASCIIEncoding.ASCII.GetBytes(fld_txtPassword.Text));
+                                    user.ADPassword = Convert.ToBase64String(passwordBytes);
+                                    //cap nhat lai username theo HIS
+                                    if (value.ContainsKey("user_id") && !string.IsNullOrEmpty(value["user_id"].ToString()))
+                                        user.ADUserName = fld_txtUserName.Text;
+
+                                    _usersController.UpdateObject(user);
+                                }
+                                //login local
+                                if (BOSApp.IsAuthenticated(fld_txtUserName.Text, fld_txtPassword.Text))
+                                {
+                                    if (!ForceLoginAtOtherMachine(hostName, mac, ip))
+                                        return;
+
+                                    user.ADUserOnComputerName = hostName;
+                                    user.ADUserOnIpAddress = ip;
+                                    user.ADUserOnComputerMAC = mac;
+
+                                    _usersController.UpdateObject(user);
+
+                                    BOSApp.IsLoginBacSi24X7 = false;
+                                    BOSApp.SetCurrentUserLogin(fld_txtUserName.Text);
+                                    if (value.ContainsKey("token"))
+                                        BOSApp.ApiToken = value["token"].ToString();
+
+                                    var userName = fld_txtUserName.Text;
+                                    var pwd = fld_txtPassword.Text;
+                                    GetEmrApiToken(userName, pwd);
+                                    //Task.Run(() =>
+                                    //{
+                                    //    GetEmrApiToken(userName, pwd);
+                                    //});
+                                    BOSApp.ConnectToSignalHub();
+
+                                    DialogResult = DialogResult.OK;
+                                    Dispose();
+                                }
+                            }
                             else
                             {
-                                byte[] passwordBytes = SHA1Managed.Create().ComputeHash(ASCIIEncoding.ASCII.GetBytes(fld_txtPassword.Text));
-                                user.ADPassword = Convert.ToBase64String(passwordBytes);
-                                //cap nhat lai username theo HIS
-                                if (value.ContainsKey("user_id") && !string.IsNullOrEmpty(value["user_id"].ToString()))
-                                    user.ADUserName = fld_txtUserName.Text;
-
-                                _usersController.UpdateObject(user);
-                            }
-                            //login local
-                            if (BOSApp.IsAuthenticated(fld_txtUserName.Text, fld_txtPassword.Text))
-                            {
-                                if (!ForceLoginAtOtherMachine(hostName, mac, ip))
-                                    return;
-
-                                user.ADUserOnComputerName = hostName;
-                                user.ADUserOnIpAddress = ip;
-                                user.ADUserOnComputerMAC = mac;
-
-                                _usersController.UpdateObject(user);
-
-                                BOSApp.IsLoginBacSi24X7 = false;
-                                BOSApp.SetCurrentUserLogin(fld_txtUserName.Text);
-                                if (value.ContainsKey("token"))
-                                    BOSApp.ApiToken = value["token"].ToString();
-
-                                var userName = fld_txtUserName.Text;
-                                var pwd = fld_txtPassword.Text;
-                                GetEmrApiToken(userName, pwd);
-                                //Task.Run(() =>
-                                //{
-                                //    GetEmrApiToken(userName, pwd);
-                                //});
-                                BOSApp.ConnectToSignalHub();
-
-                                DialogResult = DialogResult.OK;
-                                Dispose();
+                                var msg = BaseLocalizedResources.InvalidAuthenticationMessage;
+                                if (value.ContainsKey("msg"))
+                                {
+                                    msg = value["msg"].ToString();
+                                }
+                                MessageBox.Show(msg, CommonLocalizedResources.MessageBoxDefaultCaption, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                             }
                         }
                         else
                         {
                             var msg = BaseLocalizedResources.InvalidAuthenticationMessage;
-                            if (value.ContainsKey("msg"))
-                            {
-                                msg = value["msg"].ToString();
-                            }
                             MessageBox.Show(msg, CommonLocalizedResources.MessageBoxDefaultCaption, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
                     }
                     else
                     {
-                        var msg = BaseLocalizedResources.InvalidAuthenticationMessage;
-                        MessageBox.Show(msg, CommonLocalizedResources.MessageBoxDefaultCaption, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    }
-                }
-                else
-                {
-                    if (BOSApp.IsAuthenticated(fld_txtUserName.Text, fld_txtPassword.Text))
-                    {
-
-                        if (!ForceLoginAtOtherMachine(hostName, mac, ip))
-                            return;
-
-                        BOSApp.IsLoginBacSi24X7 = false;
-                        var user = BOSApp.SetCurrentUserLogin(fld_txtUserName.Text);
-                        BOSApp.ApiToken = "local-logined";
-
-                        user.ADUserOnComputerName = hostName;
-                        user.ADUserOnIpAddress = ip;
-                        user.ADUserOnComputerMAC = mac;
-
-                        _usersController.UpdateObject(user);
-
-                        if (!user.ADUserActiveCheck)
+                        if (BOSApp.IsAuthenticated(fld_txtUserName.Text, fld_txtPassword.Text))
                         {
-                            MessageBox.Show("Người dùng không hoạt động. Vui lòng liên hệ quản trị viên.",
-                            CommonLocalizedResources.MessageBoxDefaultCaption, MessageBoxButtons.OK,
-                            MessageBoxIcon.Warning);
-                            return;
+
+                            if (!ForceLoginAtOtherMachine(hostName, mac, ip))
+                                return;
+
+                            BOSApp.IsLoginBacSi24X7 = false;
+                            var user = BOSApp.SetCurrentUserLogin(fld_txtUserName.Text);
+                            BOSApp.ApiToken = "local-logined";
+
+                            user.ADUserOnComputerName = hostName;
+                            user.ADUserOnIpAddress = ip;
+                            user.ADUserOnComputerMAC = mac;
+
+                            _usersController.UpdateObject(user);
+
+                            if (!user.ADUserActiveCheck)
+                            {
+                                MessageBox.Show("Người dùng không hoạt động. Vui lòng liên hệ quản trị viên.",
+                                CommonLocalizedResources.MessageBoxDefaultCaption, MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                                return;
+                            }
+                            else
+                            {
+                                var userName = fld_txtUserName.Text;
+                                var pwd = fld_txtPassword.Text;
+                                //Task.Run(() =>
+                                //{
+                                //    GetEmrApiToken(userName, pwd);
+                                //});
+                                GetEmrApiToken(userName, pwd);
+                                //GetEmrApiToken(fld_txtUserName.Text, fld_txtPassword.Text);
+                                BOSApp.ConnectToSignalHub();
+                                DialogResult = DialogResult.OK;
+                            }
+                            Dispose();
                         }
                         else
                         {
-                            var userName = fld_txtUserName.Text;
-                            var pwd = fld_txtPassword.Text;
-                            //Task.Run(() =>
-                            //{
-                            //    GetEmrApiToken(userName, pwd);
-                            //});
-                            GetEmrApiToken(userName, pwd);
-                            //GetEmrApiToken(fld_txtUserName.Text, fld_txtPassword.Text);
-                            BOSApp.ConnectToSignalHub();
-                            DialogResult = DialogResult.OK;
+                            var msg = BaseLocalizedResources.InvalidAuthenticationMessage;
+                            MessageBox.Show(msg, CommonLocalizedResources.MessageBoxDefaultCaption, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
-                        Dispose();
-                    }
-                    else
-                    {
-                        var msg = BaseLocalizedResources.InvalidAuthenticationMessage;
-                        MessageBox.Show(msg, CommonLocalizedResources.MessageBoxDefaultCaption, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
                 }
-            }
+            } 
+            catch(ThreadAbortException)
+            {
+                Thread.ResetAbort(); // tránh crash
+            } 
+            
+           
         }
 
         private void GetEmrApiToken(string userName, string password)
