@@ -4164,7 +4164,7 @@ namespace BOSERP.Modules.MEEmr.UI
             this.dockPanel4_Container.Controls.Add(this.msgLogs);
             this.dockPanel4_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanel4_Container.Name = "dockPanel4_Container";
-            this.dockPanel4_Container.Size = new System.Drawing.Size(254, 491);
+            this.dockPanel4_Container.Size = new System.Drawing.Size(868, 491);
             this.dockPanel4_Container.TabIndex = 0;
             // 
             // msgLogs
@@ -4187,7 +4187,7 @@ namespace BOSERP.Modules.MEEmr.UI
             this.msgLogs.Properties.Appearance.Options.UseBackColor = true;
             this.msgLogs.Properties.Appearance.Options.UseForeColor = true;
             this.msgLogs.Screen = null;
-            this.msgLogs.Size = new System.Drawing.Size(254, 491);
+            this.msgLogs.Size = new System.Drawing.Size(868, 491);
             this.msgLogs.TabIndex = 12;
             this.msgLogs.Tag = "DC";
             // 
@@ -4215,7 +4215,7 @@ namespace BOSERP.Modules.MEEmr.UI
             this.controlContainer1.Controls.Add(this.panelControl2);
             this.controlContainer1.Location = new System.Drawing.Point(0, 0);
             this.controlContainer1.Name = "controlContainer1";
-            this.controlContainer1.Size = new System.Drawing.Size(254, 491);
+            this.controlContainer1.Size = new System.Drawing.Size(868, 491);
             this.controlContainer1.TabIndex = 0;
             // 
             // panelControl2
@@ -4226,7 +4226,7 @@ namespace BOSERP.Modules.MEEmr.UI
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl2.Location = new System.Drawing.Point(0, 0);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(254, 491);
+            this.panelControl2.Size = new System.Drawing.Size(868, 491);
             this.panelControl2.TabIndex = 26;
             // 
             // fld_trlDocumentDataView
@@ -4237,7 +4237,7 @@ namespace BOSERP.Modules.MEEmr.UI
             this.fld_trlDocumentDataView.DataSource = null;
             this.fld_trlDocumentDataView.Location = new System.Drawing.Point(420, 43);
             this.fld_trlDocumentDataView.Name = "fld_trlDocumentDataView";
-            this.fld_trlDocumentDataView.Size = new System.Drawing.Size(0, 445);
+            this.fld_trlDocumentDataView.Size = new System.Drawing.Size(614, 445);
             this.fld_trlDocumentDataView.TabIndex = 26;
             // 
             // fld_btnRefreshJsonView
@@ -4303,7 +4303,7 @@ namespace BOSERP.Modules.MEEmr.UI
             this.controlContainer2.Controls.Add(this.panelControl3);
             this.controlContainer2.Location = new System.Drawing.Point(0, 0);
             this.controlContainer2.Name = "controlContainer2";
-            this.controlContainer2.Size = new System.Drawing.Size(254, 491);
+            this.controlContainer2.Size = new System.Drawing.Size(868, 491);
             this.controlContainer2.TabIndex = 0;
             // 
             // panelControl3
@@ -4314,7 +4314,7 @@ namespace BOSERP.Modules.MEEmr.UI
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl3.Location = new System.Drawing.Point(0, 0);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(254, 491);
+            this.panelControl3.Size = new System.Drawing.Size(868, 491);
             this.panelControl3.TabIndex = 0;
             // 
             // label5
@@ -4360,7 +4360,7 @@ namespace BOSERP.Modules.MEEmr.UI
             this.fld_dgcMEEmrDocumentSigns.Name = "fld_dgcMEEmrDocumentSigns";
             this.fld_dgcMEEmrDocumentSigns.PrintReport = false;
             this.fld_dgcMEEmrDocumentSigns.Screen = null;
-            this.fld_dgcMEEmrDocumentSigns.Size = new System.Drawing.Size(244, 446);
+            this.fld_dgcMEEmrDocumentSigns.Size = new System.Drawing.Size(858, 446);
             this.fld_dgcMEEmrDocumentSigns.TabIndex = 26;
             this.fld_dgcMEEmrDocumentSigns.Tag = "DC";
             this.fld_dgcMEEmrDocumentSigns.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -4398,7 +4398,7 @@ namespace BOSERP.Modules.MEEmr.UI
             this.dockPanel2_Container.Controls.Add(this.panelControl1);
             this.dockPanel2_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanel2_Container.Name = "dockPanel2_Container";
-            this.dockPanel2_Container.Size = new System.Drawing.Size(254, 491);
+            this.dockPanel2_Container.Size = new System.Drawing.Size(868, 491);
             this.dockPanel2_Container.TabIndex = 0;
             // 
             // panelControl1
@@ -4407,7 +4407,7 @@ namespace BOSERP.Modules.MEEmr.UI
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(254, 491);
+            this.panelControl1.Size = new System.Drawing.Size(868, 491);
             this.panelControl1.TabIndex = 1;
             // 
             // fld_pdfViewer
@@ -4417,7 +4417,7 @@ namespace BOSERP.Modules.MEEmr.UI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.fld_pdfViewer.Location = new System.Drawing.Point(0, 42);
             this.fld_pdfViewer.Name = "fld_pdfViewer";
-            this.fld_pdfViewer.Size = new System.Drawing.Size(251, 444);
+            this.fld_pdfViewer.Size = new System.Drawing.Size(865, 444);
             this.fld_pdfViewer.TabIndex = 0;
             // 
             // dpnRichEdit
