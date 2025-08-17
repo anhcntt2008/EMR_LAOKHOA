@@ -40,6 +40,7 @@ namespace BOSLib
         public static string _HIS_DB_SERVER = string.Empty;
         public static string _HIS_INTERGRATE_API_ENDPOINT = string.Empty;
         public static string _HIS_API_ENDPOINT = string.Empty;
+        public static string _HIS_SIGN_API_ENDPOINT = string.Empty;
         public static string _EMR_API_ENDPOINT = string.Empty;
         public static string _MONGO_HOST = string.Empty;
 
@@ -88,6 +89,7 @@ namespace BOSLib
                     _HIS_INTERGRATE_API_ENDPOINT = ConfigurationManager.AppSettings["HIS_INTERGRATE_API_ENDPOINT"];
                     _HIS_API_ENDPOINT = ConfigurationManager.AppSettings["HIS_API_ENDPOINT"];
                     _EMR_API_ENDPOINT = ConfigurationManager.AppSettings["EMR_API_ENDPOINT"];
+                    _HIS_SIGN_API_ENDPOINT = ConfigurationManager.AppSettings["HIS_SIGN_API_ENDPOINT"];
                     _MONGO_HOST = ConfigurationManager.AppSettings["MONGO_HOST"];
 
                     _connectionString = string.Format("Data Source={0};Initial Catalog={1};User ID={2};Password={3}", serverName, databaseName, userID, password);
