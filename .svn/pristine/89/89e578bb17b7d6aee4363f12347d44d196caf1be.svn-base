@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<configSections>
+		<section name="dataConfiguration" type="Microsoft.Practices.EnterpriseLibrary.Data.Configuration.DatabaseSettings, Microsoft.Practices.EnterpriseLibrary.Data" />
+		<section name="oracle.manageddataaccess.client" type="OracleInternal.Common.ODPMSectionHandler, Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342" />
+	</configSections>
+	<appSettings>
+		<add key="ServerName" value="vrnejW7iFQ/5Z/+9LYq7wA==" />
+		<add key="DatabaseName" value="+V9615jctLPg1mdEjKLJ2A==" />
+		<add key="UserID" value="qF8yeSOSbwI=" />
+		<add key="Password" value="6asI7+PU1YeZUYhDwyJxtw==" />
+
+		<add key="RabbitMQ_HostName" value="vrnejW7iFQ/5Z/+9LYq7wA==" />
+		<add key="RabbitMQ_Port" value="ixfZMAfJRpg=" />
+		<add key="RabbitMQ_UserName" value="QjoZAKAg4ec=" />
+		<add key="RabbitMQ_Password" value="6sYiHruguiOZUYhDwyJxtw==" />
+
+
+		<add key="HIS_INTERGRATE_API_ENDPOINT" value="ix55ARCXAnlBZs7xNyHtZrF9xu9sIw5v8fa1dGq19uPIG8+76VZ5S5lRiEPDInG3" />
+	</appSettings>
+	<runtime>
+		<legacyCasPolicy enabled="true" />
+		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+			<dependentAssembly>
+				<assemblyIdentity name="EnvDTE" publicKeyToken="B03F5F7F11D50A3A" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-8.0.0.0" newVersion="8.0.0.0" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="Microsoft.SqlServer.ConnectionInfo" publicKeyToken="89845DCD8080CC91" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-10.0.0.0" newVersion="10.0.0.0" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="Microsoft.SqlServer.ConnectionInfo" publicKeyToken="89845dcd8080cc91" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-14.100.0.0" newVersion="14.100.0.0" />
+			</dependentAssembly>
+			<probing privatePath="x86" />
+			<dependentAssembly>
+				<publisherPolicy apply="no" />
+				<assemblyIdentity name="Oracle.ManagedDataAccess" publicKeyToken="89b483f429c47342" culture="neutral" />
+				<bindingRedirect oldVersion="4.121.0.0 - 4.65535.65535.65535" newVersion="4.122.1.0" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="FluentFTP" publicKeyToken="f4af092b1d8df44f" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-24.0.0.0" newVersion="24.0.0.0" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-11.0.0.0" newVersion="11.0.0.0" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="Google.Apis.Auth" publicKeyToken="4b01fa6e34db77ab" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-1.40.2.0" newVersion="1.40.2.0" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="Google.Apis.Auth.PlatformServices" publicKeyToken="4b01fa6e34db77ab" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-1.40.2.0" newVersion="1.40.2.0" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="Google.Protobuf" publicKeyToken="a7d26565bac4d604" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-3.8.0.0" newVersion="3.8.0.0" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="Google.Api.Gax" publicKeyToken="3ec5ea7f18953e47" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-2.7.0.0" newVersion="2.7.0.0" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="Google.Api.Gax.Grpc" publicKeyToken="3ec5ea7f18953e47" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-2.7.0.0" newVersion="2.7.0.0" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="Google.Api.CommonProtos" publicKeyToken="3ec5ea7f18953e47" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-1.6.0.0" newVersion="1.6.0.0" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="System.Interactive.Async" publicKeyToken="94bc3704cddfc263" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-3.2.0.0" newVersion="3.2.0.0" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="Google.LongRunning" publicKeyToken="185c282632e132a0" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-1.1.0.0" newVersion="1.1.0.0" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="System.Buffers" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-4.0.2.0" newVersion="4.0.2.0" />
+			</dependentAssembly>
+		</assemblyBinding>
+	</runtime>
+	<system.web>
+		<membership defaultProvider="ClientAuthenticationMembershipProvider">
+			<providers>
+				<add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+			</providers>
+		</membership>
+		<roleManager enabled="true" defaultProvider="ClientRoleProvider">
+			<providers>
+				<add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+			</providers>
+		</roleManager>
+	</system.web>
+	<!--Config endpoint-->
+	<system.serviceModel>
+		<bindings>
+			<wsHttpBinding>
+				<binding name="WSHttpBinding_IDataExchangeService" closeTimeout="00:10:00" openTimeout="00:10:00" receiveTimeout="00:10:00" sendTimeout="00:10:00" bypassProxyOnLocal="false" transactionFlow="false" hostNameComparisonMode="StrongWildcard" maxBufferPoolSize="2147483646" maxReceivedMessageSize="2147483646" messageEncoding="Text" textEncoding="utf-8" useDefaultWebProxy="true" allowCookies="false">
+					<readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="2147483646" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
+					<reliableSession ordered="true" inactivityTimeout="00:10:00" enabled="false" />
+					<security mode="Message">
+						<transport clientCredentialType="Windows" proxyCredentialType="None" realm="">
+							<extendedProtectionPolicy policyEnforcement="Never" />
+						</transport>
+						<message clientCredentialType="Windows" negotiateServiceCredential="true" algorithmSuite="Default" establishSecurityContext="true" />
+					</security>
+				</binding>
+			</wsHttpBinding>
+			<!--Viettel CA eSign-->
+			<basicHttpBinding>
+				<binding name="eSignCAServicesPortBinding" allowCookies="true" maxReceivedMessageSize="20000000" maxBufferSize="20000000" maxBufferPoolSize="20000000">
+					<security mode="Transport" />
+					<readerQuotas maxDepth="32" maxArrayLength="200000000" maxStringContentLength="200000000" />
+				</binding>
+			</basicHttpBinding>
+		</bindings>
+		<client>
+			<endpoint address="http://localhost/DataExchange.svc" binding="wsHttpBinding" bindingConfiguration="WSHttpBinding_IDataExchangeService" contract="IDataExchangeService" name="WSHttpBinding_IDataExchangeService">
+				<identity>
+					<dns value="localhost" />
+				</identity>
+			</endpoint>
+		</client>
+	</system.serviceModel>
+	<startup>
+		<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+	</startup>
+	<system.diagnostics>
+		<trace autoflush="true" indentsize="3">
+			<listeners>
+				<add name="ChcEmrApp" type="System.Diagnostics.TextWriterTraceListener" initializeData="emrLog.txt" />
+				<remove name="Default" />
+			</listeners>
+		</trace>
+	</system.diagnostics>
+	<system.data>
+		<DbProviderFactories>
+			<remove invariant="Oracle.ManagedDataAccess.Client" />
+			<add name="ODP.NET, Managed Driver" invariant="Oracle.ManagedDataAccess.Client" description="Oracle Data Provider for .NET, Managed Driver" type="Oracle.ManagedDataAccess.Client.OracleClientFactory, Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342" />
+		</DbProviderFactories>
+	</system.data>
+	<oracle.manageddataaccess.client>
+		<version number="*">
+			<settings>
+				<setting name="TraceLevel" value="7" />
+				<setting name="TraceOption" value="1" />
+				<setting name="SQLNET.AUTHENTICATION_SERVICES" value="NONE" />
+			</settings>
+			<dataSources>
+				<dataSource alias="SampleDataSource" descriptor="(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=ORCL))) " />
+			</dataSources>
+		</version>
+	</oracle.manageddataaccess.client>
+</configuration>

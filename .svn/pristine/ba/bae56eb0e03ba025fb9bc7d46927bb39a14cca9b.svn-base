@@ -1,0 +1,286 @@
+﻿using BOSCommon;
+using BOSERP;
+using BOSLib;
+using BOSLib.DataAccess;
+using Newtonsoft.Json;
+using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
+using System.Threading; // Cần cho lock
+
+public static class RabbitMqConnectionManager
+{
+    private static IConnection _connection;
+    private static readonly object _lock = new object(); // Đối tượng để đồng bộ hóa
+    private static ConnectionFactory _factory;
+
+    // Cấu hình kết nối (có thể đọc từ App.config)
+    private static string _hostname = "103.245.237.119";
+    private static int _port = 5672;
+    private static string _username = "admin";
+    private static string _password = "Attt@123";
+    private static string _virtualHost = "/";
+    public static List<IModel> Chanels = new List<IModel>();
+    public static bool IsConnected
+    {
+        get
+        {
+            // Kiểm tra connection có tồn tại và đang mở không
+            lock (_lock)
+            {
+                return _connection != null && _connection.IsOpen;
+            }
+        }
+    }
+    static RabbitMqConnectionManager()
+    {
+
+        //_hostname = SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_RABBITMQ_HOST);
+        _hostname = SqlDatabaseHelper._rabbitMQ_HostName;
+
+        _port = Convert.ToInt32(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_RABBITMQ_PORT));
+        _username = SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_RABBITMQ_USER);
+        _password = SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_RABBITMQ_PASSWORD);
+
+        // Khởi tạo kết nối ngay khi lớp được nạp
+        Initialize();
+
+        AppDomain.CurrentDomain.ProcessExit += (s, e) =>
+        {
+            CloseAllChanels();
+            _connection?.Dispose();
+        };
+    }
+    // Phương thức để khởi tạo kết nối
+    public static void Initialize()
+    {
+        // Lưu cấu hình
+        LogTxt("Initialize", "work");
+
+        lock (_lock) // Đảm bảo chỉ một luồng khởi tạo
+        {
+            if (_connection == null || !_connection.IsOpen)
+            {
+                try
+                {
+                    _factory = new ConnectionFactory()
+                    {
+                        HostName = _hostname,
+                        Port = _port,
+                        UserName = _username,
+                        Password = _password,
+                        VirtualHost = _virtualHost,
+                        RequestedHeartbeat = (ushort)TimeSpan.FromSeconds(30).TotalSeconds,
+                        AutomaticRecoveryEnabled = true, // RẤT QUAN TRỌNG: Bật tự động phục hồi kết nối
+                        NetworkRecoveryInterval = TimeSpan.FromSeconds(10) // Khoảng thời gian thử phục hồi
+                    };
+
+                    _connection = _factory.CreateConnection();
+
+                    // Đăng ký xử lý sự kiện (tuỳ chọn, giúp theo dõi trạng thái)
+                    _connection.ConnectionShutdown += Connection_ConnectionShutdown;
+                    _connection.CallbackException += Connection_CallbackException;
+                    _connection.ConnectionBlocked += Connection_ConnectionBlocked;
+                    _connection.ConnectionUnblocked += Connection_ConnectionUnblocked;
+
+
+                    Console.WriteLine("RabbitMQ connection initialized successfully."); // Hoặc ghi log
+                    StartHeartbeatPing();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error connecting to RabbitMQ: {ex.Message}"); // Hoặc ghi log
+                                                                                      // Xử lý lỗi kết nối ban đầu (ví dụ: thử lại sau)
+                    LogTxt("Initialize_Error", JsonConvert.SerializeObject(ex));
+
+                    throw; // Ném lại ngoại lệ nếu việc kết nối là bắt buộc
+                }
+            }
+        }
+    }
+
+    // Phương thức để lấy một Channel mới từ kết nối tĩnh
+    // Mỗi lần gọi sẽ tạo một IModel mới. Đây là mô hình an toàn cho đa luồng.
+    public static IModel CreateChannel()
+    {
+        if (!IsConnected)
+        {
+            // Tự động thử khởi tạo lại nếu chưa kết nối hoặc bị ngắt (khác với auto recovery)
+            // Một chiến lược tốt hơn là xử lý lỗi kết nối khi gọi CreateChannel
+            // và có logic retry ở lớp gọi.
+            // Ví dụ đơn giản:
+            lock (_lock)
+            {
+                if (!IsConnected)
+                {
+                    Console.WriteLine("Connection lost, attempting to re-initialize...");
+                    try
+                    {
+                        Initialize();
+                    }
+                    catch
+                    {
+                        // Bỏ qua lỗi ở đây, lỗi sẽ được ném khi gọi CreateModel()
+                    }
+                }
+            }
+
+            if (!IsConnected)
+            {
+                throw new InvalidOperationException("RabbitMQ connection is not available.");
+            }
+        }
+
+        try
+        {
+            // Connection.CreateModel() là thread-safe
+            var channel = _connection.CreateModel();
+            Chanels.Add(channel); // Lưu channel vào danh sách để quản lý
+            return channel;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error creating channel: {ex.Message}"); // Hoặc ghi log
+            // Xử lý lỗi tạo channel (ví dụ: kết nối bị ngắt đột ngột sau khi kiểm tra IsConnected)
+            throw;
+        }
+    }
+
+    // Phương thức để đóng kết nối khi ứng dụng tắt
+    public static void Shutdown()
+    {
+        lock (_lock) // Đảm bảo đồng bộ hóa khi đóng
+        {
+            Console.WriteLine("Shutting down RabbitMQ connection..."); // Hoặc ghi log
+            if (_connection != null && _connection.IsOpen)
+            {
+                // Hủy đăng ký sự kiện trước khi dispose
+                _connection.ConnectionShutdown -= Connection_ConnectionShutdown;
+                _connection.CallbackException -= Connection_CallbackException;
+                _connection.ConnectionBlocked -= Connection_ConnectionBlocked;
+                _connection.ConnectionUnblocked -= Connection_ConnectionUnblocked;
+
+                try
+                {
+                    CloseAllChanels(); // Đóng tất cả các channel đã tạo        
+                    _connection.Close(); // Đóng connection
+                    _connection.Dispose(); // Giải phóng tài nguyên
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error closing RabbitMQ connection: {ex.Message}"); // Hoặc ghi log
+                }
+                finally
+                {
+                    _connection = null;
+                    _factory = null;
+                }
+            }
+            Console.WriteLine("RabbitMQ connection shut down."); // Hoặc ghi log
+        }
+    }
+
+    public static void CloseAllChanels()
+    {
+        // Đóng tất cả các channel đã tạo
+        foreach (var model in Chanels)
+        {
+            try
+            {
+                if (model.IsOpen)
+                {
+                    model.Close(); // Đóng channel
+                }
+                model.Dispose(); // Giải phóng tài nguyên
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error closing channel: {ex.Message}"); // Hoặc ghi log
+            }
+        }
+    }
+    
+    public static string GetQueueName(string name)
+    {
+        return string.Format("{0}_{1}_{2}", BOSApp.GetMachineMac(), BOSApp.CurrentUser, name).ToLower();
+    }
+
+    // Xử lý sự kiện kết nối bị ngắt
+    private static void Connection_ConnectionShutdown(object sender, ShutdownEventArgs e)
+    {
+        Console.WriteLine($"RabbitMQ connection shut down. ReplyCode: {e.ReplyCode}, ReplyText: {e.ReplyText}");
+        LogTxt("Connection_ConnectionShutdown", JsonConvert.SerializeObject(e));
+        // Khi AutomaticRecoveryEnabled = true, client sẽ tự động thử kết nối lại.
+        // Bạn không cần gọi Initialize() ở đây trừ khi muốn logic phức tạp hơn.
+    }
+
+    // Xử lý sự kiện ngoại lệ callback (ví dụ: trong quá trình phục hồi)
+    private static void Connection_CallbackException(object sender, CallbackExceptionEventArgs e)
+    {
+        Console.WriteLine($"RabbitMQ callback exception: {e.Exception.Message}");
+        LogTxt("Connection_CallbackException", JsonConvert.SerializeObject(e));
+        // Log chi tiết lỗi: e.Detail
+    }
+
+    // Xử lý sự kiện kết nối bị block bởi broker (ví dụ: do thiếu bộ nhớ)
+    private static void Connection_ConnectionBlocked(object sender, ConnectionBlockedEventArgs e)
+    {
+        Console.WriteLine($"RabbitMQ connection blocked: {e.Reason}");
+        LogTxt("Connection_ConnectionBlocked", JsonConvert.SerializeObject(e));
+    }
+
+    // Xử lý sự kiện kết nối được unblocked
+    private static void Connection_ConnectionUnblocked(object sender, EventArgs e)
+    {
+        Console.WriteLine("RabbitMQ connection unblocked.");
+        LogTxt("Connection_ConnectionUnblocked", JsonConvert.SerializeObject(e));
+    }
+
+    private static Timer _pingTimer;
+
+    private static void StartHeartbeatPing()
+    {
+        _pingTimer = new Timer(state =>
+        {
+            if (_connection?.IsOpen == true)
+            {
+                try
+                {
+                    using (var pingChannel = _connection.CreateModel())
+                    {
+                        pingChannel.QueueDeclare("ping-queue", durable: false, exclusive: false, autoDelete: true, null);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Ping failed: " + ex.Message);
+                }
+            }
+        }, null, TimeSpan.Zero, TimeSpan.FromSeconds(60)); // mỗi 60 giây
+    }
+
+    public static void LogTxt(string type, string message, string fileName = null)
+    {
+        try
+        {
+            var logPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\logs";
+            Directory.CreateDirectory(logPath);
+            var now = DateTime.Now;
+            if (string.IsNullOrEmpty(fileName))
+            {
+                fileName = $"rabbitMQManager" +now.ToString("yyyyMMdd") + ".txt";
+            }
+
+            logPath = Path.Combine(logPath, fileName);
+            using (StreamWriter sw = new StreamWriter(logPath, true))
+            {
+                sw.WriteLine($"{now} : {type} : {message}");
+            }
+        }
+        catch { }
+    }
+}
