@@ -3052,7 +3052,6 @@
       <DependentUpon>SMMPR100.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="UI\guiConfirmWithLongInfo.resx">
       <DependentUpon>guiConfirmWithLongInfo.cs</DependentUpon>
       <SubType>Designer</SubType>
