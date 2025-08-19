@@ -9,8 +9,11 @@ build/
 [Rr]eleases/
 
 *.licx
+*.csproj
+*.csproj.user
 
 .vs/
-/SourceCode/BOSERPSolution/BOSERP/App.config
+.svn/
 /SourceCode/BOSERPSolution/packages/
-/SourceCode/BOSERPSolution/Emr.Workflow.Client/Emr.Workflow.Client.csproj.user
+/SourceCode/Clas/Clas.Repository/packages/
+/SourceCode/Clas/Clas.Test/packages/
