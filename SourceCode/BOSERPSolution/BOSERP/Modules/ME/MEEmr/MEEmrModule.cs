@@ -630,6 +630,13 @@ namespace BOSERP.Modules.MEEmr
                             BOSApp._hisWaitHandle.Set();
                         }
                         break;
+                    case "HisReturnDataTongKetBenhAn":
+                        {
+                            _dataJsonFromHIS = data.Data;
+                            //_waittingForHIS = false;
+                            BOSApp._hisWaitHandle.Set();
+                        }
+                        break;
                     case "HisSearch":
                         {
                             SetSearchParamValueInvoke(ParentScreen.SearchQuickContainer, "fld_txtMEEmrNo", data.EmrNo);
