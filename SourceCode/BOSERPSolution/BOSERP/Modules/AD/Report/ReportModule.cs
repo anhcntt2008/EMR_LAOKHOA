@@ -36,7 +36,8 @@ namespace BOSERP.Modules.Report
             CurrentModuleEntity = _entity;
             CurrentModuleEntity.Module = this;
             Crypto cryp = new Crypto();
-            _ftpHost = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_HOST), true);
+            //_ftpHost = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_HOST), true);
+            _ftpHost = SqlDatabaseHelper._PRIVATE_FTP_HOST;
             //_ftpPort = Convert.ToInt32(cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_PORT), true));
             _ftpUser = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_USER), true);
             _ftpPassword = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_PASSWORD), true);

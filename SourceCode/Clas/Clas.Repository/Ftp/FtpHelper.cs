@@ -32,9 +32,11 @@ namespace Clas.Repository.Ftp
         public FtpHelper()
         {
             Crypto cryp = new Crypto();
-            if (!string.IsNullOrEmpty(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_HOST)))
+            //if (!string.IsNullOrEmpty(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_HOST)))
+            if (!string.IsNullOrEmpty(SqlDatabaseHelper._PRIVATE_FTP_HOST))
             {
-                _ftpHost = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_HOST), true);
+                //_ftpHost = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_HOST), true);
+                _ftpHost = SqlDatabaseHelper._PRIVATE_FTP_HOST;
                 _ftpPort = Convert.ToInt32(cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_PORT), true));
                 _ftpUser = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_USER), true);
                 _ftpPassword = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_PASSWORD), true);
@@ -45,9 +47,9 @@ namespace Clas.Repository.Ftp
                 if (string.IsNullOrEmpty(_ftpUser))
                 {
                     _ftpUser = "anonymous";
-                } 
+                }
             }
-            
+
             if (string.IsNullOrEmpty(_ftpHost))
             {
                 _notUseFtp = true; // USE PATH LOCAL

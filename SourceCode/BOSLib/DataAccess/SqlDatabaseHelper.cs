@@ -43,6 +43,7 @@ namespace BOSLib
         public static string _HIS_SIGN_API_ENDPOINT = string.Empty;
         public static string _EMR_API_ENDPOINT = string.Empty;
         public static string _MONGO_HOST = string.Empty;
+        public static string _PRIVATE_FTP_HOST = string.Empty;
 
         private static Dictionary<string, string> _tableIdentities;
 
@@ -91,6 +92,7 @@ namespace BOSLib
                     _EMR_API_ENDPOINT = ConfigurationManager.AppSettings["EMR_API_ENDPOINT"];
                     _HIS_SIGN_API_ENDPOINT = ConfigurationManager.AppSettings["HIS_SIGN_API_ENDPOINT"];
                     _MONGO_HOST = ConfigurationManager.AppSettings["MONGO_HOST"];
+                    _PRIVATE_FTP_HOST = ConfigurationManager.AppSettings["PRIVATE_FTP_HOST"];
 
                     _connectionString = string.Format("Data Source={0};Initial Catalog={1};User ID={2};Password={3}", serverName, databaseName, userID, password);
                     database = new SqlDatabase(_connectionString);
