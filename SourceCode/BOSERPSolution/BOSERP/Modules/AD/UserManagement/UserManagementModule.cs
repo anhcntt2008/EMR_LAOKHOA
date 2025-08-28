@@ -226,7 +226,7 @@ namespace BOSERP.Modules.UserManagement
                 ADUsersInfo objUsersInfo = (ADUsersInfo)entity.ModuleObjects[TableName.ADUsersTableName];
                 var dataPriv = objUsersInfo.Clone() as ADUsersInfo; // Prevent edit user system
                 objUsersInfo.ADPassword = string.Empty;
-                objUsersInfo.ADUserCaPasscode = string.Empty;
+                objUsersInfo.ADUserCaPasscode = objUsersInfo.ADUserCaPasscode;
                 entity.UpdateModuleObjectBindingSource(TableName.ADUsersTableName);
                 if (_guiManageUser.ShowDialog() == DialogResult.OK)
                 {

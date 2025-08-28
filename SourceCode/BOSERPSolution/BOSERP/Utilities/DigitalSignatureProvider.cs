@@ -1,4 +1,6 @@
-﻿using BOSERP;
+﻿using BOSCommon;
+using BOSERP;
+using BOSLib;
 using Emr.Ca.Bkav;
 using Emr.Ca.Core;
 using Emr.Ca.eSign;
@@ -6,6 +8,7 @@ using Emr.Ca.VNPT;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -60,9 +63,10 @@ namespace Emr.Ca
 
                 case CaProviders.ESIGN_CA:
                     p12Path = _appPath + configDict[eSignConfigKeys.ESIGN_CA_X509CERTIFICATE2.ToString()];
+                    string urlSign = SqlDatabaseHelper._HIS_SIGN_API_ENDPOINT;
                     pw = Cryptographier.Decrypt(configDict[eSignConfigKeys.ESIGN_CA_X509CERTIFICATE2_PW.ToString()]);
-                    var eSigner = new eSign.DigitalSignatureBase(
-                        configDict[eSignConfigKeys.ESIGN_CA_URL.ToString()],
+                    var eSigner = new eSign.DigitalSignatureBase(urlSign,
+                        //configDict[eSignConfigKeys.ESIGN_CA_URL.ToString()],
                         configDict[eSignConfigKeys.ESIGN_CA_PARTY.ToString()],
                         configDict[eSignConfigKeys.ESIGN_CA_PARTY_USER.ToString()],
                         Cryptographier.Decrypt(configDict[eSignConfigKeys.ESIGN_CA_PARTY_PW.ToString()]),

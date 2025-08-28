@@ -12164,7 +12164,7 @@ namespace BOSERP.Modules.MEEmr
                    base64Pdf = Convert.ToBase64String(byteContent),
                    base64Signature = signature,
                    dateSigned = DateTime.Now,
-                   appId = Cryptographier.Decrypt(BOSApp.CurrentUsersInfo.ADUserCaPasscode),
+                   appId = BOSApp.CurrentUsersInfo.ADUserCaPasscode, //  Cryptographier.Decrypt(BOSApp.CurrentUsersInfo.ADUserCaPasscode),
                    secret = BOSApp.CurrentUsersInfo.ADUserCaIdentity,
                    pdfFileName = toFileFullname,
                    locations = null
@@ -15230,7 +15230,7 @@ namespace BOSERP.Modules.MEEmr
 
         #endregion
 
-        #region Benh nhan ky van tay
+        #region Benh nhan ky van tay và ky signpad 
         internal void PatientSign()
         {
             if (this._richEditCtrl.Modified)

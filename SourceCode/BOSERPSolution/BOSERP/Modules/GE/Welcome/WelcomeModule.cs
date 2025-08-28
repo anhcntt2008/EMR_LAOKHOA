@@ -111,10 +111,10 @@ namespace BOSERP.Modules.Welcome
                     _notiImgBox.Image = ConvertByteToImg(notification.MENotificationImg);
                 }
             }
-            else
-            {
-                _currBox.Visible = true;
-            }
+            //else
+            //{
+            //    _currBox.Visible = true;
+            //}
         }
 
         private Image ConvertByteToImg(byte[] byteArrayIn)

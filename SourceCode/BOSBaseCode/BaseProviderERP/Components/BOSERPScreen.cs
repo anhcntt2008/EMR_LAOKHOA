@@ -9,7 +9,6 @@ using System.Text;
 using System.Windows.Forms;
 using BOSComponent;
 using BOSLib;
-using CommonResources;
 using DevExpress.LookAndFeel;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Mask;
@@ -269,7 +268,7 @@ namespace BOSERP
 
         private void BOSERPScreen_Load0(object sender, EventArgs e)
         {
-            Icon = Resources.clas_logo;
+            //Icon = Resources.clas_logo;
         }
 
         public virtual void InitializeScreen(STScreensInfo objStScreensInfo)
@@ -288,7 +287,7 @@ namespace BOSERP
                 Font = new Font(ScreenInfo.STScreenFontName, (float)ScreenInfo.STScreenFontSize,
                     (FontStyle)Enum.Parse(typeof(FontStyle), ScreenInfo.STScreenFontStyle));
                 Tag = ScreenInfo.STScreenTag;
-                Icon = Resources.clas_logo;
+                //Icon = Resources.clas_logo;
                 if (IsDataSubScreen())
                     FormClosing += Screen_Closing;
                 if (ScreenInfo.STScreenTag == BaseModule.cstDataSubScreen)
