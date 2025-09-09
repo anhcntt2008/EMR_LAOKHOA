@@ -84,6 +84,8 @@ using DevExpress.DataProcessing;
 using DevExpress.XtraCharts;
 using Gecko.Net;
 using System.Threading;
+using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
 #endregion
 
 namespace BOSERP.Modules.MEEmr
@@ -12134,7 +12136,10 @@ namespace BOSERP.Modules.MEEmr
             // luu file to benh an chinh sau khi ky
             string fileName = string.Format(@"{0}\Emr\{1}\{2}.docx", _documentPath, document.FK_MEEmrID, document.MEEmrDocumentFile);
             this._emrDocumentHelper.SignRange(doc.Range, true, "CA Digital Signature", "Ký bằng chứng thư số bởi");
-            string signature = template.METemplateDgtSignatureImage ? Convert.ToBase64String(BOSApp.CurrentEmployeesInfo.HREmployeeSignature) : string.Empty;
+
+            byte[] signImage = ResizeImage(BOSApp.CurrentEmployeesInfo.HREmployeeSignature, 100, 50);
+
+            string signature = template.METemplateDgtSignatureImage ? Convert.ToBase64String(signImage) : string.Empty;
             // thuc hien ky so CA tren toan bo file
             BOSProgressBar.Start("Đang thực hiện ký số CA");
             string toFileName = $"{document.MEEmrDocumentFile}_digitalsigned{DateTime.Now.ToBinary()}";
@@ -12214,6 +12219,32 @@ namespace BOSERP.Modules.MEEmr
             _richEditCtrl.Modified = false;
             _msgNotification.Text = "Ký bằng chứng thư số CA thành công. Xem lịch sử và nội dung ký ở tab Lịch sử ký tên";
         }
+        private byte[] ResizeImage(byte[] imageBytes, int width, int height)
+        {
+            using (var inputStream = new MemoryStream(imageBytes))
+            using (var sourceImage = Image.FromStream(inputStream))
+            {
+                // Tạo bitmap mới theo size mong muốn
+                var newBitmap = new Bitmap(width, height);
+
+                using (var graphics = Graphics.FromImage(newBitmap))
+                {
+                    graphics.CompositingQuality = CompositingQuality.HighQuality;
+                    graphics.SmoothingMode = SmoothingMode.HighQuality;
+                    graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+
+                    // Vẽ ảnh đã resize
+                    graphics.DrawImage(sourceImage, 0, 0, width, height);
+                }
+
+                using (var outputStream = new MemoryStream())
+                {
+                    // Lưu ra định dạng JPEG/PNG
+                    newBitmap.Save(outputStream, ImageFormat.Jpeg);
+                    return outputStream.ToArray();
+                }
+            }
+        }
         private void DigitalSignPdfDocument(MEEmrDocumentsInfo document)
         {
             string fileName = $"{document.MEEmrDocumentFile}.{EmrDocumentFileExtention.pdf}";
@@ -12240,7 +12271,11 @@ namespace BOSERP.Modules.MEEmr
 
             var byteContent = File.ReadAllBytes(filePath);
             var hash = _hashProvider.ComputeHash(byteContent);
-            string signature = template.METemplateDgtSignatureImage ? Convert.ToBase64String(BOSApp.CurrentEmployeesInfo.HREmployeeSignature) : string.Empty;
+
+            byte[] signImage = ResizeImage(BOSApp.CurrentEmployeesInfo.HREmployeeSignature,100,50);
+
+
+            string signature = template.METemplateDgtSignatureImage ? Convert.ToBase64String(signImage) : string.Empty;
 
             var configCA = BOSApp.GetSystemConfigValue(SysCfgConsts.SYSTEM_CONFIGS, SysCfgConsts.SYSTEM_CONFIGS_CA_METHOD);
             var methodCA = !string.IsNullOrEmpty(configCA) ? configCA : string.Empty;
@@ -15439,7 +15474,24 @@ namespace BOSERP.Modules.MEEmr
                     {
                         if (signPadForm.ShowDialog() != DialogResult.OK) return;
 
-                        var img = signPadForm.Signature;
+                        byte[] byteImage; 
+
+                        using (var ms = new MemoryStream())
+                        {
+                            signPadForm.Signature.Save(ms, signPadForm.Signature.RawFormat);
+                            byteImage = ms.ToArray();
+                        }
+                        byteImage = ResizeImage(byteImage, 100, 140);
+
+                        Image signImage;
+                        using (MemoryStream ms = new MemoryStream(byteImage))
+                        {
+                            ms.Position = 0;
+                            signImage = Image.FromStream(ms);
+                        }
+
+                        //var img = signPadForm.Signature;
+                        var img = signImage;
                         if (img == null) return;
 
                         var signRanges = new List<DocumentRange>();
@@ -15503,7 +15555,25 @@ namespace BOSERP.Modules.MEEmr
                     using (var cap = new Emr.FingerPrint.Capture(_fingerPrint, contentHash, listName, signer, alternativeSign))
                     {
                         if (cap.ShowDialog() != DialogResult.OK) return;
-                        var img = cap.GetImage();
+
+                        byte[] byteImage;
+
+                        using (var ms = new MemoryStream())
+                        {
+                            cap.GetImage().Save(ms, cap.GetImage().RawFormat);
+                            byteImage = ms.ToArray();
+                        }
+                        byteImage = ResizeImage(byteImage, 100, 140);
+
+                        Image signImage;
+                        using (MemoryStream ms = new MemoryStream(byteImage))
+                        {
+                            ms.Position = 0;
+                            signImage = Image.FromStream(ms);
+                        }
+
+                        var img = signImage;
+                        //var img = cap.GetImage();
                         if (img == null) return;
                         signer = cap.SelectedSigner;
                         fullSignerName = cap.SelectedName;
@@ -15568,7 +15638,30 @@ namespace BOSERP.Modules.MEEmr
                     using (var cap = new CaptureZKTeco(_fingerPrintZK, contentHash, listName, signer, alternativeSign))
                     {
                         if (cap.ShowDialog() != DialogResult.OK) return;
-                        var img = cap.GetImage();
+
+                        byte[] byteImage;
+
+                        using (var ms = new MemoryStream())
+                        {
+                            ImageCodecInfo codec = ImageCodecInfo.GetImageEncoders().FirstOrDefault(c => c.MimeType.Equals("image/jpeg", StringComparison.OrdinalIgnoreCase));
+                            EncoderParameters encoderParams = new EncoderParameters(1);
+                            encoderParams.Param[0] = new EncoderParameter(System.Drawing.Imaging.Encoder.Quality, 90L);
+
+                            cap.GetImage().Save(ms, codec, encoderParams);
+                            byteImage = ms.ToArray();
+                        }
+                        byteImage = ResizeImage(byteImage, 100, 140);
+
+                        Image signImage;
+                        using (MemoryStream ms = new MemoryStream(byteImage))
+                        {
+                            ms.Position = 0;
+                            signImage = Image.FromStream(ms);
+                        }
+
+                        //var img = signPadForm.Signature;
+                        var img = signImage;
+                        //var img = cap.GetImage();
                         if (img == null) return;
                         signer = cap.SelectedSigner;
                         fullSignerName = cap.SelectedName;
