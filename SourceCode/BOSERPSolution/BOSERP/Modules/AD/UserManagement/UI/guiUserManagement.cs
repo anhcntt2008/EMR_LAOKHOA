@@ -592,7 +592,7 @@ namespace BOSERP.Modules.UserManagement
         private void Control_MouseDown(object sender, MouseEventArgs e)
         {
             Control ctrl = (Control)sender;
-            if (e.Button == MouseButtons.Left)
+            if (e.Button == MouseButtons.Right)
             {
                 ContextMenu popupMenu = new ContextMenu();
                 if (ctrl is BOSTabControl)

@@ -56,6 +56,7 @@ namespace Clas.Repository.Ftp
             }
 
             _ftpRootFilePath = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_ROOT_PATH), true);
+            //_ftpRootFilePath = SqlDatabaseHelper._FTP_ROOT_PATH;
 
         }
         public FtpHelper(string ftpHost, string ftpPassword, string ftpRootFilePath, string ftpUser)
