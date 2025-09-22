@@ -156,6 +156,7 @@ namespace BOSERP.Modules.MEEmr.UI
             // 
             this.fld_lke_DocumentNote_FK_HRDepartmentID.BOSAllowAddNew = false;
             this.fld_lke_DocumentNote_FK_HRDepartmentID.BOSAllowDummy = true;
+            this.fld_lke_DocumentNote_FK_HRDepartmentID.BOSAllowMange = false;
             this.fld_lke_DocumentNote_FK_HRDepartmentID.BOSComment = "";
             this.fld_lke_DocumentNote_FK_HRDepartmentID.BOSDataMember = "FK_HRDepartmentID";
             this.fld_lke_DocumentNote_FK_HRDepartmentID.BOSDataSource = "MEEmrDocumentNotes";
@@ -242,6 +243,7 @@ namespace BOSERP.Modules.MEEmr.UI
             // 
             this.fld_lke_DocumentNote_FK_HREmployeeID.BOSAllowAddNew = false;
             this.fld_lke_DocumentNote_FK_HREmployeeID.BOSAllowDummy = true;
+            this.fld_lke_DocumentNote_FK_HREmployeeID.BOSAllowMange = false;
             this.fld_lke_DocumentNote_FK_HREmployeeID.BOSComment = "";
             this.fld_lke_DocumentNote_FK_HREmployeeID.BOSDataMember = "FK_HREmployeeID";
             this.fld_lke_DocumentNote_FK_HREmployeeID.BOSDataSource = "MEEmrDocumentNotes";
@@ -354,7 +356,7 @@ namespace BOSERP.Modules.MEEmr.UI
             // labelControl1
             // 
             this.labelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.Location = new System.Drawing.Point(208, 274);
             this.labelControl1.Name = "labelControl1";

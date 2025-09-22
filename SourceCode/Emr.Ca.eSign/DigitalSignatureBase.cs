@@ -101,8 +101,10 @@ namespace Emr.Ca.eSign
                 {
                     dataToSign
                 };
+                //SoapConnectorImp connector = new SoapConnectorImp(Algorithm.SHA256, _url, _relyingParty, _relyingPartyUser, _relyingPartyPassword, _relyingPartySignature, _relyingPartyKeyStore, _relyingPartyKeyStorePassword, parammeters.AgreementUUID, parammeters.AuthorizeCode);
 
-                SoapConnectorImp connector = new SoapConnectorImp(Algorithm.SHA256, _url, _relyingParty, _relyingPartyUser, _relyingPartyPassword, _relyingPartySignature, _relyingPartyKeyStore, _relyingPartyKeyStorePassword, parammeters.AgreementUUID, parammeters.AuthorizeCode);
+                string url = _url + "VinHSM/VinHSMSignaturePDF";
+                SoapConnectorImp connector = new SoapConnectorImp(Algorithm.SHA256, url, _relyingParty, _relyingPartyUser, _relyingPartyPassword, _relyingPartySignature, _relyingPartyKeyStore, _relyingPartyKeyStorePassword, parammeters.AgreementUUID, parammeters.AuthorizeCode);
 
 
                 PdfProfile profile = new PdfProfile(PdfForm.B, Algorithm.SHA256);
@@ -508,7 +510,7 @@ namespace Emr.Ca.eSign
             const string contentType = "application/json";
             const string meThod = "POST";
             string stringData = JsonConvert.SerializeObject(parammeters);
-            string url = _url + "VinHSMSignaturePDF";
+            string url = _url + "VinHSM/VinHSMSignaturePDF";
             string result = EmrCaCore.WebRequest(url, stringData, "", meThod, contentType);
             if (!string.IsNullOrEmpty(result))
             {

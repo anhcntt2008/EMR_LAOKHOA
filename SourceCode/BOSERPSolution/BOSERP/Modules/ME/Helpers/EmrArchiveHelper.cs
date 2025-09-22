@@ -112,8 +112,11 @@ namespace BOSERP.Modules.ME.Helpers
                 DigitalSignatureRect rect = new DigitalSignatureRect();
                 rect.StartX = emrType.MEEmrTypeDgtSignatureX;
                 rect.StartY = emrType.MEEmrTypeDgtSignatureY;
+                rect.Width = emrType.MEEmrTypeDgtSignatureWidth;
+                rect.Height = emrType.MEEmrTypeDgtSignatureHeight;
                 rect.EndX = emrType.MEEmrTypeDgtSignatureX + emrType.MEEmrTypeDgtSignatureWidth;
-                rect.EndY = emrType.MEEmrTypeDgtSignatureY - emrType.MEEmrTypeDgtSignatureHeight;
+                rect.EndY = emrType.MEEmrTypeDgtSignatureY + emrType.MEEmrTypeDgtSignatureHeight;
+
 
                 lstRect.Add(rect);
                 digitalSignature.pageSign = page;

@@ -62,6 +62,7 @@ namespace Emr.Ca.eSign
             basicHttpbinding.ReceiveTimeout = TimeSpan.FromMinutes(10);
             basicHttpbinding.SendTimeout = TimeSpan.FromMinutes(1);
             basicHttpbinding.Security.Mode = BasicHttpSecurityMode.Transport;
+            //basicHttpbinding.Security.Mode = BasicHttpSecurityMode.None;
             basicHttpbinding.MaxBufferSize = 2147483647;
             basicHttpbinding.MaxReceivedMessageSize = 2147483647;
             basicHttpbinding.MaxBufferPoolSize = 2147483647;
