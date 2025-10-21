@@ -170,6 +170,7 @@ namespace BOSERP
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             DevExpress.XtraEditors.TableLayout.ItemTemplateBase itemTemplateBase1 = new DevExpress.XtraEditors.TableLayout.ItemTemplateBase();
             DevExpress.XtraEditors.TableLayout.TableColumnDefinition tableColumnDefinition1 = new DevExpress.XtraEditors.TableLayout.TableColumnDefinition();
             DevExpress.XtraEditors.TableLayout.TableColumnDefinition tableColumnDefinition2 = new DevExpress.XtraEditors.TableLayout.TableColumnDefinition();
@@ -185,13 +186,13 @@ namespace BOSERP
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
-            this.fld_brmToolbarManager = new DevExpress.XtraBars.BarManager();
-            this.barAndDockingController1 = new DevExpress.XtraBars.BarAndDockingController();
+            this.fld_brmToolbarManager = new DevExpress.XtraBars.BarManager(this.components);
+            this.barAndDockingController1 = new DevExpress.XtraBars.BarAndDockingController(this.components);
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.dockSectionManager = new DevExpress.XtraBars.Docking.DockManager();
+            this.dockSectionManager = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.dockSectionPanel = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.treelistManager = new DevExpress.XtraTreeList.TreeList();
@@ -201,7 +202,10 @@ namespace BOSERP
             this.controlContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
             this.listBoxMessage = new DevExpress.XtraEditors.ListBoxControl();
             this.dropBtnAdminMessage = new DevExpress.XtraEditors.DropDownButton();
-            this.fld_barManager = new DevExpress.XtraBars.BarManager();
+            this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemProgressBar1 = new DevExpress.XtraEditors.Repository.RepositoryItemProgressBar();
+            this.repositoryItemMarqueeProgressBar1 = new DevExpress.XtraEditors.Repository.RepositoryItemMarqueeProgressBar();
+            this.fld_barManager = new DevExpress.XtraBars.BarManager(this.components);
             this.fld_barToolbar = new DevExpress.XtraBars.Bar();
             this.fld_barMenu = new DevExpress.XtraBars.Bar();
             this.barSubItem3 = new DevExpress.XtraBars.BarSubItem();
@@ -281,10 +285,7 @@ namespace BOSERP
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.barCheckItem1 = new DevExpress.XtraBars.BarCheckItem();
-            this.imageCollection1 = new DevExpress.Utils.ImageCollection();
-            this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
-            this.repositoryItemProgressBar1 = new DevExpress.XtraEditors.Repository.RepositoryItemProgressBar();
-            this.repositoryItemMarqueeProgressBar1 = new DevExpress.XtraEditors.Repository.RepositoryItemMarqueeProgressBar();
+            this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.fld_tsOpenedModules = new System.Windows.Forms.ToolStrip();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             ((System.ComponentModel.ISupportInitialize)(this.fld_brmToolbarManager)).BeginInit();
@@ -297,10 +298,10 @@ namespace BOSERP
             this.dockPanelMessage.SuspendLayout();
             this.controlContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listBoxMessage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fld_barManager)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMarqueeProgressBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fld_barManager)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             this.SuspendLayout();
             // 
             // fld_brmToolbarManager
@@ -331,7 +332,7 @@ namespace BOSERP
             // 
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 53);
             this.barDockControlTop.Manager = this.fld_brmToolbarManager;
             this.barDockControlTop.Size = new System.Drawing.Size(877, 0);
             // 
@@ -339,7 +340,7 @@ namespace BOSERP
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 433);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 408);
             this.barDockControlBottom.Manager = this.fld_brmToolbarManager;
             this.barDockControlBottom.Size = new System.Drawing.Size(877, 0);
             // 
@@ -347,17 +348,17 @@ namespace BOSERP
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 53);
             this.barDockControlLeft.Manager = this.fld_brmToolbarManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 433);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 355);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(877, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(877, 53);
             this.barDockControlRight.Manager = this.fld_brmToolbarManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 433);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 355);
             // 
             // dockSectionManager
             // 
@@ -366,7 +367,7 @@ namespace BOSERP
             this.dockSectionManager.HiddenPanels.AddRange(new DevExpress.XtraBars.Docking.DockPanel[] {
             this.dockSectionPanel,
             this.dockPanelMessage});
-            this.dockSectionManager.MenuManager = this.fld_brmToolbarManager;
+            this.dockSectionManager.MenuManager = this.fld_barManager;
             this.dockSectionManager.TopZIndexControls.AddRange(new string[] {
             "DevExpress.XtraBars.BarDockControl",
             "System.Windows.Forms.StatusBar"});
@@ -539,6 +540,23 @@ namespace BOSERP
             this.dropBtnAdminMessage.Size = new System.Drawing.Size(82, 23);
             this.dropBtnAdminMessage.TabIndex = 0;
             this.dropBtnAdminMessage.Text = "Quản trị";
+            // 
+            // barEditItem1
+            // 
+            this.barEditItem1.Caption = "barEditItem1";
+            this.barEditItem1.Edit = this.repositoryItemProgressBar1;
+            this.barEditItem1.Id = 75;
+            this.barEditItem1.Name = "barEditItem1";
+            // 
+            // repositoryItemProgressBar1
+            // 
+            this.repositoryItemProgressBar1.Name = "repositoryItemProgressBar1";
+            // 
+            // repositoryItemMarqueeProgressBar1
+            // 
+            this.repositoryItemMarqueeProgressBar1.Name = "repositoryItemMarqueeProgressBar1";
+            this.repositoryItemMarqueeProgressBar1.ProgressAnimationMode = DevExpress.Utils.Drawing.ProgressAnimationMode.PingPong;
+            this.repositoryItemMarqueeProgressBar1.ShowTitle = true;
             // 
             // fld_barManager
             // 
@@ -1342,23 +1360,6 @@ namespace BOSERP
             this.imageCollection1.Images.SetKeyName(7, "Customer List.jpg");
             this.imageCollection1.Images.SetKeyName(8, "New Item.png");
             // 
-            // barEditItem1
-            // 
-            this.barEditItem1.Caption = "barEditItem1";
-            this.barEditItem1.Edit = this.repositoryItemProgressBar1;
-            this.barEditItem1.Id = 75;
-            this.barEditItem1.Name = "barEditItem1";
-            // 
-            // repositoryItemProgressBar1
-            // 
-            this.repositoryItemProgressBar1.Name = "repositoryItemProgressBar1";
-            // 
-            // repositoryItemMarqueeProgressBar1
-            // 
-            this.repositoryItemMarqueeProgressBar1.Name = "repositoryItemMarqueeProgressBar1";
-            this.repositoryItemMarqueeProgressBar1.ProgressAnimationMode = DevExpress.Utils.Drawing.ProgressAnimationMode.PingPong;
-            this.repositoryItemMarqueeProgressBar1.ShowTitle = true;
-            // 
             // fld_tsOpenedModules
             // 
             this.fld_tsOpenedModules.AllowDrop = true;
@@ -1395,14 +1396,14 @@ namespace BOSERP
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.fld_tsOpenedModules);
             this.Controls.Add(this.dockSectionPanel);
-            this.Controls.Add(this.barDockControl3);
-            this.Controls.Add(this.barDockControl4);
-            this.Controls.Add(this.barDockControl2);
-            this.Controls.Add(this.barDockControl1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.Controls.Add(this.barDockControl3);
+            this.Controls.Add(this.barDockControl4);
+            this.Controls.Add(this.barDockControl2);
+            this.Controls.Add(this.barDockControl1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1422,10 +1423,10 @@ namespace BOSERP
             this.dockPanelMessage.ResumeLayout(false);
             this.controlContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.listBoxMessage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fld_barManager)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMarqueeProgressBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fld_barManager)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

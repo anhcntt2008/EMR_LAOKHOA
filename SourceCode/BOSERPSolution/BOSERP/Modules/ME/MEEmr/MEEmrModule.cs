@@ -5791,6 +5791,7 @@ namespace BOSERP.Modules.MEEmr
                     { "emrNo", emrNo },
                     { "documentNo", document.MEEmrDocumentFile },
                     { "documentDate", document.MEEmrDocumentCreatedDate },
+                    //{ "documentTime", document.MEEmrDocumentCreatedDate },
                     { EmrParam.TransactionIdTag, tid },
                     { EmrParam.GuidTag, group },
                     { "caseNo", this.GetCaseNo() }

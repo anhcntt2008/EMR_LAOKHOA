@@ -142,7 +142,7 @@ namespace BOSERP.Modules.Report
             var reportTool = BOSApp.AppLocation + @"\report\Emr.Report.exe";
 
 #if DEBUG
-            reportTool = @"D:\emr\ProgressNote - master\SourceCode\Emr.Report\bin\Debug\Emr.Report.exe";
+            //reportTool = @"D:\emr\ProgressNote - master\SourceCode\Emr.Report\bin\Debug\Emr.Report.exe";
 #endif
             var rowContext = _reportCtrl.GetRequestPoolParams(
                     BOSApp.CurrentUsersInfo.ADUserID,
