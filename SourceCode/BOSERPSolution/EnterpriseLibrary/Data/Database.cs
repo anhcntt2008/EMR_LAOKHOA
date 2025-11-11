@@ -502,6 +502,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data
         {
             using (DbCommand command = GetStoredProcCommand(storedProcedureName, parameterValues))
             {
+                command.CommandTimeout = 6000;
                 return ExecuteDataSet(command);
             }
         }
