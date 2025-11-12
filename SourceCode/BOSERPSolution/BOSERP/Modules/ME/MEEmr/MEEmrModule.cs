@@ -12223,6 +12223,11 @@ namespace BOSERP.Modules.MEEmr
         private byte[] ResizeImage(byte[] imageBytes, int width, int height)
         {
             Image image = null;
+
+
+
+
+
             using (MemoryStream ms = new MemoryStream(imageBytes))
             {
                  image = Image.FromStream(ms);
