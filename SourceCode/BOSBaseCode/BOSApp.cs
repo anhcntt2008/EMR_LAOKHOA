@@ -1984,7 +1984,7 @@ namespace BOSERP
             Crypto cryp = new Crypto();
             //var ftpHost = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_HOST), true);
             var ftpHost = SqlDatabaseHelper._PRIVATE_FTP_HOST;
-            //_ftpPort = Convert.ToInt32(cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_PORT), true));
+            var ftpPort = Convert.ToInt32(cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_PORT), true));
             var ftpUser = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_USER), true);
             var ftpPassword = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_PASSWORD), true);
             var ftpAppDir = cryp.DecryptNew(SystemMemCache.GetSystemConfigValue(SysCfgConsts.PRIVATE, SysCfgConsts.PRIVATE_FTP_APP_DIR), true);
@@ -1996,7 +1996,7 @@ namespace BOSERP
                 var updaterDir = Application.StartupPath + @"\updater\";
                 var updaterZip = "updater.zip";
 
-                var tempDir = updaterDir + DateTime.Now.ToString("__yyyyddMM-HHmmss") + @"\";
+                var tempDir = updaterDir + DateTime.Now.ToString("__yyyyMMdd-HHmmss") + @"\";
                 if (Directory.Exists(tempDir) == false)
                     Directory.CreateDirectory(tempDir);
 
@@ -2004,6 +2004,7 @@ namespace BOSERP
                 FtpClient client = new FtpClient
                 {
                     Host = ftpHost,
+                    Port = ftpPort,
                     Credentials = new NetworkCredential(ftpUser, ftpPassword)
                 };
                 // begin connecting to the server

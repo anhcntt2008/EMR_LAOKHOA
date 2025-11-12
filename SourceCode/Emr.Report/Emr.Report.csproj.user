@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ShowAllFiles</ProjectView>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartArguments>DESIGNER localhost anonymous abc%40123 /Report RPT19.1009 emrDb Xko/t4KCuRtjTAbPO3rPmCbwuz+Z/8/p3TiTAXOhVYzWo0gr03LpkWQsEfV9nj8rb6lCNyp/y5u3txtTsn8lh+TUi8E3pnuxDr0wdMDDPdv9R65kb/7drGX6Uq/zEkjshF/2aZb20bFDILji0LRg+jnF9apaxgYdkzJJl1YxpP4MKy/jj4WLbzWACNjZksmS eyJfQURVc2VyR3JvdXBJRCI6NDEsIl9BRFVzZXJOYW1lIjoiZW1yIiwiX0FEVXNlckhJU0lEIjoiIiwiX0FEVXNlckVtclZpZXciOiJBbGwiLCJfQURVc2VyT25Db21wdXRlck5hbWUiOiJERVNLVE9QLTlNVDRHTlMiLCJfQURVc2VyT25JcEFkZHJlc3MiOiIxMC4wLjEuNzAiLCJfQURVc2VyT25Db21wdXRlck1BQyI6IjVDRUExRDkyQzlFRiIsIl9GS19IUkRlcGFydG1lbnRJRCI6MTI3LCJfRktfSFJEZXBhcnRtZW50Um9vbUlEIjoyMCwiX0hSRW1wbG95ZWVObyI6Ijk1IiwiX0hSRW1wbG95ZWVOYW1lIjoiRMawxqFuZyBLaW0gTGFuIn0=</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ReferencePath>D:\Works\HNET_EMR\Debug\</ReferencePath>
+  </PropertyGroup>
+</Project>
