@@ -2040,7 +2040,7 @@ namespace BOSERP
                 if (Directory.Exists(updaterDir))
                 {
                     var nextVerPath = Directory.GetDirectories(updaterDir, "*", SearchOption.TopDirectoryOnly).OrderByDescending(f => f).FirstOrDefault();
-                    updater = nextVerPath?.ToString() + @"\ChcEmr.NextVer.exe";
+                    updater = (!string.IsNullOrEmpty(nextVerPath) ? nextVerPath : updaterDir).ToString() + @"\ChcEmr.NextVer.exe";
                 }
 
                 //old updater version

@@ -9,6 +9,8 @@ build/
 [Rr]eleases/
 
 *.licx
+*.csproj
+*.csproj.user
 
 .vs/
 .svn/
