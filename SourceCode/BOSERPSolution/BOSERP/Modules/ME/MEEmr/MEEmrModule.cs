@@ -12222,29 +12222,61 @@ namespace BOSERP.Modules.MEEmr
         }
         private byte[] ResizeImage(byte[] imageBytes, int width, int height)
         {
-            using (var inputStream = new MemoryStream(imageBytes))
-            using (var sourceImage = Image.FromStream(inputStream))
+            Image image = null;
+            using (MemoryStream ms = new MemoryStream(imageBytes))
             {
-                // Tạo bitmap mới theo size mong muốn
-                var newBitmap = new Bitmap(width, height);
+                 image = Image.FromStream(ms);
+            }
+           
+            var destRect = new System.Drawing.Rectangle(0, 0, width, height);
+            var destImage = new Bitmap(width, height);
 
-                using (var graphics = Graphics.FromImage(newBitmap))
+            destImage.SetResolution(image.HorizontalResolution, image.VerticalResolution);
+
+            using (var graphics = Graphics.FromImage(destImage))
+            {
+                graphics.CompositingMode = CompositingMode.SourceCopy;
+                graphics.CompositingQuality = CompositingQuality.HighQuality;
+                graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                graphics.SmoothingMode = SmoothingMode.HighQuality;
+                graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
+
+                using (var wrapMode = new ImageAttributes())
                 {
-                    graphics.CompositingQuality = CompositingQuality.HighQuality;
-                    graphics.SmoothingMode = SmoothingMode.HighQuality;
-                    graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
-
-                    // Vẽ ảnh đã resize
-                    graphics.DrawImage(sourceImage, 0, 0, width, height);
-                }
-
-                using (var outputStream = new MemoryStream())
-                {
-                    // Lưu ra định dạng JPEG/PNG
-                    newBitmap.Save(outputStream, ImageFormat.Jpeg);
-                    return outputStream.ToArray();
+                    wrapMode.SetWrapMode(WrapMode.TileFlipXY);
+                    graphics.DrawImage(image, destRect, 0, 0, image.Width, image.Height, GraphicsUnit.Pixel, wrapMode);
                 }
             }
+            byte[] imageBytesReturn = null ;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                image.Save(ms, image.RawFormat);
+                imageBytes = ms.ToArray();
+            }
+            return imageBytesReturn;
+            //using (var inputStream = new MemoryStream(imageBytes))
+            //using (var sourceImage = Image.FromStream(inputStream))
+            //{
+            //    // Tạo bitmap mới theo size mong muốn
+            //    var newBitmap = new Bitmap(width, height);
+
+            //    using (var graphics = Graphics.FromImage(newBitmap))
+            //    {
+            //        graphics.CompositingQuality = CompositingQuality.HighQuality;
+            //        graphics.SmoothingMode = SmoothingMode.HighQuality;
+            //        graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+
+            //        // Vẽ ảnh đã resize
+            //        graphics.DrawImage(sourceImage, 0, 0, width, height);
+            //    }
+
+            //    using (var outputStream = new MemoryStream())
+            //    {
+            //        // Lưu ra định dạng JPEG/PNG
+            //        newBitmap.Save(outputStream, ImageFormat.Jpeg);
+            //        return outputStream.ToArray();
+            //    }
+            //}
         }
         private void DigitalSignPdfDocument(MEEmrDocumentsInfo document)
         {
