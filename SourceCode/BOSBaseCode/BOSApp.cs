@@ -2045,11 +2045,12 @@ namespace BOSERP
 
                 //old updater version
                 if (!File.Exists(updater))
-                    updater = updaterDir + "Updater.exe";
+                    updater = updaterDir + "ChcEmr.NextVer.exe";
 
-                const string appProcess = "CHC.EMR";
+                const string appProcess = "EMR";
                 var destDir = "\"" + Application.StartupPath + "\\";
                 string cmd = "|ftpHost|" + ftpHost;
+                cmd += "|ftpPort|" + ftpPort.ToString();
                 cmd += "|ftpAppDir|" + ftpAppDir;
                 cmd += "|ftpUser|" + ftpUser;
                 cmd += "|ftpPw|" + ftpPassword;

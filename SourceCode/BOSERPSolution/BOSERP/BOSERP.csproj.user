@@ -21,6 +21,6 @@
     <StartArguments>
     </StartArguments>
     <StartAction>Program</StartAction>
-    <StartProgram>D:\Works\HNET_EMR\Debug\ChcEmr.NextVer.exe</StartProgram>
+    <StartProgram>D:\Works\HNET_EMR\Debug\EMR.exe</StartProgram>
   </PropertyGroup>
 </Project>
