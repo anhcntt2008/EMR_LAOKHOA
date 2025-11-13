@@ -12224,10 +12224,6 @@ namespace BOSERP.Modules.MEEmr
         {
             Image image = null;
 
-
-
-
-
             using (MemoryStream ms = new MemoryStream(imageBytes))
             {
                  image = Image.FromStream(ms);
