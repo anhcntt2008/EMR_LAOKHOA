@@ -20,6 +20,7 @@ namespace BOSUpdater
         private string _tempDownDir = string.Empty;
         private string _appProcess = string.Empty;
         private string _ftpHost = string.Empty;
+        private int _ftpPort = 0;
         private string _version = string.Empty;
         private string _destDir = string.Empty;
         private string _ftpPw;
@@ -77,6 +78,7 @@ namespace BOSUpdater
                     if (!ok) return;
 
                     ShowMsg("Đang giải nén dữ liệu...");
+                    //MessageBox.Show(_tempDownDir + "\\" + _appZip, _tempDownDir);
                     ok = Unzip(_tempDownDir + "\\" + _appZip, _tempDownDir);
                     if (!ok) return;
                     ReportProgress(50);
@@ -133,10 +135,18 @@ namespace BOSUpdater
             // create an FTP client
             FtpClient client = new FtpClient();
             client.Host = this._ftpHost;
+            if (_ftpPort > 0)
+            {
+                client.Port = this._ftpPort;
+            }
             // if you don't specify login credentials, we use the "anonymous" user account
             client.Credentials = new NetworkCredential(this._ftpUser, this._ftpPw);
             // begin connecting to the server
+
+            ShowMsg("connecting to the server...");
+            //MessageBox.Show("connecting to the server..." + client.Host );
             client.Connect();
+            ShowMsg("connected to the server...");
 
             if (!client.DirectoryExists(serverPath))
             {
@@ -212,6 +222,9 @@ namespace BOSUpdater
                 {
                     case "ftpHost":
                         _ftpHost = args[i + 1];
+                        break;
+                    case "ftpPort":
+                        _ftpPort = Convert.ToInt32(args[i + 1]);
                         break;
                     case "ftpAppDir":
                         _ftpAppDir = args[i + 1];
